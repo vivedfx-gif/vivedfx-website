@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Media Management — VIVEDFX | Grow Your Audience</title>
+  <meta name="description" content="Strategic social media management by VIVEDFX. Content creation, community management, and analytics that build audiences and drive engagement across all platforms." />
+  <meta property="og:title" content="Social Media Management — VIVEDFX" />
+  <meta property="og:description" content="Content strategy, posting, community management, and analytics that grow your social presence." />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Social Media Management","provider":{"@type":"Organization","name":"VIVEDFX"},"description":"Strategic social media management including content creation, community management, and analytics across Instagram, Facebook, TikTok, and LinkedIn."}</script>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root{--accent:#ec1f27}
+    .sp-hero{min-height:60vh;background:var(--dark);display:flex;align-items:flex-end;padding:120px 0 80px;position:relative;overflow:hidden}
+    .sp-hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 30% 0%,rgba(236,31,39,.18) 0%,transparent 65%);pointer-events:none}
+    .sp-back{display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-size:.9rem;text-decoration:none;margin-bottom:40px;transition:color .2s}
+    .sp-back:hover{color:var(--white)}.sp-back svg{width:18px;height:18px}
+    .sp-label{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:rgba(236,31,39,.1);border:1px solid rgba(236,31,39,.2);border-radius:100px;padding:6px 16px;margin-bottom:24px}
+    .sp-label-dot{width:6px;height:6px;background:var(--accent);border-radius:50%}
+    .sp-title{font-family:var(--font-heading);font-size:clamp(2.5rem,6vw,5rem);font-weight:900;color:var(--white);line-height:1.05;margin-bottom:24px}
+    .sp-title span{color:var(--accent)}
+    .sp-subtitle{font-size:1.15rem;color:var(--muted);max-width:600px;line-height:1.75}
+    .sp-section{padding:100px 0;background:var(--dark)}.sp-section-alt{background:var(--dark-2)}
+    .sp-section-label{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+    .sp-section-title{font-family:var(--font-heading);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:800;color:var(--white);margin-bottom:48px;line-height:1.15}
+    .sp-section-title span{color:var(--accent)}
+    .media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .media-cell{background:var(--dark-3);border:2px dashed var(--border);border-radius:var(--radius-md);aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;transition:all .3s;overflow:hidden;position:relative;cursor:pointer}
+    .media-cell:hover{border-color:var(--accent);background:rgba(236,31,39,.05)}
+    .media-cell.has-content{border-style:solid;border-color:var(--border)}
+    .media-cell.has-content:hover{border-color:var(--border-hover)}
+    .media-cell img,.media-cell video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:calc(var(--radius-md) - 2px)}
+    .media-cell-overlay{position:absolute;inset:0;background:rgba(0,0,0,.6);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;transition:opacity .3s;border-radius:calc(var(--radius-md) - 2px)}
+    .media-cell.has-content:hover .media-cell-overlay{opacity:1}
+    .media-cell-icon{color:var(--accent)}.media-cell-icon svg{width:32px;height:32px}
+    .media-cell-text{font-size:.8rem;color:var(--muted);font-weight:500}
+    .media-cell-remove{position:absolute;top:10px;right:10px;width:28px;height:28px;background:rgba(236,31,39,.9);border:none;border-radius:50%;color:white;font-size:14px;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:10}
+    .media-cell.has-content:hover .media-cell-remove{display:flex}
+    .media-cell input[type=file]{display:none}
+    .media-cell-video{aspect-ratio:16/9}.media-cell-wide{grid-column:span 2;aspect-ratio:16/6}
+    .upload-hint{text-align:center;padding:16px 0 0;color:var(--muted);font-size:.85rem}.upload-hint span{color:var(--accent)}
+    .sp-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:60px 0 0}
+    .sp-stat{background:var(--dark-3);padding:36px 32px}
+    .sp-stat-num{font-family:var(--font-heading);font-size:3rem;font-weight:900;color:var(--accent);line-height:1}
+    .sp-stat-label{font-size:.9rem;color:var(--muted);margin-top:8px}
+    .sp-features{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .sp-feature{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;transition:border-color .3s,transform .3s}
+    .sp-feature:hover{border-color:var(--border-hover);transform:translateY(-3px)}
+    .sp-feature-icon{color:var(--accent);margin-bottom:14px}.sp-feature-icon svg{width:28px;height:28px}
+    .sp-feature-title{font-weight:700;color:var(--white);margin-bottom:8px}
+    .sp-feature-text{font-size:.88rem;color:var(--muted);line-height:1.65}
+    .sp-cta{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-xl);padding:72px;text-align:center;position:relative;overflow:hidden}
+    .sp-cta-orb{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(236,31,39,.15),transparent 70%);border-radius:50%;pointer-events:none}
+    .sp-cta-orb-1{top:-100px;left:-100px}.sp-cta-orb-2{bottom:-100px;right:-100px}
+    .sp-cta-title{font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:16px}
+    .sp-cta-title span{color:var(--accent)}
+    .sp-cta-sub{color:var(--muted);font-size:1.05rem;max-width:480px;margin:0 auto 36px;line-height:1.7}
+    .sp-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    .sp-why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .sp-why-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:32px;transition:border-color .3s,transform .3s}
+    .sp-why-card:hover{border-color:var(--border-hover);transform:translateY(-3px)}
+    .sp-why-icon{width:48px;height:48px;background:rgba(236,31,39,.1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:20px}
+    .sp-why-icon svg{width:24px;height:24px}
+    .sp-why-title{font-weight:700;color:var(--white);margin-bottom:8px;font-size:1.05rem}
+    .sp-why-text{font-size:.88rem;color:var(--muted);line-height:1.65}
+    .sp-process{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;counter-reset:step}
+    .sp-process-step{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px 20px;text-align:center;position:relative;transition:border-color .3s,transform .3s}
+    .sp-process-step:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .sp-process-num{font-family:var(--font-heading);font-size:2.5rem;font-weight:900;color:rgba(236,31,39,.15);line-height:1;margin-bottom:12px}
+    .sp-process-title{font-weight:700;color:var(--white);margin-bottom:8px;font-size:.95rem}
+    .sp-process-text{font-size:.82rem;color:var(--muted);line-height:1.6}
+    .sp-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .sp-benefit{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;display:flex;align-items:flex-start;gap:16px;transition:border-color .3s,transform .3s}
+    .sp-benefit:hover{border-color:var(--border-hover);transform:translateY(-3px)}
+    .sp-benefit-check{width:24px;height:24px;background:rgba(236,31,39,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);margin-top:2px}
+    .sp-benefit-check svg{width:14px;height:14px}
+    .sp-benefit-title{font-weight:700;color:var(--white);margin-bottom:4px}
+    .sp-benefit-text{font-size:.85rem;color:var(--muted);line-height:1.6}
+    .sp-faq{max-width:800px;margin:0 auto}
+    .sp-faq-item{border-bottom:1px solid var(--border)}
+    .sp-faq-q{width:100%;background:none;border:none;padding:20px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;color:var(--white);font-weight:600;font-size:1rem;text-align:left;font-family:inherit}
+    .sp-faq-q svg{width:20px;height:20px;color:var(--muted);transition:transform .3s;flex-shrink:0;margin-left:16px}
+    .sp-faq-item.open .sp-faq-q svg{transform:rotate(180deg)}
+    .sp-faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease}
+    .sp-faq-item.open .sp-faq-a{max-height:300px;padding:0 0 20px}
+    .sp-faq-a p{font-size:.9rem;color:var(--muted);line-height:1.7}
+    .sp-nav{display:flex;justify-content:space-between;gap:16px;padding:60px 0}
+    .sp-nav-link{flex:1;display:flex;align-items:center;gap:12px;background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:20px 24px;text-decoration:none;color:var(--white);transition:border-color .3s,transform .2s}
+    .sp-nav-link:hover{border-color:var(--accent);transform:translateY(-2px)}
+    .sp-nav-link svg{width:20px;height:20px;color:var(--accent);flex-shrink:0}
+    .sp-nav-label{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+    .sp-nav-title{font-weight:700;font-size:.95rem}
+    .sp-nav-next{text-align:right;flex-direction:row-reverse}
+    @media(max-width:1024px){.sp-process{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:768px){.media-grid{grid-template-columns:repeat(2,1fr)}.media-cell-wide{grid-column:span 2}.sp-features{grid-template-columns:1fr}.sp-stats{grid-template-columns:1fr}.sp-cta{padding:48px 28px}.sp-hero{min-height:50vh}.sp-why-grid{grid-template-columns:1fr}.sp-process{grid-template-columns:1fr}.sp-benefits{grid-template-columns:1fr}.sp-nav{flex-direction:column}}
+    @media(max-width:480px){.media-grid{grid-template-columns:1fr}.media-cell-wide{grid-column:span 1;aspect-ratio:4/3}}
+  </style>
+  <!-- Arabic Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles-lang.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="logo"><img src="assets/logo.png" alt="Logo" class="logo"></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="index.html#industries" class="nav-link">Industries</a></li>
+        <li><a href="index.html#process" class="nav-link">Process</a></li>
+        <li><a href="index.html#testimonials" class="nav-link">Clients</a></li>
+      </ul>
+      <a href="index.html#contact" class="btn btn-primary nav-cta magnetic-btn" id="nav-cta-btn">
+        <span data-i18n="book_free_call">Book a Call</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+          <div class="lang-switcher">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+          </svg>
+          <span class="lang-switcher-label" id="lang-switcher-label">AR</span>
+        </button>
+        <div class="lang-dropdown" id="lang-dropdown">
+          <button class="lang-option" data-lang="en">
+            <span class="lang-flag">🇺🇸</span>
+            <span>EN</span>
+          </button>
+          <button class="lang-option" data-lang="ar">
+            <span class="lang-flag">🇸🇦</span>
+            <span>AR</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-menu-list" role="list">
+      <li class="mobile-menu-item"><a href="index.html#services" class="mobile-link">Services</a></li>
+      <li class="mobile-menu-item"><a href="index.html#portfolio" class="mobile-link">Portfolio</a></li>
+      <li class="mobile-menu-item"><a href="index.html#industries" class="mobile-link">Industries</a></li>
+      <li class="mobile-menu-item"><a href="index.html#process" class="mobile-link">Process</a></li>
+      <li class="mobile-menu-item"><a href="index.html#testimonials" class="mobile-link">Clients</a></li>
+    </ul>
+    <div class="mobile-menu-cta-wrap"><a href="index.html#contact" class="btn btn-primary mobile-menu-cta"><span data-i18n="book_free_call">Book a Call</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+  </div>
+  <main>
+    <!-- HERO -->
+    <section class="sp-hero">
+      <div class="sp-hero-bg"></div>
+      <div class="container">
+        <a href="index.html#services" class="sp-back" data-i18n="back_to_home"><svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to Services</a>
+        <div class="sp-label"><span class="sp-label-dot"></span>Service 01</div>
+        <h1 class="sp-title" data-i18n="sm_hero_title">Social Media<br/><span>Management</span></h1>
+        <p class="sp-subtitle" data-i18n="sm_hero_desc">Strategic content creation, community management, and analytics that build audiences and drive engagement across all platforms.</p>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">Our Work</div>
+        <h2 class="sp-section-title">Social Media <span>Gallery</span></h2>
+        <div class="media-grid" id="photo-grid"></div>
+        <p class="upload-hint">Click any cell to <span>upload social media visuals</span></p>
+      </div>
+    </section>
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-section-label">Reels & Videos</div>
+        <h2 class="sp-section-title">Video <span>Showcase</span></h2>
+        <div class="media-grid" id="video-grid"></div>
+        <p class="upload-hint" style="margin-top:16px">Click any cell to <span>upload social media videos</span></p>
+      </div>
+    </section>
+
+    <!-- WHY THIS SERVICE -->
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">Why Social Media</div>
+        <h2 class="sp-section-title" data-i18n="sm_why_title">Why Your Business <span>Needs This</span></h2>
+        <div class="sp-why-grid">
+          <div class="sp-why-card">
+            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-why-title">Your Audience Is Already There</div>
+            <div class="sp-why-text">Over 4.9 billion people use social media. If you're not posting strategically, you're invisible to the customers who are ready to buy.</div>
+          </div>
+          <div class="sp-why-card">
+            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-why-title">Consistency Builds Trust</div>
+            <div class="sp-why-text">Brands that post consistently see 3.5× more engagement and 67% more leads. Consistency signals professionalism and reliability.</div>
+          </div>
+          <div class="sp-why-card">
+            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-why-title">Algorithms Reward Activity</div>
+            <div class="sp-why-text">Social platforms reward accounts that post quality content regularly. More visibility means more organic reach without paying for ads.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-section-label">Results</div>
+        <h2 class="sp-section-title">What Brands <span>Achieve</span></h2>
+        <div class="sp-stats">
+          <div class="sp-stat" data-i18n="sm_stat_1"><div class="sp-stat-num" data-i18n="sm_stat_1_num">+420%</div><div class="sp-stat-label" data-i18n="sm_stat_1_label">Average Engagement Increase</div></div>
+          <div class="sp-stat" data-i18n="sm_stat_2"><div class="sp-stat-num" data-i18n="sm_stat_2_num">3.8×</div><div class="sp-stat-label" data-i18n="sm_stat_2_label">Follower Growth Rate</div></div>
+          <div class="sp-stat" data-i18n="sm_stat_3"><div class="sp-stat-num" data-i18n="sm_stat_3_num">90 days</div><div class="sp-stat-label" data-i18n="sm_stat_3_label">To Measurable Results</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE DELIVER -->
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">What's Included</div>
+        <h2 class="sp-section-title" data-i18n="sm_deliver_title">What We <span>Deliver</span></h2>
+        <div class="sp-features">
+          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="sp-feature-title" data-i18n="sm_deliver_1">Content Strategy</div><div class="sp-feature-text">Full monthly content calendars tailored to your brand voice, audience, and business goals.</div></div>
+          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="sp-feature-title" data-i18n="sm_deliver_2">Daily Posting</div><div class="sp-feature-text">Consistent posting across Instagram, Facebook, TikTok, LinkedIn, and more with optimal timing.</div></div>
+          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="sp-feature-title" data-i18n="sm_deliver_3">Community Management</div><div class="sp-feature-text">Responding to comments and DMs to keep your audience engaged, loyal, and coming back.</div></div>
+          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="sm_deliver_4">Analytics & Reporting</div><div class="sp-feature-text">Detailed monthly performance reports with actionable insights and strategy adjustments.</div></div>
+          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="sm_deliver_5">Visual Content Creation</div><div class="sp-feature-text">Scroll-stopping graphics, carousels, reels covers, and stories designed for each platform.</div></div>
+          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7V4h16v3M9 20h6M12 4v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="sm_deliver_6">Hashtag Research</div><div class="sp-feature-text">Strategic hashtag sets and trend monitoring to maximize organic reach and discoverability.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-section-label">Our Process</div>
+        <h2 class="sp-section-title" data-i18n="sm_process_title">How We <span>Work</span></h2>
+        <div class="sp-process">
+          <div class="sp-process-step"><div class="sp-process-num">01</div><div class="sp-process-title" data-i18n="sm_process_1">Audit</div><div class="sp-process-text">We analyze your current social presence, competitors, and audience behavior.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">02</div><div class="sp-process-title" data-i18n="sm_process_2">Strategy</div><div class="sp-process-text">We build a custom content calendar aligned with your business goals.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">03</div><div class="sp-process-title" data-i18n="sm_process_3">Create</div><div class="sp-process-text">Our team designs and writes all content — posts, stories, reels, and more.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">04</div><div class="sp-process-title" data-i18n="sm_process_4">Publish</div><div class="sp-process-text">Content goes live at optimal times with strategic hashtags and captions.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">05</div><div class="sp-process-title" data-i18n="sm_process_5">Optimize</div><div class="sp-process-text">We track performance weekly and refine the strategy based on data.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">Results & Benefits</div>
+        <h2 class="sp-section-title" data-i18n="sm_benefits_title">What You <span>Get</span></h2>
+        <div class="sp-benefits">
+          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="sm_benefits_1">More Engaged Followers</div><div class="sp-benefit-text">Attract real, active followers who actually interact with your content and buy from you.</div></div></div>
+          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="sm_benefits_2">Stronger Brand Authority</div><div class="sp-benefit-text">Position your business as a trusted leader in your industry through consistent, valuable content.</div></div></div>
+          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="sm_benefits_3">Higher Website Traffic</div><div class="sp-benefit-text">Drive qualified visitors from social platforms directly to your website or landing pages.</div></div></div>
+          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="sm_benefits_4">Better Customer Relationships</div><div class="sp-benefit-text">Active community management builds loyalty, trust, and repeat customers.</div></div></div>
+          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="sm_benefits_5">Time Freedom</div><div class="sp-benefit-text">We handle all content creation and posting so you can focus on running your business.</div></div></div>
+          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="sm_benefits_6">Data-Driven Growth</div><div class="sp-benefit-text">Every decision is backed by analytics, ensuring continuous improvement and ROI.</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-section-label">FAQ</div>
+        <h2 class="sp-section-title" data-i18n="sm_faq_title">Frequently Asked <span>Questions</span></h2>
+        <div class="sp-faq">
+          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="sm_faq_1_q">Which platforms do you manage?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="sm_faq_1_a">We manage Instagram, Facebook, TikTok, LinkedIn, Twitter/X, Pinterest, and YouTube. We'll recommend the best platforms for your specific business.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="sm_faq_2_q">How many posts do you create per month?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="sm_faq_2_a">Depending on your plan, we create 15–30+ posts per month including feed posts, stories, reels, and carousel content.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="sm_faq_3_q">Do you handle paid advertising too?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="sm_faq_3_a">Yes, we offer paid ad management as an add-on service. We create and manage ad campaigns to amplify your organic content.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="sm_faq_4_q">How soon will I see results?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="sm_faq_4_a">Most clients see increased engagement within 2–4 weeks. Follower growth and lead generation typically peak around 90 days.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="sm_faq_5_q">Can I approve content before it's posted?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="sm_faq_5_a">Absolutely. We send content calendars for your approval before publishing. You have full control over what goes live.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="sm_faq_6_q">Do you write captions and hashtags too?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="sm_faq_6_a">Yes, every post includes professional captions optimized for engagement and strategically researched hashtags for maximum reach.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-cta">
+          <div class="sp-cta-orb sp-cta-orb-1"></div><div class="sp-cta-orb sp-cta-orb-2"></div>
+          <h2 class="sp-cta-title" data-i18n="sm_cta_title">Ready to Grow Your<br/><span>Social Presence?</span></h2>
+          <p class="sp-cta-sub">Book a free strategy call and we'll show you exactly how we'd grow your accounts.</p>
+          <div class="sp-cta-btns">
+            <a href="index.html#contact" class="btn btn-primary btn-lg magnetic-btn"><span data-i18n="sm_cta_btn">Book Free Strategy Call</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="brief-social-media.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>Start Your Brief</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="https://wa.me/1234567890" class="btn btn-ghost btn-lg" target="_blank"><span data-i18n="sm_cta_whatsapp">Contact Us on WhatsApp</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREV / NEXT -->
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-nav">
+          <a href="service-media-buying.html" class="sp-nav-link">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div><div class="sp-nav-label" data-i18n="prev_service">Previous Service</div><div class="sp-nav-title">Media Buying</div></div>
+          </a>
+          <a href="service-brand-identity.html" class="sp-nav-link sp-nav-next">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div><div class="sp-nav-label" data-i18n="next_service">Next Service</div><div class="sp-nav-title">Brand Identity</div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="main.js" defer></script>
+  <script>
+    document.querySelectorAll('.sp-faq-q').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        const item=btn.closest('.sp-faq-item');
+        document.querySelectorAll('.sp-faq-item').forEach(i=>{if(i!==item)i.classList.remove('open')});
+        item.classList.toggle('open');
+      });
+    });
+    function createPhotoCell(i){const c=document.createElement('div');c.className='media-cell';c.innerHTML=`<input type="file" accept="image/*" class="file-input"><div class="media-cell-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="media-cell-text">Upload Photo</div><div class="media-cell-overlay"><span style="color:white;font-size:.8rem">Change Photo</span></div><button class="media-cell-remove">✕</button>`;setup(c,'image');return c;}
+    function createVideoCell(i,wide=false){const c=document.createElement('div');c.className='media-cell media-cell-video'+(wide?' media-cell-wide':'');c.innerHTML=`<input type="file" accept="video/*" class="file-input"><div class="media-cell-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div><div class="media-cell-text">Upload Video</div><div class="media-cell-overlay"><span style="color:white;font-size:.8rem">Change Video</span></div><button class="media-cell-remove">✕</button>`;setup(c,'video');return c;}
+    function setup(cell,type){const inp=cell.querySelector('.file-input'),rm=cell.querySelector('.media-cell-remove');cell.addEventListener('click',e=>{if(e.target===rm)return;inp.click();});inp.addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;const url=URL.createObjectURL(f);cell.querySelectorAll('img,video').forEach(el=>el.remove());if(type==='image'){const img=document.createElement('img');img.src=url;cell.prepend(img);}else{const v=document.createElement('video');v.src=url;v.controls=true;v.muted=true;cell.prepend(v);}cell.classList.add('has-content');});rm.addEventListener('click',e=>{e.stopPropagation();cell.querySelectorAll('img,video').forEach(el=>el.remove());cell.classList.remove('has-content');inp.value='';});}
+    const pg=document.getElementById('photo-grid');for(let i=0;i<9;i++)pg.appendChild(createPhotoCell(i));
+    const vg=document.getElementById('video-grid');for(let i=0;i<6;i++)vg.appendChild(createVideoCell(i));
+  </script>
+  <!-- Language System -->
+  <script src="lang-en.js"></script>
+  <script src="lang-ar.js"></script>
+  <script src="lang.js"></script>
+</body>
+</html>

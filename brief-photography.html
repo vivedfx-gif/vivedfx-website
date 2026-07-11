@@ -1,0 +1,198 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Brief — VIVEDFX</title>
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles-brief.css">
+  <!-- Arabic Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles-lang.css" />
+</head>
+<body>
+  <div class="brief-bg">
+    <div class="brief-bg-orb brief-bg-orb-1"></div>
+    <div class="brief-bg-orb brief-bg-orb-2"></div>
+    <div class="brief-bg-orb brief-bg-orb-3"></div>
+  </div>
+
+  <div class="brief-wrapper">
+    <div class="brief-header">
+      <a href="index.html" class="brief-logo">        <img src="assets/logo.png" alt="VIVEDFX" class="brief-logo-img"></a>
+      <h1 class="brief-title">Photography <span>Brief</span></h1>
+      <p class="brief-subtitle">Help us plan the perfect photoshoot so we capture images that represent your brand beautifully.</p>
+      <div class="lang-switcher">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+          </svg>
+          <span class="lang-switcher-label" id="lang-switcher-label">AR</span>
+        </button>
+        <div class="lang-dropdown" id="lang-dropdown">
+          <button class="lang-option" data-lang="en">
+            <span class="lang-flag">🇺🇸</span>
+            <span>EN</span>
+          </button>
+          <button class="lang-option" data-lang="ar">
+            <span class="lang-flag">🇸🇦</span>
+            <span>AR</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="brief-progress">
+      <div class="brief-progress-top">
+        <span class="brief-progress-label" data-i18n="brief_progress">Progress</span>
+        <span class="brief-progress-step" id="briefStepBadge">1 / 4</span>
+      </div>
+      <div class="brief-progress-bar">
+        <div class="brief-progress-fill" id="briefProgressFill" style="width:0%"></div>
+      </div>
+      <div class="brief-progress-dots" id="briefProgressDots"></div>
+    </div>
+
+    <div class="brief-step-counter">
+      <div class="brief-step-badge">
+        <span class="brief-step-badge-dot"></span>
+        <span id="briefStepLabel">Shoot Details</span>
+      </div>
+    </div>
+
+    <form id="briefForm" class="brief-card" novalidate>
+
+      <!-- STEP 1: Shoot Details -->
+      <div class="brief-step active" data-label="Shoot Details">
+        <h2 class="brief-step-title" data-i18n="brief_step_shoot_details">Shoot Details</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_tell_us_about_the_photoshoot_you_need">Tell us about the photoshoot you need.</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_business_type">Business Type <span class="required">*</span></label>
+          <input type="text" name="business_type" class="brief-input" placeholder="e.g. Restaurant, Gym, Fashion Brand, Corporate Office" data-i18n-placeholder="brief_ph_eg_restaurant_gym_fashion_brand_corporate_office" required>
+          <div class="brief-error">Please enter your business type</div>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_shoot_type">Shoot Type <span class="required">*</span></label>
+          <div class="brief-options brief-radio-group" name="shoot_type">
+            <label class="brief-option"><input type="radio" name="shoot_type" value="product"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_product_photography">Product Photography</span></label>
+            <label class="brief-option"><input type="radio" name="shoot_type" value="corporate"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_corporate_headshots">Corporate / Headshots</span></label>
+            <label class="brief-option"><input type="radio" name="shoot_type" value="lifestyle"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_lifestyle_brand">Lifestyle / Brand</span></label>
+            <label class="brief-option"><input type="radio" name="shoot_type" value="event"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_event_coverage">Event Coverage</span></label>
+            <label class="brief-option"><input type="radio" name="shoot_type" value="food"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_food_beverage">Food & Beverage</span></label>
+            <label class="brief-option"><input type="radio" name="shoot_type" value="real_estate"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_real_estate_interior">Real Estate / Interior</span></label>
+            <label class="brief-option"><input type="radio" name="shoot_type" value="fashion"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_fashion_apparel">Fashion & Apparel</span></label>
+          </div>
+          <div class="brief-error">Please select a shoot type</div>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_products_or_services">Products or Services</label>
+          <textarea name="products" class="brief-textarea" placeholder="What exactly do you need photographed? Describe the products, services, or scenes." data-i18n-placeholder="brief_ph_what_exactly_do_you_need_photographed_describe_the_products_services_or_scenes"></textarea>
+        </div>
+      </div>
+
+      <!-- STEP 2: Location & Setup -->
+      <div class="brief-step" data-label="Location & Setup">
+        <h2 class="brief-step-title" data-i18n="brief_step_location_and_setup">Location &amp; Setup</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_where_and_how_will_the_shoot_take_place">Where and how will the shoot take place?</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_shooting_location">Shooting Location</label>
+          <input type="text" name="location" class="brief-input" placeholder="e.g. Our studio, Client's office, Outdoor park, Restaurant" data-i18n-placeholder="brief_ph_eg_our_studio_clients_office_outdoor_park_restaurant">
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_indoor_or_outdoor">Indoor or Outdoor?</label>
+          <div class="brief-options brief-radio-group" name="indoor_outdoor">
+            <label class="brief-option"><input type="radio" name="indoor_outdoor" value="indoor"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_indoor">Indoor</span></label>
+            <label class="brief-option"><input type="radio" name="indoor_outdoor" value="outdoor"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_outdoor">Outdoor</span></label>
+            <label class="brief-option"><input type="radio" name="indoor_outdoor" value="both"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_both">Both</span></label>
+          </div>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_number_of_products">Number of Products</label>
+          <input type="text" name="num_products" class="brief-input" placeholder="e.g. 15 products, 3 categories" data-i18n-placeholder="brief_ph_eg_15_products_3_categories">
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_number_of_team_members">Number of Team Members</label>
+          <input type="text" name="num_team" class="brief-input" placeholder="e.g. 5 people for headshots" data-i18n-placeholder="brief_ph_eg_5_people_for_headshots">
+        </div>
+      </div>
+
+      <!-- STEP 3: Style & Delivery -->
+      <div class="brief-step" data-label="Style & Delivery">
+        <h2 class="brief-step-title" data-i18n="brief_step_style_and_delivery">Style &amp; Delivery</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_what_look_are_you_going_for">What look are you going for?</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_style_references">Style References</label>
+          <textarea name="style_references" class="brief-textarea" placeholder="Describe the photography style you want, or paste links to examples you love" data-i18n-placeholder="brief_ph_describe_the_photography_style_you_want_or_paste_links_to_examples_you_love"></textarea>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_delivery_date">Delivery Date</label>
+          <input type="text" name="delivery_date" class="brief-input" placeholder="e.g. Within 2 weeks, Need by March 15" data-i18n-placeholder="brief_ph_eg_within_2_weeks_need_by_march_15">
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_additional_notes">Additional Notes</label>
+          <textarea name="notes" class="brief-textarea" placeholder="Anything else? Mood, color grading, retouching level, number of final images..." data-i18n-placeholder="brief_ph_anything_else_mood_color_grading_retouching_level_number_of_final_images"></textarea>
+        </div>
+
+        <div style="text-align:center;margin-top:16px;">
+          <button type="button" id="briefSaveBtn" class="brief-btn brief-btn-save" data-i18n="brief_save">Save Progress</button>
+        </div>
+      </div>
+
+      <!-- REVIEW -->
+      <div class="brief-step" id="briefReviewStep" data-label="Review & Submit">
+        <h2 class="brief-step-title" data-i18n="brief_step_review_your_brief">Review Your Brief</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_please_review_all_your_answers_before_submitting">Please review all your answers before submitting.</p>
+        <div id="briefReviewData"></div>
+      </div>
+
+      <div class="brief-actions">
+        <button type="button" id="briefPrev" class="brief-btn brief-btn-secondary" data-i18n="brief_previous" style="visibility:hidden">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Previous
+        </button>
+        <button type="button" id="briefNext" class="brief-btn brief-btn-primary" data-i18n="brief_continue">
+          Continue<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </form>
+
+    <div class="brief-success" id="briefSuccess">
+      <div class="brief-success-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+      </div>
+      <h2 class="brief-success-title" data-i18n="brief_success_title">Brief Submitted!</h2>
+      <p class="brief-success-text" data-i18n="brief_success_text">Thank you for completing the Photography Brief. Our team will review your submission and get back to you within 24 hours.</p>
+      <div class="brief-success-actions">
+        <a href="index.html" class="brief-btn brief-btn-primary" data-i18n="brief_back_home">Back to Home</a>
+        <a href="services.html" class="brief-btn brief-btn-secondary" data-i18n="brief_view_services">View Services</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="brief-save-toast" data-i18n="brief_saved" id="briefSaveToast">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+    Progress saved
+  </div>
+
+  <script>window.BRIEF_ID = 'photography';</script>
+  <script src="brief.js"></script>
+  <!-- Language System -->
+  <script src="lang-en.js"></script>
+  <script src="lang-ar.js"></script>
+  <script src="lang.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Consultation Brief — VIVEDFX</title>
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles-brief.css">
+  <!-- Arabic Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles-lang.css" />
+</head>
+<body>
+  <div class="brief-bg">
+    <div class="brief-bg-orb brief-bg-orb-1"></div>
+    <div class="brief-bg-orb brief-bg-orb-2"></div>
+    <div class="brief-bg-orb brief-bg-orb-3"></div>
+  </div>
+
+  <div class="brief-wrapper">
+    <div class="brief-header">
+      <a href="index.html" class="brief-logo">        <img src="assets/logo.png" alt="VIVEDFX" class="brief-logo-img"></a>
+      <h1 class="brief-title">Business Consultation <span>Brief</span></h1>
+      <p class="brief-subtitle">Tell us about your business so we can prepare a focused, valuable consultation session.</p>
+      <div class="lang-switcher">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+          </svg>
+          <span class="lang-switcher-label" id="lang-switcher-label">AR</span>
+        </button>
+        <div class="lang-dropdown" id="lang-dropdown">
+          <button class="lang-option" data-lang="en">
+            <span class="lang-flag">🇺🇸</span>
+            <span>EN</span>
+          </button>
+          <button class="lang-option" data-lang="ar">
+            <span class="lang-flag">🇸🇦</span>
+            <span>AR</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="brief-progress">
+      <div class="brief-progress-top">
+        <span class="brief-progress-label" data-i18n="brief_progress">Progress</span>
+        <span class="brief-progress-step" id="briefStepBadge">1 / 3</span>
+      </div>
+      <div class="brief-progress-bar">
+        <div class="brief-progress-fill" id="briefProgressFill" style="width:0%"></div>
+      </div>
+      <div class="brief-progress-dots" id="briefProgressDots"></div>
+    </div>
+
+    <div class="brief-step-counter">
+      <div class="brief-step-badge">
+        <span class="brief-step-badge-dot"></span>
+        <span id="briefStepLabel">About Your Business</span>
+      </div>
+    </div>
+
+    <form id="briefForm" class="brief-card" novalidate>
+
+      <!-- STEP 1: About Business -->
+      <div class="brief-step active" data-label="About Your Business">
+        <h2 class="brief-step-title" data-i18n="brief_step_about_your_business">About Your Business</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_give_us_a_snapshot_of_your_business_and_where_it_stands_today">Give us a snapshot of your business and where it stands today.</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_business_name">Business Name <span class="required">*</span></label>
+          <input type="text" name="business_name" class="brief-input" placeholder="e.g. VIVEDFX" data-i18n-placeholder="brief_ph_eg_vivedfx" required>
+          <div class="brief-error">Please enter your business name</div>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_industry">Industry <span class="required">*</span></label>
+          <select name="industry" class="brief-select" required>
+<option value="" data-i18n="brief_select_select_your_industry">Select your industry</option>
+            <option data-i18n="brief_option_healthcare_medical">Healthcare & Medical</option>
+            <option data-i18n="brief_option_fitness_wellness">Fitness & Wellness</option>
+            <option data-i18n="brief_option_corporate_b2b">Corporate & B2B</option>
+            <option data-i18n="brief_option_ecommerce_retail">E-Commerce & Retail</option>
+            <option data-i18n="brief_option_real_estate">Real Estate</option>
+            <option data-i18n="brief_option_food_beverage">Food & Beverage</option>
+            <option data-i18n="brief_option_education">Education</option>
+            <option data-i18n="brief_option_technology_saas">Technology & SaaS</option>
+            <option data-i18n="brief_option_automotive">Automotive</option>
+            <option data-i18n="brief_option_fashion_beauty">Fashion & Beauty</option>
+            <option data-i18n="brief_option_hospitality_travel">Hospitality & Travel</option>
+            <option data-i18n="brief_option_other">Other</option>
+          </select>
+          <div class="brief-error">Please select your industry</div>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_current_situation">Current Situation</label>
+          <textarea name="current_situation" class="brief-textarea" placeholder="Describe where your business is right now — revenue, team size, market position, growth stage..." data-i18n-placeholder="brief_ph_describe_where_your_business_is_right_now_revenue_team_size_market_position_growth_stage"></textarea>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_main_challenges">Main Challenges <span class="required">*</span></label>
+          <textarea name="challenges" class="brief-textarea" placeholder="What are the biggest challenges you're facing right now?" data-i18n-placeholder="brief_ph_what_are_the_biggest_challenges_youre_facing_right_now" required></textarea>
+          <div class="brief-error">Please describe your main challenges</div>
+        </div>
+      </div>
+
+      <!-- STEP 2: Goals & Vision -->
+      <div class="brief-step" data-label="Goals & Vision">
+        <h2 class="brief-step-title" data-i18n="brief_step_goals_and_vision">Goals &amp; Vision</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_where_do_you_want_to_take_your_business">Where do you want to take your business?</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_goals">Goals <span class="required">*</span></label>
+          <textarea name="goals" class="brief-textarea" placeholder="What do you want to achieve? Short-term and long-term goals." data-i18n-placeholder="brief_ph_what_do_you_want_to_achieve_shortterm_and_longterm_goals" required></textarea>
+          <div class="brief-error">Please describe your goals</div>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_budget">Budget</label>
+          <select name="budget" class="brief-select">
+<option value="" data-i18n="brief_select_select_your_budget_range">Select your budget range</option>
+            <option data-i18n="brief_option_under_1000">Under $1,000</option>
+            <option data-i18n="brief_option_1000_3000">$1,000 - $3,000</option>
+            <option data-i18n="brief_option_3000_5000">$3,000 - $5,000</option>
+            <option data-i18n="brief_option_5000_10000">$5,000 - $10,000</option>
+            <option data-i18n="brief_option_10000">$10,000+</option>
+            <option data-i18n="brief_option_not_sure_yet">Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_timeline">Timeline</label>
+          <input type="text" name="timeline" class="brief-input" placeholder="e.g. Need to see results in 3 months, Long-term partnership" data-i18n-placeholder="brief_ph_eg_need_to_see_results_in_3_months_longterm_partnership">
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_additional_notes">Additional Notes</label>
+          <textarea name="notes" class="brief-textarea" placeholder="Anything else you'd like us to know before the consultation?" data-i18n-placeholder="brief_ph_anything_else_youd_like_us_to_know_before_the_consultation"></textarea>
+        </div>
+
+        <div style="text-align:center;margin-top:16px;">
+          <button type="button" id="briefSaveBtn" class="brief-btn brief-btn-save" data-i18n="brief_save">Save Progress</button>
+        </div>
+      </div>
+
+      <!-- REVIEW -->
+      <div class="brief-step" id="briefReviewStep" data-label="Review & Submit">
+        <h2 class="brief-step-title" data-i18n="brief_step_review_your_brief">Review Your Brief</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_please_review_all_your_answers_before_submitting">Please review all your answers before submitting.</p>
+        <div id="briefReviewData"></div>
+      </div>
+
+      <div class="brief-actions">
+        <button type="button" id="briefPrev" class="brief-btn brief-btn-secondary" data-i18n="brief_previous" style="visibility:hidden">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Previous
+        </button>
+        <button type="button" id="briefNext" class="brief-btn brief-btn-primary" data-i18n="brief_continue">
+          Continue<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </form>
+
+    <div class="brief-success" id="briefSuccess">
+      <div class="brief-success-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+      </div>
+      <h2 class="brief-success-title" data-i18n="brief_success_title">Brief Submitted!</h2>
+      <p class="brief-success-text" data-i18n="brief_success_text">Thank you for completing the Business Consultation Brief. Our team will review your submission and schedule your consultation within 24 hours.</p>
+      <div class="brief-success-actions">
+        <a href="index.html" class="brief-btn brief-btn-primary" data-i18n="brief_back_home">Back to Home</a>
+        <a href="services.html" class="brief-btn brief-btn-secondary" data-i18n="brief_view_services">View Services</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="brief-save-toast" data-i18n="brief_saved" id="briefSaveToast">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+    Progress saved
+  </div>
+
+  <script>window.BRIEF_ID = 'consultation';</script>
+  <script src="brief.js"></script>
+  <!-- Language System -->
+  <script src="lang-en.js"></script>
+  <script src="lang-ar.js"></script>
+  <script src="lang.js"></script>
+</body>
+</html>

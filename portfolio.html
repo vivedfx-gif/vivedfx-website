@@ -1,0 +1,1510 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Work — vivedfx | Results We've Delivered</title>
+  <meta name="description"
+    content="Explore vivedfx's full portfolio. Real projects, real metrics, real business impact across medical, fitness, engineering, corporate and educational sectors." />
+  <meta name="keywords"
+    content="vivedfx portfolio, marketing case studies, branding results, social media campaigns, paid advertising results" />
+  <meta property="og:title" content="Our Work — vivedfx | Results We've Delivered" />
+  <meta property="og:description"
+    content="Real projects. Real metrics. Real business impact. Explore all vivedfx case studies." />
+  <meta property="og:type" content="website" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* ---- Portfolio Page Overrides ---- */
+    body {
+      background: var(--dark);
+    }
+
+    .portfolio-page-hero {
+      padding: 140px 0 56px;
+      text-align: center;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 36px;
+      transition: color var(--transition-fast);
+    }
+
+    .back-link:hover { color: var(--white); }
+
+    .back-link svg {
+      transition: transform var(--transition-fast);
+    }
+
+    .back-link:hover svg { transform: translateX(-4px); }
+
+    .portfolio-page-title {
+      font-family: var(--font-heading);
+      font-weight: 900;
+      font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin-bottom: 18px;
+    }
+
+    .portfolio-page-subtitle {
+      font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+      color: rgba(255,255,255,0.55);
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* Full grid section — same background as body */
+    .portfolio-full-section {
+      background: var(--dark);
+      padding-top: 0;
+      padding-bottom: 40px;
+    }
+
+    /* Filters centered */
+    .portfolio-filters-centered {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    /* 6-column grid for mixed layouts */
+    .portfolio-full-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 0;
+      background: var(--dark);
+    }
+
+    /* Category sections - each independently editable */
+    .portfolio-category-section {
+      grid-column: span 6;
+      background: var(--dark);
+      border-radius: 0;
+    }
+    .portfolio-category-section + .portfolio-category-section {
+      margin-top: 24px;
+    }
+    .portfolio-category-grid:empty {
+      display: none;
+    }
+    .portfolio-category-section:has(.portfolio-category-grid:empty) {
+      display: none;
+    }
+    .portfolio-category-grid {
+      background: var(--dark);
+    }
+
+    /* Medical: 2 per row (6 columns, span 3) */
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-medical {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 8px;
+    }
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-medical .portfolio-item {
+      grid-column: span 3;
+      aspect-ratio: 1 / 1;
+    }
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-medical .portfolio-item-full {
+      grid-column: span 6;
+      aspect-ratio: auto;
+    }
+
+    /* Fitness: 3 per row always */
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-fitness {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 8px;
+    }
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-fitness .portfolio-item {
+      grid-column: span 2;
+      aspect-ratio: 1080 / 1350;
+      overflow: hidden;
+    }
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-fitness .portfolio-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-fitness .portfolio-item-full {
+      grid-column: span 2;
+      aspect-ratio: 1080 / 1350;
+    }
+    /* Last 2 items: bigger to fill the row */
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-fitness .portfolio-item:nth-last-child(2) {
+      grid-column: span 3;
+    }
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-fitness .portfolio-item:last-child {
+      grid-column: span 3;
+    }
+
+    /* Corporate: mixed layout */
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 8px;
+    }
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item {
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+    }
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    /* C1: full width landscape 1080x677 */
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item:first-child {
+      grid-column: span 6;
+      aspect-ratio: 1080 / 677;
+    }
+    /* C2, C3, C4: 3 per row square */
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item:nth-child(2) {
+      grid-column: span 2;
+    }
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item:nth-child(3) {
+      grid-column: span 2;
+    }
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item:nth-child(4) {
+      grid-column: span 2;
+    }
+    /* C5: full width landscape 1080x677 */
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item:nth-child(5) {
+      grid-column: span 6;
+      aspect-ratio: 1080 / 677;
+    }
+    /* C6, C7: 2 per row square */
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item:nth-child(6) {
+      grid-column: span 3;
+    }
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item:nth-child(7) {
+      grid-column: span 3;
+    }
+    /* C8: full width landscape 1709x750 */
+    .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item:last-child {
+      grid-column: span 6;
+      aspect-ratio: 1709 / 750;
+    }
+
+    /* Full-width items */
+    .portfolio-item-full .portfolio-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+
+    /* CTA strip */
+    .portfolio-cta-strip {
+      margin-top: 64px;
+      text-align: center;
+    }
+
+    .portfolio-cta-strip p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 1024px) {
+      .portfolio-full-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .portfolio-category-section {
+        grid-column: span 4;
+      }
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-medical {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-medical .portfolio-item {
+        grid-column: span 2;
+      }
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-medical .portfolio-item-full {
+        grid-column: span 4;
+      }
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-fitness {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-fitness .portfolio-item {
+        grid-column: span 1;
+      }
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-fitness .portfolio-item-full {
+        grid-column: span 3;
+      }
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item:first-child,
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item:nth-child(5),
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item:last-child {
+        grid-column: span 4;
+      }
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item:nth-child(2),
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item:nth-child(3),
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item:nth-child(4) {
+        grid-column: span 2;
+      }
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item:nth-child(6),
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate .portfolio-item:nth-child(7) {
+        grid-column: span 2;
+      }
+    }
+
+    /* ==================== MOBILE: 320px–767px ==================== */
+    @media (max-width: 767px) {
+      .portfolio-page-hero {
+        padding: 100px 0 32px;
+      }
+
+      /* Remove container side padding for full-width gallery */
+      .portfolio-full-section {
+        margin-left: -16px;
+        margin-right: -16px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      /* Outer grid: single column */
+      .portfolio-full-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 0 3vw;
+      }
+      .portfolio-category-section {
+        grid-column: span 1;
+      }
+
+      /* All category grids: single column */
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-medical,
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-fitness,
+      .portfolio-full-grid .portfolio-category-grid.portfolio-grid-corporate {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      /* ALL portfolio items: consistent 4:5 portrait ratio, centered */
+      .portfolio-full-grid .portfolio-item {
+        grid-column: span 1 !important;
+        width: 94%;
+        margin: 0 auto;
+        aspect-ratio: 4 / 5;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+      }
+
+      /* Images: fill frame, no crop, cover */
+      .portfolio-full-grid .portfolio-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      /* Wrap: fill the item */
+      .portfolio-full-grid .portfolio-item .portfolio-img-wrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Full-width items also constrained */
+      .portfolio-full-grid .portfolio-item-full {
+        grid-column: span 1 !important;
+      }
+
+      /* Filters */
+      .portfolio-filters-centered {
+        margin-bottom: 24px;
+      }
+      .portfolio-filters {
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 16px;
+        width: 100%;
+      }
+    }
+  </style>
+  <!-- Arabic Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles-lang.css" />
+</head>
+
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="vivedfx Home">
+        <span class="logo-text"><span class="logo-accent"></span></span>
+        <img src="assets/logo.png" alt="Logo" class="logo">
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+        <li><a href="index.html#industries" class="nav-link">Industries</a></li>
+        <li><a href="index.html#process" class="nav-link">Process</a></li>
+        <li><a href="index.html#testimonials" class="nav-link">Clients</a></li>
+      </ul>
+      <a href="index.html#contact" class="btn btn-primary nav-cta magnetic-btn" id="nav-cta-btn">
+        <span>Book a Call</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+          <div class="lang-switcher">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+          </svg>
+          <span class="lang-switcher-label" id="lang-switcher-label">AR</span>
+        </button>
+        <div class="lang-dropdown" id="lang-dropdown">
+          <button class="lang-option" data-lang="en">
+            <span class="lang-flag">🇺🇸</span>
+            <span>EN</span>
+          </button>
+          <button class="lang-option" data-lang="ar">
+            <span class="lang-flag">🇸🇦</span>
+            <span>AR</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-menu-list" role="list">
+      <li class="mobile-menu-item"><a href="index.html#services" class="mobile-link">Services</a></li>
+      <li class="mobile-menu-item"><a href="portfolio.html" class="mobile-link">Portfolio</a></li>
+      <li class="mobile-menu-item"><a href="index.html#industries" class="mobile-link">Industries</a></li>
+      <li class="mobile-menu-item"><a href="index.html#process" class="mobile-link">Process</a></li>
+      <li class="mobile-menu-item"><a href="index.html#testimonials" class="mobile-link">Clients</a></li>
+    </ul>
+    <div class="mobile-menu-cta-wrap">
+      <a href="index.html#contact" class="btn btn-primary mobile-menu-cta">
+        <span>Book a Call</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="portfolio-page-hero" aria-label="Portfolio header">
+      <div class="container">
+        <a href="index.html" class="back-link" data-i18n="back_to_home">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M13 8H3M7 4l-4 4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Back to Home
+        </a>
+        <span class="section-label">Our Work</span>
+        <h1 class="portfolio-page-title" data-i18n="port_page_title">
+          Results We've <span class="accent">Delivered</span>
+        </h1>
+        <p class="portfolio-page-subtitle" data-i18n="port_page_desc">
+          Real projects. Real metrics. Real business impact.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== FULL PORTFOLIO GRID ===================== -->
+    <section class="portfolio-full-section section" aria-label="Full portfolio">
+      <div class="container">
+
+        <!-- Filters -->
+        <div class="portfolio-filters-centered">
+          <div class="portfolio-filters reveal-up" role="tablist" aria-label="Filter portfolio by industry">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" id="filter-all" data-i18n="portfolio_all">All</button>
+            <button class="filter-btn" data-filter="medical" role="tab" aria-selected="false" id="filter-medical" data-i18n="portfolio_medical">Medical</button>
+            <button class="filter-btn" data-filter="fitness" role="tab" aria-selected="false" id="filter-fitness" data-i18n="portfolio_fitness">Fitness</button>
+            <button class="filter-btn" data-filter="engineering" role="tab" aria-selected="false" id="filter-engineering">Engineering</button>
+            <button class="filter-btn" data-filter="corporate" role="tab" aria-selected="false" id="filter-corporate" data-i18n="portfolio_corporate">Corporate</button>
+            <button class="filter-btn" data-filter="educational" role="tab" aria-selected="false" id="filter-educational">Educational</button>
+          </div>
+        </div>
+
+        <!-- Full Grid -->
+        <div class="portfolio-full-grid" id="portfolio-grid">
+
+          <!-- ========== MEDICAL ========== -->
+          <div class="portfolio-category-section" data-category-section="medical">
+            <div class="portfolio-category-grid portfolio-grid-medical">
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 1">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M1.png" alt="Medical Campaign 1" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 1</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 2">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M2.png" alt="Medical Campaign 2" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 2</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 3">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M3.png" alt="Medical Campaign 3" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 3</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 4">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M4.png" alt="Medical Campaign 4" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 4</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 5">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M5.png" alt="Medical Campaign 5" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 5</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 6">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M6.png" alt="Medical Campaign 6" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 6</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 7">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M7.png" alt="Medical Campaign 7" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 7</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 8">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M8.png" alt="Medical Campaign 8" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 8</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 9">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M9.png" alt="Medical Campaign 9" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 9</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 10">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M10.png" alt="Medical Campaign 10" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 10</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 11">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M11.png" alt="Medical Campaign 11" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 11</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 12">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M12.png" alt="Medical Campaign 12" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 12</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 13">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M13.png" alt="Medical Campaign 13" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 13</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 14">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M14.png" alt="Medical Campaign 14" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 14</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 15">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M15.png" alt="Medical Campaign 15" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 15</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 16">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M16.png" alt="Medical Campaign 16" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 16</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 17">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M17.png" alt="Medical Campaign 17" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 17</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 18">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M18.png" alt="Medical Campaign 18" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 18</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 19">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M19.png" alt="Medical Campaign 19" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 19</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 20">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M20.png" alt="Medical Campaign 20" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 20</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 21">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M21.png" alt="Medical Campaign 21" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 21</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 22">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M22.png" alt="Medical Campaign 22" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 22</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 23">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M23.png" alt="Medical Campaign 23" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 23</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 24">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M24.png" alt="Medical Campaign 24" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 24</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 25">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M25.png" alt="Medical Campaign 25" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 25</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 26">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M26.png" alt="Medical Campaign 26" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 26</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 27">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M27.png" alt="Medical Campaign 27" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 27</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 28">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M28.png" alt="Medical Campaign 28" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 28</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 29">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M29.png" alt="Medical Campaign 29" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 29</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 30">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M30.png" alt="Medical Campaign 30" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 30</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 31">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M31.png" alt="Medical Campaign 31" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 31</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 32">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M32.png" alt="Medical Campaign 32" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 32</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 33">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M33.png" alt="Medical Campaign 33" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 33</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 34">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M34.png" alt="Medical Campaign 34" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 34</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 35">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M35.png" alt="Medical Campaign 35" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 35</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 36">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M36.png" alt="Medical Campaign 36" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 36</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 37">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M37.png" alt="Medical Campaign 37" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 37</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 38">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M38.png" alt="Medical Campaign 38" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 38</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 39">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M39.png" alt="Medical Campaign 39" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 39</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 40">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M40.png" alt="Medical Campaign 40" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 40</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 41">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M41.png" alt="Medical Campaign 41" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 41</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 42">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M42.png" alt="Medical Campaign 42" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 42</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="medical" aria-label="Medical Campaign 43">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Medical/M43.png" alt="Medical Campaign 43" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Medical</span>
+                  <h2 class="portfolio-item-title">Medical Campaign 43</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+            </div>
+          </div>
+
+          <!-- ========== FITNESS ========== -->
+          <div class="portfolio-category-section" data-category-section="fitness">
+            <div class="portfolio-category-grid portfolio-grid-fitness">
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 1">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F1.png" alt="Fitness Campaign 1" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 1</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 2">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F2.png" alt="Fitness Campaign 2" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 2</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 3">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F3.png" alt="Fitness Campaign 3" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 3</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 4">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F4.png" alt="Fitness Campaign 4" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 4</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 5">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F5.png" alt="Fitness Campaign 5" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 5</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 6">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F6.png" alt="Fitness Campaign 6" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 6</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 7">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F7.png" alt="Fitness Campaign 7" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 7</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 8">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F8.png" alt="Fitness Campaign 8" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 8</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 9">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F9.png" alt="Fitness Campaign 9" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 9</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 10">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F10.png" alt="Fitness Campaign 10" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 10</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 11">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F11.png" alt="Fitness Campaign 11" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 11</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 12">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F12.png" alt="Fitness Campaign 12" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 12</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 13">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F13.png" alt="Fitness Campaign 13" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 13</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 14">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F14.png" alt="Fitness Campaign 14" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 14</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 15">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F15.png" alt="Fitness Campaign 15" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 15</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 16">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F16.png" alt="Fitness Campaign 16" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 16</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 17">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F17.png" alt="Fitness Campaign 17" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 17</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 18">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F18.png" alt="Fitness Campaign 18" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 18</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 19">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F19.png" alt="Fitness Campaign 19" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 19</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 20">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F20.png" alt="Fitness Campaign 20" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 20</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 21">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F21.png" alt="Fitness Campaign 21" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 21</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 22">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F22.png" alt="Fitness Campaign 22" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 22</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 23">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F23.png" alt="Fitness Campaign 23" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 23</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 24">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F24.png" alt="Fitness Campaign 24" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 24</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 25">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F25.png" alt="Fitness Campaign 25" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 25</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 26">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F26.png" alt="Fitness Campaign 26" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 26</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 27">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F27.png" alt="Fitness Campaign 27" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 27</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 28">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F28.png" alt="Fitness Campaign 28" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 28</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+           <article class="portfolio-item" data-category="fitness" aria-label="Fitness Campaign 29">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Fitness/F29.png" alt="Fitness Campaign 29" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Fitness</span>
+                  <h2 class="portfolio-item-title">Fitness Campaign 29</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+            </div>
+          </div>
+
+          <!-- ========== ENGINEERING (placeholder) ========== -->
+          <div class="portfolio-category-section" data-category-section="engineering">
+            <div class="portfolio-category-grid portfolio-grid-engineering">
+              <!-- Add engineering items here -->
+            </div>
+          </div>
+
+          <!-- ========== CORPORATE ========== -->
+          <div class="portfolio-category-section" data-category-section="corporate">
+            <div class="portfolio-category-grid portfolio-grid-corporate">
+
+          <article class="portfolio-item" data-category="corporate" aria-label="Corporate Campaign 1">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Corporate/C1.png" alt="Corporate Campaign 1" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Corporate</span>
+                  <h2 class="portfolio-item-title">Corporate Campaign 1</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="corporate" aria-label="Corporate Campaign 2">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Corporate/C2.png" alt="Corporate Campaign 2" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Corporate</span>
+                  <h2 class="portfolio-item-title">Corporate Campaign 2</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="corporate" aria-label="Corporate Campaign 3">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Corporate/C3.png" alt="Corporate Campaign 3" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Corporate</span>
+                  <h2 class="portfolio-item-title">Corporate Campaign 3</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="corporate" aria-label="Corporate Campaign 4">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Corporate/C4.png" alt="Corporate Campaign 4" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Corporate</span>
+                  <h2 class="portfolio-item-title">Corporate Campaign 4</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="corporate" aria-label="Corporate Campaign 5">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Corporate/C5.png" alt="Corporate Campaign 5" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Corporate</span>
+                  <h2 class="portfolio-item-title">Corporate Campaign 5</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="corporate" aria-label="Corporate Campaign 6">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Corporate/C6.png" alt="Corporate Campaign 6" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Corporate</span>
+                  <h2 class="portfolio-item-title">Corporate Campaign 6</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="corporate" aria-label="Corporate Campaign 7">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Corporate/C7.png" alt="Corporate Campaign 7" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Corporate</span>
+                  <h2 class="portfolio-item-title">Corporate Campaign 7</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item" data-category="corporate" aria-label="Corporate Campaign 8">
+            <div class="portfolio-img-wrap">
+              <img src="assets/Portfolio/Corporate/C8.png" alt="Corporate Campaign 8" loading="lazy" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-overlay-content">
+                  <span class="portfolio-category-tag">Corporate</span>
+                  <h2 class="portfolio-item-title">Corporate Campaign 8</h2>
+                </div>
+              </div>
+            </div>
+          </article>
+
+            </div>
+          </div>
+
+          <!-- ========== EDUCATIONAL (placeholder) ========== -->
+          <div class="portfolio-category-section" data-category-section="educational">
+            <div class="portfolio-category-grid portfolio-grid-educational">
+              <!-- Add educational items here -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CTA Strip -->
+        <div class="portfolio-cta-strip reveal-up">
+          <p>Ready to become our next success story?</p>
+          <a href="index.html#contact" class="btn btn-primary btn-lg magnetic-btn" id="portfolio-page-cta">
+            <span>Start Your Project</span>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const medicalItems = document.querySelectorAll('.portfolio-item[data-category="medical"]');
+      medicalItems.forEach(function(item) {
+        const img = item.querySelector('img');
+        if (img) {
+          if (img.complete) {
+            checkAspectRatio(img, item);
+          } else {
+            img.addEventListener('load', function() {
+              checkAspectRatio(img, item);
+            });
+          }
+        }
+      });
+
+      function checkAspectRatio(img, item) {
+        const ratio = img.naturalWidth / img.naturalHeight;
+        if (Math.abs(ratio - 1) > 0.15) {
+          item.classList.add('portfolio-item-full');
+          item.classList.remove('portfolio-item-wide');
+        }
+      }
+    });
+  </script>
+  <!-- Language System -->
+  <script src="lang-en.js"></script>
+  <script src="lang-ar.js"></script>
+  <script src="lang.js"></script>
+</body>
+
+</html>
+

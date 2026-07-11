@@ -1,0 +1,274 @@
+/* ═══════════════════════════════════════════
+   VIVEDFX — LANGUAGE SWITCHER + RTL
+   ═══════════════════════════════════════════ */
+
+/* ── SMOOTH LANGUAGE TRANSITION ── */
+.lang-transition * {
+  transition: opacity 0.3s ease, transform 0.3s ease !important;
+}
+
+/* ── LANGUAGE SWITCHER ── */
+.lang-switcher {
+  position: relative;
+  margin-left: 16px;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 100px;
+  padding: 8px 14px;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: .82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .25s;
+  letter-spacing: .02em;
+}
+.lang-toggle:hover {
+  border-color: var(--accent);
+  background: rgba(236,31,39,.08);
+}
+.lang-toggle svg {
+  opacity: .7;
+}
+
+.lang-switcher-label {
+  text-transform: uppercase;
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: #1a1a1a;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 12px;
+  padding: 6px;
+  min-width: 120px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: all .25s;
+  z-index: 1000;
+  box-shadow: 0 12px 40px rgba(0,0,0,.5);
+}
+.lang-dropdown.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 14px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: #ccc;
+  font-family: var(--font-body);
+  font-size: .85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .2s;
+}
+.lang-option:hover {
+  background: rgba(255,255,255,.06);
+  color: #fff;
+}
+.lang-option.active {
+  background: rgba(236,31,39,.12);
+  color: var(--accent);
+}
+.lang-flag {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+/* ── MOBILE MENU SWITCHER ── */
+.lang-switcher-mobile {
+  margin: 0;
+  margin-top: 16px;
+  display: none;
+}
+.lang-switcher-mobile .lang-dropdown {
+  right: auto;
+  left: 0;
+}
+
+/* ── BRIEF PAGE SWITCHER ── */
+.brief-header .lang-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+[dir="rtl"] .brief-header .lang-switcher {
+  right: auto;
+  left: 20px;
+}
+
+/* ── RTL SUPPORT ── */
+[dir="rtl"] {
+  font-family: 'Cairo', 'Inter', system-ui, sans-serif;
+}
+
+[dir="rtl"] .lang-switcher {
+  margin-left: 0;
+  margin-right: 16px;
+}
+
+[dir="rtl"] .lang-dropdown {
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] .nav {
+  direction: rtl;
+}
+
+[dir="rtl"] .nav-links {
+  direction: rtl;
+}
+
+[dir="rtl"] .hero-grid {
+  direction: rtl;
+}
+
+[dir="rtl"] .hero-headline {
+  direction: rtl;
+}
+
+[dir="rtl"] .process-grid {
+  direction: rtl;
+}
+
+[dir="rtl"] .process-card {
+  direction: rtl;
+}
+
+[dir="rtl"] .industry-card {
+  direction: rtl;
+}
+
+[dir="rtl"] .testimonial-card {
+  direction: rtl;
+}
+
+[dir="rtl"] .sp-hero-title {
+  direction: rtl;
+}
+
+[dir="rtl"] .sp-cta-btns {
+  direction: rtl;
+}
+
+[dir="rtl"] .sp-nav {
+  direction: rtl;
+}
+
+[dir="rtl"] .sp-nav-link {
+  direction: rtl;
+}
+
+[dir="rtl"] .container {
+  direction: rtl;
+}
+
+/* ── MOBILE MENU RTL ── */
+@media (max-width: 768px) {
+  .lang-switcher-mobile {
+    display: block;
+  }
+  .nav .lang-switcher {
+    display: none;
+  }
+}
+
+/* ── ARABIC HEADING OPTIMIZATION ── */
+[dir="rtl"] .hero-headline {
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+[dir="rtl"] .section-title {
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+[dir="rtl"] .sv-hero-title {
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+[dir="rtl"] .sp-hero-title {
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+/* ── ARABIC BODY TEXT OPTIMIZATION ── */
+[dir="rtl"] p,
+[dir="rtl"] .hero-subheadline,
+[dir="rtl"] .hero-desc,
+[dir="rtl"] .sv-card-desc,
+[dir="rtl"] .process-desc,
+[dir="rtl"] .industry-desc {
+  line-height: 1.85;
+  letter-spacing: 0;
+}
+
+/* ── BRIEF PAGES RTL ── */
+[dir="rtl"] .brief-wrapper {
+  direction: rtl;
+}
+
+[dir="rtl"] .brief-card {
+  direction: rtl;
+}
+
+[dir="rtl"] .brief-input,
+[dir="rtl"] .brief-select,
+[dir="rtl"] .brief-textarea {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .brief-label {
+  text-align: right;
+}
+
+[dir="rtl"] .brief-error {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .brief-actions {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .brief-option,
+[dir="rtl"] .brief-checkbox {
+  direction: rtl;
+}
+
+[dir="rtl"] .brief-review-row {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .brief-review-value {
+  text-align: left;
+}
+
+/* ── BRIEF MOBILE RTL ── */
+@media (max-width: 768px) {
+  [dir="rtl"] .brief-actions {
+    flex-direction: column;
+  }
+}

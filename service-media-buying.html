@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Buying Services — VIVEDFX | Strategic Media Planning</title>
+  <meta name="description" content="Strategic media planning and buying by VIVEDFX. TV, digital, and out-of-home channels to maximize your brand's reach and ad spend efficiency." />
+  <meta property="og:title" content="Media Buying Services — VIVEDFX" />
+  <meta property="og:description" content="TV, digital, and out-of-home media buying that maximizes your brand's reach and ROAS." />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Media Buying","provider":{"@type":"Organization","name":"VIVEDFX"},"description":"Strategic media planning and buying across TV, digital, and out-of-home channels to maximize brand reach and ad spend efficiency."}</script>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root{--accent:#ec1f27}
+    .sp-hero{min-height:60vh;background:var(--dark);display:flex;align-items:flex-end;padding:120px 0 80px;position:relative;overflow:hidden}
+    .sp-hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 30% 0%,rgba(236,31,39,.18) 0%,transparent 65%);pointer-events:none}
+    .sp-back{display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-size:.9rem;text-decoration:none;margin-bottom:40px;transition:color .2s}
+    .sp-back:hover{color:var(--white)}.sp-back svg{width:18px;height:18px}
+    .sp-label{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:rgba(236,31,39,.1);border:1px solid rgba(236,31,39,.2);border-radius:100px;padding:6px 16px;margin-bottom:24px}
+    .sp-label-dot{width:6px;height:6px;background:var(--accent);border-radius:50%}
+    .sp-title{font-family:var(--font-heading);font-size:clamp(2.5rem,6vw,5rem);font-weight:900;color:var(--white);line-height:1.05;margin-bottom:24px}
+    .sp-title span{color:var(--accent)}
+    .sp-subtitle{font-size:1.15rem;color:var(--muted);max-width:600px;line-height:1.75}
+    .sp-section{padding:100px 0;background:var(--dark)}.sp-section-alt{background:var(--dark-2)}
+    .sp-section-label{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+    .sp-section-title{font-family:var(--font-heading);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:800;color:var(--white);margin-bottom:48px;line-height:1.15}
+    .sp-section-title span{color:var(--accent)}
+    .media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .media-cell{background:var(--dark-3);border:2px dashed var(--border);border-radius:var(--radius-md);aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;transition:all .3s;overflow:hidden;position:relative;cursor:pointer}
+    .media-cell:hover{border-color:var(--accent);background:rgba(236,31,39,.05)}
+    .media-cell.has-content{border-style:solid;border-color:var(--border)}
+    .media-cell.has-content:hover{border-color:var(--border-hover)}
+    .media-cell img,.media-cell video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:calc(var(--radius-md) - 2px)}
+    .media-cell-overlay{position:absolute;inset:0;background:rgba(0,0,0,.6);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;transition:opacity .3s;border-radius:calc(var(--radius-md) - 2px)}
+    .media-cell.has-content:hover .media-cell-overlay{opacity:1}
+    .media-cell-icon{color:var(--accent)}.media-cell-icon svg{width:32px;height:32px}
+    .media-cell-text{font-size:.8rem;color:var(--muted);font-weight:500}
+    .media-cell-remove{position:absolute;top:10px;right:10px;width:28px;height:28px;background:rgba(236,31,39,.9);border:none;border-radius:50%;color:white;font-size:14px;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:10}
+    .media-cell.has-content:hover .media-cell-remove{display:flex}
+    .media-cell input[type=file]{display:none}
+    .media-cell-video{aspect-ratio:16/9}.media-cell-wide{grid-column:span 2;aspect-ratio:16/6}
+    .upload-hint{text-align:center;padding:16px 0 0;color:var(--muted);font-size:.85rem}.upload-hint span{color:var(--accent)}
+    .channels-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:60px}
+    .channel-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px 24px;text-align:center;transition:border-color .3s,transform .3s}
+    .channel-card:hover{border-color:var(--accent);transform:translateY(-4px)}
+    .channel-icon{font-size:2rem;margin-bottom:14px;display:block}
+    .channel-name{font-weight:700;color:var(--white);font-size:1rem;margin-bottom:6px}
+    .channel-desc{font-size:.82rem;color:var(--muted);line-height:1.55}
+    .sp-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:60px 0 0}
+    .sp-stat{background:var(--dark-3);padding:36px 32px}
+    .sp-stat-num{font-family:var(--font-heading);font-size:3rem;font-weight:900;color:var(--accent);line-height:1}
+    .sp-stat-label{font-size:.9rem;color:var(--muted);margin-top:8px}
+    .sp-features{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .sp-feature{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;transition:border-color .3s,transform .3s}
+    .sp-feature:hover{border-color:var(--border-hover);transform:translateY(-3px)}
+    .sp-feature-icon{color:var(--accent);margin-bottom:14px}.sp-feature-icon svg{width:28px;height:28px}
+    .sp-feature-title{font-weight:700;color:var(--white);margin-bottom:8px}
+    .sp-feature-text{font-size:.88rem;color:var(--muted);line-height:1.65}
+    .sp-cta{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-xl);padding:72px;text-align:center;position:relative;overflow:hidden}
+    .sp-cta-orb{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(236,31,39,.15),transparent 70%);border-radius:50%;pointer-events:none}
+    .sp-cta-orb-1{top:-100px;left:-100px}.sp-cta-orb-2{bottom:-100px;right:-100px}
+    .sp-cta-title{font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:16px}
+    .sp-cta-title span{color:var(--accent)}
+    .sp-cta-sub{color:var(--muted);font-size:1.05rem;max-width:480px;margin:0 auto 36px;line-height:1.7}
+    .sp-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    .sp-why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .sp-why-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:32px;transition:border-color .3s,transform .3s}
+    .sp-why-card:hover{border-color:var(--border-hover);transform:translateY(-3px)}
+    .sp-why-icon{width:48px;height:48px;background:rgba(236,31,39,.1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:20px}
+    .sp-why-icon svg{width:24px;height:24px}
+    .sp-why-title{font-weight:700;color:var(--white);margin-bottom:8px;font-size:1.05rem}
+    .sp-why-text{font-size:.88rem;color:var(--muted);line-height:1.65}
+    .sp-process{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;counter-reset:step}
+    .sp-process-step{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px 20px;text-align:center;position:relative;transition:border-color .3s,transform .3s}
+    .sp-process-step:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .sp-process-num{font-family:var(--font-heading);font-size:2.5rem;font-weight:900;color:rgba(236,31,39,.15);line-height:1;margin-bottom:12px}
+    .sp-process-title{font-weight:700;color:var(--white);margin-bottom:8px;font-size:.95rem}
+    .sp-process-text{font-size:.82rem;color:var(--muted);line-height:1.6}
+    .sp-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .sp-benefit{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;display:flex;align-items:flex-start;gap:16px;transition:border-color .3s,transform .3s}
+    .sp-benefit:hover{border-color:var(--border-hover);transform:translateY(-3px)}
+    .sp-benefit-check{width:24px;height:24px;background:rgba(236,31,39,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);margin-top:2px}
+    .sp-benefit-check svg{width:14px;height:14px}
+    .sp-benefit-title{font-weight:700;color:var(--white);margin-bottom:4px}
+    .sp-benefit-text{font-size:.85rem;color:var(--muted);line-height:1.6}
+    .sp-faq{max-width:800px;margin:0 auto}
+    .sp-faq-item{border-bottom:1px solid var(--border)}
+    .sp-faq-q{width:100%;background:none;border:none;padding:20px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;color:var(--white);font-weight:600;font-size:1rem;text-align:left;font-family:inherit}
+    .sp-faq-q svg{width:20px;height:20px;color:var(--muted);transition:transform .3s;flex-shrink:0;margin-left:16px}
+    .sp-faq-item.open .sp-faq-q svg{transform:rotate(180deg)}
+    .sp-faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease}
+    .sp-faq-item.open .sp-faq-a{max-height:300px;padding:0 0 20px}
+    .sp-faq-a p{font-size:.9rem;color:var(--muted);line-height:1.7}
+    .sp-nav{display:flex;justify-content:space-between;gap:16px;padding:60px 0}
+    .sp-nav-link{flex:1;display:flex;align-items:center;gap:12px;background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:20px 24px;text-decoration:none;color:var(--white);transition:border-color .3s,transform .2s}
+    .sp-nav-link:hover{border-color:var(--accent);transform:translateY(-2px)}
+    .sp-nav-link svg{width:20px;height:20px;color:var(--accent);flex-shrink:0}
+    .sp-nav-label{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+    .sp-nav-title{font-weight:700;font-size:.95rem}
+    .sp-nav-next{text-align:right;flex-direction:row-reverse}
+    @media(max-width:1024px){.sp-process{grid-template-columns:repeat(3,1fr)}.channels-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:768px){.media-grid{grid-template-columns:repeat(2,1fr)}.media-cell-wide{grid-column:span 2}.channels-grid{grid-template-columns:1fr}.sp-features{grid-template-columns:1fr}.sp-stats{grid-template-columns:1fr}.sp-cta{padding:48px 28px}.sp-hero{min-height:50vh}.sp-why-grid{grid-template-columns:1fr}.sp-process{grid-template-columns:1fr}.sp-benefits{grid-template-columns:1fr}.sp-nav{flex-direction:column}}
+    @media(max-width:480px){.media-grid{grid-template-columns:1fr}.media-cell-wide{grid-column:span 1;aspect-ratio:4/3}}
+  </style>
+  <!-- Arabic Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles-lang.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="logo"><img src="assets/logo.png" alt="Logo" class="logo"></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="index.html#industries" class="nav-link">Industries</a></li>
+        <li><a href="index.html#process" class="nav-link">Process</a></li>
+        <li><a href="index.html#testimonials" class="nav-link">Clients</a></li>
+      </ul>
+      <a href="index.html#contact" class="btn btn-primary nav-cta magnetic-btn" id="nav-cta-btn">
+        <span data-i18n="book_free_call">Book a Call</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+          <div class="lang-switcher">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+          </svg>
+          <span class="lang-switcher-label" id="lang-switcher-label">AR</span>
+        </button>
+        <div class="lang-dropdown" id="lang-dropdown">
+          <button class="lang-option" data-lang="en">
+            <span class="lang-flag">🇺🇸</span>
+            <span>EN</span>
+          </button>
+          <button class="lang-option" data-lang="ar">
+            <span class="lang-flag">🇸🇦</span>
+            <span>AR</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-menu-list" role="list">
+      <li class="mobile-menu-item"><a href="index.html#services" class="mobile-link">Services</a></li>
+      <li class="mobile-menu-item"><a href="index.html#portfolio" class="mobile-link">Portfolio</a></li>
+      <li class="mobile-menu-item"><a href="index.html#industries" class="mobile-link">Industries</a></li>
+      <li class="mobile-menu-item"><a href="index.html#process" class="mobile-link">Process</a></li>
+      <li class="mobile-menu-item"><a href="index.html#testimonials" class="mobile-link">Clients</a></li>
+    </ul>
+    <div class="mobile-menu-cta-wrap"><a href="index.html#contact" class="btn btn-primary mobile-menu-cta"><span data-i18n="book_free_call">Book a Call</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+  </div>
+  <main>
+    <section class="sp-hero">
+      <div class="sp-hero-bg"></div>
+      <div class="container">
+        <a href="index.html#services" class="sp-back" data-i18n="back_to_home"><svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to Services</a>
+        <div class="sp-label"><span class="sp-label-dot"></span>Service 09</div>
+        <h1 class="sp-title" data-i18n="mb_hero_title">Strategic<br/><span>Media Buying</span></h1>
+        <p class="sp-subtitle" data-i18n="mb_hero_desc">Strategic media planning and buying across TV, digital, and out-of-home channels to maximize your brand's reach and ad spend efficiency.</p>
+      </div>
+    </section>
+
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">Our Channels</div>
+        <h2 class="sp-section-title">Where We Place <span>Your Brand</span></h2>
+        <div class="channels-grid">
+          <div class="channel-card"><span class="channel-icon">&#x1F4FA;</span><div class="channel-name">TV & Broadcast</div><div class="channel-desc">National and regional TV placements during peak viewership windows for maximum brand awareness.</div></div>
+          <div class="channel-card"><span class="channel-icon">&#x1F4F1;</span><div class="channel-name">Digital & Social</div><div class="channel-desc">Programmatic display, video pre-roll, and social media placements with precise audience targeting.</div></div>
+          <div class="channel-card"><span class="channel-icon">&#x1F3D9;&#xFE0F;</span><div class="channel-name">Out-of-Home (OOH)</div><div class="channel-desc">Billboards, transit ads, and digital OOH screens in high-traffic locations that dominate physical spaces.</div></div>
+          <div class="channel-card"><span class="channel-icon">&#x1F4FB;</span><div class="channel-name">Radio & Podcast</div><div class="channel-desc">Targeted audio advertising on radio stations and premium podcast networks reaching engaged listeners.</div></div>
+          <div class="channel-card"><span class="channel-icon">&#x1F4F0;</span><div class="channel-name">Print & Press</div><div class="channel-desc">Premium print placements in industry publications, newspapers, and lifestyle magazines your audience trusts.</div></div>
+          <div class="channel-card"><span class="channel-icon">&#x1F3AF;</span><div class="channel-name">Programmatic Buying</div><div class="channel-desc">Data-driven real-time bidding across thousands of publisher sites to reach the right person at the right moment.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-section-label">Campaign Work</div>
+        <h2 class="sp-section-title">Campaign <span>Gallery</span></h2>
+        <div class="media-grid" id="campaign-grid"></div>
+        <p class="upload-hint">Click any cell to <span>upload campaign creatives</span></p>
+      </div>
+    </section>
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">TV & Digital Spots</div>
+        <h2 class="sp-section-title">Ad <span>Showreel</span></h2>
+        <div class="media-grid" id="video-grid"></div>
+        <p class="upload-hint" style="margin-top:16px">Click any cell to <span>upload ad videos</span></p>
+      </div>
+    </section>
+
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-section-label">Why Media Buying</div>
+        <h2 class="sp-section-title" data-i18n="mb_why_title">Why Your Business <span>Needs This</span></h2>
+        <div class="sp-why-grid">
+          <div class="sp-why-card">
+            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-why-title">Maximize Every Dollar</div>
+            <div class="sp-why-text">Media buyers negotiate better rates, optimize placements, and eliminate wasted spend — getting you 3× more impressions for the same budget.</div>
+          </div>
+          <div class="sp-why-card">
+            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-why-title">Reach the Right People</div>
+            <div class="sp-why-text">Omnichannel media buying ensures your brand reaches your exact target audience wherever they are — TV, social, radio, or billboards.</div>
+          </div>
+          <div class="sp-why-card">
+            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-why-title">Data-Driven Decisions</div>
+            <div class="sp-why-text">We use real data to allocate budgets, track performance, and optimize campaigns — no guesswork, just measurable results.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">Results</div>
+        <h2 class="sp-section-title">What Smart Media Buying <span>Delivers</span></h2>
+        <div class="sp-stats">
+          <div class="sp-stat" data-i18n="mb_stat_1"><div class="sp-stat-num" data-i18n="mb_stat_1_num">3.2×</div><div class="sp-stat-label" data-i18n="mb_stat_1_label">Average ROAS Improvement</div></div>
+          <div class="sp-stat" data-i18n="mb_stat_2"><div class="sp-stat-num" data-i18n="mb_stat_2_num">-40%</div><div class="sp-stat-label" data-i18n="mb_stat_2_label">Reduction in Cost Per Impression</div></div>
+          <div class="sp-stat" data-i18n="mb_stat_3"><div class="sp-stat-num" data-i18n="mb_stat_3_num">+520%</div><div class="sp-stat-label" data-i18n="mb_stat_3_label">Brand Awareness Lift</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-section-label">What's Included</div>
+        <h2 class="sp-section-title" data-i18n="mb_deliver_title">The Full <span>Service</span></h2>
+        <div class="sp-features">
+          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="mb_deliver_1">Media Planning & Strategy</div><div class="sp-feature-text">Custom omnichannel media plans built around your audience, goals, and budget — every dollar allocated for maximum impact.</div></div>
+          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="sp-feature-title" data-i18n="mb_deliver_2">Audience Targeting & Segmentation</div><div class="sp-feature-text">Laser-focused audience segmentation using demographic, behavioral, and psychographic data to reach buyers — not just viewers.</div></div>
+          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="mb_deliver_3">Negotiation & Placement</div><div class="sp-feature-text">Leveraging agency relationships and buying power to secure premium placements at the best rates across all channels.</div></div>
+          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="mb_deliver_4">Performance Tracking & Reporting</div><div class="sp-feature-text">Real-time dashboards and monthly reports tracking reach, frequency, CPM, ROAS, and brand lift — full transparency always.</div></div>
+          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="sp-feature-title" data-i18n="mb_deliver_5">Creative Coordination</div><div class="sp-feature-text">We work with your creative team or ours to produce ad creatives optimized for each platform and placement.</div></div>
+          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="sp-feature-title" data-i18n="mb_deliver_6">Real-Time Optimization</div><div class="sp-feature-text">We monitor campaigns 24/7 and adjust targeting, bids, and placements in real-time to maximize performance.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">Our Process</div>
+        <h2 class="sp-section-title" data-i18n="mb_process_title">How We <span>Work</span></h2>
+        <div class="sp-process">
+          <div class="sp-process-step"><div class="sp-process-num">01</div><div class="sp-process-title" data-i18n="mb_process_1">Audit</div><div class="sp-process-text">We analyze your current media spend and identify opportunities.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">02</div><div class="sp-process-title" data-i18n="mb_process_2">Plan</div><div class="sp-process-text">We build an omnichannel media plan with clear KPIs and budgets.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">03</div><div class="sp-process-title" data-i18n="mb_process_3">Buy</div><div class="sp-process-text">We negotiate and secure premium placements across all channels.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">04</div><div class="sp-process-title" data-i18n="mb_process_4">Monitor</div><div class="sp-process-text">Real-time tracking and daily optimization for maximum ROAS.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">05</div><div class="sp-process-title" data-i18n="mb_process_5">Report</div><div class="sp-process-text">Detailed reports with insights, recommendations, and next steps.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-section-label">Results & Benefits</div>
+        <h2 class="sp-section-title" data-i18n="mb_benefits_title">What You <span>Get</span></h2>
+        <div class="sp-benefits">
+          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="mb_benefits_1">Lower Cost Per Acquisition</div><div class="sp-benefit-text">Our negotiation power and optimization reduce your cost to acquire each customer.</div></div></div>
+          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="mb_benefits_2">Premium Placements</div><div class="sp-benefit-text">Access to prime TV slots, top digital inventory, and premium OOH locations.</div></div></div>
+          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="mb_benefits_3">Omnichannel Reach</div><div class="sp-benefit-text">Your brand reaches the right people wherever they are — TV, social, radio, or billboards.</div></div></div>
+          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="mb_benefits_4">Full Transparency</div><div class="sp-benefit-text">Real-time dashboards and detailed reports show exactly where your money goes.</div></div></div>
+          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="mb_benefits_5">Scalable Growth</div><div class="sp-benefit-text">Once we find winning channels, we scale your budget for exponential growth.</div></div></div>
+          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="mb_benefits_6">Brand Awareness</div><div class="sp-benefit-text">Omnichannel presence builds massive brand recognition and market dominance.</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">FAQ</div>
+        <h2 class="sp-section-title" data-i18n="mb_faq_title">Frequently Asked <span>Questions</span></h2>
+        <div class="sp-faq">
+          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="mb_faq_1_q">What's the minimum budget for media buying?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="mb_faq_1_a">We recommend a minimum ad spend of $5,000/month for effective media buying. We'll advise the optimal budget based on your goals and industry.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="mb_faq_2_q">What channels do you buy media on?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="mb_faq_2_a">We buy across TV, digital (display, video, social), out-of-home (billboards, transit), radio, podcasts, and print. We'll recommend the best mix for your audience.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="mb_faq_3_q">How do you negotiate rates?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="mb_faq_3_a">We leverage agency relationships, volume discounts, and market data to negotiate the best rates. Our buying power often secures 20–40% better rates than direct buys.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="mb_faq_4_q">What reports will I receive?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="mb_faq_4_a">You receive real-time dashboard access and detailed monthly reports covering reach, frequency, CPM, ROAS, brand lift, and actionable recommendations.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="mb_faq_5_q">Do you handle creative production?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="mb_faq_5_a">Yes, we offer creative production as part of our service. We produce ad creatives optimized for each platform and placement.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="mb_faq_6_q">How do you measure success?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="mb_faq_6_a">We track ROAS, CPA, brand lift, reach, and engagement. We set clear KPIs at the start and report against them every month.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-cta">
+          <div class="sp-cta-orb sp-cta-orb-1"></div><div class="sp-cta-orb sp-cta-orb-2"></div>
+          <h2 class="sp-cta-title" data-i18n="mb_cta_title">Ready to Dominate<br/><span>Every Channel?</span></h2>
+          <p class="sp-cta-sub">Let's build a media buying strategy that puts your brand in front of the right people at the right moment — everywhere.</p>
+          <div class="sp-cta-btns">
+            <a href="index.html#contact" class="btn btn-primary btn-lg magnetic-btn"><span data-i18n="mb_cta_btn">Book Free Media Audit</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="brief-performance-marketing.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>Start Your Brief</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="https://wa.me/1234567890" class="btn btn-ghost btn-lg" target="_blank"><span data-i18n="mb_cta_whatsapp">Contact Us on WhatsApp</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-nav">
+          <a href="service-photography.html" class="sp-nav-link">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div><div class="sp-nav-label" data-i18n="prev_service">Previous Service</div><div class="sp-nav-title">Photography</div></div>
+          </a>
+          <a href="service-social-media.html" class="sp-nav-link sp-nav-next">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div><div class="sp-nav-label" data-i18n="next_service">Next Service</div><div class="sp-nav-title">Social Media</div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="main.js" defer></script>
+  <script>
+    document.querySelectorAll('.sp-faq-q').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        const item=btn.closest('.sp-faq-item');
+        document.querySelectorAll('.sp-faq-item').forEach(i=>{if(i!==item)i.classList.remove('open')});
+        item.classList.toggle('open');
+      });
+    });
+    function createPhotoCell(i){const c=document.createElement('div');c.className='media-cell';c.innerHTML=`<input type="file" accept="image/*" class="file-input"><div class="media-cell-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="media-cell-text">Upload Creative</div><div class="media-cell-overlay"><span style="color:white;font-size:.8rem">Change Image</span></div><button class="media-cell-remove">✕</button>`;setup(c,'image');return c;}
+    function createVideoCell(i,wide=false){const c=document.createElement('div');c.className='media-cell media-cell-video'+(wide?' media-cell-wide':'');c.innerHTML=`<input type="file" accept="video/*" class="file-input"><div class="media-cell-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div><div class="media-cell-text">Upload Ad Video</div><div class="media-cell-overlay"><span style="color:white;font-size:.8rem">Change Video</span></div><button class="media-cell-remove">✕</button>`;setup(c,'video');return c;}
+    function setup(cell,type){const inp=cell.querySelector('.file-input'),rm=cell.querySelector('.media-cell-remove');cell.addEventListener('click',e=>{if(e.target===rm)return;inp.click();});inp.addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;const url=URL.createObjectURL(f);cell.querySelectorAll('img,video').forEach(el=>el.remove());if(type==='image'){const img=document.createElement('img');img.src=url;cell.prepend(img);}else{const v=document.createElement('video');v.src=url;v.controls=true;v.muted=true;cell.prepend(v);}cell.classList.add('has-content');});rm.addEventListener('click',e=>{e.stopPropagation();cell.querySelectorAll('img,video').forEach(el=>el.remove());cell.classList.remove('has-content');inp.value='';});}
+    const pg=document.getElementById('campaign-grid');for(let i=0;i<9;i++)pg.appendChild(createPhotoCell(i));
+    const vg=document.getElementById('video-grid');for(let i=0;i<6;i++)vg.appendChild(createVideoCell(i));
+  </script>
+  <!-- Language System -->
+  <script src="lang-en.js"></script>
+  <script src="lang-ar.js"></script>
+  <script src="lang.js"></script>
+</body>
+</html>

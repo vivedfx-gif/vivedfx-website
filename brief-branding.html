@@ -1,0 +1,287 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Branding & Identity Brief — VIVEDFX</title>
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles-brief.css">
+  <!-- Arabic Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles-lang.css" />
+</head>
+<body>
+  <div class="brief-bg">
+    <div class="brief-bg-orb brief-bg-orb-1"></div>
+    <div class="brief-bg-orb brief-bg-orb-2"></div>
+    <div class="brief-bg-orb brief-bg-orb-3"></div>
+  </div>
+
+  <div class="brief-wrapper">
+    <div class="brief-header">
+      <a href="index.html" class="brief-logo">
+        <img src="assets/logo.png" alt="VIVEDFX" class="brief-logo-img">
+      </a>
+      <h1 class="brief-title">Branding &amp; Identity <span>Brief</span></h1>
+      <p class="brief-subtitle">Help us understand your vision so we can build a brand identity that resonates and stands out.</p>
+      <div class="lang-switcher">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+          </svg>
+          <span class="lang-switcher-label" id="lang-switcher-label">AR</span>
+        </button>
+        <div class="lang-dropdown" id="lang-dropdown">
+          <button class="lang-option" data-lang="en">
+            <span class="lang-flag">🇺🇸</span>
+            <span>EN</span>
+          </button>
+          <button class="lang-option" data-lang="ar">
+            <span class="lang-flag">🇸🇦</span>
+            <span>AR</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="brief-progress">
+      <div class="brief-progress-top">
+        <span class="brief-progress-label" data-i18n="brief_progress">Progress</span>
+        <span class="brief-progress-step" id="briefStepBadge">1 / 5</span>
+      </div>
+      <div class="brief-progress-bar">
+        <div class="brief-progress-fill" id="briefProgressFill" style="width:0%"></div>
+      </div>
+      <div class="brief-progress-dots" id="briefProgressDots"></div>
+    </div>
+
+    <div class="brief-step-counter">
+      <div class="brief-step-badge">
+        <span class="brief-step-badge-dot"></span>
+        <span id="briefStepLabel">Brand Foundation</span>
+      </div>
+    </div>
+
+    <form id="briefForm" class="brief-card" novalidate>
+
+      <!-- STEP 1: Brand Foundation -->
+      <div class="brief-step active" data-label="Brand Foundation">
+        <h2 class="brief-step-title" data-i18n="brief_step_brand_foundation">Brand Foundation</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_tell_us_the_story_behind_your_brand_what_drives_you_and_where_youre_headed">Tell us the story behind your brand — what drives you and where you're headed.</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_business_name">Business Name <span class="required">*</span></label>
+          <input type="text" name="business_name" class="brief-input" placeholder="e.g. VIVEDFX" data-i18n-placeholder="brief_ph_eg_vivedfx" required>
+          <div class="brief-error">Please enter your business name</div>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_brand_story">Brand Story</label>
+          <textarea name="brand_story" class="brief-textarea" placeholder="How did your brand start? What's the journey behind it?" data-i18n-placeholder="brief_ph_how_did_your_brand_start_whats_the_journey_behind_it"></textarea>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_mission">Mission <span class="required">*</span></label>
+          <textarea name="mission" class="brief-textarea" placeholder="What is your company's mission? Why do you exist?" data-i18n-placeholder="brief_ph_what_is_your_companys_mission_why_do_you_exist" required></textarea>
+          <div class="brief-error">Please describe your mission</div>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_vision">Vision</label>
+          <textarea name="vision" class="brief-textarea" placeholder="Where do you see your brand in 5-10 years?" data-i18n-placeholder="brief_ph_where_do_you_see_your_brand_in_510_years"></textarea>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_core_values">Core Values</label>
+          <textarea name="values" class="brief-textarea" placeholder="List 3-5 core values that define your brand (e.g. innovation, integrity, excellence)" data-i18n-placeholder="brief_ph_list_35_core_values_that_define_your_brand_eg_innovation_integrity_excellence"></textarea>
+        </div>
+      </div>
+
+      <!-- STEP 2: Target Audience -->
+      <div class="brief-step" data-label="Target Audience">
+        <h2 class="brief-step-title" data-i18n="brief_step_target_audience">Target Audience</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_who_are_you_trying_to_reach_the_more_specific_the_better">Who are you trying to reach? The more specific, the better.</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_target_audience">Target Audience <span class="required">*</span></label>
+          <textarea name="target_audience" class="brief-textarea" placeholder="Describe your ideal customer — demographics, psychographics, behaviors, pain points" data-i18n-placeholder="brief_ph_describe_your_ideal_customer_demographics_psychographics_behaviors_pain_points" required></textarea>
+          <div class="brief-error">Please describe your target audience</div>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_industry">Industry</label>
+          <select name="industry" class="brief-select">
+<option value="" data-i18n="brief_select_select_your_industry">Select your industry</option>
+            <option data-i18n="brief_option_healthcare_medical">Healthcare & Medical</option>
+            <option data-i18n="brief_option_fitness_wellness">Fitness & Wellness</option>
+            <option data-i18n="brief_option_corporate_b2b">Corporate & B2B</option>
+            <option data-i18n="brief_option_ecommerce_retail">E-Commerce & Retail</option>
+            <option data-i18n="brief_option_real_estate">Real Estate</option>
+            <option data-i18n="brief_option_food_beverage">Food & Beverage</option>
+            <option data-i18n="brief_option_education">Education</option>
+            <option data-i18n="brief_option_technology_saas">Technology & SaaS</option>
+            <option data-i18n="brief_option_automotive">Automotive</option>
+            <option data-i18n="brief_option_fashion_beauty">Fashion & Beauty</option>
+            <option data-i18n="brief_option_hospitality_travel">Hospitality & Travel</option>
+            <option data-i18n="brief_option_other">Other</option>
+          </select>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_competitors">Competitors</label>
+          <textarea name="competitors" class="brief-textarea" placeholder="List 3-5 competitors. What do you like or dislike about their branding?" data-i18n-placeholder="brief_ph_list_35_competitors_what_do_you_like_or_dislike_about_their_branding"></textarea>
+        </div>
+      </div>
+
+      <!-- STEP 3: Visual Direction -->
+      <div class="brief-step" data-label="Visual Direction">
+        <h2 class="brief-step-title" data-i18n="brief_step_visual_direction">Visual Direction</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_what_should_your_brand_look_and_feel_like">What should your brand look and feel like?</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_preferred_style">Preferred Style</label>
+          <div class="brief-options brief-radio-group" name="style">
+            <label class="brief-option"><input type="radio" name="style" value="modern"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_modern_minimal">Modern & Minimal</span></label>
+            <label class="brief-option"><input type="radio" name="style" value="classic"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_classic_timeless">Classic & Timeless</span></label>
+            <label class="brief-option"><input type="radio" name="style" value="bold"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_bold_expressive">Bold & Expressive</span></label>
+            <label class="brief-option"><input type="radio" name="style" value="luxury"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_luxury_premium">Luxury & Premium</span></label>
+            <label class="brief-option"><input type="radio" name="style" value="playful"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_playful_fun">Playful & Fun</span></label>
+            <label class="brief-option"><input type="radio" name="style" value="tech"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_tech_futuristic">Tech & Futuristic</span></label>
+          </div>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_preferred_colors">Preferred Colors</label>
+          <input type="text" name="colors_preferred" class="brief-input" placeholder="e.g. Dark blue, gold accents — or describe the mood" data-i18n-placeholder="brief_ph_eg_dark_blue_gold_accents_or_describe_the_mood">
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_colors_to_avoid">Colors to Avoid</label>
+          <input type="text" name="colors_avoid" class="brief-input" placeholder="e.g. No bright pink, no neon green" data-i18n-placeholder="brief_ph_eg_no_bright_pink_no_neon_green">
+        </div>
+      </div>
+
+      <!-- STEP 4: Logo & Inspiration -->
+      <div class="brief-step" data-label="Logo & Inspiration">
+        <h2 class="brief-step-title" data-i18n="brief_step_logo_and_inspiration">Logo &amp; Inspiration</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_share_any_logo_ideas_or_brand_references_that_inspire_you">Share any logo ideas or brand references that inspire you.</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_logo_inspiration">Logo Inspiration</label>
+          <textarea name="logo_inspiration" class="brief-textarea" placeholder="Describe any logo ideas you have — style, symbols, layouts, or share links to references" data-i18n-placeholder="brief_ph_describe_any_logo_ideas_you_have_style_symbols_layouts_or_share_links_to_references"></textarea>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_brand_references">Brand References</label>
+          <textarea name="brand_references" class="brief-textarea" placeholder="List brands whose identity you admire (e.g. Apple, Nike, Aesop)" data-i18n-placeholder="brief_ph_list_brands_whose_identity_you_admire_eg_apple_nike_aesop"></textarea>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_upload_existing_logo">Upload Existing Logo</label>
+          <div class="brief-upload" data-key="existing_logo">
+            <input type="file" multiple accept=".pdf,.docx,.jpg,.jpeg,.png,.ai,.psd,.zip">
+            <div class="brief-upload-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <div class="brief-upload-text" data-i18n="brief_upload_drop_your_existing_logo_here">Drop your existing logo here</div>
+            <div class="brief-upload-hint" data-i18n="brief_hint_pdf_ai_psd_png_jpg_max_10_files">PDF, AI, PSD, PNG, JPG — Max 10 files</div>
+            <div class="brief-upload-files"></div>
+          </div>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_upload_brand_assets">Upload Brand Assets</label>
+          <div class="brief-upload" data-key="brand_assets">
+            <input type="file" multiple accept=".pdf,.docx,.jpg,.jpeg,.png,.ai,.psd,.zip">
+            <div class="brief-upload-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <div class="brief-upload-text" data-i18n="brief_upload_drop_brand_assets_here">Drop brand assets here</div>
+            <div class="brief-upload-hint" data-i18n="brief_hint_guidelines_color_palettes_typography_patterns_max_10_files">Guidelines, color palettes, typography, patterns — Max 10 files</div>
+            <div class="brief-upload-files"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 5: Extras -->
+      <div class="brief-step" data-label="Additional Details">
+        <h2 class="brief-step-title" data-i18n="brief_step_additional_details">Additional Details</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_anything_else_that_will_help_us_create_the_perfect_brand_identity">Anything else that will help us create the perfect brand identity.</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_budget_range">Budget Range</label>
+          <select name="budget" class="brief-select">
+<option value="" data-i18n="brief_select_select_your_budget_range">Select your budget range</option>
+            <option data-i18n="brief_option_under_1000">Under $1,000</option>
+            <option data-i18n="brief_option_1000_3000">$1,000 - $3,000</option>
+            <option data-i18n="brief_option_3000_5000">$3,000 - $5,000</option>
+            <option data-i18n="brief_option_5000_10000">$5,000 - $10,000</option>
+            <option data-i18n="brief_option_10000">$10,000+</option>
+            <option data-i18n="brief_option_not_sure_yet">Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_deadline">Deadline</label>
+          <input type="text" name="deadline" class="brief-input" placeholder="e.g. Within 4 weeks, No rush" data-i18n-placeholder="brief_ph_eg_within_4_weeks_no_rush">
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_additional_notes">Additional Notes</label>
+          <textarea name="notes" class="brief-textarea" placeholder="Anything else you'd like us to know?" data-i18n-placeholder="brief_ph_anything_else_youd_like_us_to_know"></textarea>
+        </div>
+
+        <div style="text-align:center;margin-top:16px;">
+          <button type="button" id="briefSaveBtn" class="brief-btn brief-btn-save" data-i18n="brief_save">Save Progress</button>
+        </div>
+      </div>
+
+      <!-- REVIEW -->
+      <div class="brief-step" id="briefReviewStep" data-label="Review & Submit">
+        <h2 class="brief-step-title" data-i18n="brief_step_review_your_brief">Review Your Brief</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_please_review_all_your_answers_before_submitting">Please review all your answers before submitting.</p>
+        <div id="briefReviewData"></div>
+      </div>
+
+      <div class="brief-actions">
+        <button type="button" id="briefPrev" class="brief-btn brief-btn-secondary" data-i18n="brief_previous" style="visibility:hidden">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Previous
+        </button>
+        <button type="button" id="briefNext" class="brief-btn brief-btn-primary" data-i18n="brief_continue">
+          Continue<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+    </form>
+
+    <div class="brief-success" id="briefSuccess">
+      <div class="brief-success-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+      </div>
+      <h2 class="brief-success-title" data-i18n="brief_success_title">Brief Submitted!</h2>
+      <p class="brief-success-text" data-i18n="brief_success_text">Thank you for completing the Branding & Identity Brief. Our team will review your submission and get back to you within 24 hours.</p>
+      <div class="brief-success-actions">
+        <a href="index.html" class="brief-btn brief-btn-primary" data-i18n="brief_back_home">Back to Home</a>
+        <a href="services.html" class="brief-btn brief-btn-secondary" data-i18n="brief_view_services">View Services</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="brief-save-toast" data-i18n="brief_saved" id="briefSaveToast">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+    Progress saved
+  </div>
+
+  <script>window.BRIEF_ID = 'branding';</script>
+  <script src="brief.js"></script>
+  <!-- Language System -->
+  <script src="lang-en.js"></script>
+  <script src="lang-ar.js"></script>
+  <script src="lang.js"></script>
+</body>
+</html>

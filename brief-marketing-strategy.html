@@ -1,0 +1,225 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketing Strategy Brief — VIVEDFX</title>
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles-brief.css">
+  <!-- Arabic Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles-lang.css" />
+</head>
+<body>
+  <div class="brief-bg">
+    <div class="brief-bg-orb brief-bg-orb-1"></div>
+    <div class="brief-bg-orb brief-bg-orb-2"></div>
+    <div class="brief-bg-orb brief-bg-orb-3"></div>
+  </div>
+
+  <div class="brief-wrapper">
+    <div class="brief-header">
+      <a href="index.html" class="brief-logo">        <img src="assets/logo.png" alt="VIVEDFX" class="brief-logo-img"></a>
+      <h1 class="brief-title">Marketing Strategy <span>Brief</span></h1>
+      <p class="brief-subtitle">Help us understand your business landscape so we can build a strategy that accelerates growth.</p>
+      <div class="lang-switcher">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+          </svg>
+          <span class="lang-switcher-label" id="lang-switcher-label">AR</span>
+        </button>
+        <div class="lang-dropdown" id="lang-dropdown">
+          <button class="lang-option" data-lang="en">
+            <span class="lang-flag">🇺🇸</span>
+            <span>EN</span>
+          </button>
+          <button class="lang-option" data-lang="ar">
+            <span class="lang-flag">🇸🇦</span>
+            <span>AR</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="brief-progress">
+      <div class="brief-progress-top">
+        <span class="brief-progress-label" data-i18n="brief_progress">Progress</span>
+        <span class="brief-progress-step" id="briefStepBadge">1 / 4</span>
+      </div>
+      <div class="brief-progress-bar">
+        <div class="brief-progress-fill" id="briefProgressFill" style="width:0%"></div>
+      </div>
+      <div class="brief-progress-dots" id="briefProgressDots"></div>
+    </div>
+
+    <div class="brief-step-counter">
+      <div class="brief-step-badge">
+        <span class="brief-step-badge-dot"></span>
+        <span id="briefStepLabel">Business Overview</span>
+      </div>
+    </div>
+
+    <form id="briefForm" class="brief-card" novalidate>
+
+      <!-- STEP 1: Business Overview -->
+      <div class="brief-step active" data-label="Business Overview">
+        <h2 class="brief-step-title" data-i18n="brief_step_business_overview">Business Overview</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_give_us_a_complete_picture_of_your_business_and_where_it_stands_today">Give us a complete picture of your business and where it stands today.</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_business_overview">Business Overview <span class="required">*</span></label>
+          <textarea name="business_overview" class="brief-textarea" placeholder="Tell us about your business — what you do, who you serve, how long you've been operating, size of team..." data-i18n-placeholder="brief_ph_tell_us_about_your_business_what_you_do_who_you_serve_how_long_youve_been_operating_size_of_team" required></textarea>
+          <div class="brief-error">Please provide your business overview</div>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_industry">Industry</label>
+          <select name="industry" class="brief-select">
+<option value="" data-i18n="brief_select_select_your_industry">Select your industry</option>
+            <option data-i18n="brief_option_healthcare_medical">Healthcare & Medical</option>
+            <option data-i18n="brief_option_fitness_wellness">Fitness & Wellness</option>
+            <option data-i18n="brief_option_corporate_b2b">Corporate & B2B</option>
+            <option data-i18n="brief_option_ecommerce_retail">E-Commerce & Retail</option>
+            <option data-i18n="brief_option_real_estate">Real Estate</option>
+            <option data-i18n="brief_option_food_beverage">Food & Beverage</option>
+            <option data-i18n="brief_option_education">Education</option>
+            <option data-i18n="brief_option_technology_saas">Technology & SaaS</option>
+            <option data-i18n="brief_option_automotive">Automotive</option>
+            <option data-i18n="brief_option_fashion_beauty">Fashion & Beauty</option>
+            <option data-i18n="brief_option_hospitality_travel">Hospitality & Travel</option>
+            <option data-i18n="brief_option_other">Other</option>
+          </select>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_current_marketing_activities">Current Marketing Activities</label>
+          <textarea name="current_marketing" class="brief-textarea" placeholder="What marketing are you currently doing? (e.g. social media, Google Ads, content marketing, print, events)" data-i18n-placeholder="brief_ph_what_marketing_are_you_currently_doing_eg_social_media_google_ads_content_marketing_print_events"></textarea>
+        </div>
+      </div>
+
+      <!-- STEP 2: Goals & Challenges -->
+      <div class="brief-step" data-label="Goals & Challenges">
+        <h2 class="brief-step-title" data-i18n="brief_step_goals_and_challenges">Goals &amp; Challenges</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_where_do_you_want_to_go_and_whats_holding_you_back">Where do you want to go and what's holding you back?</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_revenue_goals">Revenue Goals</label>
+          <textarea name="revenue_goals" class="brief-textarea" placeholder="What are your revenue targets? (e.g. $100K/month, 2x revenue in 12 months)" data-i18n-placeholder="brief_ph_what_are_your_revenue_targets_eg_100kmonth_2x_revenue_in_12_months"></textarea>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_biggest_challenges">Biggest Challenges <span class="required">*</span></label>
+          <textarea name="challenges" class="brief-textarea" placeholder="What are the biggest obstacles to your growth? (e.g. low brand awareness, not enough leads, poor conversion rates)" data-i18n-placeholder="brief_ph_what_are_the_biggest_obstacles_to_your_growth_eg_low_brand_awareness_not_enough_leads_poor_conversion_rates" required></textarea>
+          <div class="brief-error">Please describe your biggest challenges</div>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_growth_goals">Growth Goals</label>
+          <textarea name="growth_goals" class="brief-textarea" placeholder="Where do you want to be in 6-12 months? What does success look like?" data-i18n-placeholder="brief_ph_where_do_you_want_to_be_in_612_months_what_does_success_look_like"></textarea>
+        </div>
+      </div>
+
+      <!-- STEP 3: Audience & Competition -->
+      <div class="brief-step" data-label="Audience & Competition">
+        <h2 class="brief-step-title" data-i18n="brief_step_audience_and_competition">Audience &amp; Competition</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_who_are_you_targeting_and_who_are_you_up_against">Who are you targeting and who are you up against?</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_target_audience">Target Audience <span class="required">*</span></label>
+          <textarea name="target_audience" class="brief-textarea" placeholder="Describe your ideal customer in detail — demographics, psychographics, behaviors" data-i18n-placeholder="brief_ph_describe_your_ideal_customer_in_detail_demographics_psychographics_behaviors" required></textarea>
+          <div class="brief-error">Please describe your target audience</div>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_competitors">Competitors</label>
+          <textarea name="competitors" class="brief-textarea" placeholder="List 3-5 main competitors. What are they doing well? Where do they fall short?" data-i18n-placeholder="brief_ph_list_35_main_competitors_what_are_they_doing_well_where_do_they_fall_short"></textarea>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_unique_selling_proposition">Unique Selling Proposition</label>
+          <textarea name="usp" class="brief-textarea" placeholder="What makes you different from competitors? Why should customers choose you?" data-i18n-placeholder="brief_ph_what_makes_you_different_from_competitors_why_should_customers_choose_you"></textarea>
+        </div>
+      </div>
+
+      <!-- STEP 4: Budget & KPIs -->
+      <div class="brief-step" data-label="Budget & KPIs">
+        <h2 class="brief-step-title" data-i18n="brief_step_budget_and_kpis">Budget &amp; KPIs</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_how_much_are_you_investing_and_what_metrics_matter">How much are you investing and what metrics matter?</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_budget">Budget</label>
+          <select name="budget" class="brief-select">
+<option value="" data-i18n="brief_select_select_your_budget_range">Select your budget range</option>
+            <option data-i18n="brief_option_under_1000month">Under $1,000/month</option>
+            <option data-i18n="brief_option_1000_3000month">$1,000 - $3,000/month</option>
+            <option data-i18n="brief_option_3000_5000month">$3,000 - $5,000/month</option>
+            <option data-i18n="brief_option_5000_10000month">$5,000 - $10,000/month</option>
+            <option data-i18n="brief_option_10000month">$10,000+/month</option>
+            <option data-i18n="brief_option_not_sure_yet">Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_key_performance_indicators_kpis">Key Performance Indicators (KPIs)</label>
+          <textarea name="kpis" class="brief-textarea" placeholder="What metrics will you judge success by? (e.g. leads per month, conversion rate, revenue growth, social engagement)" data-i18n-placeholder="brief_ph_what_metrics_will_you_judge_success_by_eg_leads_per_month_conversion_rate_revenue_growth_social_engagement"></textarea>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_additional_notes">Additional Notes</label>
+          <textarea name="notes" class="brief-textarea" placeholder="Anything else? Past experiences, specific requirements, timeline expectations..." data-i18n-placeholder="brief_ph_anything_else_past_experiences_specific_requirements_timeline_expectations"></textarea>
+        </div>
+
+        <div style="text-align:center;margin-top:16px;">
+          <button type="button" id="briefSaveBtn" class="brief-btn brief-btn-save" data-i18n="brief_save">Save Progress</button>
+        </div>
+      </div>
+
+      <!-- REVIEW -->
+      <div class="brief-step" id="briefReviewStep" data-label="Review & Submit">
+        <h2 class="brief-step-title" data-i18n="brief_step_review_your_brief">Review Your Brief</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_please_review_all_your_answers_before_submitting">Please review all your answers before submitting.</p>
+        <div id="briefReviewData"></div>
+      </div>
+
+      <div class="brief-actions">
+        <button type="button" id="briefPrev" class="brief-btn brief-btn-secondary" data-i18n="brief_previous" style="visibility:hidden">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Previous
+        </button>
+        <button type="button" id="briefNext" class="brief-btn brief-btn-primary" data-i18n="brief_continue">
+          Continue<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </form>
+
+    <div class="brief-success" id="briefSuccess">
+      <div class="brief-success-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+      </div>
+      <h2 class="brief-success-title" data-i18n="brief_success_title">Brief Submitted!</h2>
+      <p class="brief-success-text" data-i18n="brief_success_text">Thank you for completing the Marketing Strategy Brief. Our team will analyze your submission and get back to you within 24 hours.</p>
+      <div class="brief-success-actions">
+        <a href="index.html" class="brief-btn brief-btn-primary" data-i18n="brief_back_home">Back to Home</a>
+        <a href="services.html" class="brief-btn brief-btn-secondary" data-i18n="brief_view_services">View Services</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="brief-save-toast" data-i18n="brief_saved" id="briefSaveToast">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+    Progress saved
+  </div>
+
+  <script>window.BRIEF_ID = 'marketing-strategy';</script>
+  <script src="brief.js"></script>
+  <!-- Language System -->
+  <script src="lang-en.js"></script>
+  <script src="lang-ar.js"></script>
+  <script src="lang.js"></script>
+</body>
+</html>

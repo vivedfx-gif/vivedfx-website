@@ -1,0 +1,253 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Creation Brief — VIVEDFX</title>
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles-brief.css">
+  <!-- Arabic Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles-lang.css" />
+</head>
+<body>
+  <div class="brief-bg">
+    <div class="brief-bg-orb brief-bg-orb-1"></div>
+    <div class="brief-bg-orb brief-bg-orb-2"></div>
+    <div class="brief-bg-orb brief-bg-orb-3"></div>
+  </div>
+
+  <div class="brief-wrapper">
+    <div class="brief-header">
+      <a href="index.html" class="brief-logo">        <img src="assets/logo.png" alt="VIVEDFX" class="brief-logo-img"></a>
+      <h1 class="brief-title">Content Creation <span>Brief</span></h1>
+      <p class="brief-subtitle">Tell us what content you need so we can create material that captivates your audience.</p>
+      <div class="lang-switcher">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+          </svg>
+          <span class="lang-switcher-label" id="lang-switcher-label">AR</span>
+        </button>
+        <div class="lang-dropdown" id="lang-dropdown">
+          <button class="lang-option" data-lang="en">
+            <span class="lang-flag">🇺🇸</span>
+            <span>EN</span>
+          </button>
+          <button class="lang-option" data-lang="ar">
+            <span class="lang-flag">🇸🇦</span>
+            <span>AR</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="brief-progress">
+      <div class="brief-progress-top">
+        <span class="brief-progress-label" data-i18n="brief_progress">Progress</span>
+        <span class="brief-progress-step" id="briefStepBadge">1 / 4</span>
+      </div>
+      <div class="brief-progress-bar">
+        <div class="brief-progress-fill" id="briefProgressFill" style="width:0%"></div>
+      </div>
+      <div class="brief-progress-dots" id="briefProgressDots"></div>
+    </div>
+
+    <div class="brief-step-counter">
+      <div class="brief-step-badge">
+        <span class="brief-step-badge-dot"></span>
+        <span id="briefStepLabel">Content Type & Audience</span>
+      </div>
+    </div>
+
+    <form id="briefForm" class="brief-card" novalidate>
+
+      <!-- STEP 1: Content Type & Audience -->
+      <div class="brief-step active" data-label="Content Type & Audience">
+        <h2 class="brief-step-title" data-i18n="brief_step_content_type_and_audience">Content Type &amp; Audience</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_what_kind_of_content_do_you_need_and_who_is_it_for">What kind of content do you need and who is it for?</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_content_type">Content Type <span class="required">*</span></label>
+          <div class="brief-checkbox-group">
+            <label class="brief-checkbox"><input type="checkbox" name="content_type" value="social_media"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_social_media_posts">Social Media Posts</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="content_type" value="blog"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_blog_articles">Blog Articles</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="content_type" value="email"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_email_marketing">Email Marketing</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="content_type" value="ad_copy"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_ad_copy">Ad Copy</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="content_type" value="website"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_website_copy">Website Copy</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="content_type" value="video_script"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_video_scripts">Video Scripts</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="content_type" value="presentation"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_presentations">Presentations</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="content_type" value="infographic"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_infographics">Infographics</span></label>
+          </div>
+          <div class="brief-error">Please select at least one content type</div>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_platforms">Platforms</label>
+          <div class="brief-checkbox-group">
+            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="instagram"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_instagram">Instagram</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="facebook"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_facebook">Facebook</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="tiktok"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_tiktok">TikTok</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="linkedin"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_linkedin">LinkedIn</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="twitter"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_twitter_x">Twitter / X</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="website"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_website">Website</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="email"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_email">Email</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="youtube"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_youtube">YouTube</span></label>
+          </div>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_target_audience">Target Audience</label>
+          <textarea name="target_audience" class="brief-textarea" placeholder="Who are you creating this content for?" data-i18n-placeholder="brief_ph_who_are_you_creating_this_content_for"></textarea>
+        </div>
+      </div>
+
+      <!-- STEP 2: Brand & Style -->
+      <div class="brief-step" data-label="Brand & Style">
+        <h2 class="brief-step-title" data-i18n="brief_step_brand_and_style">Brand &amp; Style</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_how_should_your_content_look_and_feel">How should your content look and feel?</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_brand_voice">Brand Voice</label>
+          <div class="brief-options brief-radio-group" name="brand_voice">
+            <label class="brief-option"><input type="radio" name="brand_voice" value="professional"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_professional">Professional</span></label>
+            <label class="brief-option"><input type="radio" name="brand_voice" value="friendly"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_friendly_casual">Friendly & Casual</span></label>
+            <label class="brief-option"><input type="radio" name="brand_voice" value="authoritative"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_authoritative">Authoritative</span></label>
+            <label class="brief-option"><input type="radio" name="brand_voice" value="playful"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_playful_fun">Playful & Fun</span></label>
+            <label class="brief-option"><input type="radio" name="brand_voice" value="luxury"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_luxury_premium">Luxury & Premium</span></label>
+          </div>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_preferred_style">Preferred Style</label>
+          <textarea name="preferred_style" class="brief-textarea" placeholder="Describe the visual or writing style you prefer (e.g. clean with bold headlines, minimal with lots of white space)" data-i18n-placeholder="brief_ph_describe_the_visual_or_writing_style_you_prefer_eg_clean_with_bold_headlines_minimal_with_lots_of_white_space"></textarea>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_cta_style">CTA Style</label>
+          <textarea name="cta_style" class="brief-textarea" placeholder="How do you want to prompt action? (e.g. soft and informative, direct and urgent, playful)" data-i18n-placeholder="brief_ph_how_do_you_want_to_prompt_action_eg_soft_and_informative_direct_and_urgent_playful"></textarea>
+        </div>
+      </div>
+
+      <!-- STEP 3: Topics & Deliverables -->
+      <div class="brief-step" data-label="Topics & Deliverables">
+        <h2 class="brief-step-title" data-i18n="brief_step_topics_and_deliverables">Topics &amp; Deliverables</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_what_should_we_create_and_how_much">What should we create and how much?</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_monthly_deliverables">Monthly Deliverables</label>
+          <select name="deliverables" class="brief-select">
+<option value="" data-i18n="brief_select_select_quantity">Select quantity</option>
+            <option data-i18n="brief_option_14_pieces_per_month">1-4 pieces per month</option>
+            <option data-i18n="brief_option_510_pieces_per_month">5-10 pieces per month</option>
+            <option data-i18n="brief_option_1020_pieces_per_month">10-20 pieces per month</option>
+            <option data-i18n="brief_option_20_pieces_per_month">20+ pieces per month</option>
+            <option data-i18n="brief_option_need_recommendation">Need recommendation</option>
+          </select>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_topics_themes">Topics & Themes</label>
+          <textarea name="topics" class="brief-textarea" placeholder="What topics should we cover? List themes, product highlights, seasonal content ideas..." data-i18n-placeholder="brief_ph_what_topics_should_we_cover_list_themes_product_highlights_seasonal_content_ideas"></textarea>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_competitors">Competitors</label>
+          <textarea name="competitors" class="brief-textarea" placeholder="List competitors whose content you admire. What do you like about their content?" data-i18n-placeholder="brief_ph_list_competitors_whose_content_you_admire_what_do_you_like_about_their_content"></textarea>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_references">References</label>
+          <textarea name="references" class="brief-textarea" placeholder="Share any examples of content you love — links, screenshots, or descriptions" data-i18n-placeholder="brief_ph_share_any_examples_of_content_you_love_links_screenshots_or_descriptions"></textarea>
+        </div>
+      </div>
+
+      <!-- STEP 4: Extras -->
+      <div class="brief-step" data-label="Budget & Extras">
+        <h2 class="brief-step-title" data-i18n="brief_step_budget_and_extras">Budget &amp; Extras</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_final_details_to_get_started">Final details to get started.</p>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_budget_range">Budget Range</label>
+          <select name="budget" class="brief-select">
+<option value="" data-i18n="brief_select_select_your_budget_range">Select your budget range</option>
+            <option data-i18n="brief_option_under_500month">Under $500/month</option>
+            <option data-i18n="brief_option_500_1000month">$500 - $1,000/month</option>
+            <option data-i18n="brief_option_1000_3000month">$1,000 - $3,000/month</option>
+            <option data-i18n="brief_option_3000_5000month">$3,000 - $5,000/month</option>
+            <option data-i18n="brief_option_5000month">$5,000+/month</option>
+            <option data-i18n="brief_option_not_sure_yet">Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_additional_notes">Additional Notes</label>
+          <textarea name="notes" class="brief-textarea" placeholder="Anything else? Special requirements, brand guidelines, content calendar..." data-i18n-placeholder="brief_ph_anything_else_special_requirements_brand_guidelines_content_calendar"></textarea>
+        </div>
+
+        <div class="brief-group">
+          <label class="brief-label" data-i18n="brief_label_upload_reference_files">Upload Reference Files</label>
+          <div class="brief-upload" data-key="references_files">
+            <input type="file" multiple accept=".pdf,.docx,.jpg,.jpeg,.png,.ai,.psd,.zip">
+            <div class="brief-upload-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <div class="brief-upload-text" data-i18n="brief_upload_drop_files_here_or_click_to_upload">Drop files here or click to upload</div>
+            <div class="brief-upload-hint" data-i18n="brief_hint_pdf_docx_jpg_png_ai_psd_zip_max_10_files">PDF, DOCX, JPG, PNG, AI, PSD, ZIP — Max 10 files</div>
+            <div class="brief-upload-files"></div>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:16px;">
+          <button type="button" id="briefSaveBtn" class="brief-btn brief-btn-save" data-i18n="brief_save">Save Progress</button>
+        </div>
+      </div>
+
+      <!-- REVIEW -->
+      <div class="brief-step" id="briefReviewStep" data-label="Review & Submit">
+        <h2 class="brief-step-title" data-i18n="brief_step_review_your_brief">Review Your Brief</h2>
+        <p class="brief-step-desc" data-i18n="brief_desc_please_review_all_your_answers_before_submitting">Please review all your answers before submitting.</p>
+        <div id="briefReviewData"></div>
+      </div>
+
+      <div class="brief-actions">
+        <button type="button" id="briefPrev" class="brief-btn brief-btn-secondary" data-i18n="brief_previous" style="visibility:hidden">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Previous
+        </button>
+        <button type="button" id="briefNext" class="brief-btn brief-btn-primary" data-i18n="brief_continue">
+          Continue<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </form>
+
+    <div class="brief-success" id="briefSuccess">
+      <div class="brief-success-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+      </div>
+      <h2 class="brief-success-title" data-i18n="brief_success_title">Brief Submitted!</h2>
+      <p class="brief-success-text" data-i18n="brief_success_text">Thank you for completing the Content Creation Brief. Our team will review your submission and get back to you within 24 hours.</p>
+      <div class="brief-success-actions">
+        <a href="index.html" class="brief-btn brief-btn-primary" data-i18n="brief_back_home">Back to Home</a>
+        <a href="services.html" class="brief-btn brief-btn-secondary" data-i18n="brief_view_services">View Services</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="brief-save-toast" data-i18n="brief_saved" id="briefSaveToast">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+    Progress saved
+  </div>
+
+  <script>window.BRIEF_ID = 'content-creation';</script>
+  <script src="brief.js"></script>
+  <!-- Language System -->
+  <script src="lang-en.js"></script>
+  <script src="lang-ar.js"></script>
+  <script src="lang.js"></script>
+</body>
+</html>
