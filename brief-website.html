@@ -1,18 +1,15 @@
-﻿﻿<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Design & Development Brief — VIVEDFX</title>
+  <title>Website Design & Development Brief — vivedfx</title>
   <link rel="preconnect" href="https://api.fontshare.com" />
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles-brief.css">
-  <!-- Arabic Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles-lang.css" />
 </head>
 <body>
   <div class="brief-bg">
@@ -23,33 +20,14 @@
 
   <div class="brief-wrapper">
     <div class="brief-header">
-      <a href="index.html" class="brief-logo">        <img src="assets/logo.png" alt="VIVEDFX" class="brief-logo-img"></a>
+      <a href="index.html" class="brief-logo">        <img src="assets/logo.png" alt="vivedfx" class="brief-logo-img"></a>
       <h1 class="brief-title">Website Design &amp; Development <span>Brief</span></h1>
       <p class="brief-subtitle">Tell us about your dream website so we can build something that converts and impresses.</p>
-      <div class="lang-switcher">
-        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="12" cy="12" r="10"/>
-            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
-          </svg>
-          <span class="lang-switcher-label" id="lang-switcher-label">AR</span>
-        </button>
-        <div class="lang-dropdown" id="lang-dropdown">
-          <button class="lang-option" data-lang="en">
-            <span class="lang-flag">🇺🇸</span>
-            <span>EN</span>
-          </button>
-          <button class="lang-option" data-lang="ar">
-            <span class="lang-flag">🇸🇦</span>
-            <span>AR</span>
-          </button>
-        </div>
-      </div>
     </div>
 
     <div class="brief-progress">
       <div class="brief-progress-top">
-        <span class="brief-progress-label" data-i18n="brief_progress">Progress</span>
+        <span class="brief-progress-label">Progress</span>
         <span class="brief-progress-step" id="briefStepBadge">1 / 6</span>
       </div>
       <div class="brief-progress-bar">
@@ -69,208 +47,208 @@
 
       <!-- STEP 1: Business & Purpose -->
       <div class="brief-step active" data-label="Business & Purpose">
-        <h2 class="brief-step-title" data-i18n="brief_step_business_and_purpose">Business &amp; Purpose</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_tell_us_about_your_business_and_what_you_need_the_website_to_achieve">Tell us about your business and what you need the website to achieve.</p>
+        <h2 class="brief-step-title">Business &amp; Purpose</h2>
+        <p class="brief-step-desc">Tell us about your business and what you need the website to achieve.</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_business_information">Business Information <span class="required">*</span></label>
-          <textarea name="business_info" class="brief-textarea" placeholder="Business name, what you do, location, years in business..." data-i18n-placeholder="brief_ph_business_name_what_you_do_location_years_in_business" required></textarea>
+          <label class="brief-label">Business Information <span class="required">*</span></label>
+          <textarea name="business_info" class="brief-textarea" placeholder="Business name, what you do, location, years in business..." required></textarea>
           <div class="brief-error">Please provide your business information</div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_website_purpose">Website Purpose <span class="required">*</span></label>
+          <label class="brief-label">Website Purpose <span class="required">*</span></label>
           <div class="brief-options brief-radio-group" name="website_purpose">
-            <label class="brief-option"><input type="radio" name="website_purpose" value="brochure"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_brochure_info_site">Brochure / Info Site</span></label>
-            <label class="brief-option"><input type="radio" name="website_purpose" value="ecommerce"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_ecommerce_online_store">E-Commerce / Online Store</span></label>
-            <label class="brief-option"><input type="radio" name="website_purpose" value="booking"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_booking_appointment">Booking / Appointment</span></label>
-            <label class="brief-option"><input type="radio" name="website_purpose" value="lead_gen"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_lead_generation">Lead Generation</span></label>
-            <label class="brief-option"><input type="radio" name="website_purpose" value="portfolio"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_portfolio_showcase">Portfolio / Showcase</span></label>
-            <label class="brief-option"><input type="radio" name="website_purpose" value="saas"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_saas_app_landing">SaaS / App Landing</span></label>
+            <label class="brief-option"><input type="radio" name="website_purpose" value="brochure"><span class="brief-option-check"></span><span class="brief-option-text">Brochure / Info Site</span></label>
+            <label class="brief-option"><input type="radio" name="website_purpose" value="ecommerce"><span class="brief-option-check"></span><span class="brief-option-text">E-Commerce / Online Store</span></label>
+            <label class="brief-option"><input type="radio" name="website_purpose" value="booking"><span class="brief-option-check"></span><span class="brief-option-text">Booking / Appointment</span></label>
+            <label class="brief-option"><input type="radio" name="website_purpose" value="lead_gen"><span class="brief-option-check"></span><span class="brief-option-text">Lead Generation</span></label>
+            <label class="brief-option"><input type="radio" name="website_purpose" value="portfolio"><span class="brief-option-check"></span><span class="brief-option-text">Portfolio / Showcase</span></label>
+            <label class="brief-option"><input type="radio" name="website_purpose" value="saas"><span class="brief-option-check"></span><span class="brief-option-text">SaaS / App Landing</span></label>
           </div>
           <div class="brief-error">Please select a website purpose</div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_target_audience">Target Audience</label>
-          <textarea name="target_audience" class="brief-textarea" placeholder="Who is this website for? Describe your ideal visitor." data-i18n-placeholder="brief_ph_who_is_this_website_for_describe_your_ideal_visitor"></textarea>
+          <label class="brief-label">Target Audience</label>
+          <textarea name="target_audience" class="brief-textarea" placeholder="Who is this website for? Describe your ideal visitor."></textarea>
         </div>
       </div>
 
       <!-- STEP 2: Pages & Features -->
       <div class="brief-step" data-label="Pages & Features">
-        <h2 class="brief-step-title" data-i18n="brief_step_pages_and_features">Pages &amp; Features</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_what_pages_and_features_do_you_need">What pages and features do you need?</p>
+        <h2 class="brief-step-title">Pages &amp; Features</h2>
+        <p class="brief-step-desc">What pages and features do you need?</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_required_pages">Required Pages</label>
+          <label class="brief-label">Required Pages</label>
           <div class="brief-checkbox-group">
-            <label class="brief-checkbox"><input type="checkbox" name="pages" value="home"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_home">Home</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="pages" value="about"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_about_us">About Us</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="pages" value="services"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_services">Services</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="pages" value="portfolio"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_portfolio_work">Portfolio / Work</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="pages" value="blog"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_blog">Blog</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="pages" value="contact"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_contact">Contact</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="pages" value="pricing"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_pricing">Pricing</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="pages" value="faq"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_faq">FAQ</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="pages" value="team"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_team">Team</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="pages" value="testimonials"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_testimonials">Testimonials</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="pages" value="careers"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_careers">Careers</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="pages" value="custom"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_custom_page">Custom Page</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="pages" value="home"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Home</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="pages" value="about"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">About Us</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="pages" value="services"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Services</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="pages" value="portfolio"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Portfolio / Work</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="pages" value="blog"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Blog</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="pages" value="contact"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Contact</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="pages" value="pricing"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Pricing</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="pages" value="faq"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">FAQ</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="pages" value="team"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Team</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="pages" value="testimonials"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Testimonials</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="pages" value="careers"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Careers</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="pages" value="custom"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Custom Page</span></label>
           </div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_required_features">Required Features</label>
+          <label class="brief-label">Required Features</label>
           <div class="brief-checkbox-group">
-            <label class="brief-checkbox"><input type="checkbox" name="features" value="contact_form"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_contact_form">Contact Form</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="features" value="newsletter"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_newsletter_signup">Newsletter Signup</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="features" value="live_chat"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_live_chat">Live Chat</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="features" value="social_feed"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_social_media_feed">Social Media Feed</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="features" value="analytics"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_analytics_dashboard">Analytics Dashboard</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="features" value="multilingual"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_multilanguage">Multi-Language</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="features" value="animations"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_custom_animations">Custom Animations</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="features" value="cms"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_cms_content_management">CMS (Content Management)</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="features" value="contact_form"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Contact Form</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="features" value="newsletter"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Newsletter Signup</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="features" value="live_chat"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Live Chat</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="features" value="social_feed"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Social Media Feed</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="features" value="analytics"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Analytics Dashboard</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="features" value="multilingual"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Multi-Language</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="features" value="animations"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Custom Animations</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="features" value="cms"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">CMS (Content Management)</span></label>
           </div>
         </div>
       </div>
 
       <!-- STEP 3: E-Commerce & Integrations -->
       <div class="brief-step" data-label="E-Commerce & Integrations">
-        <h2 class="brief-step-title" data-i18n="brief_step_ecommerce_and_integrations">E-Commerce &amp; Integrations</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_do_you_need_online_selling_or_booking_capabilities">Do you need online selling or booking capabilities?</p>
+        <h2 class="brief-step-title">E-Commerce &amp; Integrations</h2>
+        <p class="brief-step-desc">Do you need online selling or booking capabilities?</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_booking_system">Booking System?</label>
+          <label class="brief-label">Booking System?</label>
           <div class="brief-options brief-radio-group" name="booking">
-            <label class="brief-option"><input type="radio" name="booking" value="yes"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_yes_i_need_a_booking_system">Yes, I need a booking system</span></label>
-            <label class="brief-option"><input type="radio" name="booking" value="maybe"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_maybe_in_the_future">Maybe in the future</span></label>
-            <label class="brief-option"><input type="radio" name="booking" value="no"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_no">No</span></label>
+            <label class="brief-option"><input type="radio" name="booking" value="yes"><span class="brief-option-check"></span><span class="brief-option-text">Yes, I need a booking system</span></label>
+            <label class="brief-option"><input type="radio" name="booking" value="maybe"><span class="brief-option-check"></span><span class="brief-option-text">Maybe in the future</span></label>
+            <label class="brief-option"><input type="radio" name="booking" value="no"><span class="brief-option-check"></span><span class="brief-option-text">No</span></label>
           </div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_payment_gateway">Payment Gateway?</label>
+          <label class="brief-label">Payment Gateway?</label>
           <div class="brief-options brief-radio-group" name="payment">
-            <label class="brief-option"><input type="radio" name="payment" value="stripe"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_stripe">Stripe</span></label>
-            <label class="brief-option"><input type="radio" name="payment" value="paypal"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_paypal">PayPal</span></label>
-            <label class="brief-option"><input type="radio" name="payment" value="both"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_both">Both</span></label>
-            <label class="brief-option"><input type="radio" name="payment" value="local"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_local_payment_gateway">Local Payment Gateway</span></label>
-            <label class="brief-option"><input type="radio" name="payment" value="no"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_not_needed">Not needed</span></label>
+            <label class="brief-option"><input type="radio" name="payment" value="stripe"><span class="brief-option-check"></span><span class="brief-option-text">Stripe</span></label>
+            <label class="brief-option"><input type="radio" name="payment" value="paypal"><span class="brief-option-check"></span><span class="brief-option-text">PayPal</span></label>
+            <label class="brief-option"><input type="radio" name="payment" value="both"><span class="brief-option-check"></span><span class="brief-option-text">Both</span></label>
+            <label class="brief-option"><input type="radio" name="payment" value="local"><span class="brief-option-check"></span><span class="brief-option-text">Local Payment Gateway</span></label>
+            <label class="brief-option"><input type="radio" name="payment" value="no"><span class="brief-option-check"></span><span class="brief-option-text">Not needed</span></label>
           </div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_languages">Languages</label>
+          <label class="brief-label">Languages</label>
           <div class="brief-options brief-radio-group" name="languages">
-            <label class="brief-option"><input type="radio" name="languages" value="en"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_english_only">English Only</span></label>
-            <label class="brief-option"><input type="radio" name="languages" value="ar"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_arabic_english">Arabic + English</span></label>
-            <label class="brief-option"><input type="radio" name="languages" value="multi"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_multilanguage">Multi-Language</span></label>
+            <label class="brief-option"><input type="radio" name="languages" value="en"><span class="brief-option-check"></span><span class="brief-option-text">English Only</span></label>
+            <label class="brief-option"><input type="radio" name="languages" value="ar"><span class="brief-option-check"></span><span class="brief-option-text">Arabic + English</span></label>
+            <label class="brief-option"><input type="radio" name="languages" value="multi"><span class="brief-option-check"></span><span class="brief-option-text">Multi-Language</span></label>
           </div>
         </div>
       </div>
 
       <!-- STEP 4: Design & References -->
       <div class="brief-step" data-label="Design & References">
-        <h2 class="brief-step-title" data-i18n="brief_step_design_and_references">Design &amp; References</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_show_us_what_you_like_so_we_can_match_your_vision">Show us what you like so we can match your vision.</p>
+        <h2 class="brief-step-title">Design &amp; References</h2>
+        <p class="brief-step-desc">Show us what you like so we can match your vision.</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_style_preference">Style Preference</label>
+          <label class="brief-label">Style Preference</label>
           <div class="brief-options brief-radio-group" name="style">
-            <label class="brief-option"><input type="radio" name="style" value="minimal"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_minimal_clean">Minimal & Clean</span></label>
-            <label class="brief-option"><input type="radio" name="style" value="bold"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_bold_dynamic">Bold & Dynamic</span></label>
-            <label class="brief-option"><input type="radio" name="style" value="luxury"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_luxury_premium">Luxury & Premium</span></label>
-            <label class="brief-option"><input type="radio" name="style" value="corporate"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_corporate_professional">Corporate & Professional</span></label>
-            <label class="brief-option"><input type="radio" name="style" value="creative"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_creative_artistic">Creative & Artistic</span></label>
-            <label class="brief-option"><input type="radio" name="style" value="tech"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_tech_modern">Tech & Modern</span></label>
+            <label class="brief-option"><input type="radio" name="style" value="minimal"><span class="brief-option-check"></span><span class="brief-option-text">Minimal & Clean</span></label>
+            <label class="brief-option"><input type="radio" name="style" value="bold"><span class="brief-option-check"></span><span class="brief-option-text">Bold & Dynamic</span></label>
+            <label class="brief-option"><input type="radio" name="style" value="luxury"><span class="brief-option-check"></span><span class="brief-option-text">Luxury & Premium</span></label>
+            <label class="brief-option"><input type="radio" name="style" value="corporate"><span class="brief-option-check"></span><span class="brief-option-text">Corporate & Professional</span></label>
+            <label class="brief-option"><input type="radio" name="style" value="creative"><span class="brief-option-check"></span><span class="brief-option-text">Creative & Artistic</span></label>
+            <label class="brief-option"><input type="radio" name="style" value="tech"><span class="brief-option-check"></span><span class="brief-option-text">Tech & Modern</span></label>
           </div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_reference_websites">Reference Websites</label>
-          <textarea name="references" class="brief-textarea" placeholder="Paste URLs of websites you like and tell us what you like about them" data-i18n-placeholder="brief_ph_paste_urls_of_websites_you_like_and_tell_us_what_you_like_about_them"></textarea>
+          <label class="brief-label">Reference Websites</label>
+          <textarea name="references" class="brief-textarea" placeholder="Paste URLs of websites you like and tell us what you like about them"></textarea>
         </div>
       </div>
 
       <!-- STEP 5: Technical & SEO -->
       <div class="brief-step" data-label="Technical & SEO">
-        <h2 class="brief-step-title" data-i18n="brief_step_technical_and_seo">Technical &amp; SEO</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_tell_us_about_your_technical_requirements_and_seo_goals">Tell us about your technical requirements and SEO goals.</p>
+        <h2 class="brief-step-title">Technical &amp; SEO</h2>
+        <p class="brief-step-desc">Tell us about your technical requirements and SEO goals.</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_seo_requirements">SEO Requirements</label>
+          <label class="brief-label">SEO Requirements</label>
           <div class="brief-checkbox-group">
-            <label class="brief-checkbox"><input type="checkbox" name="seo" value="on_page"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_onpage_seo">On-Page SEO</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="seo" value="technical"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_technical_seo">Technical SEO</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="seo" value="local"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_local_seo">Local SEO</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="seo" value="schema"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_schema_markup">Schema Markup</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="seo" value="speed"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_speed_optimization">Speed Optimization</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="seo" value="none"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_not_needed">Not needed</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="seo" value="on_page"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">On-Page SEO</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="seo" value="technical"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Technical SEO</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="seo" value="local"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Local SEO</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="seo" value="schema"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Schema Markup</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="seo" value="speed"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Speed Optimization</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="seo" value="none"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Not needed</span></label>
           </div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_domain">Domain</label>
-          <input type="text" name="domain" class="brief-input" placeholder="e.g. yourbusiness.com — or 'need help choosing'" data-i18n-placeholder="brief_ph_eg_yourbusinesscom_or_need_help_choosing">
+          <label class="brief-label">Domain</label>
+          <input type="text" name="domain" class="brief-input" placeholder="e.g. yourbusiness.com — or 'need help choosing'">
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_hosting">Hosting</label>
+          <label class="brief-label">Hosting</label>
           <div class="brief-options brief-radio-group" name="hosting">
-            <label class="brief-option"><input type="radio" name="hosting" value="have"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_i_have_hosting">I have hosting</span></label>
-            <label class="brief-option"><input type="radio" name="hosting" value="need"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_need_hosting_setup">Need hosting setup</span></label>
-            <label class="brief-option"><input type="radio" name="hosting" value="unsure"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_not_sure">Not sure</span></label>
+            <label class="brief-option"><input type="radio" name="hosting" value="have"><span class="brief-option-check"></span><span class="brief-option-text">I have hosting</span></label>
+            <label class="brief-option"><input type="radio" name="hosting" value="need"><span class="brief-option-check"></span><span class="brief-option-text">Need hosting setup</span></label>
+            <label class="brief-option"><input type="radio" name="hosting" value="unsure"><span class="brief-option-check"></span><span class="brief-option-text">Not sure</span></label>
           </div>
         </div>
       </div>
 
       <!-- STEP 6: Budget & Timeline -->
       <div class="brief-step" data-label="Budget & Timeline">
-        <h2 class="brief-step-title" data-i18n="brief_step_budget_and_timeline">Budget &amp; Timeline</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_when_do_you_need_this_and_whats_your_budget">When do you need this and what's your budget?</p>
+        <h2 class="brief-step-title">Budget &amp; Timeline</h2>
+        <p class="brief-step-desc">When do you need this and what's your budget?</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_deadline">Deadline</label>
-          <input type="text" name="deadline" class="brief-input" placeholder="e.g. Launch by March 1st, ASAP, No rush" data-i18n-placeholder="brief_ph_eg_launch_by_march_1st_asap_no_rush">
+          <label class="brief-label">Deadline</label>
+          <input type="text" name="deadline" class="brief-input" placeholder="e.g. Launch by March 1st, ASAP, No rush">
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_budget_range">Budget Range</label>
+          <label class="brief-label">Budget Range</label>
           <select name="budget" class="brief-select">
-<option value="" data-i18n="brief_select_select_your_budget_range">Select your budget range</option>
-            <option data-i18n="brief_option_under_1000">Under $1,000</option>
-            <option data-i18n="brief_option_1000_3000">$1,000 - $3,000</option>
-            <option data-i18n="brief_option_3000_5000">$3,000 - $5,000</option>
-            <option data-i18n="brief_option_5000_10000">$5,000 - $10,000</option>
-            <option data-i18n="brief_option_10000_20000">$10,000 - $20,000</option>
-            <option data-i18n="brief_option_20000">$20,000+</option>
-            <option data-i18n="brief_option_not_sure_yet">Not sure yet</option>
+<option value="">Select your budget range</option>
+            <option>Under $1,000</option>
+            <option>$1,000 - $3,000</option>
+            <option>$3,000 - $5,000</option>
+            <option>$5,000 - $10,000</option>
+            <option>$10,000 - $20,000</option>
+            <option>$20,000+</option>
+            <option>Not sure yet</option>
           </select>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_additional_notes">Additional Notes</label>
-          <textarea name="notes" class="brief-textarea" placeholder="Anything else? Special features, integrations, existing content..." data-i18n-placeholder="brief_ph_anything_else_special_features_integrations_existing_content"></textarea>
+          <label class="brief-label">Additional Notes</label>
+          <textarea name="notes" class="brief-textarea" placeholder="Anything else? Special features, integrations, existing content..."></textarea>
         </div>
 
         <div style="text-align:center;margin-top:16px;">
-          <button type="button" id="briefSaveBtn" class="brief-btn brief-btn-save" data-i18n="brief_save">Save Progress</button>
+          <button type="button" id="briefSaveBtn" class="brief-btn brief-btn-save">Save Progress</button>
         </div>
       </div>
 
       <!-- REVIEW -->
       <div class="brief-step" id="briefReviewStep" data-label="Review & Submit">
-        <h2 class="brief-step-title" data-i18n="brief_step_review_your_brief">Review Your Brief</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_please_review_all_your_answers_before_submitting">Please review all your answers before submitting.</p>
+        <h2 class="brief-step-title">Review Your Brief</h2>
+        <p class="brief-step-desc">Please review all your answers before submitting.</p>
         <div id="briefReviewData"></div>
       </div>
 
       <div class="brief-actions">
-        <button type="button" id="briefPrev" class="brief-btn brief-btn-secondary" data-i18n="brief_previous" style="visibility:hidden">
+        <button type="button" id="briefPrev" class="brief-btn brief-btn-secondary" style="visibility:hidden">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Previous
         </button>
-        <button type="button" id="briefNext" class="brief-btn brief-btn-primary" data-i18n="brief_continue">
+        <button type="button" id="briefNext" class="brief-btn brief-btn-primary">
           Continue<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
       </div>
@@ -280,25 +258,21 @@
       <div class="brief-success-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
       </div>
-      <h2 class="brief-success-title" data-i18n="brief_success_title">Brief Submitted!</h2>
-      <p class="brief-success-text" data-i18n="brief_success_text">Thank you for completing the Website Design & Development Brief. Our team will review your submission and get back to you within 24 hours.</p>
+      <h2 class="brief-success-title">Brief Submitted!</h2>
+      <p class="brief-success-text">Thank you for completing the Website Design & Development Brief. Our team will review your submission and get back to you within 24 hours.</p>
       <div class="brief-success-actions">
-        <a href="index.html" class="brief-btn brief-btn-primary" data-i18n="brief_back_home">Back to Home</a>
-        <a href="services.html" class="brief-btn brief-btn-secondary" data-i18n="brief_view_services">View Services</a>
+        <a href="index.html" class="brief-btn brief-btn-primary">Back to Home</a>
+        <a href="services.html" class="brief-btn brief-btn-secondary">View Services</a>
       </div>
     </div>
   </div>
 
-  <div class="brief-save-toast" data-i18n="brief_saved" id="briefSaveToast">
+  <div class="brief-save-toast" id="briefSaveToast">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
     Progress saved
   </div>
 
   <script>window.BRIEF_ID = 'website';</script>
   <script src="brief.js"></script>
-  <!-- Language System -->
-  <script src="lang-en.js"></script>
-  <script src="lang-ar.js"></script>
-  <script src="lang.js"></script>
 </body>
 </html>

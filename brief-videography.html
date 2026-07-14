@@ -1,18 +1,15 @@
-﻿﻿<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Videography Brief — VIVEDFX</title>
+  <title>Videography Brief — vivedfx</title>
   <link rel="preconnect" href="https://api.fontshare.com" />
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles-brief.css">
-  <!-- Arabic Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles-lang.css" />
 </head>
 <body>
   <div class="brief-bg">
@@ -23,33 +20,14 @@
 
   <div class="brief-wrapper">
     <div class="brief-header">
-      <a href="index.html" class="brief-logo">        <img src="assets/logo.png" alt="VIVEDFX" class="brief-logo-img"></a>
+      <a href="index.html" class="brief-logo">        <img src="assets/logo.png" alt="vivedfx" class="brief-logo-img"></a>
       <h1 class="brief-title">Videography <span>Brief</span></h1>
       <p class="brief-subtitle">Tell us about your video project so we can create compelling footage that tells your story.</p>
-      <div class="lang-switcher">
-        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="12" cy="12" r="10"/>
-            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
-          </svg>
-          <span class="lang-switcher-label" id="lang-switcher-label">AR</span>
-        </button>
-        <div class="lang-dropdown" id="lang-dropdown">
-          <button class="lang-option" data-lang="en">
-            <span class="lang-flag">🇺🇸</span>
-            <span>EN</span>
-          </button>
-          <button class="lang-option" data-lang="ar">
-            <span class="lang-flag">🇸🇦</span>
-            <span>AR</span>
-          </button>
-        </div>
-      </div>
     </div>
 
     <div class="brief-progress">
       <div class="brief-progress-top">
-        <span class="brief-progress-label" data-i18n="brief_progress">Progress</span>
+        <span class="brief-progress-label">Progress</span>
         <span class="brief-progress-step" id="briefStepBadge">1 / 4</span>
       </div>
       <div class="brief-progress-bar">
@@ -69,170 +47,170 @@
 
       <!-- STEP 1: Video Details -->
       <div class="brief-step active" data-label="Video Details">
-        <h2 class="brief-step-title" data-i18n="brief_step_video_details">Video Details</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_tell_us_about_the_video_you_need">Tell us about the video you need.</p>
+        <h2 class="brief-step-title">Video Details</h2>
+        <p class="brief-step-desc">Tell us about the video you need.</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_video_type">Video Type <span class="required">*</span></label>
+          <label class="brief-label">Video Type <span class="required">*</span></label>
           <div class="brief-options brief-radio-group" name="video_type">
-            <label class="brief-option"><input type="radio" name="video_type" value="brand"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_brand_company_profile">Brand / Company Profile</span></label>
-            <label class="brief-option"><input type="radio" name="video_type" value="product"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_product_demo">Product Demo</span></label>
-            <label class="brief-option"><input type="radio" name="video_type" value="social"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_social_media_video">Social Media Video</span></label>
-            <label class="brief-option"><input type="radio" name="video_type" value="commercial"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_commercial_ad">Commercial / Ad</span></label>
-            <label class="brief-option"><input type="radio" name="video_type" value="tutorial"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_tutorial_howto">Tutorial / How-To</span></label>
-            <label class="brief-option"><input type="radio" name="video_type" value="event"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_event_coverage">Event Coverage</span></label>
-            <label class="brief-option"><input type="radio" name="video_type" value="testimonial"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_testimonial_interview">Testimonial / Interview</span></label>
-            <label class="brief-option"><input type="radio" name="video_type" value="animation"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_motion_graphics_animation">Motion Graphics / Animation</span></label>
+            <label class="brief-option"><input type="radio" name="video_type" value="brand"><span class="brief-option-check"></span><span class="brief-option-text">Brand / Company Profile</span></label>
+            <label class="brief-option"><input type="radio" name="video_type" value="product"><span class="brief-option-check"></span><span class="brief-option-text">Product Demo</span></label>
+            <label class="brief-option"><input type="radio" name="video_type" value="social"><span class="brief-option-check"></span><span class="brief-option-text">Social Media Video</span></label>
+            <label class="brief-option"><input type="radio" name="video_type" value="commercial"><span class="brief-option-check"></span><span class="brief-option-text">Commercial / Ad</span></label>
+            <label class="brief-option"><input type="radio" name="video_type" value="tutorial"><span class="brief-option-check"></span><span class="brief-option-text">Tutorial / How-To</span></label>
+            <label class="brief-option"><input type="radio" name="video_type" value="event"><span class="brief-option-check"></span><span class="brief-option-text">Event Coverage</span></label>
+            <label class="brief-option"><input type="radio" name="video_type" value="testimonial"><span class="brief-option-check"></span><span class="brief-option-text">Testimonial / Interview</span></label>
+            <label class="brief-option"><input type="radio" name="video_type" value="animation"><span class="brief-option-check"></span><span class="brief-option-text">Motion Graphics / Animation</span></label>
           </div>
           <div class="brief-error">Please select a video type</div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_objective">Objective</label>
-          <textarea name="objective" class="brief-textarea" placeholder="What should this video achieve? (e.g. increase brand awareness, explain our service, drive sales)" data-i18n-placeholder="brief_ph_what_should_this_video_achieve_eg_increase_brand_awareness_explain_our_service_drive_sales"></textarea>
+          <label class="brief-label">Objective</label>
+          <textarea name="objective" class="brief-textarea" placeholder="What should this video achieve? (e.g. increase brand awareness, explain our service, drive sales)"></textarea>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_duration">Duration</label>
+          <label class="brief-label">Duration</label>
           <select name="duration" class="brief-select">
-<option value="" data-i18n="brief_select_select_target_duration">Select target duration</option>
-            <option data-i18n="brief_option_under_15_seconds_reeltiktok">Under 15 seconds (Reel/TikTok)</option>
-            <option data-i18n="brief_option_1530_seconds_adsocial">15-30 seconds (Ad/Social)</option>
-            <option data-i18n="brief_option_3060_seconds_promo">30-60 seconds (Promo)</option>
-            <option data-i18n="brief_option_12_minutes_profiledemo">1-2 minutes (Profile/Demo)</option>
-            <option data-i18n="brief_option_25_minutes_documentary_style">2-5 minutes (Documentary style)</option>
-            <option data-i18n="brief_option_5_minutes_long_form">5+ minutes (Long form)</option>
-            <option data-i18n="brief_option_not_sure_need_recommendation">Not sure — need recommendation</option>
+<option value="">Select target duration</option>
+            <option>Under 15 seconds (Reel/TikTok)</option>
+            <option>15-30 seconds (Ad/Social)</option>
+            <option>30-60 seconds (Promo)</option>
+            <option>1-2 minutes (Profile/Demo)</option>
+            <option>2-5 minutes (Documentary style)</option>
+            <option>5+ minutes (Long form)</option>
+            <option>Not sure — need recommendation</option>
           </select>
         </div>
       </div>
 
       <!-- STEP 2: Production -->
       <div class="brief-step" data-label="Production Requirements">
-        <h2 class="brief-step-title" data-i18n="brief_step_production_requirements">Production Requirements</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_what_do_we_need_to_bring_to_the_shoot">What do we need to bring to the shoot?</p>
+        <h2 class="brief-step-title">Production Requirements</h2>
+        <p class="brief-step-desc">What do we need to bring to the shoot?</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_shooting_location">Shooting Location</label>
-          <input type="text" name="location" class="brief-input" placeholder="e.g. Our office, Outdoor location, Studio, Multiple locations" data-i18n-placeholder="brief_ph_eg_our_office_outdoor_location_studio_multiple_locations">
+          <label class="brief-label">Shooting Location</label>
+          <input type="text" name="location" class="brief-input" placeholder="e.g. Our office, Outdoor location, Studio, Multiple locations">
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_script_available">Script Available?</label>
+          <label class="brief-label">Script Available?</label>
           <div class="brief-options brief-radio-group" name="script">
-            <label class="brief-option"><input type="radio" name="script" value="yes"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_yes_i_have_a_script">Yes, I have a script</span></label>
-            <label class="brief-option"><input type="radio" name="script" value="partial"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_i_have_a_rough_idea">I have a rough idea</span></label>
-            <label class="brief-option"><input type="radio" name="script" value="no"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_no_need_script_writing">No, need script writing</span></label>
+            <label class="brief-option"><input type="radio" name="script" value="yes"><span class="brief-option-check"></span><span class="brief-option-text">Yes, I have a script</span></label>
+            <label class="brief-option"><input type="radio" name="script" value="partial"><span class="brief-option-check"></span><span class="brief-option-text">I have a rough idea</span></label>
+            <label class="brief-option"><input type="radio" name="script" value="no"><span class="brief-option-check"></span><span class="brief-option-text">No, need script writing</span></label>
           </div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_actors_needed">Actors Needed?</label>
+          <label class="brief-label">Actors Needed?</label>
           <div class="brief-options brief-radio-group" name="actors">
-            <label class="brief-option"><input type="radio" name="actors" value="yes"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_yes_provide_actors">Yes, provide actors</span></label>
-            <label class="brief-option"><input type="radio" name="actors" value="team"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_well_use_our_own_team">We'll use our own team</span></label>
-            <label class="brief-option"><input type="radio" name="actors" value="no"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_no_actors_needed">No actors needed</span></label>
+            <label class="brief-option"><input type="radio" name="actors" value="yes"><span class="brief-option-check"></span><span class="brief-option-text">Yes, provide actors</span></label>
+            <label class="brief-option"><input type="radio" name="actors" value="team"><span class="brief-option-check"></span><span class="brief-option-text">We'll use our own team</span></label>
+            <label class="brief-option"><input type="radio" name="actors" value="no"><span class="brief-option-check"></span><span class="brief-option-text">No actors needed</span></label>
           </div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_drone_needed">Drone Needed?</label>
+          <label class="brief-label">Drone Needed?</label>
           <div class="brief-options brief-radio-group" name="drone">
-            <label class="brief-option"><input type="radio" name="drone" value="yes"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_yes_aerial_footage_needed">Yes, aerial footage needed</span></label>
-            <label class="brief-option"><input type="radio" name="drone" value="no"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_no_drone_needed">No drone needed</span></label>
+            <label class="brief-option"><input type="radio" name="drone" value="yes"><span class="brief-option-check"></span><span class="brief-option-text">Yes, aerial footage needed</span></label>
+            <label class="brief-option"><input type="radio" name="drone" value="no"><span class="brief-option-check"></span><span class="brief-option-text">No drone needed</span></label>
           </div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_voice_over_needed">Voice Over Needed?</label>
+          <label class="brief-label">Voice Over Needed?</label>
           <div class="brief-options brief-radio-group" name="voiceover">
-            <label class="brief-option"><input type="radio" name="voiceover" value="yes_male"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_yes_male_vo">Yes, Male VO</span></label>
-            <label class="brief-option"><input type="radio" name="voiceover" value="yes_female"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_yes_female_vo">Yes, Female VO</span></label>
-            <label class="brief-option"><input type="radio" name="voiceover" value="no"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_no_voice_over">No voice over</span></label>
+            <label class="brief-option"><input type="radio" name="voiceover" value="yes_male"><span class="brief-option-check"></span><span class="brief-option-text">Yes, Male VO</span></label>
+            <label class="brief-option"><input type="radio" name="voiceover" value="yes_female"><span class="brief-option-check"></span><span class="brief-option-text">Yes, Female VO</span></label>
+            <label class="brief-option"><input type="radio" name="voiceover" value="no"><span class="brief-option-check"></span><span class="brief-option-text">No voice over</span></label>
           </div>
         </div>
       </div>
 
       <!-- STEP 3: Editing & References -->
       <div class="brief-step" data-label="Editing & References">
-        <h2 class="brief-step-title" data-i18n="brief_step_editing_and_references">Editing &amp; References</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_how_should_the_final_video_look">How should the final video look?</p>
+        <h2 class="brief-step-title">Editing &amp; References</h2>
+        <p class="brief-step-desc">How should the final video look?</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_editing_style">Editing Style</label>
+          <label class="brief-label">Editing Style</label>
           <div class="brief-options brief-radio-group" name="editing_style">
-            <label class="brief-option"><input type="radio" name="editing_style" value="cinematic"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_cinematic_dramatic">Cinematic & Dramatic</span></label>
-            <label class="brief-option"><input type="radio" name="editing_style" value="clean"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_clean_modern">Clean & Modern</span></label>
-            <label class="brief-option"><input type="radio" name="editing_style" value="fast"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_fastpaced_energetic">Fast-Paced & Energetic</span></label>
-            <label class="brief-option"><input type="radio" name="editing_style" value="minimal"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_minimal_elegant">Minimal & Elegant</span></label>
-            <label class="brief-option"><input type="radio" name="editing_style" value="documentary"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_documentary_style">Documentary Style</span></label>
+            <label class="brief-option"><input type="radio" name="editing_style" value="cinematic"><span class="brief-option-check"></span><span class="brief-option-text">Cinematic & Dramatic</span></label>
+            <label class="brief-option"><input type="radio" name="editing_style" value="clean"><span class="brief-option-check"></span><span class="brief-option-text">Clean & Modern</span></label>
+            <label class="brief-option"><input type="radio" name="editing_style" value="fast"><span class="brief-option-check"></span><span class="brief-option-text">Fast-Paced & Energetic</span></label>
+            <label class="brief-option"><input type="radio" name="editing_style" value="minimal"><span class="brief-option-check"></span><span class="brief-option-text">Minimal & Elegant</span></label>
+            <label class="brief-option"><input type="radio" name="editing_style" value="documentary"><span class="brief-option-check"></span><span class="brief-option-text">Documentary Style</span></label>
           </div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_references">References</label>
-          <textarea name="references" class="brief-textarea" placeholder="Paste URLs of videos you like or describe the look and feel you want" data-i18n-placeholder="brief_ph_paste_urls_of_videos_you_like_or_describe_the_look_and_feel_you_want"></textarea>
+          <label class="brief-label">References</label>
+          <textarea name="references" class="brief-textarea" placeholder="Paste URLs of videos you like or describe the look and feel you want"></textarea>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_deadline">Deadline</label>
-          <input type="text" name="deadline" class="brief-input" placeholder="e.g. Need final video by March 20" data-i18n-placeholder="brief_ph_eg_need_final_video_by_march_20">
+          <label class="brief-label">Deadline</label>
+          <input type="text" name="deadline" class="brief-input" placeholder="e.g. Need final video by March 20">
         </div>
       </div>
 
       <!-- STEP 4: Budget & Extras -->
       <div class="brief-step" data-label="Budget & Extras">
-        <h2 class="brief-step-title" data-i18n="brief_step_budget_and_extras">Budget &amp; Extras</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_final_details_to_wrap_up_your_brief">Final details to wrap up your brief.</p>
+        <h2 class="brief-step-title">Budget &amp; Extras</h2>
+        <p class="brief-step-desc">Final details to wrap up your brief.</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_budget_range">Budget Range</label>
+          <label class="brief-label">Budget Range</label>
           <select name="budget" class="brief-select">
-<option value="" data-i18n="brief_select_select_your_budget_range">Select your budget range</option>
-            <option data-i18n="brief_option_under_1000">Under $1,000</option>
-            <option data-i18n="brief_option_1000_3000">$1,000 - $3,000</option>
-            <option data-i18n="brief_option_3000_5000">$3,000 - $5,000</option>
-            <option data-i18n="brief_option_5000_10000">$5,000 - $10,000</option>
-            <option data-i18n="brief_option_10000">$10,000+</option>
-            <option data-i18n="brief_option_not_sure_yet">Not sure yet</option>
+<option value="">Select your budget range</option>
+            <option>Under $1,000</option>
+            <option>$1,000 - $3,000</option>
+            <option>$3,000 - $5,000</option>
+            <option>$5,000 - $10,000</option>
+            <option>$10,000+</option>
+            <option>Not sure yet</option>
           </select>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_additional_notes">Additional Notes</label>
-          <textarea name="notes" class="brief-textarea" placeholder="Anything else? Music preferences, subtitles, format requirements, distribution platforms..." data-i18n-placeholder="brief_ph_anything_else_music_preferences_subtitles_format_requirements_distribution_platforms"></textarea>
+          <label class="brief-label">Additional Notes</label>
+          <textarea name="notes" class="brief-textarea" placeholder="Anything else? Music preferences, subtitles, format requirements, distribution platforms..."></textarea>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_upload_reference_files">Upload Reference Files</label>
+          <label class="brief-label">Upload Reference Files</label>
           <div class="brief-upload" data-key="reference_files">
             <input type="file" multiple accept=".pdf,.docx,.jpg,.jpeg,.png,.ai,.psd,.zip">
             <div class="brief-upload-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
             </div>
-            <div class="brief-upload-text" data-i18n="brief_upload_drop_files_here_or_click_to_upload">Drop files here or click to upload</div>
-            <div class="brief-upload-hint" data-i18n="brief_hint_pdf_docx_jpg_png_ai_psd_zip_max_10_files">PDF, DOCX, JPG, PNG, AI, PSD, ZIP — Max 10 files</div>
+            <div class="brief-upload-text">Drop files here or click to upload</div>
+            <div class="brief-upload-hint">PDF, DOCX, JPG, PNG, AI, PSD, ZIP — Max 10 files</div>
             <div class="brief-upload-files"></div>
           </div>
         </div>
 
         <div style="text-align:center;margin-top:16px;">
-          <button type="button" id="briefSaveBtn" class="brief-btn brief-btn-save" data-i18n="brief_save">Save Progress</button>
+          <button type="button" id="briefSaveBtn" class="brief-btn brief-btn-save">Save Progress</button>
         </div>
       </div>
 
       <!-- REVIEW -->
       <div class="brief-step" id="briefReviewStep" data-label="Review & Submit">
-        <h2 class="brief-step-title" data-i18n="brief_step_review_your_brief">Review Your Brief</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_please_review_all_your_answers_before_submitting">Please review all your answers before submitting.</p>
+        <h2 class="brief-step-title">Review Your Brief</h2>
+        <p class="brief-step-desc">Please review all your answers before submitting.</p>
         <div id="briefReviewData"></div>
       </div>
 
       <div class="brief-actions">
-        <button type="button" id="briefPrev" class="brief-btn brief-btn-secondary" data-i18n="brief_previous" style="visibility:hidden">
+        <button type="button" id="briefPrev" class="brief-btn brief-btn-secondary" style="visibility:hidden">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Previous
         </button>
-        <button type="button" id="briefNext" class="brief-btn brief-btn-primary" data-i18n="brief_continue">
+        <button type="button" id="briefNext" class="brief-btn brief-btn-primary">
           Continue<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
       </div>
@@ -242,25 +220,21 @@
       <div class="brief-success-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
       </div>
-      <h2 class="brief-success-title" data-i18n="brief_success_title">Brief Submitted!</h2>
-      <p class="brief-success-text" data-i18n="brief_success_text">Thank you for completing the Videography Brief. Our team will review your submission and get back to you within 24 hours.</p>
+      <h2 class="brief-success-title">Brief Submitted!</h2>
+      <p class="brief-success-text">Thank you for completing the Videography Brief. Our team will review your submission and get back to you within 24 hours.</p>
       <div class="brief-success-actions">
-        <a href="index.html" class="brief-btn brief-btn-primary" data-i18n="brief_back_home">Back to Home</a>
-        <a href="services.html" class="brief-btn brief-btn-secondary" data-i18n="brief_view_services">View Services</a>
+        <a href="index.html" class="brief-btn brief-btn-primary">Back to Home</a>
+        <a href="services.html" class="brief-btn brief-btn-secondary">View Services</a>
       </div>
     </div>
   </div>
 
-  <div class="brief-save-toast" data-i18n="brief_saved" id="briefSaveToast">
+  <div class="brief-save-toast" id="briefSaveToast">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
     Progress saved
   </div>
 
   <script>window.BRIEF_ID = 'videography';</script>
   <script src="brief.js"></script>
-  <!-- Language System -->
-  <script src="lang-en.js"></script>
-  <script src="lang-ar.js"></script>
-  <script src="lang.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
-/* ═══════════════════════════════════════════
-   VIVEDFX CLIENT BRIEF — PREMIUM DESIGN SYSTEM
-   ═══════════════════════════════════════════ */
+﻿/* â•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گ
+   vivedfx CLIENT BRIEF â€” PREMIUM DESIGN SYSTEM
+   â•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گ */
 
 :root {
   --accent: #ec1f27;
@@ -38,7 +38,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ── BACKGROUND ORBS ── */
+/* â”€â”€ BACKGROUND ORBS â”€â”€ */
 .brief-bg {
   position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
 }
@@ -49,14 +49,14 @@ body {
 .brief-bg-orb-2 { width: 500px; height: 500px; background: var(--accent); bottom: -150px; right: -150px; }
 .brief-bg-orb-3 { width: 300px; height: 300px; background: var(--accent); top: 50%; left: 50%; transform: translate(-50%,-50%); opacity: .08; }
 
-/* ── LAYOUT ── */
+/* â”€â”€ LAYOUT â”€â”€ */
 .brief-wrapper {
   position: relative; z-index: 1;
   max-width: 800px; margin: 0 auto; padding: 40px 24px 80px;
   min-height: 100vh; display: flex; flex-direction: column;
 }
 
-/* ── HEADER ── */
+/* â”€â”€ HEADER â”€â”€ */
 .brief-header {
   text-align: center; margin-bottom: 48px;
   animation: briefFadeUp .6s ease-out;
@@ -77,7 +77,7 @@ body {
   font-size: 1rem; color: var(--muted); max-width: 500px; margin: 0 auto;
 }
 
-/* ── PROGRESS BAR ── */
+/* â”€â”€ PROGRESS BAR â”€â”€ */
 .brief-progress {
   margin-bottom: 40px;
   animation: briefFadeUp .6s ease-out .1s both;
@@ -123,7 +123,7 @@ body {
   background: var(--accent); border-color: var(--accent);
 }
 
-/* ── STEP COUNTER ── */
+/* â”€â”€ STEP COUNTER â”€â”€ */
 .brief-step-counter {
   text-align: center; margin-bottom: 32px;
   animation: briefFadeUp .6s ease-out .15s both;
@@ -140,7 +140,7 @@ body {
   animation: briefPulse 2s ease-in-out infinite;
 }
 
-/* ── FORM CARD ── */
+/* â”€â”€ FORM CARD â”€â”€ */
 .brief-card {
   background: var(--glass);
   backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
@@ -156,7 +156,7 @@ body {
   pointer-events: none;
 }
 
-/* ── STEP SECTIONS ── */
+/* â”€â”€ STEP SECTIONS â”€â”€ */
 .brief-step { display: none; }
 .brief-step.active { display: block; animation: briefSlideIn .5s ease-out; }
 
@@ -169,7 +169,7 @@ body {
   line-height: 1.6;
 }
 
-/* ── FORM ELEMENTS ── */
+/* â”€â”€ FORM ELEMENTS â”€â”€ */
 .brief-group {
   margin-bottom: 24px;
   animation: briefFadeUp .4s ease-out both;
@@ -228,7 +228,7 @@ body {
 }
 .brief-error.visible { display: flex; }
 
-/* ── CHECKBOX / RADIO GROUPS ── */
+/* â”€â”€ CHECKBOX / RADIO GROUPS â”€â”€ */
 .brief-options {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 10px;
@@ -290,7 +290,7 @@ body {
 }
 .brief-checkbox-text { font-size: .88rem; color: var(--white); }
 
-/* ── FILE UPLOAD ── */
+/* â”€â”€ FILE UPLOAD â”€â”€ */
 .brief-upload {
   border: 2px dashed var(--border); border-radius: var(--radius-lg);
   padding: 32px; text-align: center; cursor: pointer;
@@ -321,7 +321,7 @@ body {
 }
 .brief-upload-file-remove:hover { background: var(--accent); color: var(--white); }
 
-/* ── BUTTONS ── */
+/* â”€â”€ BUTTONS â”€â”€ */
 .brief-actions {
   display: flex; gap: 12px; margin-top: 32px; justify-content: space-between;
 }
@@ -363,7 +363,7 @@ body {
 }
 .brief-btn-save:hover { color: var(--accent); border-color: var(--accent); }
 
-/* ── REVIEW STEP ── */
+/* â”€â”€ REVIEW STEP â”€â”€ */
 .brief-review-section {
   background: var(--dark-3); border: 1px solid var(--border);
   border-radius: var(--radius-lg); padding: 24px; margin-bottom: 16px;
@@ -380,7 +380,7 @@ body {
 .brief-review-key { font-size: .85rem; color: var(--muted); }
 .brief-review-value { font-size: .85rem; color: var(--white); font-weight: 500; text-align: right; max-width: 60%; }
 
-/* ── SUCCESS PAGE ── */
+/* â”€â”€ SUCCESS PAGE â”€â”€ */
 .brief-success {
   display: none; text-align: center; padding: 60px 20px;
   animation: briefFadeUp .6s ease-out;
@@ -403,7 +403,7 @@ body {
 }
 .brief-success-actions { display: flex; gap: 12px; justify-content: center; }
 
-/* ── SAVE NOTIFICATION ── */
+/* â”€â”€ SAVE NOTIFICATION â”€â”€ */
 .brief-save-toast {
   position: fixed; bottom: 24px; right: 24px; z-index: 1000;
   background: var(--dark-3); border: 1px solid var(--accent);
@@ -417,7 +417,7 @@ body {
 .brief-save-toast.visible { transform: translateY(0); opacity: 1; }
 .brief-save-toast svg { width: 18px; height: 18px; color: var(--accent); }
 
-/* ── ANIMATIONS ── */
+/* â”€â”€ ANIMATIONS â”€â”€ */
 @keyframes briefFadeUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -441,7 +441,7 @@ body {
   75% { transform: translateX(5px); }
 }
 
-/* ── RESPONSIVE ── */
+/* â”€â”€ RESPONSIVE â”€â”€ */
 @media (max-width: 768px) {
   .brief-wrapper { padding: 24px 16px 60px; }
   .brief-card { padding: 32px 24px; }

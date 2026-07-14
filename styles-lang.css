@@ -1,13 +1,13 @@
-/* ═══════════════════════════════════════════
-   VIVEDFX — LANGUAGE SWITCHER + RTL
-   ═══════════════════════════════════════════ */
+﻿/* â•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گ
+   vivedfx â€” LANGUAGE SWITCHER + RTL
+   â•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گ */
 
-/* ── SMOOTH LANGUAGE TRANSITION ── */
+/* â”€â”€ SMOOTH LANGUAGE TRANSITION â”€â”€ */
 .lang-transition * {
   transition: opacity 0.3s ease, transform 0.3s ease !important;
 }
 
-/* ── LANGUAGE SWITCHER ── */
+/* â”€â”€ LANGUAGE SWITCHER â”€â”€ */
 .lang-switcher {
   position: relative;
   margin-left: 16px;
@@ -92,7 +92,7 @@
   line-height: 1;
 }
 
-/* ── MOBILE MENU SWITCHER ── */
+/* â”€â”€ MOBILE MENU SWITCHER â”€â”€ */
 .lang-switcher-mobile {
   margin: 0;
   margin-top: 16px;
@@ -103,7 +103,7 @@
   left: 0;
 }
 
-/* ── BRIEF PAGE SWITCHER ── */
+/* â”€â”€ BRIEF PAGE SWITCHER â”€â”€ */
 .brief-header .lang-switcher {
   position: absolute;
   top: 20px;
@@ -115,7 +115,7 @@
   left: 20px;
 }
 
-/* ── RTL SUPPORT ── */
+/* â”€â”€ RTL SUPPORT â”€â”€ */
 [dir="rtl"] {
   font-family: 'Cairo', 'Inter', system-ui, sans-serif;
 }
@@ -182,7 +182,7 @@
   direction: rtl;
 }
 
-/* ── MOBILE MENU RTL ── */
+/* â”€â”€ MOBILE MENU RTL â”€â”€ */
 @media (max-width: 768px) {
   .lang-switcher-mobile {
     display: block;
@@ -192,7 +192,7 @@
   }
 }
 
-/* ── ARABIC HEADING OPTIMIZATION ── */
+/* â”€â”€ ARABIC HEADING OPTIMIZATION â”€â”€ */
 [dir="rtl"] .hero-headline {
   line-height: 1.2;
   letter-spacing: 0;
@@ -213,7 +213,7 @@
   letter-spacing: 0;
 }
 
-/* ── ARABIC BODY TEXT OPTIMIZATION ── */
+/* â”€â”€ ARABIC BODY TEXT OPTIMIZATION â”€â”€ */
 [dir="rtl"] p,
 [dir="rtl"] .hero-subheadline,
 [dir="rtl"] .hero-desc,
@@ -224,7 +224,7 @@
   letter-spacing: 0;
 }
 
-/* ── BRIEF PAGES RTL ── */
+/* â”€â”€ BRIEF PAGES RTL â”€â”€ */
 [dir="rtl"] .brief-wrapper {
   direction: rtl;
 }
@@ -266,7 +266,7 @@
   text-align: left;
 }
 
-/* ── BRIEF MOBILE RTL ── */
+/* â”€â”€ BRIEF MOBILE RTL â”€â”€ */
 @media (max-width: 768px) {
   [dir="rtl"] .brief-actions {
     flex-direction: column;

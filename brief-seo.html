@@ -1,18 +1,15 @@
-﻿﻿<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEO Brief — VIVEDFX</title>
+  <title>SEO Brief — vivedfx</title>
   <link rel="preconnect" href="https://api.fontshare.com" />
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles-brief.css">
-  <!-- Arabic Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles-lang.css" />
 </head>
 <body>
   <div class="brief-bg">
@@ -23,33 +20,14 @@
 
   <div class="brief-wrapper">
     <div class="brief-header">
-      <a href="index.html" class="brief-logo">        <img src="assets/logo.png" alt="VIVEDFX" class="brief-logo-img"></a>
+      <a href="index.html" class="brief-logo">        <img src="assets/logo.png" alt="vivedfx" class="brief-logo-img"></a>
       <h1 class="brief-title">SEO <span>Brief</span></h1>
       <p class="brief-subtitle">Help us understand your current SEO position and goals so we can boost your rankings.</p>
-      <div class="lang-switcher">
-        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="12" cy="12" r="10"/>
-            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
-          </svg>
-          <span class="lang-switcher-label" id="lang-switcher-label">AR</span>
-        </button>
-        <div class="lang-dropdown" id="lang-dropdown">
-          <button class="lang-option" data-lang="en">
-            <span class="lang-flag">🇺🇸</span>
-            <span>EN</span>
-          </button>
-          <button class="lang-option" data-lang="ar">
-            <span class="lang-flag">🇸🇦</span>
-            <span>AR</span>
-          </button>
-        </div>
-      </div>
     </div>
 
     <div class="brief-progress">
       <div class="brief-progress-top">
-        <span class="brief-progress-label" data-i18n="brief_progress">Progress</span>
+        <span class="brief-progress-label">Progress</span>
         <span class="brief-progress-step" id="briefStepBadge">1 / 4</span>
       </div>
       <div class="brief-progress-bar">
@@ -69,127 +47,127 @@
 
       <!-- STEP 1: Website & Business -->
       <div class="brief-step active" data-label="Website & Business">
-        <h2 class="brief-step-title" data-i18n="brief_step_website_and_business">Website &amp; Business</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_tell_us_about_your_website_and_business_so_we_can_assess_your_seo_needs">Tell us about your website and business so we can assess your SEO needs.</p>
+        <h2 class="brief-step-title">Website &amp; Business</h2>
+        <p class="brief-step-desc">Tell us about your website and business so we can assess your SEO needs.</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_website_url">Website URL <span class="required">*</span></label>
-          <input type="url" name="website_url" class="brief-input" placeholder="https://yourwebsite.com" data-i18n-placeholder="brief_ph_httpsyourwebsitecom" required>
+          <label class="brief-label">Website URL <span class="required">*</span></label>
+          <input type="url" name="website_url" class="brief-input" placeholder="https://yourwebsite.com" required>
           <div class="brief-error">Please enter your website URL</div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_business_category">Business Category <span class="required">*</span></label>
+          <label class="brief-label">Business Category <span class="required">*</span></label>
           <select name="business_category" class="brief-select" required>
-<option value="" data-i18n="brief_select_select_your_category">Select your category</option>
-            <option data-i18n="brief_option_healthcare_medical">Healthcare & Medical</option>
-            <option data-i18n="brief_option_fitness_wellness">Fitness & Wellness</option>
-            <option data-i18n="brief_option_corporate_b2b">Corporate & B2B</option>
-            <option data-i18n="brief_option_ecommerce_retail">E-Commerce & Retail</option>
-            <option data-i18n="brief_option_real_estate">Real Estate</option>
-            <option data-i18n="brief_option_food_beverage">Food & Beverage</option>
-            <option data-i18n="brief_option_education">Education</option>
-            <option data-i18n="brief_option_technology_saas">Technology & SaaS</option>
-            <option data-i18n="brief_option_automotive">Automotive</option>
-            <option data-i18n="brief_option_fashion_beauty">Fashion & Beauty</option>
-            <option data-i18n="brief_option_hospitality_travel">Hospitality & Travel</option>
-            <option data-i18n="brief_option_legal_financial">Legal & Financial</option>
-            <option data-i18n="brief_option_other">Other</option>
+<option value="">Select your category</option>
+            <option>Healthcare & Medical</option>
+            <option>Fitness & Wellness</option>
+            <option>Corporate & B2B</option>
+            <option>E-Commerce & Retail</option>
+            <option>Real Estate</option>
+            <option>Food & Beverage</option>
+            <option>Education</option>
+            <option>Technology & SaaS</option>
+            <option>Automotive</option>
+            <option>Fashion & Beauty</option>
+            <option>Hospitality & Travel</option>
+            <option>Legal & Financial</option>
+            <option>Other</option>
           </select>
           <div class="brief-error">Please select your business category</div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_target_keywords">Target Keywords</label>
-          <textarea name="keywords" class="brief-textarea" placeholder="List keywords you want to rank for (e.g. 'digital marketing agency Dubai', 'best fitness trainer near me')" data-i18n-placeholder="brief_ph_list_keywords_you_want_to_rank_for_eg_digital_marketing_agency_dubai_best_fitness_trainer_near_me"></textarea>
+          <label class="brief-label">Target Keywords</label>
+          <textarea name="keywords" class="brief-textarea" placeholder="List keywords you want to rank for (e.g. 'digital marketing agency Dubai', 'best fitness trainer near me')"></textarea>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_target_locations">Target Locations</label>
-          <input type="text" name="target_locations" class="brief-input" placeholder="e.g. Dubai, UAE, Worldwide" data-i18n-placeholder="brief_ph_eg_dubai_uae_worldwide">
+          <label class="brief-label">Target Locations</label>
+          <input type="text" name="target_locations" class="brief-input" placeholder="e.g. Dubai, UAE, Worldwide">
         </div>
       </div>
 
       <!-- STEP 2: Current SEO -->
       <div class="brief-step" data-label="Current SEO Status">
-        <h2 class="brief-step-title" data-i18n="brief_step_current_seo_status">Current SEO Status</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_what_seo_work_have_you_already_done">What SEO work have you already done?</p>
+        <h2 class="brief-step-title">Current SEO Status</h2>
+        <p class="brief-step-desc">What SEO work have you already done?</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_existing_seo_work">Existing SEO Work</label>
-          <textarea name="existing_seo" class="brief-textarea" placeholder="Describe any SEO work done before — on-page, off-page, link building, content creation..." data-i18n-placeholder="brief_ph_describe_any_seo_work_done_before_onpage_offpage_link_building_content_creation"></textarea>
+          <label class="brief-label">Existing SEO Work</label>
+          <textarea name="existing_seo" class="brief-textarea" placeholder="Describe any SEO work done before — on-page, off-page, link building, content creation..."></textarea>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_google_search_console">Google Search Console</label>
+          <label class="brief-label">Google Search Console</label>
           <div class="brief-options brief-radio-group" name="search_console">
-            <label class="brief-option"><input type="radio" name="search_console" value="yes"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_yes_connected">Yes, connected</span></label>
-            <label class="brief-option"><input type="radio" name="search_console" value="no"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_no">No</span></label>
-            <label class="brief-option"><input type="radio" name="search_console" value="unsure"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_not_sure">Not sure</span></label>
+            <label class="brief-option"><input type="radio" name="search_console" value="yes"><span class="brief-option-check"></span><span class="brief-option-text">Yes, connected</span></label>
+            <label class="brief-option"><input type="radio" name="search_console" value="no"><span class="brief-option-check"></span><span class="brief-option-text">No</span></label>
+            <label class="brief-option"><input type="radio" name="search_console" value="unsure"><span class="brief-option-check"></span><span class="brief-option-text">Not sure</span></label>
           </div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_google_analytics">Google Analytics</label>
+          <label class="brief-label">Google Analytics</label>
           <div class="brief-options brief-radio-group" name="analytics">
-            <label class="brief-option"><input type="radio" name="analytics" value="ga4"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_ga4_installed">GA4 installed</span></label>
-            <label class="brief-option"><input type="radio" name="analytics" value="old"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_old_analytics_ua">Old Analytics (UA)</span></label>
-            <label class="brief-option"><input type="radio" name="analytics" value="no"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_no_analytics">No analytics</span></label>
-            <label class="brief-option"><input type="radio" name="analytics" value="unsure"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_not_sure">Not sure</span></label>
+            <label class="brief-option"><input type="radio" name="analytics" value="ga4"><span class="brief-option-check"></span><span class="brief-option-text">GA4 installed</span></label>
+            <label class="brief-option"><input type="radio" name="analytics" value="old"><span class="brief-option-check"></span><span class="brief-option-text">Old Analytics (UA)</span></label>
+            <label class="brief-option"><input type="radio" name="analytics" value="no"><span class="brief-option-check"></span><span class="brief-option-text">No analytics</span></label>
+            <label class="brief-option"><input type="radio" name="analytics" value="unsure"><span class="brief-option-check"></span><span class="brief-option-text">Not sure</span></label>
           </div>
         </div>
       </div>
 
       <!-- STEP 3: Goals -->
       <div class="brief-step" data-label="Goals & Priorities">
-        <h2 class="brief-step-title" data-i18n="brief_step_goals_and_priorities">Goals &amp; Priorities</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_what_do_you_want_to_achieve_with_seo">What do you want to achieve with SEO?</p>
+        <h2 class="brief-step-title">Goals &amp; Priorities</h2>
+        <p class="brief-step-desc">What do you want to achieve with SEO?</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_monthly_goals">Monthly Goals</label>
-          <textarea name="monthly_goals" class="brief-textarea" placeholder="What are your monthly traffic/ranking goals? (e.g. rank on page 1 for 5 keywords, 10K monthly visitors)" data-i18n-placeholder="brief_ph_what_are_your_monthly_trafficranking_goals_eg_rank_on_page_1_for_5_keywords_10k_monthly_visitors"></textarea>
+          <label class="brief-label">Monthly Goals</label>
+          <textarea name="monthly_goals" class="brief-textarea" placeholder="What are your monthly traffic/ranking goals? (e.g. rank on page 1 for 5 keywords, 10K monthly visitors)"></textarea>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_priority_pages">Priority Pages</label>
-          <textarea name="priority_pages" class="brief-textarea" placeholder="Which pages are most important to rank? (e.g. homepage, service pages, blog posts)" data-i18n-placeholder="brief_ph_which_pages_are_most_important_to_rank_eg_homepage_service_pages_blog_posts"></textarea>
+          <label class="brief-label">Priority Pages</label>
+          <textarea name="priority_pages" class="brief-textarea" placeholder="Which pages are most important to rank? (e.g. homepage, service pages, blog posts)"></textarea>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_competitors">Competitors</label>
-          <textarea name="competitors" class="brief-textarea" placeholder="List 3-5 competitors who rank well for your target keywords" data-i18n-placeholder="brief_ph_list_35_competitors_who_rank_well_for_your_target_keywords"></textarea>
+          <label class="brief-label">Competitors</label>
+          <textarea name="competitors" class="brief-textarea" placeholder="List 3-5 competitors who rank well for your target keywords"></textarea>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_budget_range">Budget Range</label>
+          <label class="brief-label">Budget Range</label>
           <select name="budget" class="brief-select">
-<option value="" data-i18n="brief_select_select_your_budget_range">Select your budget range</option>
-            <option data-i18n="brief_option_under_500month">Under $500/month</option>
-            <option data-i18n="brief_option_500_1000month">$500 - $1,000/month</option>
-            <option data-i18n="brief_option_1000_3000month">$1,000 - $3,000/month</option>
-            <option data-i18n="brief_option_3000_5000month">$3,000 - $5,000/month</option>
-            <option data-i18n="brief_option_5000month">$5,000+/month</option>
-            <option data-i18n="brief_option_not_sure_yet">Not sure yet</option>
+<option value="">Select your budget range</option>
+            <option>Under $500/month</option>
+            <option>$500 - $1,000/month</option>
+            <option>$1,000 - $3,000/month</option>
+            <option>$3,000 - $5,000/month</option>
+            <option>$5,000+/month</option>
+            <option>Not sure yet</option>
           </select>
         </div>
 
         <div style="text-align:center;margin-top:16px;">
-          <button type="button" id="briefSaveBtn" class="brief-btn brief-btn-save" data-i18n="brief_save">Save Progress</button>
+          <button type="button" id="briefSaveBtn" class="brief-btn brief-btn-save">Save Progress</button>
         </div>
       </div>
 
       <!-- REVIEW -->
       <div class="brief-step" id="briefReviewStep" data-label="Review & Submit">
-        <h2 class="brief-step-title" data-i18n="brief_step_review_your_brief">Review Your Brief</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_please_review_all_your_answers_before_submitting">Please review all your answers before submitting.</p>
+        <h2 class="brief-step-title">Review Your Brief</h2>
+        <p class="brief-step-desc">Please review all your answers before submitting.</p>
         <div id="briefReviewData"></div>
       </div>
 
       <div class="brief-actions">
-        <button type="button" id="briefPrev" class="brief-btn brief-btn-secondary" data-i18n="brief_previous" style="visibility:hidden">
+        <button type="button" id="briefPrev" class="brief-btn brief-btn-secondary" style="visibility:hidden">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Previous
         </button>
-        <button type="button" id="briefNext" class="brief-btn brief-btn-primary" data-i18n="brief_continue">
+        <button type="button" id="briefNext" class="brief-btn brief-btn-primary">
           Continue<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
       </div>
@@ -199,25 +177,21 @@
       <div class="brief-success-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
       </div>
-      <h2 class="brief-success-title" data-i18n="brief_success_title">Brief Submitted!</h2>
-      <p class="brief-success-text" data-i18n="brief_success_text">Thank you for completing the SEO Brief. Our team will audit your website and get back to you within 24 hours.</p>
+      <h2 class="brief-success-title">Brief Submitted!</h2>
+      <p class="brief-success-text">Thank you for completing the SEO Brief. Our team will audit your website and get back to you within 24 hours.</p>
       <div class="brief-success-actions">
-        <a href="index.html" class="brief-btn brief-btn-primary" data-i18n="brief_back_home">Back to Home</a>
-        <a href="services.html" class="brief-btn brief-btn-secondary" data-i18n="brief_view_services">View Services</a>
+        <a href="index.html" class="brief-btn brief-btn-primary">Back to Home</a>
+        <a href="services.html" class="brief-btn brief-btn-secondary">View Services</a>
       </div>
     </div>
   </div>
 
-  <div class="brief-save-toast" data-i18n="brief_saved" id="briefSaveToast">
+  <div class="brief-save-toast" id="briefSaveToast">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
     Progress saved
   </div>
 
   <script>window.BRIEF_ID = 'seo';</script>
   <script src="brief.js"></script>
-  <!-- Language System -->
-  <script src="lang-en.js"></script>
-  <script src="lang-ar.js"></script>
-  <script src="lang.js"></script>
 </body>
 </html>

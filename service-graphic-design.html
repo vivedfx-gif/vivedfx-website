@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Graphic Design Services — VIVEDFX | Visuals That Convert</title>
-  <meta name="description" content="Premium graphic design services by VIVEDFX. Social media graphics, ad creatives, print design, packaging, and brand collateral crafted to stop the scroll and drive conversions." />
-  <meta property="og:title" content="Graphic Design Services — VIVEDFX" />
-  <meta property="og:description" content="Visuals that stop the scroll — ads, banners, print, packaging, and more crafted to convert." />
+  <title>Graphic Design Services — vivedfx | Designs That Convert</title>
+  <meta name="description" content="Premium graphic design services by vivedfx. Social media graphics, ad creatives, print design, packaging, presentations, and brand collateral crafted to stop the scroll and drive conversions." />
+  <meta property="og:title" content="Graphic Design Services — vivedfx" />
+  <meta property="og:description" content="Designs that stop the scroll — ads, banners, print, packaging, and more crafted to convert." />
   <meta property="og:type" content="website" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Graphic Design","provider":{"@type":"Organization","name":"VIVEDFX"},"description":"Premium graphic design services including social media graphics, ad creatives, print design, packaging, and brand collateral."}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Graphic Design","provider":{"@type":"Organization","name":"vivedfx"},"description":"Premium graphic design services including social media graphics, ad creatives, print design, packaging, presentations, and brand collateral."}</script>
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -22,66 +22,61 @@
     .sp-title{font-family:var(--font-heading);font-size:clamp(2.5rem,6vw,5rem);font-weight:900;color:var(--white);line-height:1.05;margin-bottom:24px}
     .sp-title span{color:var(--accent)}
     .sp-subtitle{font-size:1.15rem;color:var(--muted);max-width:600px;line-height:1.75}
+    .sp-hero-btns{display:flex;gap:16px;margin-top:32px;flex-wrap:wrap}
     .sp-section{padding:100px 0;background:var(--dark)}.sp-section-alt{background:var(--dark-2)}
     .sp-section-label{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
     .sp-section-title{font-family:var(--font-heading);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:800;color:var(--white);margin-bottom:48px;line-height:1.15}
     .sp-section-title span{color:var(--accent)}
-    .media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .media-cell{background:var(--dark-3);border:2px dashed var(--border);border-radius:var(--radius-md);aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;transition:all .3s;overflow:hidden;position:relative;cursor:pointer}
-    .media-cell:hover{border-color:var(--accent);background:rgba(236,31,39,.05)}
-    .media-cell.has-content{border-style:solid;border-color:var(--border)}
-    .media-cell.has-content:hover{border-color:var(--border-hover)}
-    .media-cell img,.media-cell video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:calc(var(--radius-md) - 2px)}
-    .media-cell-overlay{position:absolute;inset:0;background:rgba(0,0,0,.6);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;transition:opacity .3s;border-radius:calc(var(--radius-md) - 2px)}
-    .media-cell.has-content:hover .media-cell-overlay{opacity:1}
-    .media-cell-icon{color:var(--accent)}.media-cell-icon svg{width:32px;height:32px}
-    .media-cell-text{font-size:.8rem;color:var(--muted);font-weight:500}
-    .media-cell-remove{position:absolute;top:10px;right:10px;width:28px;height:28px;background:rgba(236,31,39,.9);border:none;border-radius:50%;color:white;font-size:14px;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:10}
-    .media-cell.has-content:hover .media-cell-remove{display:flex}
-    .media-cell input[type=file]{display:none}
-    .media-cell-video{aspect-ratio:16/9}.media-cell-wide{grid-column:span 2;aspect-ratio:16/6}
-    .upload-hint{text-align:center;padding:16px 0 0;color:var(--muted);font-size:.85rem}.upload-hint span{color:var(--accent)}
-    .sp-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:60px 0 0}
-    .sp-stat{background:var(--dark-3);padding:36px 32px}
-    .sp-stat-num{font-family:var(--font-heading);font-size:3rem;font-weight:900;color:var(--accent);line-height:1}
-    .sp-stat-label{font-size:.9rem;color:var(--muted);margin-top:8px}
-    .sp-features{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-    .sp-feature{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;transition:border-color .3s,transform .3s}
-    .sp-feature:hover{border-color:var(--border-hover);transform:translateY(-3px)}
-    .sp-feature-icon{color:var(--accent);margin-bottom:14px}.sp-feature-icon svg{width:28px;height:28px}
-    .sp-feature-title{font-weight:700;color:var(--white);margin-bottom:8px}
-    .sp-feature-text{font-size:.88rem;color:var(--muted);line-height:1.65}
-    .sp-cta{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-xl);padding:72px;text-align:center;position:relative;overflow:hidden}
-    .sp-cta-orb{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(236,31,39,.15),transparent 70%);border-radius:50%;pointer-events:none}
-    .sp-cta-orb-1{top:-100px;left:-100px}.sp-cta-orb-2{bottom:-100px;right:-100px}
-    .sp-cta-title{font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:16px}
-    .sp-cta-title span{color:var(--accent)}
-    .sp-cta-sub{color:var(--muted);font-size:1.05rem;max-width:480px;margin:0 auto 36px;line-height:1.7}
-    .sp-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-    /* Why section */
-    .sp-why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .sp-why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
     .sp-why-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:32px;transition:border-color .3s,transform .3s}
     .sp-why-card:hover{border-color:var(--border-hover);transform:translateY(-3px)}
     .sp-why-icon{width:48px;height:48px;background:rgba(236,31,39,.1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:20px}
     .sp-why-icon svg{width:24px;height:24px}
     .sp-why-title{font-weight:700;color:var(--white);margin-bottom:8px;font-size:1.05rem}
     .sp-why-text{font-size:.88rem;color:var(--muted);line-height:1.65}
-    /* Process */
-    .sp-process{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;counter-reset:step}
-    .sp-process-step{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px 20px;text-align:center;position:relative;transition:border-color .3s,transform .3s}
+    .sp-services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .sp-service-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;transition:border-color .3s,transform .3s}
+    .sp-service-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .sp-service-card-icon{width:44px;height:44px;background:rgba(236,31,39,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:16px}
+    .sp-service-card-icon svg{width:22px;height:22px}
+    .sp-service-card-title{font-weight:700;color:var(--white);margin-bottom:6px;font-size:.95rem}
+    .sp-service-card-text{font-size:.84rem;color:var(--muted);line-height:1.6}
+    .sp-process{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;counter-reset:step;position:relative}
+    .sp-process::before{content:'';position:absolute;top:44px;left:8%;right:8%;height:2px;background:var(--border);z-index:0}
+    .sp-process-step{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px 16px;text-align:center;position:relative;z-index:1;transition:border-color .3s,transform .3s}
     .sp-process-step:hover{border-color:var(--accent);transform:translateY(-3px)}
-    .sp-process-num{font-family:var(--font-heading);font-size:2.5rem;font-weight:900;color:rgba(236,31,39,.15);line-height:1;margin-bottom:12px}
-    .sp-process-title{font-weight:700;color:var(--white);margin-bottom:8px;font-size:.95rem}
-    .sp-process-text{font-size:.82rem;color:var(--muted);line-height:1.6}
-    /* Benefits */
-    .sp-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .sp-benefit{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;display:flex;align-items:flex-start;gap:16px;transition:border-color .3s,transform .3s}
-    .sp-benefit:hover{border-color:var(--border-hover);transform:translateY(-3px)}
-    .sp-benefit-check{width:24px;height:24px;background:rgba(236,31,39,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);margin-top:2px}
-    .sp-benefit-check svg{width:14px;height:14px}
-    .sp-benefit-title{font-weight:700;color:var(--white);margin-bottom:4px}
-    .sp-benefit-text{font-size:.85rem;color:var(--muted);line-height:1.6}
-    /* FAQ */
+    .sp-process-num{font-family:var(--font-heading);font-size:2.2rem;font-weight:900;color:rgba(236,31,39,.15);line-height:1;margin-bottom:10px}
+    .sp-process-title{font-weight:700;color:var(--white);margin-bottom:6px;font-size:.88rem}
+    .sp-process-text{font-size:.78rem;color:var(--muted);line-height:1.55}
+    .sp-portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .sp-portfolio-item{position:relative;border-radius:var(--radius-md);overflow:hidden;aspect-ratio:4/3;cursor:pointer;border:1px solid var(--border);transition:border-color .3s,transform .3s}
+    .sp-portfolio-item:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .sp-portfolio-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+    .sp-portfolio-item:hover img{transform:scale(1.05)}
+    .sp-portfolio-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.8) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:24px;opacity:0;transition:opacity .3s}
+    .sp-portfolio-item:hover .sp-portfolio-overlay{opacity:1}
+    .sp-portfolio-tag{font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+    .sp-portfolio-name{font-weight:700;color:var(--white);font-size:1rem}
+    .sp-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:60px 0 0}
+    .sp-stat{background:var(--dark-3);padding:36px 32px}
+    .sp-stat-num{font-family:var(--font-heading);font-size:3rem;font-weight:900;color:var(--accent);line-height:1}
+    .sp-stat-label{font-size:.9rem;color:var(--muted);margin-top:8px}
+    .sp-testimonials-slider{position:relative;max-width:900px;margin:0 auto}
+    .sp-testimonials-track{display:flex;overflow:hidden}
+    .sp-testimonial-slide{min-width:100%;padding:0 20px;box-sizing:border-box}
+    .sp-testimonial-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px;position:relative}
+    .sp-testimonial-quote{font-size:1.05rem;color:var(--white);line-height:1.8;font-style:italic;margin-bottom:28px;position:relative;padding-left:24px;border-left:3px solid var(--accent)}
+    .sp-testimonial-author{display:flex;align-items:center;gap:14px}
+    .sp-testimonial-avatar{width:48px;height:48px;border-radius:50%;background:rgba(236,31,39,.15);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:.9rem;flex-shrink:0}
+    .sp-testimonial-name{font-weight:700;color:var(--white);font-size:.95rem}
+    .sp-testimonial-role{font-size:.82rem;color:var(--muted);margin-top:2px}
+    .sp-testimonial-controls{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:32px}
+    .sp-testimonial-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:var(--dark-3);color:var(--white);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:border-color .2s,transform .2s}
+    .sp-testimonial-btn:hover{border-color:var(--accent);transform:scale(1.05)}
+    .sp-testimonial-btn svg{width:18px;height:18px}
+    .sp-testimonial-dots{display:flex;gap:8px}
+    .sp-testimonial-dot{width:10px;height:10px;border-radius:50%;border:none;background:var(--border);cursor:pointer;transition:background .2s,transform .2s}
+    .sp-testimonial-dot.active{background:var(--accent);transform:scale(1.2)}
     .sp-faq{max-width:800px;margin:0 auto}
     .sp-faq-item{border-bottom:1px solid var(--border)}
     .sp-faq-q{width:100%;background:none;border:none;padding:20px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;color:var(--white);font-weight:600;font-size:1rem;text-align:left;font-family:inherit}
@@ -90,7 +85,19 @@
     .sp-faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease}
     .sp-faq-item.open .sp-faq-a{max-height:300px;padding:0 0 20px}
     .sp-faq-a p{font-size:.9rem;color:var(--muted);line-height:1.7}
-    /* Prev/Next */
+    .sp-cta{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-xl);padding:72px;text-align:center;position:relative;overflow:hidden}
+    .sp-cta-orb{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(236,31,39,.15),transparent 70%);border-radius:50%;pointer-events:none}
+    .sp-cta-orb-1{top:-100px;left:-100px}.sp-cta-orb-2{bottom:-100px;right:-100px}
+    .sp-cta-title{font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:16px}
+    .sp-cta-title span{color:var(--accent)}
+    .sp-cta-sub{color:var(--muted);font-size:1.05rem;max-width:480px;margin:0 auto 36px;line-height:1.7}
+    .sp-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    .sp-related-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+    .sp-related-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px;text-align:center;text-decoration:none;color:var(--white);transition:border-color .3s,transform .3s}
+    .sp-related-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .sp-related-icon{width:44px;height:44px;background:rgba(236,31,39,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin:0 auto 14px}
+    .sp-related-icon svg{width:22px;height:22px}
+    .sp-related-title{font-weight:700;font-size:.9rem}
     .sp-nav{display:flex;justify-content:space-between;gap:16px;padding:60px 0}
     .sp-nav-link{flex:1;display:flex;align-items:center;gap:12px;background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:20px 24px;text-decoration:none;color:var(--white);transition:border-color .3s,transform .2s}
     .sp-nav-link:hover{border-color:var(--accent);transform:translateY(-2px)}
@@ -98,13 +105,12 @@
     .sp-nav-label{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
     .sp-nav-title{font-weight:700;font-size:.95rem}
     .sp-nav-next{text-align:right;flex-direction:row-reverse}
-    @media(max-width:1024px){.sp-process{grid-template-columns:repeat(3,1fr)}}
-    @media(max-width:768px){.media-grid{grid-template-columns:repeat(2,1fr)}.media-cell-wide{grid-column:span 2}.sp-features{grid-template-columns:1fr}.sp-stats{grid-template-columns:1fr}.sp-cta{padding:48px 28px}.sp-hero{min-height:50vh}.sp-why-grid{grid-template-columns:1fr}.sp-process{grid-template-columns:1fr}.sp-benefits{grid-template-columns:1fr}.sp-nav{flex-direction:column}}
-    @media(max-width:480px){.media-grid{grid-template-columns:1fr}.media-cell-wide{grid-column:span 1;aspect-ratio:4/3}}
+    @media(max-width:1024px){.sp-process{grid-template-columns:repeat(3,1fr)}.sp-process::before{display:none}.sp-services-grid{grid-template-columns:repeat(2,1fr)}.sp-related-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:768px){.sp-why-grid{grid-template-columns:1fr}.sp-services-grid{grid-template-columns:1fr}.sp-process{grid-template-columns:1fr}.sp-portfolio-grid{grid-template-columns:repeat(2,1fr)}.sp-stats{grid-template-columns:1fr}.sp-related-grid{grid-template-columns:1fr}.sp-cta{padding:48px 28px}.sp-hero{min-height:50vh}.sp-nav{flex-direction:column}.sp-testimonial-card{padding:28px}}
+    @media(max-width:480px){.sp-portfolio-grid{grid-template-columns:1fr}}
   </style>
   <!-- Arabic Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles-lang.css" />
 </head>
 <body>
   <header class="header" id="header">
@@ -118,29 +124,10 @@
         <li><a href="index.html#testimonials" class="nav-link">Clients</a></li>
       </ul>
       <a href="index.html#contact" class="btn btn-primary nav-cta magnetic-btn" id="nav-cta-btn">
-        <span data-i18n="book_free_call">Book a Call</span>
+        <span>Book a Call</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-          <div class="lang-switcher">
-        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="12" cy="12" r="10"/>
-            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
-          </svg>
-          <span class="lang-switcher-label" id="lang-switcher-label">AR</span>
-        </button>
-        <div class="lang-dropdown" id="lang-dropdown">
-          <button class="lang-option" data-lang="en">
-            <span class="lang-flag">🇺🇸</span>
-            <span>EN</span>
-          </button>
-          <button class="lang-option" data-lang="ar">
-            <span class="lang-flag">🇸🇦</span>
-            <span>AR</span>
-          </button>
-        </div>
-      </div>
     </nav>
   </header>
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
@@ -151,151 +138,296 @@
       <li class="mobile-menu-item"><a href="index.html#process" class="mobile-link">Process</a></li>
       <li class="mobile-menu-item"><a href="index.html#testimonials" class="mobile-link">Clients</a></li>
     </ul>
-    <div class="mobile-menu-cta-wrap"><a href="index.html#contact" class="btn btn-primary mobile-menu-cta"><span data-i18n="book_free_call">Book a Call</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+    <div class="mobile-menu-cta-wrap"><a href="index.html#contact" class="btn btn-primary mobile-menu-cta"><span>Book a Call</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
   </div>
   <main>
+
     <!-- HERO -->
     <section class="sp-hero">
       <div class="sp-hero-bg"></div>
       <div class="container">
-        <a href="index.html#services" class="sp-back" data-i18n="back_to_home"><svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to Services</a>
+        <a href="index.html#services" class="sp-back"><svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to Services</a>
         <div class="sp-label"><span class="sp-label-dot"></span>Service 04</div>
-        <h1 class="sp-title" data-i18n="gd_hero_title">Graphic<br/><span>Design</span></h1>
-        <p class="sp-subtitle" data-i18n="gd_hero_desc">Visuals that stop the scroll — ads, banners, print, packaging, and more crafted to convert.</p>
+        <h1 class="sp-title">Graphic<br/><span>Design</span></h1>
+        <p class="sp-subtitle" style="font-family:var(--font-heading);font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:700;color:var(--white);max-width:700px;margin-bottom:16px">Designs That Build Strong Brands.</p>
+        <p class="sp-subtitle">From branding and advertising campaigns to social media creatives and corporate identity systems, we design visuals that communicate your message, increase trust, and drive business growth.</p>
+        <div class="sp-hero-btns">
+          <a href="brief-branding.html" class="btn btn-primary btn-lg magnetic-btn"><span>Start Your Design Project</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="portfolio.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>View Design Portfolio</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
       </div>
     </section>
 
-    <!-- GALLERY -->
+    <!-- WHY CHOOSE US -->
     <section class="sp-section">
       <div class="container">
-        <div class="sp-section-label">Design & Visuals</div>
-        <h2 class="sp-section-title">Logo to Launch <span>Gallery</span></h2>
-        <div class="media-grid" id="photo-grid"></div>
-        <p class="upload-hint">Click any cell to <span>upload graphic design visuals</span></p>
-      </div>
-    </section>
-    <section class="sp-section sp-section-alt">
-      <div class="container">
-        <div class="sp-section-label">Ad Banners</div>
-        <h2 class="sp-section-title">Ad Banners <span>Videos</span></h2>
-        <div class="media-grid" id="video-grid"></div>
-        <p class="upload-hint" style="margin-top:16px">Click any cell to <span>upload graphic design videos</span></p>
-      </div>
-    </section>
-
-    <!-- WHY THIS SERVICE -->
-    <section class="sp-section">
-      <div class="container">
-        <div class="sp-section-label">Why Graphic Design</div>
-        <h2 class="sp-section-title" data-i18n="gd_why_title">Why Your Business <span>Needs This</span></h2>
+        <div class="sp-section-label">Why vivedfx</div>
+        <h2 class="sp-section-title">Why Leading Brands <span>Choose Us</span></h2>
         <div class="sp-why-grid">
           <div class="sp-why-card">
             <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5"/></svg></div>
-            <div class="sp-why-title">First Impressions Matter</div>
-            <div class="sp-why-text">Users form an opinion about your brand in 50 milliseconds. Professional design ensures that first impression builds trust, not doubt.</div>
+            <div class="sp-why-title">Design-First Thinking</div>
+            <div class="sp-why-text">Every pixel is intentional. We don't just make things look good — we design with strategy, ensuring every visual moves your business forward.</div>
           </div>
           <div class="sp-why-card">
             <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="sp-why-title">Design Drives Revenue</div>
-            <div class="sp-why-text">Consistent, high-quality visual content increases conversion rates by up to 290%. Every pixel is an opportunity to sell more.</div>
+            <div class="sp-why-title">Conversion-Focused</div>
+            <div class="sp-why-text">Our designs are engineered to perform. We combine aesthetics with UX psychology to create visuals that drive clicks, sign-ups, and sales.</div>
           </div>
           <div class="sp-why-card">
-            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-            <div class="sp-why-title">Stand Out From Competitors</div>
-            <div class="sp-why-text">In a sea of generic templates, custom design makes your brand memorable and gives you a competitive edge in crowded markets.</div>
+            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-why-title">Lightning Fast Delivery</div>
+            <div class="sp-why-text">Most projects delivered in 3–5 business days. We respect your deadlines without compromising on quality or attention to detail.</div>
+          </div>
+          <div class="sp-why-card">
+            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-why-title">Dedicated Team</div>
+            <div class="sp-why-text">You get a dedicated designer and art director assigned to your account. Consistent quality, every single time.</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- STATS -->
+    <!-- OUR DESIGN SERVICES -->
     <section class="sp-section sp-section-alt">
       <div class="container">
-        <div class="sp-section-label">Results</div>
-        <h2 class="sp-section-title">What Brands <span>Achieve</span></h2>
-        <div class="sp-stats">
-          <div class="sp-stat" data-i18n="gd_stat_1"><div class="sp-stat-num" data-i18n="gd_stat_1_num">+290%</div><div class="sp-stat-label" data-i18n="gd_stat_1_label">Client Conversion Rate</div></div>
-          <div class="sp-stat" data-i18n="gd_stat_2"><div class="sp-stat-num" data-i18n="gd_stat_2_num">2.2×</div><div class="sp-stat-label" data-i18n="gd_stat_2_label">Sales Lift</div></div>
-          <div class="sp-stat" data-i18n="gd_stat_3"><div class="sp-stat-num" data-i18n="gd_stat_3_num">21 days</div><div class="sp-stat-label" data-i18n="gd_stat_3_label">Average Delivery</div></div>
+        <div class="sp-section-label">What We Design</div>
+        <h2 class="sp-section-title">Our Design <span>Services</span></h2>
+        <div class="sp-services-grid">
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Social Media Graphics</div>
+            <div class="sp-service-card-text">Scroll-stopping posts, stories, reels covers, and carousels optimized for every platform.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="1.5"/></svg></div>
+            <div class="sp-service-card-title">Ad Creatives</div>
+            <div class="sp-service-card-text">High-converting Meta, Google, and TikTok ad visuals designed for maximum CTR and ROAS.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-service-card-title">Presentation Design</div>
+            <div class="sp-service-card-text">Investor decks, sales decks, and corporate presentations that win deals and close partnerships.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Print Design</div>
+            <div class="sp-service-card-text">Brochures, flyers, posters, billboards, and magazine ads that demand attention.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="1.5"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-service-card-title">Packaging Design</div>
+            <div class="sp-service-card-text">Product packaging, labels, boxes, and retail displays that stand out on shelves and drive impulse buys.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7V4h16v3M9 20h6M12 4v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Brand Collateral</div>
+            <div class="sp-service-card-text">Business cards, letterheads, envelopes, email signatures, and complete stationery systems.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/></svg></div>
+            <div class="sp-service-card-title">Infographics</div>
+            <div class="sp-service-card-text">Data visualization and infographic design that turns complex information into compelling visuals.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-service-card-title">Merchandise Design</div>
+            <div class="sp-service-card-text">T-shirts, caps, tote bags, mugs, and branded merchandise that your team and clients will love.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke="currentColor" stroke-width="1.5"/></svg></div>
+            <div class="sp-service-card-title">UI Mockups</div>
+            <div class="sp-service-card-text">App screens, website mockups, and digital product visuals for pitches and development handoff.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" stroke="currentColor" stroke-width="1.5"/><line x1="4" y1="22" x2="4" y2="15" stroke="currentColor" stroke-width="1.5"/></svg></div>
+            <div class="sp-service-card-title">Event Graphics</div>
+            <div class="sp-service-card-text">Banners, backdrops, invitations, name badges, and event branding for conferences and launches.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">WhatsApp Graphics</div>
+            <div class="sp-service-card-text">Catalog designs, status images, display pictures, and broadcast visuals for WhatsApp marketing.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Icon & Illustration</div>
+            <div class="sp-service-card-text">Custom icons, illustrations, and mascots that give your brand a unique visual personality.</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- WHAT WE DELIVER -->
+    <!-- DESIGN PROCESS -->
     <section class="sp-section">
-      <div class="container">
-        <div class="sp-section-label">What's Included</div>
-        <h2 class="sp-section-title" data-i18n="gd_deliver_title">What We <span>Deliver</span></h2>
-        <div class="sp-features">
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="gd_deliver_1">Social Media Graphics</div><div class="sp-feature-text">Eye-catching posts, stories, and reels covers optimized for each platform's best practices.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="sp-feature-title" data-i18n="gd_deliver_2">Ad Creatives</div><div class="sp-feature-text">High-converting social media ads, display banners, and Google ad visuals designed for maximum CTR.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="gd_deliver_3">Print & Packaging</div><div class="sp-feature-text">Brochures, flyers, product packaging, business cards, and merchandise design that stands out.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="sp-feature-title" data-i18n="gd_deliver_4">Presentation Design</div><div class="sp-feature-text">Investor decks, sales decks, and corporate presentations that win deals and close partnerships.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7V4h16v3M9 20h6M12 4v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="gd_deliver_5">Brand Collateral</div><div class="sp-feature-text">Letterheads, envelopes, email signatures, and complete stationery systems for professional outreach.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="sp-feature-title" data-i18n="gd_deliver_6">Rapid Turnaround</div><div class="sp-feature-text">Most designs delivered within 3–5 business days with up to 2 revision rounds included.</div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="sp-section sp-section-alt">
       <div class="container">
         <div class="sp-section-label">Our Process</div>
-        <h2 class="sp-section-title" data-i18n="gd_process_title">How We <span>Work</span></h2>
+        <h2 class="sp-section-title">Our 6-Step Design <span>Process</span></h2>
         <div class="sp-process">
-          <div class="sp-process-step"><div class="sp-process-num">01</div><div class="sp-process-title" data-i18n="gd_process_1">Discovery</div><div class="sp-process-text">We learn your brand, audience, goals, and competitors inside out.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">02</div><div class="sp-process-title" data-i18n="gd_process_2">Strategy</div><div class="sp-process-text">We define the visual direction, mood boards, and creative concepts.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">03</div><div class="sp-process-title" data-i18n="gd_process_3">Design</div><div class="sp-process-text">Our designers craft pixel-perfect visuals aligned with your brand.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">04</div><div class="sp-process-title" data-i18n="gd_process_4">Review</div><div class="sp-process-text">You provide feedback, we refine until every detail is perfect.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">05</div><div class="sp-process-title" data-i18n="gd_process_5">Delivery</div><div class="sp-process-text">Final files in all formats — print-ready, web-optimized, and source files.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">01</div><div class="sp-process-title">Discovery</div><div class="sp-process-text">We learn your brand, audience, goals, and competitive landscape inside out.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">02</div><div class="sp-process-title">Research</div><div class="sp-process-text">We analyze competitors, trends, and audience preferences to inform every design decision.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">03</div><div class="sp-process-title">Strategy</div><div class="sp-process-text">We define the visual direction, mood boards, and creative concepts for your project.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">04</div><div class="sp-process-title">Design</div><div class="sp-process-text">Our designers craft pixel-perfect visuals aligned with your brand and goals.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">05</div><div class="sp-process-title">Review</div><div class="sp-process-text">You provide feedback, we refine until every detail is exactly right.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">06</div><div class="sp-process-title">Deliver</div><div class="sp-process-text">Final files in all formats — print-ready, web-optimized, and source files included.</div></div>
         </div>
       </div>
     </section>
 
-    <!-- BENEFITS -->
+    <!-- PORTFOLIO -->
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-section-label">Our Work</div>
+        <h2 class="sp-section-title">Graphic Design <span>Portfolio</span></h2>
+        <div class="sp-portfolio-grid">
+          <div class="sp-portfolio-item">
+            <img src="assets/portfolio_gd_1.png" alt="Social media campaign design" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Social Media</div><div class="sp-portfolio-name">Instagram Campaign — MediCare Plus</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/portfolio_gd_2.png" alt="Ad creative design" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Ad Creatives</div><div class="sp-portfolio-name">Meta Ads — IronEdge Fitness</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/portfolio_gd_3.png" alt="Packaging design" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Packaging</div><div class="sp-portfolio-name">Product Packaging — Luxe Skincare</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/portfolio_gd_4.png" alt="Presentation design" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Presentation</div><div class="sp-portfolio-name">Investor Deck — BuildCore Engineering</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/portfolio_gd_5.png" alt="Print design" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Print Design</div><div class="sp-portfolio-name">Brochure Campaign — FreshBite Restaurant</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/portfolio_gd_6.png" alt="Brand collateral design" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Brand Collateral</div><div class="sp-portfolio-name">Stationery System — Apex Corporate</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENT RESULTS -->
     <section class="sp-section">
       <div class="container">
-        <div class="sp-section-label">Results & Benefits</div>
-        <h2 class="sp-section-title" data-i18n="gd_benefits_title">What You <span>Get</span></h2>
-        <div class="sp-benefits">
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="gd_benefits_1">Higher Conversion Rates</div><div class="sp-benefit-text">Professionally designed visuals increase clicks, sign-ups, and purchases across all channels.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="gd_benefits_2">Stronger Brand Recognition</div><div class="sp-benefit-text">Consistent design across touchpoints builds trust and makes your brand instantly recognizable.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="gd_benefits_3">Better Engagement</div><div class="sp-benefit-text">Scroll-stopping visuals get more likes, shares, comments, and saves on social media.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="gd_benefits_4">Increased Sales</div><div class="sp-benefit-text">Compelling product visuals and ad creatives directly drive more revenue and higher average order values.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="gd_benefits_5">Time Savings</div><div class="sp-benefit-text">We handle all design work so your team can focus on what they do best — running the business.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="gd_benefits_6">Higher ROI</div><div class="sp-benefit-text">Every dollar spent on professional design returns measurable business results and long-term brand equity.</div></div></div>
+        <div class="sp-section-label">Client Results</div>
+        <h2 class="sp-section-title">Designs That <span>Drive Results</span></h2>
+        <div class="sp-stats">
+          <div class="sp-stat"><div class="sp-stat-num" data-target="290" data-suffix="%">0%</div><div class="sp-stat-label">Average Conversion Lift</div></div>
+          <div class="sp-stat"><div class="sp-stat-num" data-target="3.2" data-suffix="×" data-decimal="1">0×</div><div class="sp-stat-label">Return on Ad Spend</div></div>
+          <div class="sp-stat"><div class="sp-stat-num" data-target="500" data-suffix="+" data-prefix="">0+</div><div class="sp-stat-label">Projects Delivered</div></div>
+          <div class="sp-stat"><div class="sp-stat-num" data-target="98" data-suffix="%">0%</div><div class="sp-stat-label">Client Satisfaction Rate</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-section-label">Testimonials</div>
+        <h2 class="sp-section-title">What Our Clients <span>Say</span></h2>
+        <div class="sp-testimonials-slider" id="gd-testimonials">
+          <div class="sp-testimonials-track" id="gd-testimonials-track">
+            <div class="sp-testimonial-slide">
+              <div class="sp-testimonial-card">
+                <div class="sp-testimonial-quote">vivedfx completely transformed our clinic's visual presence. The social media graphics they create consistently outperform anything we've done in-house. Engagement is up 340% and new patient bookings follow the same trend.</div>
+                <div class="sp-testimonial-author">
+                  <div class="sp-testimonial-avatar">AH</div>
+                  <div><div class="sp-testimonial-name">Dr. Ahmed Hassan</div><div class="sp-testimonial-role">Founder, MediCare Plus Clinic</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="sp-testimonial-slide">
+              <div class="sp-testimonial-card">
+                <div class="sp-testimonial-quote">The ad creatives vivedfx designed for us doubled our ROAS in the first month. Their understanding of what stops the scroll is unmatched. We've scaled our ad budget 3× since launching the new visuals.</div>
+                <div class="sp-testimonial-author">
+                  <div class="sp-testimonial-avatar">SM</div>
+                  <div><div class="sp-testimonial-name">Sarah Mitchell</div><div class="sp-testimonial-role">Owner, IronEdge Fitness</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="sp-testimonial-slide">
+              <div class="sp-testimonial-card">
+                <div class="sp-testimonial-quote">Our investor deck went from boring slides to a visual masterpiece. vivedfx helped us close our Series A funding round. The presentation design alone was worth every penny — and we raised $2.4M.</div>
+                <div class="sp-testimonial-author">
+                  <div class="sp-testimonial-avatar">JO</div>
+                  <div><div class="sp-testimonial-name">James Okonkwo</div><div class="sp-testimonial-role">CEO, BuildCore Engineering</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sp-testimonial-controls">
+            <button class="sp-testimonial-btn" id="gd-testimonial-prev" aria-label="Previous testimonial"><svg viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="sp-testimonial-dots" id="gd-testimonial-dots">
+              <button class="sp-testimonial-dot active" data-index="0" aria-label="Testimonial 1"></button>
+              <button class="sp-testimonial-dot" data-index="1" aria-label="Testimonial 2"></button>
+              <button class="sp-testimonial-dot" data-index="2" aria-label="Testimonial 3"></button>
+            </div>
+            <button class="sp-testimonial-btn" id="gd-testimonial-next" aria-label="Next testimonial"><svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section class="sp-section sp-section-alt">
+    <section class="sp-section">
       <div class="container">
         <div class="sp-section-label">FAQ</div>
-        <h2 class="sp-section-title" data-i18n="gd_faq_title">Frequently Asked <span>Questions</span></h2>
+        <h2 class="sp-section-title">Frequently Asked <span>Questions</span></h2>
         <div class="sp-faq">
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="gd_faq_1_q">What graphic design services do you offer?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="gd_faq_1_a">We offer social media graphics, ad creatives, print design, packaging, presentations, brand collateral, and any custom visual assets your business needs.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="gd_faq_2_q">How quickly can I expect delivery?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="gd_faq_2_a">Most projects are delivered within 3–5 business days. Complex projects like packaging or brand guidelines may take 2–3 weeks.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="gd_faq_3_q">Do you offer revision rounds?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="gd_faq_3_a">Yes, every project includes up to 2 revision rounds. Additional revisions are available at a small fee.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="gd_faq_4_q">What file formats will I receive?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="gd_faq_4_a">You'll receive print-ready PDFs, web-optimized PNGs/JPGs, and source files (AI, PSD, Figma) depending on the project type.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="gd_faq_5_q">Can you match our existing brand style?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="gd_faq_5_a">Absolutely. We work within your existing brand guidelines to ensure every design is consistent with your visual identity.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="gd_faq_6_q">Do you work with startups or only established brands?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="gd_faq_6_a">We work with businesses at every stage — from pre-launch startups building their first visual assets to enterprise brands scaling their design output.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">What graphic design services do you offer?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>We offer social media graphics, ad creatives, print design, packaging, presentations, brand collateral, infographics, merchandise design, UI mockups, event graphics, WhatsApp graphics, and custom illustrations.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">How quickly can I expect delivery?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>Most projects are delivered within 3–5 business days. Complex projects like packaging, brand guidelines, or large print campaigns may take 2–3 weeks.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">Do you offer revision rounds?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>Yes, every project includes up to 2 revision rounds. Additional revisions are available at a small fee to ensure you're 100% satisfied.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">What file formats will I receive?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>You'll receive print-ready PDFs, web-optimized PNGs/JPGs, and source files (AI, PSD, Figma) depending on the project type. Everything you need for print and digital use.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">Can you match our existing brand style?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>Absolutely. We work within your existing brand guidelines to ensure every design is consistent with your visual identity. If you don't have guidelines yet, we can create them.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">Do you work with startups or only established brands?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>We work with businesses at every stage — from pre-launch startups building their first visual assets to enterprise brands scaling their design output. Our packages flex to fit your needs and budget.</p></div></div>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="sp-section">
+    <section class="sp-section sp-section-alt">
       <div class="container">
         <div class="sp-cta">
           <div class="sp-cta-orb sp-cta-orb-1"></div><div class="sp-cta-orb sp-cta-orb-2"></div>
-          <h2 class="sp-cta-title" data-i18n="gd_cta_title">Ready to Grow Your<br/><span>Business?</span></h2>
-          <p class="sp-cta-sub">Book a free strategy call and let's discuss how premium design can transform your brand.</p>
+          <h2 class="sp-cta-title">Ready to Design<br/><span>Something Amazing?</span></h2>
+          <p class="sp-cta-sub">Book a free strategy call and let's discuss how premium design can transform your brand's visual presence.</p>
           <div class="sp-cta-btns">
-            <a href="index.html#contact" class="btn btn-primary btn-lg magnetic-btn"><span data-i18n="gd_cta_btn">Book Free Strategy Call</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <a href="brief-content-creation.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>Start Your Brief</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <a href="https://wa.me/1234567890" class="btn btn-ghost btn-lg" target="_blank"><span data-i18n="gd_cta_whatsapp">Contact Us on WhatsApp</span></a>
+            <a href="index.html#contact" class="btn btn-primary btn-lg magnetic-btn"><span>Book Free Strategy Call</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="brief-branding.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>Start Your Brief</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="https://wa.me/1234567890" class="btn btn-ghost btn-lg" target="_blank"><span>Contact Us on WhatsApp</span></a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED SERVICES -->
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">Explore More</div>
+        <h2 class="sp-section-title">Related <span>Services</span></h2>
+        <div class="sp-related-grid">
+          <a href="service-brand-identity.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-related-title">Brand Identity</div>
+          </a>
+          <a href="service-social-media.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-related-title">Social Media</div>
+          </a>
+          <a href="service-paid-advertising.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-related-title">Paid Advertising</div>
+          </a>
+          <a href="service-video-editing.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+            <div class="sp-related-title">Video Editing</div>
+          </a>
+          <a href="service-website-design.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-related-title">Website Design</div>
+          </a>
         </div>
       </div>
     </section>
@@ -306,15 +438,16 @@
         <div class="sp-nav">
           <a href="service-video-editing.html" class="sp-nav-link">
             <svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <div><div class="sp-nav-label" data-i18n="prev_service">Previous Service</div><div class="sp-nav-title">Video Editing</div></div>
+            <div><div class="sp-nav-label">Previous Service</div><div class="sp-nav-title">Video Editing</div></div>
           </a>
-          <a href="service-brand-identity.html" class="sp-nav-link sp-nav-next">
+          <a href="service-paid-advertising.html" class="sp-nav-link sp-nav-next">
             <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <div><div class="sp-nav-label" data-i18n="next_service">Next Service</div><div class="sp-nav-title">Brand Identity</div></div>
+            <div><div class="sp-nav-label">Next Service</div><div class="sp-nav-title">Paid Advertising</div></div>
           </a>
         </div>
       </div>
     </section>
+
   </main>
   <script src="main.js" defer></script>
   <script>
@@ -326,16 +459,50 @@
         item.classList.toggle('open');
       });
     });
-    // Media upload system
-    function createPhotoCell(i){const c=document.createElement('div');c.className='media-cell';c.innerHTML=`<input type="file" accept="image/*" class="file-input"><div class="media-cell-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="media-cell-text">Upload Photo</div><div class="media-cell-overlay"><span style="color:white;font-size:.8rem">Change Photo</span></div><button class="media-cell-remove">✕</button>`;setup(c,'image');return c;}
-    function createVideoCell(i,wide=false){const c=document.createElement('div');c.className='media-cell media-cell-video'+(wide?' media-cell-wide':'');c.innerHTML=`<input type="file" accept="video/*" class="file-input"><div class="media-cell-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div><div class="media-cell-text">Upload Video</div><div class="media-cell-overlay"><span style="color:white;font-size:.8rem">Change Video</span></div><button class="media-cell-remove">✕</button>`;setup(c,'video');return c;}
-    function setup(cell,type){const inp=cell.querySelector('.file-input'),rm=cell.querySelector('.media-cell-remove');cell.addEventListener('click',e=>{if(e.target===rm)return;inp.click();});inp.addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;const url=URL.createObjectURL(f);cell.querySelectorAll('img,video').forEach(el=>el.remove());if(type==='image'){const img=document.createElement('img');img.src=url;cell.prepend(img);}else{const v=document.createElement('video');v.src=url;v.controls=true;v.muted=true;cell.prepend(v);}cell.classList.add('has-content');});rm.addEventListener('click',e=>{e.stopPropagation();cell.querySelectorAll('img,video').forEach(el=>el.remove());cell.classList.remove('has-content');inp.value='';});}
-    const pg=document.getElementById('photo-grid');for(let i=0;i<9;i++)pg.appendChild(createPhotoCell(i));
-    const vg=document.getElementById('video-grid');for(let i=0;i<6;i++)vg.appendChild(createVideoCell(i));
+
+    // Testimonial slider
+    (function(){
+      const track=document.getElementById('gd-testimonials-track');
+      const dots=document.querySelectorAll('#gd-testimonial-dots .sp-testimonial-dot');
+      const prevBtn=document.getElementById('gd-testimonial-prev');
+      const nextBtn=document.getElementById('gd-testimonial-next');
+      let current=0;const total=dots.length;
+      function goTo(i){current=((i%total)+total)%total;track.style.transform='translateX(-'+(current*100)+'%)';dots.forEach((d,idx)=>{d.classList.toggle('active',idx===current)});}
+      prevBtn.addEventListener('click',()=>goTo(current-1));
+      nextBtn.addEventListener('click',()=>goTo(current+1));
+      dots.forEach(d=>d.addEventListener('click',()=>goTo(parseInt(d.dataset.index))));
+      let autoplay=setInterval(()=>goTo(current+1),5000);
+      track.parentElement.addEventListener('mouseenter',()=>clearInterval(autoplay));
+      track.parentElement.addEventListener('mouseleave',()=>{autoplay=setInterval(()=>goTo(current+1),5000)});
+    })();
+
+    // Stats counter animation
+    (function(){
+      const stats=document.querySelectorAll('.sp-stat-num[data-target]');
+      const observer=new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            const el=entry.target;
+            const target=parseFloat(el.dataset.target);
+            const suffix=el.dataset.suffix||'';
+            const prefix=el.dataset.prefix||'';
+            const decimal=parseInt(el.dataset.decimal)||0;
+            let start=0;const duration=2000;const startTime=performance.now();
+            function update(now){
+              const elapsed=now-startTime;const progress=Math.min(elapsed/duration,1);
+              const eased=1-Math.pow(1-progress,3);
+              const current=eased*target;
+              el.textContent=prefix+(decimal>0?current.toFixed(decimal):Math.floor(current))+suffix;
+              if(progress<1)requestAnimationFrame(update);
+            }
+            requestAnimationFrame(update);
+            observer.unobserve(el);
+          }
+        });
+      },{threshold:0.3});
+      stats.forEach(s=>observer.observe(s));
+    })();
   </script>
-  <!-- Language System -->
-  <script src="lang-en.js"></script>
-  <script src="lang-ar.js"></script>
-  <script src="lang.js"></script>
+
 </body>
 </html>

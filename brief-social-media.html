@@ -3,16 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Social Media Management Brief — VIVEDFX</title>
+  <title>Social Media Management Brief — vivedfx</title>
   <link rel="preconnect" href="https://api.fontshare.com" />
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles-brief.css">
-  <!-- Arabic Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles-lang.css" />
 </head>
 <body>
   <!-- Background -->
@@ -26,35 +23,16 @@
     <!-- Header -->
     <div class="brief-header">
       <a href="index.html" class="brief-logo">
-        <img src="assets/logo.png" alt="VIVEDFX" class="brief-logo-img">
+        <img src="assets/logo.png" alt="vivedfx" class="brief-logo-img">
       </a>
       <h1 class="brief-title">Social Media <span>Brief</span></h1>
       <p class="brief-subtitle">Tell us about your brand so we can craft a social media strategy that drives real engagement and growth.</p>
-      <div class="lang-switcher">
-        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="12" cy="12" r="10"/>
-            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
-          </svg>
-          <span class="lang-switcher-label" id="lang-switcher-label">AR</span>
-        </button>
-        <div class="lang-dropdown" id="lang-dropdown">
-          <button class="lang-option" data-lang="en">
-            <span class="lang-flag">🇺🇸</span>
-            <span>EN</span>
-          </button>
-          <button class="lang-option" data-lang="ar">
-            <span class="lang-flag">🇸🇦</span>
-            <span>AR</span>
-          </button>
-        </div>
-      </div>
     </div>
 
     <!-- Progress Bar -->
     <div class="brief-progress">
       <div class="brief-progress-top">
-        <span class="brief-progress-label" data-i18n="brief_progress">Progress</span>
+        <span class="brief-progress-label">Progress</span>
         <span class="brief-progress-step" id="briefStepBadge">1 / 5</span>
       </div>
       <div class="brief-progress-bar">
@@ -76,183 +54,183 @@
 
       <!-- STEP 1: Business Info -->
       <div class="brief-step active" data-label="About Your Business">
-        <h2 class="brief-step-title" data-i18n="brief_social_media_step_about_your_business">About Your Business</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_lets_start_with_the_basics_so_we_understand_who_you_are">Let's start with the basics so we understand who you are.</p>
+        <h2 class="brief-step-title">About Your Business</h2>
+        <p class="brief-step-desc">Let's start with the basics so we understand who you are.</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_business_name">Business Name <span class="required">*</span></label>
-          <input type="text" name="business_name" class="brief-input" placeholder="e.g. VIVEDFX" data-i18n-placeholder="brief_ph_eg_vivedfx" required>
+          <label class="brief-label">Business Name <span class="required">*</span></label>
+          <input type="text" name="business_name" class="brief-input" placeholder="e.g. vivedfx" required>
           <div class="brief-error">Please enter your business name</div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_industry">Industry <span class="required">*</span></label>
+          <label class="brief-label">Industry <span class="required">*</span></label>
           <select name="industry" class="brief-select" required>
-<option value="" data-i18n="brief_select_select_your_industry">Select your industry</option>
-            <option data-i18n="brief_option_healthcare_medical">Healthcare & Medical</option>
-            <option data-i18n="brief_option_fitness_wellness">Fitness & Wellness</option>
-            <option data-i18n="brief_option_corporate_b2b">Corporate & B2B</option>
-            <option data-i18n="brief_option_ecommerce_retail">E-Commerce & Retail</option>
-            <option data-i18n="brief_option_real_estate">Real Estate</option>
-            <option data-i18n="brief_option_food_beverage">Food & Beverage</option>
-            <option data-i18n="brief_option_education">Education</option>
-            <option data-i18n="brief_option_technology_saas">Technology & SaaS</option>
-            <option data-i18n="brief_option_automotive">Automotive</option>
-            <option data-i18n="brief_option_fashion_beauty">Fashion & Beauty</option>
-            <option data-i18n="brief_option_hospitality_travel">Hospitality & Travel</option>
-            <option data-i18n="brief_option_other">Other</option>
+<option value="">Select your industry</option>
+            <option>Healthcare & Medical</option>
+            <option>Fitness & Wellness</option>
+            <option>Corporate & B2B</option>
+            <option>E-Commerce & Retail</option>
+            <option>Real Estate</option>
+            <option>Food & Beverage</option>
+            <option>Education</option>
+            <option>Technology & SaaS</option>
+            <option>Automotive</option>
+            <option>Fashion & Beauty</option>
+            <option>Hospitality & Travel</option>
+            <option>Other</option>
           </select>
           <div class="brief-error">Please select your industry</div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_target_audience">Target Audience</label>
-          <textarea name="target_audience" class="brief-textarea" placeholder="Describe your ideal customer — age, gender, interests, pain points..." data-i18n-placeholder="brief_ph_describe_your_ideal_customer_age_gender_interests_pain_points"></textarea>
+          <label class="brief-label">Target Audience</label>
+          <textarea name="target_audience" class="brief-textarea" placeholder="Describe your ideal customer — age, gender, interests, pain points..."></textarea>
         </div>
       </div>
 
       <!-- STEP 2: Current Social Presence -->
       <div class="brief-step" data-label="Current Social Presence">
-        <h2 class="brief-step-title" data-i18n="brief_step_current_social_presence">Current Social Presence</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_help_us_understand_where_you_currently_stand_on_social_media">Help us understand where you currently stand on social media.</p>
+        <h2 class="brief-step-title">Current Social Presence</h2>
+        <p class="brief-step-desc">Help us understand where you currently stand on social media.</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_current_social_media_accounts">Current Social Media Accounts</label>
-          <textarea name="social_accounts" class="brief-textarea" placeholder="List your social media profiles and follower counts (e.g. Instagram: @vivedfx — 5K followers)" data-i18n-placeholder="brief_ph_list_your_social_media_profiles_and_follower_counts_eg_instagram_vivedfx_5k_followers"></textarea>
+          <label class="brief-label">Current Social Media Accounts</label>
+          <textarea name="social_accounts" class="brief-textarea" placeholder="List your social media profiles and follower counts (e.g. Instagram: @vivedfx — 5K followers)"></textarea>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_biggest_challenges">Biggest Challenges</label>
-          <textarea name="challenges" class="brief-textarea" placeholder="What are you struggling with most on social media? (e.g. low engagement, inconsistent posting, no strategy)" data-i18n-placeholder="brief_ph_what_are_you_struggling_with_most_on_social_media_eg_low_engagement_inconsistent_posting_no_strategy"></textarea>
+          <label class="brief-label">Biggest Challenges</label>
+          <textarea name="challenges" class="brief-textarea" placeholder="What are you struggling with most on social media? (e.g. low engagement, inconsistent posting, no strategy)"></textarea>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_competitors">Competitors</label>
-          <textarea name="competitors" class="brief-textarea" placeholder="List 3-5 competitors or brands you admire on social media" data-i18n-placeholder="brief_ph_list_35_competitors_or_brands_you_admire_on_social_media"></textarea>
+          <label class="brief-label">Competitors</label>
+          <textarea name="competitors" class="brief-textarea" placeholder="List 3-5 competitors or brands you admire on social media"></textarea>
         </div>
       </div>
 
       <!-- STEP 3: Goals & Strategy -->
       <div class="brief-step" data-label="Goals & Strategy">
-        <h2 class="brief-step-title" data-i18n="brief_step_goals_strategy">Goals & Strategy</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_what_do_you_want_to_achieve_with_social_media_marketing">What do you want to achieve with social media marketing?</p>
+        <h2 class="brief-step-title">Goals & Strategy</h2>
+        <p class="brief-step-desc">What do you want to achieve with social media marketing?</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_primary_goals">Primary Goals</label>
+          <label class="brief-label">Primary Goals</label>
           <div class="brief-options brief-radio-group" name="goals">
-            <label class="brief-option"><input type="radio" name="goals" value="brand_awareness"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_brand_awareness">Brand Awareness</span></label>
-            <label class="brief-option"><input type="radio" name="goals" value="lead_generation"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_lead_generation">Lead Generation</span></label>
-            <label class="brief-option"><input type="radio" name="goals" value="sales"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_sales_conversions">Sales & Conversions</span></label>
-            <label class="brief-option"><input type="radio" name="goals" value="engagement"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_community_engagement">Community Engagement</span></label>
-            <label class="brief-option"><input type="radio" name="goals" value="traffic"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_website_traffic">Website Traffic</span></label>
-            <label class="brief-option"><input type="radio" name="goals" value="all"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_all_of_the_above">All of the Above</span></label>
+            <label class="brief-option"><input type="radio" name="goals" value="brand_awareness"><span class="brief-option-check"></span><span class="brief-option-text">Brand Awareness</span></label>
+            <label class="brief-option"><input type="radio" name="goals" value="lead_generation"><span class="brief-option-check"></span><span class="brief-option-text">Lead Generation</span></label>
+            <label class="brief-option"><input type="radio" name="goals" value="sales"><span class="brief-option-check"></span><span class="brief-option-text">Sales & Conversions</span></label>
+            <label class="brief-option"><input type="radio" name="goals" value="engagement"><span class="brief-option-check"></span><span class="brief-option-text">Community Engagement</span></label>
+            <label class="brief-option"><input type="radio" name="goals" value="traffic"><span class="brief-option-check"></span><span class="brief-option-text">Website Traffic</span></label>
+            <label class="brief-option"><input type="radio" name="goals" value="all"><span class="brief-option-check"></span><span class="brief-option-text">All of the Above</span></label>
           </div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_platforms_required">Platforms Required</label>
+          <label class="brief-label">Platforms Required</label>
           <div class="brief-checkbox-group">
-            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="instagram"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_instagram">Instagram</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="facebook"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_facebook">Facebook</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="tiktok"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_tiktok">TikTok</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="linkedin"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_linkedin">LinkedIn</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="twitter"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_twitter_x">Twitter / X</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="youtube"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_youtube">YouTube</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="pinterest"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_pinterest">Pinterest</span></label>
-            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="snapchat"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text" data-i18n="brief_option_snapchat">Snapchat</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="instagram"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Instagram</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="facebook"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Facebook</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="tiktok"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">TikTok</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="linkedin"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">LinkedIn</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="twitter"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Twitter / X</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="youtube"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">YouTube</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="pinterest"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Pinterest</span></label>
+            <label class="brief-checkbox"><input type="checkbox" name="platforms" value="snapchat"><span class="brief-checkbox-mark"></span><span class="brief-checkbox-text">Snapchat</span></label>
           </div>
         </div>
       </div>
 
       <!-- STEP 4: Content & Brand -->
       <div class="brief-step" data-label="Content & Brand">
-        <h2 class="brief-step-title" data-i18n="brief_step_content_brand">Content & Brand</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_how_should_your_brand_look_and_feel_on_social_media">How should your brand look and feel on social media?</p>
+        <h2 class="brief-step-title">Content & Brand</h2>
+        <p class="brief-step-desc">How should your brand look and feel on social media?</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_preferred_content_style">Preferred Content Style</label>
+          <label class="brief-label">Preferred Content Style</label>
           <div class="brief-options brief-radio-group" name="content_style">
-            <label class="brief-option"><input type="radio" name="content_style" value="professional"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_professional_polished">Professional & Polished</span></label>
-            <label class="brief-option"><input type="radio" name="content_style" value="casual"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_casual_friendly">Casual & Friendly</span></label>
-            <label class="brief-option"><input type="radio" name="content_style" value="bold"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_bold_edgy">Bold & Edgy</span></label>
-            <label class="brief-option"><input type="radio" name="content_style" value="minimal"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_minimal_clean">Minimal & Clean</span></label>
-            <label class="brief-option"><input type="radio" name="content_style" value="luxury"><span class="brief-option-check"></span><span class="brief-option-text" data-i18n="brief_option_luxury_premium">Luxury & Premium</span></label>
+            <label class="brief-option"><input type="radio" name="content_style" value="professional"><span class="brief-option-check"></span><span class="brief-option-text">Professional & Polished</span></label>
+            <label class="brief-option"><input type="radio" name="content_style" value="casual"><span class="brief-option-check"></span><span class="brief-option-text">Casual & Friendly</span></label>
+            <label class="brief-option"><input type="radio" name="content_style" value="bold"><span class="brief-option-check"></span><span class="brief-option-text">Bold & Edgy</span></label>
+            <label class="brief-option"><input type="radio" name="content_style" value="minimal"><span class="brief-option-check"></span><span class="brief-option-text">Minimal & Clean</span></label>
+            <label class="brief-option"><input type="radio" name="content_style" value="luxury"><span class="brief-option-check"></span><span class="brief-option-text">Luxury & Premium</span></label>
           </div>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_brand_personality">Brand Personality</label>
-          <textarea name="brand_personality" class="brief-textarea" placeholder="Describe your brand in 3-5 adjectives (e.g. modern, bold, trustworthy, playful)" data-i18n-placeholder="brief_ph_describe_your_brand_in_35_adjectives_eg_modern_bold_trustworthy_playful"></textarea>
+          <label class="brief-label">Brand Personality</label>
+          <textarea name="brand_personality" class="brief-textarea" placeholder="Describe your brand in 3-5 adjectives (e.g. modern, bold, trustworthy, playful)"></textarea>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_monthly_content_needed">Monthly Content Needed</label>
+          <label class="brief-label">Monthly Content Needed</label>
           <select name="content_volume" class="brief-select">
-<option value="" data-i18n="brief_select_select_volume">Select volume</option>
-            <option data-i18n="brief_option_12_posts_per_week">1-2 posts per week</option>
-            <option data-i18n="brief_option_34_posts_per_week">3-4 posts per week</option>
-            <option data-i18n="brief_option_daily_posts">Daily posts</option>
-            <option data-i18n="brief_option_multiple_posts_per_day">Multiple posts per day</option>
-            <option data-i18n="brief_option_not_sure_need_recommendation">Not sure — need recommendation</option>
+<option value="">Select volume</option>
+            <option>1-2 posts per week</option>
+            <option>3-4 posts per week</option>
+            <option>Daily posts</option>
+            <option>Multiple posts per day</option>
+            <option>Not sure — need recommendation</option>
           </select>
         </div>
       </div>
 
       <!-- STEP 5: Budget & Extras -->
       <div class="brief-step" data-label="Budget & Extras">
-        <h2 class="brief-step-title" data-i18n="brief_step_budget_extras">Budget & Extras</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_help_us_tailor_a_package_that_fits_your_needs_and_budget">Help us tailor a package that fits your needs and budget.</p>
+        <h2 class="brief-step-title">Budget & Extras</h2>
+        <p class="brief-step-desc">Help us tailor a package that fits your needs and budget.</p>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_monthly_marketing_budget">Monthly Marketing Budget</label>
+          <label class="brief-label">Monthly Marketing Budget</label>
           <select name="budget" class="brief-select">
-<option value="" data-i18n="brief_select_select_your_budget_range">Select your budget range</option>
-            <option data-i18n="brief_option_under_1000">Under $1,000</option>
-            <option data-i18n="brief_option_1000_3000">$1,000 - $3,000</option>
-            <option data-i18n="brief_option_3000_5000">$3,000 - $5,000</option>
-            <option data-i18n="brief_option_5000_10000">$5,000 - $10,000</option>
-            <option data-i18n="brief_option_10000">$10,000+</option>
-            <option data-i18n="brief_option_not_sure_yet">Not sure yet</option>
+<option value="">Select your budget range</option>
+            <option>Under $1,000</option>
+            <option>$1,000 - $3,000</option>
+            <option>$3,000 - $5,000</option>
+            <option>$5,000 - $10,000</option>
+            <option>$10,000+</option>
+            <option>Not sure yet</option>
           </select>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_additional_notes">Additional Notes</label>
-          <textarea name="notes" class="brief-textarea" placeholder="Anything else you'd like us to know? Special requirements, deadlines, references..." data-i18n-placeholder="brief_ph_anything_else_youd_like_us_to_know_special_requirements_deadlines_references"></textarea>
+          <label class="brief-label">Additional Notes</label>
+          <textarea name="notes" class="brief-textarea" placeholder="Anything else you'd like us to know? Special requirements, deadlines, references..."></textarea>
         </div>
 
         <div class="brief-group">
-          <label class="brief-label" data-i18n="brief_label_upload_reference_files">Upload Reference Files</label>
+          <label class="brief-label">Upload Reference Files</label>
           <div class="brief-upload" data-key="references">
             <input type="file" multiple accept=".pdf,.docx,.jpg,.jpeg,.png,.ai,.psd,.zip">
             <div class="brief-upload-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
             </div>
-            <div class="brief-upload-text" data-i18n="brief_upload_drop_files_here_or_click_to_upload">Drop files here or click to upload</div>
-            <div class="brief-upload-hint" data-i18n="brief_hint_pdf_docx_jpg_png_ai_psd_zip_max_10_files">PDF, DOCX, JPG, PNG, AI, PSD, ZIP — Max 10 files</div>
+            <div class="brief-upload-text">Drop files here or click to upload</div>
+            <div class="brief-upload-hint">PDF, DOCX, JPG, PNG, AI, PSD, ZIP — Max 10 files</div>
             <div class="brief-upload-files"></div>
           </div>
         </div>
 
         <!-- Save Progress -->
         <div style="text-align:center;margin-top:16px;">
-          <button type="button" id="briefSaveBtn" class="brief-btn brief-btn-save" data-i18n="brief_save">Save Progress</button>
+          <button type="button" id="briefSaveBtn" class="brief-btn brief-btn-save">Save Progress</button>
         </div>
       </div>
 
       <!-- REVIEW STEP -->
       <div class="brief-step" id="briefReviewStep" data-label="Review & Submit">
-        <h2 class="brief-step-title" data-i18n="brief_step_review_your_brief">Review Your Brief</h2>
-        <p class="brief-step-desc" data-i18n="brief_desc_please_review_all_your_answers_before_submitting_you_can_go_back_to_make_changes">Please review all your answers before submitting. You can go back to make changes.</p>
+        <h2 class="brief-step-title">Review Your Brief</h2>
+        <p class="brief-step-desc">Please review all your answers before submitting. You can go back to make changes.</p>
         <div id="briefReviewData"></div>
       </div>
 
       <!-- NAVIGATION -->
       <div class="brief-actions">
-        <button type="button" id="briefPrev" class="brief-btn brief-btn-secondary" data-i18n="brief_previous" style="visibility:hidden">
+        <button type="button" id="briefPrev" class="brief-btn brief-btn-secondary" style="visibility:hidden">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Previous
         </button>
-        <button type="button" id="briefNext" class="brief-btn brief-btn-primary" data-i18n="brief_continue">
+        <button type="button" id="briefNext" class="brief-btn brief-btn-primary">
           Continue<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
       </div>
@@ -264,26 +242,22 @@
       <div class="brief-success-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
       </div>
-      <h2 class="brief-success-title" data-i18n="brief_success_title">Brief Submitted!</h2>
-      <p class="brief-success-text" data-i18n="brief_success_text">Thank you for completing the Social Media Management Brief. Our team will review your submission and get back to you within 24 hours.</p>
+      <h2 class="brief-success-title">Brief Submitted!</h2>
+      <p class="brief-success-text">Thank you for completing the Social Media Management Brief. Our team will review your submission and get back to you within 24 hours.</p>
       <div class="brief-success-actions">
-        <a href="index.html" class="brief-btn brief-btn-primary" data-i18n="brief_back_home">Back to Home</a>
-        <a href="services.html" class="brief-btn brief-btn-secondary" data-i18n="brief_view_services">View Services</a>
+        <a href="index.html" class="brief-btn brief-btn-primary">Back to Home</a>
+        <a href="services.html" class="brief-btn brief-btn-secondary">View Services</a>
       </div>
     </div>
   </div>
 
   <!-- Save Toast -->
-  <div class="brief-save-toast" data-i18n="brief_saved" id="briefSaveToast">
+  <div class="brief-save-toast" id="briefSaveToast">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
     Progress saved
   </div>
 
   <script>window.BRIEF_ID = 'social-media';</script>
   <script src="brief.js"></script>
-  <!-- Language System -->
-  <script src="lang-en.js"></script>
-  <script src="lang-ar.js"></script>
-  <script src="lang.js"></script>
 </body>
 </html>

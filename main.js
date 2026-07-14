@@ -1,5 +1,5 @@
-/**
- * VIVEDFX — Premium Marketing Agency
+﻿/**
+ * vivedfx â€” Premium Marketing Agency
  * Main JavaScript: Animations, Interactions & Behaviors
  */
 
@@ -12,7 +12,7 @@ const $ = (sel, ctx = document) => ctx.querySelector(sel);
 const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
 /* ============================================================
-   1. HEADER — Scroll-activated glass effect
+   1. HEADER â€” Scroll-activated glass effect
    ============================================================ */
 (function initHeader() {
   const header = $('#header');
@@ -63,7 +63,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 })();
 
 /* ============================================================
-   3. SCROLL REVEAL — Intersection Observer
+   3. SCROLL REVEAL â€” Intersection Observer
    ============================================================ */
 (function initScrollReveal() {
   const targets = $$('.reveal-up, .reveal-scale');
@@ -225,9 +225,9 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 })();
 
 /* ============================================================
-   6b. PORTFOLIO OVERLAY — Mobile tap toggle
-   First tap  → show overlay
-   Second tap → hide overlay
+   6b. PORTFOLIO OVERLAY â€” Mobile tap toggle
+   First tap  â†’ show overlay
+   Second tap â†’ hide overlay
    ============================================================ */
 (function initPortfolioTouchOverlay() {
   // Only on touch devices
@@ -252,14 +252,14 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
     });
   });
 
-  // Tap anywhere outside → close all
+  // Tap anywhere outside â†’ close all
   document.addEventListener('click', () => {
     items.forEach(i => i.classList.remove('touch-active'));
   });
 })();
 
 /* ============================================================
-   7. INDUSTRY CARDS — Toggle expand/collapse
+   7. INDUSTRY CARDS â€” Toggle expand/collapse
    ============================================================ */
 (function initIndustryCards() {
   const cards = $$('.industry-card');
@@ -311,7 +311,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
     if (!activeSlide) return;
     // Use scrollHeight so padding + full text content is measured
     const slideH = activeSlide.scrollHeight;
-    // Controls live outside the track — keep wrapper height = slide only;
+    // Controls live outside the track â€” keep wrapper height = slide only;
     // the controls sit below in normal flow so no extra height needed here.
     wrapper.style.minHeight = slideH + 'px';
   };
@@ -436,7 +436,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 })();
 
 /* ============================================================
-   10. SMOOTH SCROLL — Anchor links
+   10. SMOOTH SCROLL â€” Anchor links
    ============================================================ */
 (function initSmoothScroll() {
   $$('a[href^="#"]').forEach(link => {
@@ -454,7 +454,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 })();
 
 /* ============================================================
-   11. FLOATING BADGES — Subtle float on scroll
+   11. FLOATING BADGES â€” Subtle float on scroll
    ============================================================ */
 (function initFloatingBadges() {
   const heroBadges = $$('.hero-floating-badge');
@@ -480,7 +480,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 })();
 
 /* ============================================================
-   12. MOBILE STICKY CTA — Show after scrolling past hero
+   12. MOBILE STICKY CTA â€” Show after scrolling past hero
    ============================================================ */
 (function initMobileStickyCTA() {
   const cta = $('#mobile-sticky-cta');
@@ -497,7 +497,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 })();
 
 /* ============================================================
-   13. PORTFOLIO ITEM — Fade-in keyframe injection
+   13. PORTFOLIO ITEM â€” Fade-in keyframe injection
    ============================================================ */
 (function injectKeyframes() {
   const style = document.createElement('style');
@@ -547,7 +547,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 })();
 
 /* ============================================================
-   15. ACTIVE NAV LINK — Highlight on scroll
+   15. ACTIVE NAV LINK â€” Highlight on scroll
    ============================================================ */
 (function initActiveNav() {
   const sections = $$('section[id]');

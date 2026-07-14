@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Video Editing Services — VIVEDFX | Cinematic Content That Converts</title>
-  <meta name="description" content="Professional video editing by VIVEDFX. Reels, brand films, testimonials, and short-form content optimized for maximum reach, engagement, and conversions." />
-  <meta property="og:title" content="Video Editing Services — VIVEDFX" />
-  <meta property="og:description" content="Cinematic reels, brand films, and short-form video content optimized for maximum reach and retention." />
+  <title>Video Editing Services — vivedfx | Videos That Capture Attention</title>
+  <meta name="description" content="Premium video editing services by vivedfx. Social media reels, brand films, promotional videos, motion graphics, color grading, and sound design crafted to engage audiences and drive conversions." />
+  <meta property="og:title" content="Video Editing Services — vivedfx" />
+  <meta property="og:description" content="Videos that capture attention and drive results — reels, brand films, motion graphics, and more." />
   <meta property="og:type" content="website" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Video Editing","provider":{"@type":"Organization","name":"VIVEDFX"},"description":"Professional video editing services including reels, brand films, testimonials, and short-form content optimized for social media."}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Video Editing","provider":{"@type":"Organization","name":"vivedfx"},"description":"Premium video editing services including social media reels, brand films, promotional videos, motion graphics, color grading, sound design, subtitles, and thumbnail design."}</script>
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -22,62 +22,61 @@
     .sp-title{font-family:var(--font-heading);font-size:clamp(2.5rem,6vw,5rem);font-weight:900;color:var(--white);line-height:1.05;margin-bottom:24px}
     .sp-title span{color:var(--accent)}
     .sp-subtitle{font-size:1.15rem;color:var(--muted);max-width:600px;line-height:1.75}
+    .sp-hero-btns{display:flex;gap:16px;margin-top:32px;flex-wrap:wrap}
     .sp-section{padding:100px 0;background:var(--dark)}.sp-section-alt{background:var(--dark-2)}
     .sp-section-label{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
     .sp-section-title{font-family:var(--font-heading);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:800;color:var(--white);margin-bottom:48px;line-height:1.15}
     .sp-section-title span{color:var(--accent)}
-    .media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .media-cell{background:var(--dark-3);border:2px dashed var(--border);border-radius:var(--radius-md);aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;transition:all .3s;overflow:hidden;position:relative;cursor:pointer}
-    .media-cell:hover{border-color:var(--accent);background:rgba(236,31,39,.05)}
-    .media-cell.has-content{border-style:solid;border-color:var(--border)}
-    .media-cell.has-content:hover{border-color:var(--border-hover)}
-    .media-cell img,.media-cell video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:calc(var(--radius-md) - 2px)}
-    .media-cell-overlay{position:absolute;inset:0;background:rgba(0,0,0,.6);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;transition:opacity .3s;border-radius:calc(var(--radius-md) - 2px)}
-    .media-cell.has-content:hover .media-cell-overlay{opacity:1}
-    .media-cell-icon{color:var(--accent)}.media-cell-icon svg{width:32px;height:32px}
-    .media-cell-text{font-size:.8rem;color:var(--muted);font-weight:500}
-    .media-cell-remove{position:absolute;top:10px;right:10px;width:28px;height:28px;background:rgba(236,31,39,.9);border:none;border-radius:50%;color:white;font-size:14px;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:10}
-    .media-cell.has-content:hover .media-cell-remove{display:flex}
-    .media-cell input[type=file]{display:none}
-    .media-cell-video{aspect-ratio:16/9}.media-cell-wide{grid-column:span 2;aspect-ratio:16/6}
-    .upload-hint{text-align:center;padding:16px 0 0;color:var(--muted);font-size:.85rem}.upload-hint span{color:var(--accent)}
-    .sp-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:60px 0 0}
-    .sp-stat{background:var(--dark-3);padding:36px 32px}
-    .sp-stat-num{font-family:var(--font-heading);font-size:3rem;font-weight:900;color:var(--accent);line-height:1}
-    .sp-stat-label{font-size:.9rem;color:var(--muted);margin-top:8px}
-    .sp-features{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-    .sp-feature{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;transition:border-color .3s,transform .3s}
-    .sp-feature:hover{border-color:var(--border-hover);transform:translateY(-3px)}
-    .sp-feature-icon{color:var(--accent);margin-bottom:14px}.sp-feature-icon svg{width:28px;height:28px}
-    .sp-feature-title{font-weight:700;color:var(--white);margin-bottom:8px}
-    .sp-feature-text{font-size:.88rem;color:var(--muted);line-height:1.65}
-    .sp-cta{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-xl);padding:72px;text-align:center;position:relative;overflow:hidden}
-    .sp-cta-orb{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(236,31,39,.15),transparent 70%);border-radius:50%;pointer-events:none}
-    .sp-cta-orb-1{top:-100px;left:-100px}.sp-cta-orb-2{bottom:-100px;right:-100px}
-    .sp-cta-title{font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:16px}
-    .sp-cta-title span{color:var(--accent)}
-    .sp-cta-sub{color:var(--muted);font-size:1.05rem;max-width:480px;margin:0 auto 36px;line-height:1.7}
-    .sp-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-    .sp-why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .sp-why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
     .sp-why-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:32px;transition:border-color .3s,transform .3s}
     .sp-why-card:hover{border-color:var(--border-hover);transform:translateY(-3px)}
     .sp-why-icon{width:48px;height:48px;background:rgba(236,31,39,.1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:20px}
     .sp-why-icon svg{width:24px;height:24px}
     .sp-why-title{font-weight:700;color:var(--white);margin-bottom:8px;font-size:1.05rem}
     .sp-why-text{font-size:.88rem;color:var(--muted);line-height:1.65}
-    .sp-process{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;counter-reset:step}
-    .sp-process-step{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px 20px;text-align:center;position:relative;transition:border-color .3s,transform .3s}
+    .sp-services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .sp-service-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;transition:border-color .3s,transform .3s}
+    .sp-service-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .sp-service-card-icon{width:44px;height:44px;background:rgba(236,31,39,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:16px}
+    .sp-service-card-icon svg{width:22px;height:22px}
+    .sp-service-card-title{font-weight:700;color:var(--white);margin-bottom:6px;font-size:.95rem}
+    .sp-service-card-text{font-size:.84rem;color:var(--muted);line-height:1.6}
+    .sp-process{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;counter-reset:step;position:relative}
+    .sp-process::before{content:'';position:absolute;top:44px;left:8%;right:8%;height:2px;background:var(--border);z-index:0}
+    .sp-process-step{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px 16px;text-align:center;position:relative;z-index:1;transition:border-color .3s,transform .3s}
     .sp-process-step:hover{border-color:var(--accent);transform:translateY(-3px)}
-    .sp-process-num{font-family:var(--font-heading);font-size:2.5rem;font-weight:900;color:rgba(236,31,39,.15);line-height:1;margin-bottom:12px}
-    .sp-process-title{font-weight:700;color:var(--white);margin-bottom:8px;font-size:.95rem}
-    .sp-process-text{font-size:.82rem;color:var(--muted);line-height:1.6}
-    .sp-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .sp-benefit{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;display:flex;align-items:flex-start;gap:16px;transition:border-color .3s,transform .3s}
-    .sp-benefit:hover{border-color:var(--border-hover);transform:translateY(-3px)}
-    .sp-benefit-check{width:24px;height:24px;background:rgba(236,31,39,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);margin-top:2px}
-    .sp-benefit-check svg{width:14px;height:14px}
-    .sp-benefit-title{font-weight:700;color:var(--white);margin-bottom:4px}
-    .sp-benefit-text{font-size:.85rem;color:var(--muted);line-height:1.6}
+    .sp-process-num{font-family:var(--font-heading);font-size:2.2rem;font-weight:900;color:rgba(236,31,39,.15);line-height:1;margin-bottom:10px}
+    .sp-process-title{font-weight:700;color:var(--white);margin-bottom:6px;font-size:.88rem}
+    .sp-process-text{font-size:.78rem;color:var(--muted);line-height:1.55}
+    .sp-portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .sp-portfolio-item{position:relative;border-radius:var(--radius-md);overflow:hidden;aspect-ratio:4/3;cursor:pointer;border:1px solid var(--border);transition:border-color .3s,transform .3s}
+    .sp-portfolio-item:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .sp-portfolio-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+    .sp-portfolio-item:hover img{transform:scale(1.05)}
+    .sp-portfolio-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.8) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:24px;opacity:0;transition:opacity .3s}
+    .sp-portfolio-item:hover .sp-portfolio-overlay{opacity:1}
+    .sp-portfolio-tag{font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+    .sp-portfolio-name{font-weight:700;color:var(--white);font-size:1rem}
+    .sp-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:60px 0 0}
+    .sp-stat{background:var(--dark-3);padding:36px 32px}
+    .sp-stat-num{font-family:var(--font-heading);font-size:3rem;font-weight:900;color:var(--accent);line-height:1}
+    .sp-stat-label{font-size:.9rem;color:var(--muted);margin-top:8px}
+    .sp-testimonials-slider{position:relative;max-width:900px;margin:0 auto}
+    .sp-testimonials-track{display:flex;overflow:hidden}
+    .sp-testimonial-slide{min-width:100%;padding:0 20px;box-sizing:border-box}
+    .sp-testimonial-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px;position:relative}
+    .sp-testimonial-quote{font-size:1.05rem;color:var(--white);line-height:1.8;font-style:italic;margin-bottom:28px;position:relative;padding-left:24px;border-left:3px solid var(--accent)}
+    .sp-testimonial-author{display:flex;align-items:center;gap:14px}
+    .sp-testimonial-avatar{width:48px;height:48px;border-radius:50%;background:rgba(236,31,39,.15);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:.9rem;flex-shrink:0}
+    .sp-testimonial-name{font-weight:700;color:var(--white);font-size:.95rem}
+    .sp-testimonial-role{font-size:.82rem;color:var(--muted);margin-top:2px}
+    .sp-testimonial-controls{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:32px}
+    .sp-testimonial-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:var(--dark-3);color:var(--white);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:border-color .2s,transform .2s}
+    .sp-testimonial-btn:hover{border-color:var(--accent);transform:scale(1.05)}
+    .sp-testimonial-btn svg{width:18px;height:18px}
+    .sp-testimonial-dots{display:flex;gap:8px}
+    .sp-testimonial-dot{width:10px;height:10px;border-radius:50%;border:none;background:var(--border);cursor:pointer;transition:background .2s,transform .2s}
+    .sp-testimonial-dot.active{background:var(--accent);transform:scale(1.2)}
     .sp-faq{max-width:800px;margin:0 auto}
     .sp-faq-item{border-bottom:1px solid var(--border)}
     .sp-faq-q{width:100%;background:none;border:none;padding:20px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;color:var(--white);font-weight:600;font-size:1rem;text-align:left;font-family:inherit}
@@ -86,6 +85,19 @@
     .sp-faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease}
     .sp-faq-item.open .sp-faq-a{max-height:300px;padding:0 0 20px}
     .sp-faq-a p{font-size:.9rem;color:var(--muted);line-height:1.7}
+    .sp-cta{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-xl);padding:72px;text-align:center;position:relative;overflow:hidden}
+    .sp-cta-orb{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(236,31,39,.15),transparent 70%);border-radius:50%;pointer-events:none}
+    .sp-cta-orb-1{top:-100px;left:-100px}.sp-cta-orb-2{bottom:-100px;right:-100px}
+    .sp-cta-title{font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:16px}
+    .sp-cta-title span{color:var(--accent)}
+    .sp-cta-sub{color:var(--muted);font-size:1.05rem;max-width:480px;margin:0 auto 36px;line-height:1.7}
+    .sp-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    .sp-related-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+    .sp-related-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px;text-align:center;text-decoration:none;color:var(--white);transition:border-color .3s,transform .3s}
+    .sp-related-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .sp-related-icon{width:44px;height:44px;background:rgba(236,31,39,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin:0 auto 14px}
+    .sp-related-icon svg{width:22px;height:22px}
+    .sp-related-title{font-weight:700;font-size:.9rem}
     .sp-nav{display:flex;justify-content:space-between;gap:16px;padding:60px 0}
     .sp-nav-link{flex:1;display:flex;align-items:center;gap:12px;background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:20px 24px;text-decoration:none;color:var(--white);transition:border-color .3s,transform .2s}
     .sp-nav-link:hover{border-color:var(--accent);transform:translateY(-2px)}
@@ -93,13 +105,10 @@
     .sp-nav-label{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
     .sp-nav-title{font-weight:700;font-size:.95rem}
     .sp-nav-next{text-align:right;flex-direction:row-reverse}
-    @media(max-width:1024px){.sp-process{grid-template-columns:repeat(3,1fr)}}
-    @media(max-width:768px){.media-grid{grid-template-columns:repeat(2,1fr)}.media-cell-wide{grid-column:span 2}.sp-features{grid-template-columns:1fr}.sp-stats{grid-template-columns:1fr}.sp-cta{padding:48px 28px}.sp-hero{min-height:50vh}.sp-why-grid{grid-template-columns:1fr}.sp-process{grid-template-columns:1fr}.sp-benefits{grid-template-columns:1fr}.sp-nav{flex-direction:column}}
-    @media(max-width:480px){.media-grid{grid-template-columns:1fr}.media-cell-wide{grid-column:span 1;aspect-ratio:4/3}}
+    @media(max-width:1024px){.sp-process{grid-template-columns:repeat(3,1fr)}.sp-process::before{display:none}.sp-services-grid{grid-template-columns:repeat(2,1fr)}.sp-related-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:768px){.sp-why-grid{grid-template-columns:1fr}.sp-services-grid{grid-template-columns:1fr}.sp-process{grid-template-columns:1fr}.sp-portfolio-grid{grid-template-columns:repeat(2,1fr)}.sp-stats{grid-template-columns:1fr}.sp-related-grid{grid-template-columns:1fr}.sp-cta{padding:48px 28px}.sp-hero{min-height:50vh}.sp-nav{flex-direction:column}.sp-testimonial-card{padding:28px}}
+    @media(max-width:480px){.sp-portfolio-grid{grid-template-columns:1fr}}
   </style>
-  <!-- Arabic Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles-lang.css" />
 </head>
 <body>
   <header class="header" id="header">
@@ -113,29 +122,10 @@
         <li><a href="index.html#testimonials" class="nav-link">Clients</a></li>
       </ul>
       <a href="index.html#contact" class="btn btn-primary nav-cta magnetic-btn" id="nav-cta-btn">
-        <span data-i18n="book_free_call">Book a Call</span>
+        <span>Book a Call</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-          <div class="lang-switcher">
-        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="12" cy="12" r="10"/>
-            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
-          </svg>
-          <span class="lang-switcher-label" id="lang-switcher-label">AR</span>
-        </button>
-        <div class="lang-dropdown" id="lang-dropdown">
-          <button class="lang-option" data-lang="en">
-            <span class="lang-flag">🇺🇸</span>
-            <span>EN</span>
-          </button>
-          <button class="lang-option" data-lang="ar">
-            <span class="lang-flag">🇸🇦</span>
-            <span>AR</span>
-          </button>
-        </div>
-      </div>
     </nav>
   </header>
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
@@ -146,150 +136,275 @@
       <li class="mobile-menu-item"><a href="index.html#process" class="mobile-link">Process</a></li>
       <li class="mobile-menu-item"><a href="index.html#testimonials" class="mobile-link">Clients</a></li>
     </ul>
-    <div class="mobile-menu-cta-wrap"><a href="index.html#contact" class="btn btn-primary mobile-menu-cta"><span data-i18n="book_free_call">Book a Call</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+    <div class="mobile-menu-cta-wrap"><a href="index.html#contact" class="btn btn-primary mobile-menu-cta"><span>Book a Call</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
   </div>
   <main>
-    <!-- HERO -->
+
+    <!-- SECTION 1: HERO -->
     <section class="sp-hero">
       <div class="sp-hero-bg"></div>
       <div class="container">
-        <a href="index.html#services" class="sp-back" data-i18n="back_to_home"><svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to Services</a>
+        <a href="index.html#services" class="sp-back"><svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to Services</a>
         <div class="sp-label"><span class="sp-label-dot"></span>Service 03</div>
-        <h1 class="sp-title" data-i18n="ve_hero_title">Video<br/><span>Editing</span></h1>
-        <p class="sp-subtitle" data-i18n="ve_hero_desc">Cinematic reels, brand films, testimonials, and short-form content optimized for maximum reach and retention.</p>
+        <h1 class="sp-title">Video<br/><span>Editing</span></h1>
+        <p class="sp-subtitle" style="font-family:var(--font-heading);font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:700;color:var(--white);max-width:700px;margin-bottom:16px">Videos That Capture Attention and Drive Results.</p>
+        <p class="sp-subtitle">From social media reels to brand films, we edit raw footage into compelling visual stories that engage your audience, boost retention, and drive conversions across every platform.</p>
+        <div class="sp-hero-btns">
+          <a href="brief-content-creation.html" class="btn btn-primary btn-lg magnetic-btn"><span>Start Your Video Project</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="portfolio.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>View Video Portfolio</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
       </div>
     </section>
 
-    <!-- GALLERY -->
+    <!-- SECTION 2: WHY THIS SERVICE -->
     <section class="sp-section">
       <div class="container">
-        <div class="sp-section-label">Reel & Film</div>
-        <h2 class="sp-section-title">Reels & Shorts <span>Gallery</span></h2>
-        <div class="media-grid" id="photo-grid"></div>
-        <p class="upload-hint">Click any cell to <span>upload video editing visuals</span></p>
-      </div>
-    </section>
-    <section class="sp-section sp-section-alt">
-      <div class="container">
-        <div class="sp-section-label">Brand Films</div>
-        <h2 class="sp-section-title">Brand Films <span>Videos</span></h2>
-        <div class="media-grid" id="video-grid"></div>
-        <p class="upload-hint" style="margin-top:16px">Click any cell to <span>upload video editing videos</span></p>
-      </div>
-    </section>
-
-    <!-- WHY THIS SERVICE -->
-    <section class="sp-section">
-      <div class="container">
-        <div class="sp-section-label">Why Video Editing</div>
-        <h2 class="sp-section-title" data-i18n="ve_why_title">Why Your Business <span>Needs This</span></h2>
+        <div class="sp-section-label">Why vivedfx</div>
+        <h2 class="sp-section-title">Why Your Business <span>Needs This</span></h2>
         <div class="sp-why-grid">
           <div class="sp-why-card">
             <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
-            <div class="sp-why-title">Video Dominates Social Media</div>
+            <div class="sp-why-title">Video Dominates Social</div>
             <div class="sp-why-text">Video content gets 5× more engagement than static posts. Algorithms on Instagram, TikTok, and YouTube heavily favor video creators.</div>
           </div>
           <div class="sp-why-card">
             <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="sp-why-title">Professional Quality Sells</div>
-            <div class="sp-why-text">Poorly edited videos hurt your brand. Professional cuts, transitions, and color grading signal quality and keep viewers watching longer.</div>
+            <div class="sp-why-title">Professional Quality</div>
+            <div class="sp-why-text">Raw footage is just the beginning. We add motion graphics, color grading, sound design, and transitions that make your content stand out.</div>
+          </div>
+          <div class="sp-why-card">
+            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-why-title">Platform-Optimized</div>
+            <div class="sp-why-text">Every video is exported with the right specs — aspect ratios, duration, format — for each platform's requirements.</div>
           </div>
           <div class="sp-why-card">
             <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-            <div class="sp-why-title">Save Hours of Your Time</div>
-            <div class="sp-why-text">Editing one minute of video can take 4+ hours. We handle the entire post-production process so you can focus on filming and growing.</div>
+            <div class="sp-why-title">Fast Turnaround</div>
+            <div class="sp-why-text">Most projects delivered within 3–5 business days. Rush delivery available for time-sensitive campaigns.</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- STATS -->
+    <!-- SECTION 3: WHAT WE DELIVER -->
     <section class="sp-section sp-section-alt">
       <div class="container">
-        <div class="sp-section-label">Results</div>
-        <h2 class="sp-section-title">What Brands <span>Achieve</span></h2>
-        <div class="sp-stats">
-          <div class="sp-stat" data-i18n="ve_stat_1"><div class="sp-stat-num" data-i18n="ve_stat_1_num">+350%</div><div class="sp-stat-label" data-i18n="ve_stat_1_label">Average View Retention</div></div>
-          <div class="sp-stat" data-i18n="ve_stat_2"><div class="sp-stat-num" data-i18n="ve_stat_2_num">4.1×</div><div class="sp-stat-label" data-i18n="ve_stat_2_label">Engagement vs Static</div></div>
-          <div class="sp-stat" data-i18n="ve_stat_3"><div class="sp-stat-num" data-i18n="ve_stat_3_num">7-14 days</div><div class="sp-stat-label" data-i18n="ve_stat_3_label">Per Video Turnaround</div></div>
+        <div class="sp-section-label">What We Deliver</div>
+        <h2 class="sp-section-title">Our Video Editing <span>Services</span></h2>
+        <div class="sp-services-grid">
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Social Media Reels</div>
+            <div class="sp-service-card-text">Short-form vertical videos optimized for Instagram, TikTok, and YouTube Shorts.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-service-card-title">Brand Films</div>
+            <div class="sp-service-card-text">Cinematic brand stories that communicate your values and connect emotionally.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Promotional Videos</div>
+            <div class="sp-service-card-text">Product launches, service highlights, and sales-driven video content.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7V4h16v3M9 20h6M12 4v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Motion Graphics</div>
+            <div class="sp-service-card-text">Animated logos, lower thirds, transitions, and visual effects.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-service-card-title">Color Grading</div>
+            <div class="sp-service-card-text">Professional color correction and grading for cinematic, cohesive visuals.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="1.5"/></svg></div>
+            <div class="sp-service-card-title">Sound Design</div>
+            <div class="sp-service-card-text">Audio mixing, music selection, and sound effects that enhance the viewing experience.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Subtitles & Captions</div>
+            <div class="sp-service-card-text">Burned-in or SRT captions for accessibility and silent viewing.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Thumbnail Design</div>
+            <div class="sp-service-card-text">Eye-catching thumbnails that increase click-through rates on YouTube and social.</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- WHAT WE DELIVER -->
+    <!-- SECTION 4: OUR PROCESS -->
     <section class="sp-section">
-      <div class="container">
-        <div class="sp-section-label">What's Included</div>
-        <h2 class="sp-section-title" data-i18n="ve_deliver_title">What We <span>Deliver</span></h2>
-        <div class="sp-features">
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="ve_deliver_1">Social Media Reels</div><div class="sp-feature-text">TikTok, Instagram Reels, and YouTube Shorts edited for maximum retention and shares.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="sp-feature-title" data-i18n="ve_deliver_2">Brand Films</div><div class="sp-feature-text">Cinematic brand stories, company overviews, and product showcases that inspire.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="sp-feature-title" data-i18n="ve_deliver_3">Testimonial Videos</div><div class="sp-feature-text">Interview-style client testimonials edited with graphics, subtitles, and branding.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7V4h16v3M9 20h6M12 4v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="ve_deliver_4">Motion Graphics</div><div class="sp-feature-text">Animated text, lower thirds, transitions, and visual effects that elevate production value.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="sp-feature-title" data-i18n="ve_deliver_5">Color Grading</div><div class="sp-feature-text">Professional color correction and grading that sets the mood and matches your brand.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="ve_deliver_6">Subtitles & Captions</div><div class="sp-feature-text">Burned-in or SRT captions for accessibility and silent viewers on social feeds.</div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="sp-section sp-section-alt">
       <div class="container">
         <div class="sp-section-label">Our Process</div>
-        <h2 class="sp-section-title" data-i18n="ve_process_title">How We <span>Work</span></h2>
+        <h2 class="sp-section-title">Our 6-Step Video <span>Process</span></h2>
         <div class="sp-process">
-          <div class="sp-process-step"><div class="sp-process-num">01</div><div class="sp-process-title" data-i18n="ve_process_1">Brief</div><div class="sp-process-text">Share your footage, vision, and goals for the final video.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">02</div><div class="sp-process-title" data-i18n="ve_process_2">Assemble</div><div class="sp-process-text">We review all footage and select the best takes and moments.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">03</div><div class="sp-process-title" data-i18n="ve_process_3">Edit</div><div class="sp-process-text">We cut, arrange, and pace the video for maximum impact.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">04</div><div class="sp-process-title" data-i18n="ve_process_4">Polish</div><div class="sp-process-text">Color grading, sound design, music, and motion graphics.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">05</div><div class="sp-process-title" data-i18n="ve_process_5">Deliver</div><div class="sp-process-text">Final video in all formats — vertical, square, and landscape.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">01</div><div class="sp-process-title">Upload</div><div class="sp-process-text">Send us your raw footage via our secure file transfer system.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">02</div><div class="sp-process-title">Review</div><div class="sp-process-text">We analyze the footage, identify the best moments, and plan the edit.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">03</div><div class="sp-process-title">Edit</div><div class="sp-process-text">Our editors craft the narrative, add transitions, effects, and music.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">04</div><div class="sp-process-title">Color & Sound</div><div class="sp-process-text">Professional color grading and audio mixing for polished output.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">05</div><div class="sp-process-title">Review</div><div class="sp-process-text">You review the draft and provide feedback for revisions.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">06</div><div class="sp-process-title">Deliver</div><div class="sp-process-text">Final exports in all formats — vertical, horizontal, square — ready to publish.</div></div>
         </div>
       </div>
     </section>
 
-    <!-- BENEFITS -->
-    <section class="sp-section">
-      <div class="container">
-        <div class="sp-section-label">Results & Benefits</div>
-        <h2 class="sp-section-title" data-i18n="ve_benefits_title">What You <span>Get</span></h2>
-        <div class="sp-benefits">
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="ve_benefits_1">Higher Watch Time</div><div class="sp-benefit-text">Professional pacing and editing keep viewers engaged until the end.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="ve_benefits_2">More Shares & Saves</div><div class="sp-benefit-text">Polished videos get shared more often, expanding your organic reach.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="ve_benefits_3">Better Conversions</div><div class="sp-benefit-text">Video on landing pages can increase conversions by up to 80%.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="ve_benefits_4">Time Savings</div><div class="sp-benefit-text">We handle the entire post-production process — you just send us footage.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="ve_benefits_5">Platform Optimization</div><div class="sp-benefit-text">Every video is formatted for the specific platform where it will be published.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="ve_benefits_6">Brand Consistency</div><div class="sp-benefit-text">Every edit matches your brand's tone, style, and visual identity.</div></div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
+    <!-- SECTION 5: PORTFOLIO -->
     <section class="sp-section sp-section-alt">
       <div class="container">
-        <div class="sp-section-label">FAQ</div>
-        <h2 class="sp-section-title" data-i18n="ve_faq_title">Frequently Asked <span>Questions</span></h2>
-        <div class="sp-faq">
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="ve_faq_1_q">What types of videos do you edit?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="ve_faq_1_a">We edit social media reels, brand films, testimonials, product demos, tutorials, event highlights, and any custom video format you need.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="ve_faq_2_q">How do I send you my footage?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="ve_faq_2_a">You can share footage via Google Drive, Dropbox, WeTransfer, or any cloud storage link. We'll handle the rest.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="ve_faq_3_q">How many revision rounds are included?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="ve_faq_3_a">Every project includes up to 2 revision rounds. We want you to be 100% happy with the final cut.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="ve_faq_4_q">What resolution do you deliver in?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="ve_faq_4_a">We deliver in 4K, 1080p, or any resolution you need. We also create vertical, square, and landscape versions for different platforms.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="ve_faq_5_q">Do you add music and sound effects?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="ve_faq_5_a">Yes, we select royalty-free music and add sound effects to enhance the viewing experience. We can also work with your preferred tracks.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="ve_faq_6_q">Can you add subtitles and captions?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="ve_faq_6_a">Absolutely. We add burned-in captions or SRT files for accessibility and to reach silent viewers on social media.</p></div></div>
+        <div class="sp-section-label">Our Work</div>
+        <h2 class="sp-section-title">Video Editing <span>Portfolio</span></h2>
+        <div class="sp-portfolio-grid">
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Fitness/F1.png" alt="Fitness Video Campaign 1" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Fitness</div><div class="sp-portfolio-name">Fitness Campaign 1</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Fitness/F2.png" alt="Fitness Video Campaign 2" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Fitness</div><div class="sp-portfolio-name">Fitness Campaign 2</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Fitness/F3.png" alt="Fitness Video Campaign 3" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Fitness</div><div class="sp-portfolio-name">Fitness Campaign 3</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Fitness/F4.png" alt="Fitness Video Campaign 4" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Fitness</div><div class="sp-portfolio-name">Fitness Campaign 4</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Fitness/F5.png" alt="Fitness Video Campaign 5" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Fitness</div><div class="sp-portfolio-name">Fitness Campaign 5</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Fitness/F6.png" alt="Fitness Video Campaign 6" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Fitness</div><div class="sp-portfolio-name">Fitness Campaign 6</div></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
+    <!-- SECTION 6: RESULTS -->
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">Client Results</div>
+        <h2 class="sp-section-title">Videos That <span>Drive Results</span></h2>
+        <div class="sp-stats">
+          <div class="sp-stat"><div class="sp-stat-num" data-target="4.1" data-suffix="×" data-decimal="1">0×</div><div class="sp-stat-label">Engagement vs Static</div></div>
+          <div class="sp-stat"><div class="sp-stat-num" data-target="7" data-suffix="–14 days" data-decimal="0">0–14 days</div><div class="sp-stat-label">Per Video Turnaround</div></div>
+          <div class="sp-stat"><div class="sp-stat-num" data-target="200" data-suffix="+">0+</div><div class="sp-stat-label">Videos Delivered</div></div>
+          <div class="sp-stat"><div class="sp-stat-num" data-target="98" data-suffix="%">0%</div><div class="sp-stat-label">Client Satisfaction</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: TESTIMONIALS -->
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-section-label">Testimonials</div>
+        <h2 class="sp-section-title">What Our Clients <span>Say</span></h2>
+        <div class="sp-testimonials-slider" id="gd-testimonials">
+          <div class="sp-testimonials-track" id="gd-testimonials-track">
+            <div class="sp-testimonial-slide">
+              <div class="sp-testimonial-card">
+                <div class="sp-testimonial-quote">The video content vivedfx produces for us consistently outperforms everything else. Our reels get 10× more reach than static posts.</div>
+                <div class="sp-testimonial-author">
+                  <div class="sp-testimonial-avatar">AH</div>
+                  <div><div class="sp-testimonial-name">Dr. Ahmed Hassan</div><div class="sp-testimonial-role">Founder, MediCare Plus Clinic</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="sp-testimonial-slide">
+              <div class="sp-testimonial-card">
+                <div class="sp-testimonial-quote">Our gym's video content went from amateur to cinematic. The quality of work vivedfx delivers is outstanding.</div>
+                <div class="sp-testimonial-author">
+                  <div class="sp-testimonial-avatar">SM</div>
+                  <div><div class="sp-testimonial-name">Sarah Mitchell</div><div class="sp-testimonial-role">Owner, IronEdge Fitness</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="sp-testimonial-slide">
+              <div class="sp-testimonial-card">
+                <div class="sp-testimonial-quote">vivedfx turned our project footage into compelling brand videos that help us win new contracts.</div>
+                <div class="sp-testimonial-author">
+                  <div class="sp-testimonial-avatar">JO</div>
+                  <div><div class="sp-testimonial-name">James Okonkwo</div><div class="sp-testimonial-role">CEO, BuildCore Engineering</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sp-testimonial-controls">
+            <button class="sp-testimonial-btn" id="gd-testimonial-prev" aria-label="Previous testimonial"><svg viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="sp-testimonial-dots" id="gd-testimonial-dots">
+              <button class="sp-testimonial-dot active" data-index="0" aria-label="Testimonial 1"></button>
+              <button class="sp-testimonial-dot" data-index="1" aria-label="Testimonial 2"></button>
+              <button class="sp-testimonial-dot" data-index="2" aria-label="Testimonial 3"></button>
+            </div>
+            <button class="sp-testimonial-btn" id="gd-testimonial-next" aria-label="Next testimonial"><svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: FAQ -->
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">FAQ</div>
+        <h2 class="sp-section-title">Frequently Asked <span>Questions</span></h2>
+        <div class="sp-faq">
+          <div class="sp-faq-item"><button class="sp-faq-q">What video formats do you deliver?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>We deliver MP4, MOV, and AVI in vertical (9:16), horizontal (16:9), and square (1:1) formats optimized for each platform.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">How long should my video be?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>It depends on the platform. We recommend 15–60 seconds for Reels/TikTok, 1–3 minutes for YouTube, and 30–90 seconds for ads.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">Do you provide scripts?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>Yes, we offer scriptwriting services or can work with your existing scripts and storyboards.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">How quickly can I get my video?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>Standard turnaround is 3–5 business days. Rush delivery (24–48 hours) is available for an additional fee.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">Can you match a specific editing style?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>Yes. Share reference videos and we'll match the tone, pacing, and visual style you're looking for.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">Do you handle raw footage from any camera?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>We work with footage from any camera — smartphones, DSLRs, mirrorless, cinema cameras. All common formats supported.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: RELATED SERVICES -->
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-section-label">Explore More</div>
+        <h2 class="sp-section-title">Related <span>Services</span></h2>
+        <div class="sp-related-grid">
+          <a href="service-videography.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="23 7 16 12 23 17 23 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="1.5"/></svg></div>
+            <div class="sp-related-title">Videography</div>
+          </a>
+          <a href="service-social-media.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-related-title">Social Media</div>
+          </a>
+          <a href="service-graphic-design.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-related-title">Graphic Design</div>
+          </a>
+          <a href="service-photography.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="13" r="4" stroke="currentColor" stroke-width="1.5"/></svg></div>
+            <div class="sp-related-title">Photography</div>
+          </a>
+          <a href="service-paid-advertising.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-related-title">Paid Advertising</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: FINAL CTA -->
     <section class="sp-section">
       <div class="container">
         <div class="sp-cta">
           <div class="sp-cta-orb sp-cta-orb-1"></div><div class="sp-cta-orb sp-cta-orb-2"></div>
-          <h2 class="sp-cta-title" data-i18n="ve_cta_title">Ready to Create Videos<br/><span>That Convert?</span></h2>
-          <p class="sp-cta-sub">Book a free strategy call and let's discuss how video can grow your business.</p>
+          <h2 class="sp-cta-title">Ready to Create<br/><span>Scroll-Stopping Videos?</span></h2>
+          <p class="sp-cta-sub">Book a free strategy call and let's discuss how video can transform your brand.</p>
           <div class="sp-cta-btns">
-            <a href="index.html#contact" class="btn btn-primary btn-lg magnetic-btn"><span data-i18n="ve_cta_btn">Book Free Strategy Call</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="index.html#contact" class="btn btn-primary btn-lg magnetic-btn"><span>Book Free Strategy Call</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
             <a href="brief-content-creation.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>Start Your Brief</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <a href="https://wa.me/1234567890" class="btn btn-ghost btn-lg" target="_blank"><span data-i18n="ve_cta_whatsapp">Contact Us on WhatsApp</span></a>
+            <a href="https://wa.me/1234567890" class="btn btn-ghost btn-lg" target="_blank"><span>Contact Us on WhatsApp</span></a>
           </div>
         </div>
       </div>
@@ -301,18 +416,20 @@
         <div class="sp-nav">
           <a href="service-brand-identity.html" class="sp-nav-link">
             <svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <div><div class="sp-nav-label" data-i18n="prev_service">Previous Service</div><div class="sp-nav-title">Brand Identity</div></div>
+            <div><div class="sp-nav-label">Previous Service</div><div class="sp-nav-title">Brand Identity</div></div>
           </a>
           <a href="service-graphic-design.html" class="sp-nav-link sp-nav-next">
             <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <div><div class="sp-nav-label" data-i18n="next_service">Next Service</div><div class="sp-nav-title">Graphic Design</div></div>
+            <div><div class="sp-nav-label">Next Service</div><div class="sp-nav-title">Graphic Design</div></div>
           </a>
         </div>
       </div>
     </section>
+
   </main>
   <script src="main.js" defer></script>
   <script>
+    // FAQ accordion
     document.querySelectorAll('.sp-faq-q').forEach(btn=>{
       btn.addEventListener('click',()=>{
         const item=btn.closest('.sp-faq-item');
@@ -320,15 +437,50 @@
         item.classList.toggle('open');
       });
     });
-    function createPhotoCell(i){const c=document.createElement('div');c.className='media-cell';c.innerHTML=`<input type="file" accept="image/*" class="file-input"><div class="media-cell-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="media-cell-text">Upload Photo</div><div class="media-cell-overlay"><span style="color:white;font-size:.8rem">Change Photo</span></div><button class="media-cell-remove">✕</button>`;setup(c,'image');return c;}
-    function createVideoCell(i,wide=false){const c=document.createElement('div');c.className='media-cell media-cell-video'+(wide?' media-cell-wide':'');c.innerHTML=`<input type="file" accept="video/*" class="file-input"><div class="media-cell-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div><div class="media-cell-text">Upload Video</div><div class="media-cell-overlay"><span style="color:white;font-size:.8rem">Change Video</span></div><button class="media-cell-remove">✕</button>`;setup(c,'video');return c;}
-    function setup(cell,type){const inp=cell.querySelector('.file-input'),rm=cell.querySelector('.media-cell-remove');cell.addEventListener('click',e=>{if(e.target===rm)return;inp.click();});inp.addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;const url=URL.createObjectURL(f);cell.querySelectorAll('img,video').forEach(el=>el.remove());if(type==='image'){const img=document.createElement('img');img.src=url;cell.prepend(img);}else{const v=document.createElement('video');v.src=url;v.controls=true;v.muted=true;cell.prepend(v);}cell.classList.add('has-content');});rm.addEventListener('click',e=>{e.stopPropagation();cell.querySelectorAll('img,video').forEach(el=>el.remove());cell.classList.remove('has-content');inp.value='';});}
-    const pg=document.getElementById('photo-grid');for(let i=0;i<9;i++)pg.appendChild(createPhotoCell(i));
-    const vg=document.getElementById('video-grid');for(let i=0;i<6;i++)vg.appendChild(createVideoCell(i));
+
+    // Testimonial slider
+    (function(){
+      const track=document.getElementById('gd-testimonials-track');
+      const dots=document.querySelectorAll('#gd-testimonial-dots .sp-testimonial-dot');
+      const prevBtn=document.getElementById('gd-testimonial-prev');
+      const nextBtn=document.getElementById('gd-testimonial-next');
+      let current=0;const total=dots.length;
+      function goTo(i){current=((i%total)+total)%total;track.style.transform='translateX(-'+(current*100)+'%)';dots.forEach((d,idx)=>{d.classList.toggle('active',idx===current)});}
+      prevBtn.addEventListener('click',()=>goTo(current-1));
+      nextBtn.addEventListener('click',()=>goTo(current+1));
+      dots.forEach(d=>d.addEventListener('click',()=>goTo(parseInt(d.dataset.index))));
+      let autoplay=setInterval(()=>goTo(current+1),5000);
+      track.parentElement.addEventListener('mouseenter',()=>clearInterval(autoplay));
+      track.parentElement.addEventListener('mouseleave',()=>{autoplay=setInterval(()=>goTo(current+1),5000)});
+    })();
+
+    // Stats counter animation
+    (function(){
+      const stats=document.querySelectorAll('.sp-stat-num[data-target]');
+      const observer=new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            const el=entry.target;
+            const target=parseFloat(el.dataset.target);
+            const suffix=el.dataset.suffix||'';
+            const prefix=el.dataset.prefix||'';
+            const decimal=parseInt(el.dataset.decimal)||0;
+            let start=0;const duration=2000;const startTime=performance.now();
+            function update(now){
+              const elapsed=now-startTime;const progress=Math.min(elapsed/duration,1);
+              const eased=1-Math.pow(1-progress,3);
+              const current=eased*target;
+              el.textContent=prefix+(decimal>0?current.toFixed(decimal):Math.floor(current))+suffix;
+              if(progress<1)requestAnimationFrame(update);
+            }
+            requestAnimationFrame(update);
+            observer.unobserve(el);
+          }
+        });
+      },{threshold:0.3});
+      stats.forEach(s=>observer.observe(s));
+    })();
   </script>
-  <!-- Language System -->
-  <script src="lang-en.js"></script>
-  <script src="lang-ar.js"></script>
-  <script src="lang.js"></script>
+
 </body>
 </html>

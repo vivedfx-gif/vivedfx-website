@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Photography Services — VIVEDFX | Stunning Commercial Photography</title>
-  <meta name="description" content="High-quality product, portrait, and commercial photography by VIVEDFX. Stunning visuals built for both print and digital that showcase your brand." />
-  <meta property="og:title" content="Photography Services — VIVEDFX" />
+  <title>Photography Services — vivedfx | Premium Commercial Photography</title>
+  <meta name="description" content="High-quality product, portrait, and commercial photography by vivedfx. Stunning visuals built for both print and digital that showcase your brand." />
+  <meta property="og:title" content="Photography Services — vivedfx" />
   <meta property="og:description" content="Product, portrait, and commercial photography that showcases your brand with stunning visuals." />
   <meta property="og:type" content="website" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Photography","provider":{"@type":"Organization","name":"VIVEDFX"},"description":"High-quality product, portrait, and commercial photography services with professional post-production."}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Photography","provider":{"@type":"Organization","name":"vivedfx"},"description":"High-quality product, portrait, and commercial photography services with professional post-production."}</script>
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -22,63 +22,61 @@
     .sp-title{font-family:var(--font-heading);font-size:clamp(2.5rem,6vw,5rem);font-weight:900;color:var(--white);line-height:1.05;margin-bottom:24px}
     .sp-title span{color:var(--accent)}
     .sp-subtitle{font-size:1.15rem;color:var(--muted);max-width:600px;line-height:1.75}
+    .sp-hero-btns{display:flex;gap:16px;margin-top:32px;flex-wrap:wrap}
     .sp-section{padding:100px 0;background:var(--dark)}.sp-section-alt{background:var(--dark-2)}
     .sp-section-label{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
     .sp-section-title{font-family:var(--font-heading);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:800;color:var(--white);margin-bottom:48px;line-height:1.15}
     .sp-section-title span{color:var(--accent)}
-    .media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .media-cell{background:var(--dark-3);border:2px dashed var(--border);border-radius:var(--radius-md);aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;transition:all .3s;overflow:hidden;position:relative;cursor:pointer}
-    .media-cell:hover{border-color:var(--accent);background:rgba(236,31,39,.05)}
-    .media-cell.has-content{border-style:solid;border-color:var(--border)}
-    .media-cell.has-content:hover{border-color:var(--border-hover)}
-    .media-cell img,.media-cell video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:calc(var(--radius-md) - 2px)}
-    .media-cell-overlay{position:absolute;inset:0;background:rgba(0,0,0,.6);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;transition:opacity .3s;border-radius:calc(var(--radius-md) - 2px)}
-    .media-cell.has-content:hover .media-cell-overlay{opacity:1}
-    .media-cell-icon{color:var(--accent)}.media-cell-icon svg{width:32px;height:32px}
-    .media-cell-text{font-size:.8rem;color:var(--muted);font-weight:500}
-    .media-cell-remove{position:absolute;top:10px;right:10px;width:28px;height:28px;background:rgba(236,31,39,.9);border:none;border-radius:50%;color:white;font-size:14px;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:10}
-    .media-cell.has-content:hover .media-cell-remove{display:flex}
-    .media-cell input[type=file]{display:none}
-    .media-cell-sq{aspect-ratio:1/1}
-    .media-cell-wide{grid-column:span 2;aspect-ratio:16/6}
-    .upload-hint{text-align:center;padding:16px 0 0;color:var(--muted);font-size:.85rem}.upload-hint span{color:var(--accent)}
-    .sp-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:60px 0 0}
-    .sp-stat{background:var(--dark-3);padding:36px 32px}
-    .sp-stat-num{font-family:var(--font-heading);font-size:3rem;font-weight:900;color:var(--accent);line-height:1}
-    .sp-stat-label{font-size:.9rem;color:var(--muted);margin-top:8px}
-    .sp-features{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-    .sp-feature{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;transition:border-color .3s,transform .3s}
-    .sp-feature:hover{border-color:var(--border-hover);transform:translateY(-3px)}
-    .sp-feature-icon{color:var(--accent);margin-bottom:14px}.sp-feature-icon svg{width:28px;height:28px}
-    .sp-feature-title{font-weight:700;color:var(--white);margin-bottom:8px}
-    .sp-feature-text{font-size:.88rem;color:var(--muted);line-height:1.65}
-    .sp-cta{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-xl);padding:72px;text-align:center;position:relative;overflow:hidden}
-    .sp-cta-orb{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(236,31,39,.15),transparent 70%);border-radius:50%;pointer-events:none}
-    .sp-cta-orb-1{top:-100px;left:-100px}.sp-cta-orb-2{bottom:-100px;right:-100px}
-    .sp-cta-title{font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:16px}
-    .sp-cta-title span{color:var(--accent)}
-    .sp-cta-sub{color:var(--muted);font-size:1.05rem;max-width:480px;margin:0 auto 36px;line-height:1.7}
-    .sp-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-    .sp-why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .sp-why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
     .sp-why-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:32px;transition:border-color .3s,transform .3s}
     .sp-why-card:hover{border-color:var(--border-hover);transform:translateY(-3px)}
     .sp-why-icon{width:48px;height:48px;background:rgba(236,31,39,.1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:20px}
     .sp-why-icon svg{width:24px;height:24px}
     .sp-why-title{font-weight:700;color:var(--white);margin-bottom:8px;font-size:1.05rem}
     .sp-why-text{font-size:.88rem;color:var(--muted);line-height:1.65}
-    .sp-process{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;counter-reset:step}
-    .sp-process-step{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px 20px;text-align:center;position:relative;transition:border-color .3s,transform .3s}
+    .sp-services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .sp-service-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;transition:border-color .3s,transform .3s}
+    .sp-service-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .sp-service-card-icon{width:44px;height:44px;background:rgba(236,31,39,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:16px}
+    .sp-service-card-icon svg{width:22px;height:22px}
+    .sp-service-card-title{font-weight:700;color:var(--white);margin-bottom:6px;font-size:.95rem}
+    .sp-service-card-text{font-size:.84rem;color:var(--muted);line-height:1.6}
+    .sp-process{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;counter-reset:step;position:relative}
+    .sp-process::before{content:'';position:absolute;top:44px;left:8%;right:8%;height:2px;background:var(--border);z-index:0}
+    .sp-process-step{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px 16px;text-align:center;position:relative;z-index:1;transition:border-color .3s,transform .3s}
     .sp-process-step:hover{border-color:var(--accent);transform:translateY(-3px)}
-    .sp-process-num{font-family:var(--font-heading);font-size:2.5rem;font-weight:900;color:rgba(236,31,39,.15);line-height:1;margin-bottom:12px}
-    .sp-process-title{font-weight:700;color:var(--white);margin-bottom:8px;font-size:.95rem}
-    .sp-process-text{font-size:.82rem;color:var(--muted);line-height:1.6}
-    .sp-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .sp-benefit{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;display:flex;align-items:flex-start;gap:16px;transition:border-color .3s,transform .3s}
-    .sp-benefit:hover{border-color:var(--border-hover);transform:translateY(-3px)}
-    .sp-benefit-check{width:24px;height:24px;background:rgba(236,31,39,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);margin-top:2px}
-    .sp-benefit-check svg{width:14px;height:14px}
-    .sp-benefit-title{font-weight:700;color:var(--white);margin-bottom:4px}
-    .sp-benefit-text{font-size:.85rem;color:var(--muted);line-height:1.6}
+    .sp-process-num{font-family:var(--font-heading);font-size:2.2rem;font-weight:900;color:rgba(236,31,39,.15);line-height:1;margin-bottom:10px}
+    .sp-process-title{font-weight:700;color:var(--white);margin-bottom:6px;font-size:.88rem}
+    .sp-process-text{font-size:.78rem;color:var(--muted);line-height:1.55}
+    .sp-portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .sp-portfolio-item{position:relative;border-radius:var(--radius-md);overflow:hidden;aspect-ratio:1/1;cursor:pointer;border:1px solid var(--border);transition:border-color .3s,transform .3s}
+    .sp-portfolio-item:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .sp-portfolio-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+    .sp-portfolio-item:hover img{transform:scale(1.05)}
+    .sp-portfolio-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.8) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:24px;opacity:0;transition:opacity .3s}
+    .sp-portfolio-item:hover .sp-portfolio-overlay{opacity:1}
+    .sp-portfolio-tag{font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+    .sp-portfolio-name{font-weight:700;color:var(--white);font-size:1rem}
+    .sp-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:60px 0 0}
+    .sp-stat{background:var(--dark-3);padding:36px 32px}
+    .sp-stat-num{font-family:var(--font-heading);font-size:3rem;font-weight:900;color:var(--accent);line-height:1}
+    .sp-stat-label{font-size:.9rem;color:var(--muted);margin-top:8px}
+    .sp-testimonials-slider{position:relative;max-width:900px;margin:0 auto}
+    .sp-testimonials-track{display:flex;overflow:hidden}
+    .sp-testimonial-slide{min-width:100%;padding:0 20px;box-sizing:border-box}
+    .sp-testimonial-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px;position:relative}
+    .sp-testimonial-quote{font-size:1.05rem;color:var(--white);line-height:1.8;font-style:italic;margin-bottom:28px;position:relative;padding-left:24px;border-left:3px solid var(--accent)}
+    .sp-testimonial-author{display:flex;align-items:center;gap:14px}
+    .sp-testimonial-avatar{width:48px;height:48px;border-radius:50%;background:rgba(236,31,39,.15);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:.9rem;flex-shrink:0}
+    .sp-testimonial-name{font-weight:700;color:var(--white);font-size:.95rem}
+    .sp-testimonial-role{font-size:.82rem;color:var(--muted);margin-top:2px}
+    .sp-testimonial-controls{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:32px}
+    .sp-testimonial-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:var(--dark-3);color:var(--white);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:border-color .2s,transform .2s}
+    .sp-testimonial-btn:hover{border-color:var(--accent);transform:scale(1.05)}
+    .sp-testimonial-btn svg{width:18px;height:18px}
+    .sp-testimonial-dots{display:flex;gap:8px}
+    .sp-testimonial-dot{width:10px;height:10px;border-radius:50%;border:none;background:var(--border);cursor:pointer;transition:background .2s,transform .2s}
+    .sp-testimonial-dot.active{background:var(--accent);transform:scale(1.2)}
     .sp-faq{max-width:800px;margin:0 auto}
     .sp-faq-item{border-bottom:1px solid var(--border)}
     .sp-faq-q{width:100%;background:none;border:none;padding:20px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;color:var(--white);font-weight:600;font-size:1rem;text-align:left;font-family:inherit}
@@ -87,6 +85,19 @@
     .sp-faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease}
     .sp-faq-item.open .sp-faq-a{max-height:300px;padding:0 0 20px}
     .sp-faq-a p{font-size:.9rem;color:var(--muted);line-height:1.7}
+    .sp-cta{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-xl);padding:72px;text-align:center;position:relative;overflow:hidden}
+    .sp-cta-orb{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(236,31,39,.15),transparent 70%);border-radius:50%;pointer-events:none}
+    .sp-cta-orb-1{top:-100px;left:-100px}.sp-cta-orb-2{bottom:-100px;right:-100px}
+    .sp-cta-title{font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:16px}
+    .sp-cta-title span{color:var(--accent)}
+    .sp-cta-sub{color:var(--muted);font-size:1.05rem;max-width:480px;margin:0 auto 36px;line-height:1.7}
+    .sp-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    .sp-related-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+    .sp-related-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px;text-align:center;text-decoration:none;color:var(--white);transition:border-color .3s,transform .3s}
+    .sp-related-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .sp-related-icon{width:44px;height:44px;background:rgba(236,31,39,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin:0 auto 14px}
+    .sp-related-icon svg{width:22px;height:22px}
+    .sp-related-title{font-weight:700;font-size:.9rem}
     .sp-nav{display:flex;justify-content:space-between;gap:16px;padding:60px 0}
     .sp-nav-link{flex:1;display:flex;align-items:center;gap:12px;background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:20px 24px;text-decoration:none;color:var(--white);transition:border-color .3s,transform .2s}
     .sp-nav-link:hover{border-color:var(--accent);transform:translateY(-2px)}
@@ -94,13 +105,10 @@
     .sp-nav-label{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
     .sp-nav-title{font-weight:700;font-size:.95rem}
     .sp-nav-next{text-align:right;flex-direction:row-reverse}
-    @media(max-width:1024px){.sp-process{grid-template-columns:repeat(3,1fr)}}
-    @media(max-width:768px){.media-grid{grid-template-columns:repeat(2,1fr)}.media-cell-wide{grid-column:span 2}.sp-features{grid-template-columns:1fr}.sp-stats{grid-template-columns:1fr}.sp-cta{padding:48px 28px}.sp-hero{min-height:50vh}.sp-why-grid{grid-template-columns:1fr}.sp-process{grid-template-columns:1fr}.sp-benefits{grid-template-columns:1fr}.sp-nav{flex-direction:column}}
-    @media(max-width:480px){.media-grid{grid-template-columns:1fr}.media-cell-wide{grid-column:span 1;aspect-ratio:4/3}}
+    @media(max-width:1024px){.sp-process{grid-template-columns:repeat(3,1fr)}.sp-process::before{display:none}.sp-services-grid{grid-template-columns:repeat(2,1fr)}.sp-related-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:768px){.sp-why-grid{grid-template-columns:1fr}.sp-services-grid{grid-template-columns:1fr}.sp-process{grid-template-columns:1fr}.sp-portfolio-grid{grid-template-columns:repeat(2,1fr)}.sp-stats{grid-template-columns:1fr}.sp-related-grid{grid-template-columns:1fr}.sp-cta{padding:48px 28px}.sp-hero{min-height:50vh}.sp-nav{flex-direction:column}.sp-testimonial-card{padding:28px}}
+    @media(max-width:480px){.sp-portfolio-grid{grid-template-columns:1fr}}
   </style>
-  <!-- Arabic Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles-lang.css" />
 </head>
 <body>
   <header class="header" id="header">
@@ -114,29 +122,10 @@
         <li><a href="index.html#testimonials" class="nav-link">Clients</a></li>
       </ul>
       <a href="index.html#contact" class="btn btn-primary nav-cta magnetic-btn" id="nav-cta-btn">
-        <span data-i18n="book_free_call">Book a Call</span>
+        <span>Book a Call</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-          <div class="lang-switcher">
-        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="12" cy="12" r="10"/>
-            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
-          </svg>
-          <span class="lang-switcher-label" id="lang-switcher-label">AR</span>
-        </button>
-        <div class="lang-dropdown" id="lang-dropdown">
-          <button class="lang-option" data-lang="en">
-            <span class="lang-flag">🇺🇸</span>
-            <span>EN</span>
-          </button>
-          <button class="lang-option" data-lang="ar">
-            <span class="lang-flag">🇸🇦</span>
-            <span>AR</span>
-          </button>
-        </div>
-      </div>
     </nav>
   </header>
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
@@ -147,163 +136,300 @@
       <li class="mobile-menu-item"><a href="index.html#process" class="mobile-link">Process</a></li>
       <li class="mobile-menu-item"><a href="index.html#testimonials" class="mobile-link">Clients</a></li>
     </ul>
-    <div class="mobile-menu-cta-wrap"><a href="index.html#contact" class="btn btn-primary mobile-menu-cta"><span data-i18n="book_free_call">Book a Call</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+    <div class="mobile-menu-cta-wrap"><a href="index.html#contact" class="btn btn-primary mobile-menu-cta"><span>Book a Call</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
   </div>
   <main>
+
+    <!-- ===================== SECTION 1 — HERO ===================== -->
     <section class="sp-hero">
       <div class="sp-hero-bg"></div>
       <div class="container">
-        <a href="index.html#services" class="sp-back" data-i18n="back_to_home"><svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to Services</a>
+        <a href="index.html#services" class="sp-back"><svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to Services</a>
         <div class="sp-label"><span class="sp-label-dot"></span>Service 08</div>
-        <h1 class="sp-title" data-i18n="ph_hero_title">Commercial<br/><span>Photography</span></h1>
-        <p class="sp-subtitle" data-i18n="ph_hero_desc">High-quality product, portrait, and commercial photography that showcases your brand with stunning visuals built for both print and digital.</p>
+        <h1 class="sp-title">Photo<br/><span>graphy</span></h1>
+        <p class="sp-subtitle" style="font-family:var(--font-heading);font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:700;color:var(--white);max-width:700px;margin-bottom:16px">Every Frame Tells Your Brand Story.</p>
+        <p class="sp-subtitle">From product photography and corporate headshots to lifestyle shoots and event coverage — we capture high-quality images that strengthen your brand, boost engagement, and make your business look its best.</p>
+        <div class="sp-hero-btns">
+          <a href="brief-photography.html" class="btn btn-primary btn-lg magnetic-btn"><span>Start Your Photo Project</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="portfolio.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>View Photo Portfolio</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
       </div>
     </section>
 
-    <section class="sp-section">
-      <div class="container">
-        <div class="sp-section-label">Product Shots</div>
-        <h2 class="sp-section-title">Product & Commercial <span>Gallery</span></h2>
-        <div class="media-grid" id="product-grid"></div>
-        <p class="upload-hint">Click any cell to <span>upload product photos</span></p>
-      </div>
-    </section>
-    <section class="sp-section sp-section-alt">
-      <div class="container">
-        <div class="sp-section-label">Portraits & Lifestyle</div>
-        <h2 class="sp-section-title">Portrait <span>Showcase</span></h2>
-        <div class="media-grid" id="portrait-grid"></div>
-        <p class="upload-hint" style="margin-top:16px">Click any cell to <span>upload portrait & lifestyle photos</span></p>
-      </div>
-    </section>
-
+    <!-- ===================== SECTION 2 — WHY THIS SERVICE ===================== -->
     <section class="sp-section">
       <div class="container">
         <div class="sp-section-label">Why Photography</div>
-        <h2 class="sp-section-title" data-i18n="ph_why_title">Why Your Business <span>Needs This</span></h2>
+        <h2 class="sp-section-title">Why Your Business <span>Needs This</span></h2>
         <div class="sp-why-grid">
           <div class="sp-why-card">
-            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="sp-why-title">Visuals Sell Products</div>
-            <div class="sp-why-text">93% of consumers consider visual appearance to be the key deciding factor in a purchase. Quality photos drive more sales.</div>
+            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-why-title">Quality Images Build Trust</div>
+            <div class="sp-why-text">Professional photos signal legitimacy and quality. 67% of consumers say quality images are the most important factor in their purchase decisions.</div>
           </div>
           <div class="sp-why-card">
-            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="sp-why-title">Professional = Trustworthy</div>
-            <div class="sp-why-text">Professional photography signals quality and attention to detail. Customers trust brands that invest in their visual presentation.</div>
+            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-why-title">Consistent Visual Identity</div>
+            <div class="sp-why-text">We ensure every photo matches your brand's aesthetic — lighting, color grading, and composition aligned with your visual system.</div>
+          </div>
+          <div class="sp-why-card">
+            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5"/></svg></div>
+            <div class="sp-why-title">Content That Performs</div>
+            <div class="sp-why-text">High-quality images get 2.3× more engagement than stock photos. Custom photography gives your brand a unique visual voice.</div>
           </div>
           <div class="sp-why-card">
             <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-            <div class="sp-why-title">Content That Works Everywhere</div>
-            <div class="sp-why-text">One photoshoot generates content for your website, social media, ads, print materials, and more — maximum value from every session.</div>
+            <div class="sp-why-title">Versatile Deliverables</div>
+            <div class="sp-why-text">Every shoot produces images optimized for web, social media, print, and advertising — one shoot, endless uses.</div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ===================== SECTION 3 — WHAT WE DELIVER ===================== -->
     <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-section-label">What We Deliver</div>
+        <h2 class="sp-section-title">Photography <span>Services</span></h2>
+        <div class="sp-services-grid">
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg></div>
+            <div class="sp-service-card-title">Product Photography</div>
+            <div class="sp-service-card-text">Professional product shots on white, lifestyle, and styled backgrounds for e-commerce and marketing.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/></svg></div>
+            <div class="sp-service-card-title">Corporate Headshots</div>
+            <div class="sp-service-card-text">Executive and team portraits that convey professionalism and approachability.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 22V12h6v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Lifestyle Photography</div>
+            <div class="sp-service-card-text">Authentic, candid-style images showing your products or services in real-world contexts.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Event Photography</div>
+            <div class="sp-service-card-text">Conference, launch, and corporate event coverage that captures every important moment.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Food Photography</div>
+            <div class="sp-service-card-text">Mouth-watering food and beverage imagery for restaurants, brands, and packaging.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Real Estate Photography</div>
+            <div class="sp-service-card-text">Interior and exterior shots that showcase properties at their absolute best.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Social Media Content</div>
+            <div class="sp-service-card-text">Photo shoots specifically designed for social media feeds, stories, and ads.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" stroke="currentColor" stroke-width="1.5"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16l-5.74-9.94M14.31 16H2.83M16.62 12l-5.74 9.94" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Retouching &amp; Editing</div>
+            <div class="sp-service-card-text">Professional color correction, skin retouching, and background removal included.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 4 — OUR PROCESS ===================== -->
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">Our Process</div>
+        <h2 class="sp-section-title">Our 6-Step Photography <span>Process</span></h2>
+        <div class="sp-process">
+          <div class="sp-process-step"><div class="sp-process-num">01</div><div class="sp-process-title">Brief</div><div class="sp-process-text">We discuss your goals, brand style, and the types of images you need.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">02</div><div class="sp-process-title">Plan</div><div class="sp-process-text">We create a shot list, mood board, and production schedule for the shoot.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">03</div><div class="sp-process-title">Prep</div><div class="sp-process-text">Location scouting, prop styling, lighting setup, and equipment preparation.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">04</div><div class="sp-process-title">Shoot</div><div class="sp-process-text">Professional photography session with expert direction and multiple setups.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">05</div><div class="sp-process-title">Edit</div><div class="sp-process-text">Culling, color correction, retouching, and delivery preparation.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">06</div><div class="sp-process-title">Deliver</div><div class="sp-process-text">High-res and web-optimized files in all formats — JPEG, PNG, TIFF — ready to use.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 5 — PORTFOLIO ===================== -->
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-section-label">Our Work</div>
+        <h2 class="sp-section-title">Photography <span>Portfolio</span></h2>
+        <div class="sp-portfolio-grid">
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Medical/M7.png" alt="Medical Campaign 7" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Medical</div><div class="sp-portfolio-name">Medical Campaign 7</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Medical/M8.png" alt="Medical Campaign 8" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Medical</div><div class="sp-portfolio-name">Medical Campaign 8</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Medical/M9.png" alt="Medical Campaign 9" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Medical</div><div class="sp-portfolio-name">Medical Campaign 9</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Medical/M10.png" alt="Medical Campaign 10" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Medical</div><div class="sp-portfolio-name">Medical Campaign 10</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Medical/M11.png" alt="Medical Campaign 11" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Medical</div><div class="sp-portfolio-name">Medical Campaign 11</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Medical/M12.png" alt="Medical Campaign 12" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Medical</div><div class="sp-portfolio-name">Medical Campaign 12</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 6 — RESULTS ===================== -->
+    <section class="sp-section">
       <div class="container">
         <div class="sp-section-label">Results</div>
         <h2 class="sp-section-title">What Great Photography <span>Delivers</span></h2>
         <div class="sp-stats">
-          <div class="sp-stat" data-i18n="ph_stat_1"><div class="sp-stat-num" data-i18n="ph_stat_1_num">+340%</div><div class="sp-stat-label" data-i18n="ph_stat_1_label">Product Page Conversion Lift</div></div>
-          <div class="sp-stat" data-i18n="ph_stat_2"><div class="sp-stat-num" data-i18n="ph_stat_2_num">50MP+</div><div class="sp-stat-label" data-i18n="ph_stat_2_label">Ultra-High Resolution Shots</div></div>
-          <div class="sp-stat" data-i18n="ph_stat_3"><div class="sp-stat-num" data-i18n="ph_stat_3_num">24h</div><div class="sp-stat-label" data-i18n="ph_stat_3_label">Edited Delivery Turnaround</div></div>
+          <div class="sp-stat"><div class="sp-stat-num" data-target="2.3" data-suffix="×" data-decimal="1">0×</div><div class="sp-stat-label">More Engagement Than Stock</div></div>
+          <div class="sp-stat"><div class="sp-stat-num">24–48 hours</div><div class="sp-stat-label">Photo Delivery</div></div>
+          <div class="sp-stat"><div class="sp-stat-num" data-target="500" data-suffix="+">0+</div><div class="sp-stat-label">Shoots Completed</div></div>
+          <div class="sp-stat"><div class="sp-stat-num" data-target="99" data-suffix="%">0%</div><div class="sp-stat-label">Client Satisfaction</div></div>
         </div>
       </div>
     </section>
 
-    <section class="sp-section">
-      <div class="container">
-        <div class="sp-section-label">What's Included</div>
-        <h2 class="sp-section-title" data-i18n="ph_deliver_title">The Full <span>Package</span></h2>
-        <div class="sp-features">
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg></div><div class="sp-feature-title" data-i18n="ph_deliver_1">Product Photography</div><div class="sp-feature-text">Studio-lit product shots on white, lifestyle setups, and creative compositions designed to convert browsers into buyers.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="sp-feature-title" data-i18n="ph_deliver_2">Corporate & Executive Portraits</div><div class="sp-feature-text">Professional headshots, team photos, and executive portraits that communicate authority, trust, and credibility.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 22V12h6v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="ph_deliver_3">Lifestyle & Brand Sessions</div><div class="sp-feature-text">On-location lifestyle shoots that tell your brand story authentically — perfect for social media, websites, and campaigns.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="sp-feature-title" data-i18n="ph_deliver_4">Full Post-Production</div><div class="sp-feature-text">Professional retouching, color grading, and background removal. Every image delivered print-ready and web-optimized.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="sp-feature-title" data-i18n="ph_deliver_5">Fast Delivery</div><div class="sp-feature-text">Edited photos delivered within 24–48 hours. Rush delivery available for urgent projects.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7V4h16v3M9 20h6M12 4v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="ph_deliver_6">All Formats</div><div class="sp-feature-text">High-res for print, optimized for web, and cropped versions for social media — every format you need.</div></div>
-        </div>
-      </div>
-    </section>
-
+    <!-- ===================== SECTION 7 — TESTIMONIALS ===================== -->
     <section class="sp-section sp-section-alt">
       <div class="container">
-        <div class="sp-section-label">Our Process</div>
-        <h2 class="sp-section-title" data-i18n="ph_process_title">How We <span>Work</span></h2>
-        <div class="sp-process">
-          <div class="sp-process-step"><div class="sp-process-num">01</div><div class="sp-process-title" data-i18n="ph_process_1">Brief</div><div class="sp-process-text">We discuss your brand, products, and visual goals for the shoot.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">02</div><div class="sp-process-title" data-i18n="ph_process_2">Plan</div><div class="sp-process-text">We define the concept, mood board, locations, and styling direction.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">03</div><div class="sp-process-title" data-i18n="ph_process_3">Shoot</div><div class="sp-process-text">Professional photography with studio lighting and creative direction.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">04</div><div class="sp-process-title" data-i18n="ph_process_4">Edit</div><div class="sp-process-text">Retouching, color grading, and background removal on every image.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">05</div><div class="sp-process-title" data-i18n="ph_process_5">Deliver</div><div class="sp-process-text">Final images in all formats — print-ready, web-optimized, and social.</div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sp-section">
-      <div class="container">
-        <div class="sp-section-label">Results & Benefits</div>
-        <h2 class="sp-section-title" data-i18n="ph_benefits_title">What You <span>Get</span></h2>
-        <div class="sp-benefits">
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="ph_benefits_1">Higher Conversion Rates</div><div class="sp-benefit-text">Professional product photos increase page conversions by up to 340%.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="ph_benefits_2">Brand Consistency</div><div class="sp-benefit-text">Cohesive visual style across all platforms builds recognition and trust.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="ph_benefits_3">Social Media Engagement</div><div class="sp-benefit-text">High-quality images get 2.3× more engagement than stock photos.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="ph_benefits_4">Time Savings</div><div class="sp-benefit-text">We handle all photography, editing, and delivery — you focus on your business.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="ph_benefits_5">Multi-Use Content</div><div class="sp-benefit-text">One shoot generates content for website, social, ads, print, and more.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="ph_benefits_6">Competitive Edge</div><div class="sp-benefit-text">Professional photography sets you apart from competitors using phone photos.</div></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sp-section sp-section-alt">
-      <div class="container">
-        <div class="sp-section-label">FAQ</div>
-        <h2 class="sp-section-title" data-i18n="ph_faq_title">Frequently Asked <span>Questions</span></h2>
-        <div class="sp-faq">
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="ph_faq_1_q">What types of photography do you offer?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="ph_faq_1_a">We offer product photography, corporate portraits, lifestyle shoots, event coverage, food photography, and any commercial photography you need.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="ph_faq_2_q">Do you travel for shoots?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="ph_faq_2_a">Yes, we travel nationally and internationally for shoots. We have our own studio and can also come to your location.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="ph_faq_3_q">How many photos will I receive?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="ph_faq_3_a">The number of final edited photos depends on the package — typically 20–50+ high-quality edited images per shoot.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="ph_faq_4_q">When will I receive the photos?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="ph_faq_4_a">Edited photos are delivered within 24–48 hours. Rush delivery is available for urgent projects.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="ph_faq_5_q">Do you provide retouching?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="ph_faq_5_a">Yes, every photo includes professional retouching, color grading, and any necessary background removal or compositing.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="ph_faq_6_q">What file formats do you deliver?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="ph_faq_6_a">We deliver high-res TIFF/PNG for print, web-optimized JPGs, and any specific format you need for your platforms.</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sp-section">
-      <div class="container">
-        <div class="sp-cta">
-          <div class="sp-cta-orb sp-cta-orb-1"></div><div class="sp-cta-orb sp-cta-orb-2"></div>
-          <h2 class="sp-cta-title" data-i18n="ph_cta_title">Ready to Showcase<br/><span>Your Brand Visually?</span></h2>
-          <p class="sp-cta-sub">Let's create photography that makes your brand impossible to ignore — online and in print.</p>
-          <div class="sp-cta-btns">
-            <a href="index.html#contact" class="btn btn-primary btn-lg magnetic-btn"><span data-i18n="ph_cta_btn">Book Free Production Call</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <a href="brief-photography.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>Start Your Brief</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <a href="https://wa.me/1234567890" class="btn btn-ghost btn-lg" target="_blank"><span data-i18n="ph_cta_whatsapp">Contact Us on WhatsApp</span></a>
+        <div class="sp-section-label">Testimonials</div>
+        <h2 class="sp-section-title">What Our Clients <span>Say</span></h2>
+        <div class="sp-testimonials-slider" id="gd-testimonials">
+          <div class="sp-testimonials-track" id="gd-testimonials-track">
+            <div class="sp-testimonial-slide">
+              <div class="sp-testimonial-card">
+                <div class="sp-testimonial-quote">The product photos vivedfx took for us are stunning. Our online orders increased 40% after we updated our product imagery.</div>
+                <div class="sp-testimonial-author">
+                  <div class="sp-testimonial-avatar">AH</div>
+                  <div><div class="sp-testimonial-name">Dr. Ahmed Hassan</div><div class="sp-testimonial-role">Founder, MediCare Plus Clinic</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="sp-testimonial-slide">
+              <div class="sp-testimonial-card">
+                <div class="sp-testimonial-quote">Our gym photos look incredible. Members constantly compliment the quality of our visual content. vivedfx nailed the energy we wanted.</div>
+                <div class="sp-testimonial-author">
+                  <div class="sp-testimonial-avatar">SM</div>
+                  <div><div class="sp-testimonial-name">Sarah Mitchell</div><div class="sp-testimonial-role">Owner, IronEdge Fitness</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="sp-testimonial-slide">
+              <div class="sp-testimonial-card">
+                <div class="sp-testimonial-quote">vivedfx photographed our completed projects beautifully. The images help us showcase our work and win new contracts.</div>
+                <div class="sp-testimonial-author">
+                  <div class="sp-testimonial-avatar">JO</div>
+                  <div><div class="sp-testimonial-name">James Okonkwo</div><div class="sp-testimonial-role">CEO, BuildCore Engineering</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sp-testimonial-controls">
+            <button class="sp-testimonial-btn" id="gd-testimonial-prev" aria-label="Previous testimonial"><svg viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="sp-testimonial-dots" id="gd-testimonial-dots">
+              <button class="sp-testimonial-dot active" data-index="0" aria-label="Testimonial 1"></button>
+              <button class="sp-testimonial-dot" data-index="1" aria-label="Testimonial 2"></button>
+              <button class="sp-testimonial-dot" data-index="2" aria-label="Testimonial 3"></button>
+            </div>
+            <button class="sp-testimonial-btn" id="gd-testimonial-next" aria-label="Next testimonial"><svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ===================== SECTION 8 — FAQ ===================== -->
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">FAQ</div>
+        <h2 class="sp-section-title">Frequently Asked <span>Questions</span></h2>
+        <div class="sp-faq">
+          <div class="sp-faq-item"><button class="sp-faq-q">How many photos will I receive?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>The number of final edited photos depends on the package — typically 20–50+ high-quality edited images per shoot.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">When will I receive the photos?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>Edited photos are delivered within 24–48 hours. Rush delivery is available for urgent projects.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">Do you provide props and styling?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>Yes. We handle prop sourcing, styling, and set design as part of our production service.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">Can you shoot at our location?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>Yes. We come to your location with portable studio equipment. We also have access to professional studio spaces.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">What formats do you deliver?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>We deliver high-res JPEG, PNG, and TIFF files. RAW files are available upon request.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">Do you offer photo editing and retouching?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>Yes. All packages include professional color correction and basic retouching. Advanced retouching is available as an add-on.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 9 — FINAL CTA ===================== -->
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-cta">
+          <div class="sp-cta-orb sp-cta-orb-1"></div><div class="sp-cta-orb sp-cta-orb-2"></div>
+          <h2 class="sp-cta-title">Ready to Capture<br/><span>Something Beautiful?</span></h2>
+          <p class="sp-cta-sub">Book a free consultation and let's plan your next photoshoot.</p>
+          <div class="sp-cta-btns">
+            <a href="index.html#contact" class="btn btn-primary btn-lg magnetic-btn"><span>Book Free Consultation</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="brief-photography.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>Start Your Brief</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="https://wa.me/1234567890" class="btn btn-ghost btn-lg" target="_blank"><span>Contact Us on WhatsApp</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RELATED SERVICES ===================== -->
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">Explore More</div>
+        <h2 class="sp-section-title">Related <span>Services</span></h2>
+        <div class="sp-related-grid">
+          <a href="service-videography.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+            <div class="sp-related-title">Videography</div>
+          </a>
+          <a href="service-graphic-design.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-related-title">Graphic Design</div>
+          </a>
+          <a href="service-social-media.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-related-title">Social Media</div>
+          </a>
+          <a href="service-brand-identity.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-related-title">Brand Identity</div>
+          </a>
+          <a href="service-website-design.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-related-title">Website Design</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PREV / NEXT ===================== -->
     <section class="sp-section sp-section-alt">
       <div class="container">
         <div class="sp-nav">
           <a href="service-videography.html" class="sp-nav-link">
             <svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <div><div class="sp-nav-label" data-i18n="prev_service">Previous Service</div><div class="sp-nav-title">Videography</div></div>
+            <div><div class="sp-nav-label">Previous Service</div><div class="sp-nav-title">Videography</div></div>
           </a>
           <a href="service-media-buying.html" class="sp-nav-link sp-nav-next">
             <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <div><div class="sp-nav-label" data-i18n="next_service">Next Service</div><div class="sp-nav-title">Media Buying</div></div>
+            <div><div class="sp-nav-label">Next Service</div><div class="sp-nav-title">Media Buying</div></div>
           </a>
         </div>
       </div>
     </section>
+
   </main>
   <script src="main.js" defer></script>
   <script>
+    // FAQ accordion
     document.querySelectorAll('.sp-faq-q').forEach(btn=>{
       btn.addEventListener('click',()=>{
         const item=btn.closest('.sp-faq-item');
@@ -311,14 +437,50 @@
         item.classList.toggle('open');
       });
     });
-    function createPhotoCell(i,extraClass=''){const c=document.createElement('div');c.className='media-cell'+(extraClass?' '+extraClass:'');c.innerHTML=`<input type="file" accept="image/*" class="file-input"><div class="media-cell-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="media-cell-text">Upload Photo</div><div class="media-cell-overlay"><span style="color:white;font-size:.8rem">Change Photo</span></div><button class="media-cell-remove">✕</button>`;setup(c,'image');return c;}
-    function setup(cell,type){const inp=cell.querySelector('.file-input'),rm=cell.querySelector('.media-cell-remove');cell.addEventListener('click',e=>{if(e.target===rm)return;inp.click();});inp.addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;const url=URL.createObjectURL(f);cell.querySelectorAll('img,video').forEach(el=>el.remove());const img=document.createElement('img');img.src=url;cell.prepend(img);cell.classList.add('has-content');});rm.addEventListener('click',e=>{e.stopPropagation();cell.querySelectorAll('img,video').forEach(el=>el.remove());cell.classList.remove('has-content');inp.value='';});}
-    const pg=document.getElementById('product-grid');for(let i=0;i<9;i++)pg.appendChild(createPhotoCell(i));
-    const ptg=document.getElementById('portrait-grid');for(let i=0;i<6;i++)ptg.appendChild(createPhotoCell(i,'media-cell-sq'));
+
+    // Testimonial slider
+    (function(){
+      const track=document.getElementById('gd-testimonials-track');
+      const dots=document.querySelectorAll('#gd-testimonial-dots .sp-testimonial-dot');
+      const prevBtn=document.getElementById('gd-testimonial-prev');
+      const nextBtn=document.getElementById('gd-testimonial-next');
+      let current=0;const total=dots.length;
+      function goTo(i){current=((i%total)+total)%total;track.style.transform='translateX(-'+(current*100)+'%)';dots.forEach((d,idx)=>{d.classList.toggle('active',idx===current)});}
+      prevBtn.addEventListener('click',()=>goTo(current-1));
+      nextBtn.addEventListener('click',()=>goTo(current+1));
+      dots.forEach(d=>d.addEventListener('click',()=>goTo(parseInt(d.dataset.index))));
+      let autoplay=setInterval(()=>goTo(current+1),5000);
+      track.parentElement.addEventListener('mouseenter',()=>clearInterval(autoplay));
+      track.parentElement.addEventListener('mouseleave',()=>{autoplay=setInterval(()=>goTo(current+1),5000)});
+    })();
+
+    // Stats counter animation
+    (function(){
+      const stats=document.querySelectorAll('.sp-stat-num[data-target]');
+      const observer=new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            const el=entry.target;
+            const target=parseFloat(el.dataset.target);
+            const suffix=el.dataset.suffix||'';
+            const prefix=el.dataset.prefix||'';
+            const decimal=parseInt(el.dataset.decimal)||0;
+            let start=0;const duration=2000;const startTime=performance.now();
+            function update(now){
+              const elapsed=now-startTime;const progress=Math.min(elapsed/duration,1);
+              const eased=1-Math.pow(1-progress,3);
+              const current=eased*target;
+              el.textContent=prefix+(decimal>0?current.toFixed(decimal):Math.floor(current))+suffix;
+              if(progress<1)requestAnimationFrame(update);
+            }
+            requestAnimationFrame(update);
+            observer.unobserve(el);
+          }
+        });
+      },{threshold:0.3});
+      stats.forEach(s=>observer.observe(s));
+    })();
   </script>
-  <!-- Language System -->
-  <script src="lang-en.js"></script>
-  <script src="lang-ar.js"></script>
-  <script src="lang.js"></script>
+
 </body>
 </html>

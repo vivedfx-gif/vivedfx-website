@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Social Media Management — VIVEDFX | Grow Your Audience</title>
-  <meta name="description" content="Strategic social media management by VIVEDFX. Content creation, community management, and analytics that build audiences and drive engagement across all platforms." />
-  <meta property="og:title" content="Social Media Management — VIVEDFX" />
-  <meta property="og:description" content="Content strategy, posting, community management, and analytics that grow your social presence." />
+  <title>Social Media Services — VIVEDFX | Grow Your Brand</title>
+  <meta name="description" content="Premium social media management by VIVEDFX. Content creation, community management, paid campaigns, and analytics that turn followers into loyal customers and drive measurable business growth." />
+  <meta property="og:title" content="Social Media Services — VIVEDFX" />
+  <meta property="og:description" content="Scroll-stopping content, community management, and data-driven campaigns that grow your social media presence." />
   <meta property="og:type" content="website" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Social Media Management","provider":{"@type":"Organization","name":"VIVEDFX"},"description":"Strategic social media management including content creation, community management, and analytics across Instagram, Facebook, TikTok, and LinkedIn."}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Social Media Management","provider":{"@type":"Organization","name":"VIVEDFX"},"description":"Premium social media management including content creation, community management, paid campaigns, and analytics across Instagram, TikTok, LinkedIn, and Facebook."}</script>
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -22,62 +22,61 @@
     .sp-title{font-family:var(--font-heading);font-size:clamp(2.5rem,6vw,5rem);font-weight:900;color:var(--white);line-height:1.05;margin-bottom:24px}
     .sp-title span{color:var(--accent)}
     .sp-subtitle{font-size:1.15rem;color:var(--muted);max-width:600px;line-height:1.75}
+    .sp-hero-btns{display:flex;gap:16px;margin-top:32px;flex-wrap:wrap}
     .sp-section{padding:100px 0;background:var(--dark)}.sp-section-alt{background:var(--dark-2)}
     .sp-section-label{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
     .sp-section-title{font-family:var(--font-heading);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:800;color:var(--white);margin-bottom:48px;line-height:1.15}
     .sp-section-title span{color:var(--accent)}
-    .media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .media-cell{background:var(--dark-3);border:2px dashed var(--border);border-radius:var(--radius-md);aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;transition:all .3s;overflow:hidden;position:relative;cursor:pointer}
-    .media-cell:hover{border-color:var(--accent);background:rgba(236,31,39,.05)}
-    .media-cell.has-content{border-style:solid;border-color:var(--border)}
-    .media-cell.has-content:hover{border-color:var(--border-hover)}
-    .media-cell img,.media-cell video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:calc(var(--radius-md) - 2px)}
-    .media-cell-overlay{position:absolute;inset:0;background:rgba(0,0,0,.6);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;transition:opacity .3s;border-radius:calc(var(--radius-md) - 2px)}
-    .media-cell.has-content:hover .media-cell-overlay{opacity:1}
-    .media-cell-icon{color:var(--accent)}.media-cell-icon svg{width:32px;height:32px}
-    .media-cell-text{font-size:.8rem;color:var(--muted);font-weight:500}
-    .media-cell-remove{position:absolute;top:10px;right:10px;width:28px;height:28px;background:rgba(236,31,39,.9);border:none;border-radius:50%;color:white;font-size:14px;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:10}
-    .media-cell.has-content:hover .media-cell-remove{display:flex}
-    .media-cell input[type=file]{display:none}
-    .media-cell-video{aspect-ratio:16/9}.media-cell-wide{grid-column:span 2;aspect-ratio:16/6}
-    .upload-hint{text-align:center;padding:16px 0 0;color:var(--muted);font-size:.85rem}.upload-hint span{color:var(--accent)}
-    .sp-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:60px 0 0}
-    .sp-stat{background:var(--dark-3);padding:36px 32px}
-    .sp-stat-num{font-family:var(--font-heading);font-size:3rem;font-weight:900;color:var(--accent);line-height:1}
-    .sp-stat-label{font-size:.9rem;color:var(--muted);margin-top:8px}
-    .sp-features{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-    .sp-feature{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;transition:border-color .3s,transform .3s}
-    .sp-feature:hover{border-color:var(--border-hover);transform:translateY(-3px)}
-    .sp-feature-icon{color:var(--accent);margin-bottom:14px}.sp-feature-icon svg{width:28px;height:28px}
-    .sp-feature-title{font-weight:700;color:var(--white);margin-bottom:8px}
-    .sp-feature-text{font-size:.88rem;color:var(--muted);line-height:1.65}
-    .sp-cta{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-xl);padding:72px;text-align:center;position:relative;overflow:hidden}
-    .sp-cta-orb{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(236,31,39,.15),transparent 70%);border-radius:50%;pointer-events:none}
-    .sp-cta-orb-1{top:-100px;left:-100px}.sp-cta-orb-2{bottom:-100px;right:-100px}
-    .sp-cta-title{font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:16px}
-    .sp-cta-title span{color:var(--accent)}
-    .sp-cta-sub{color:var(--muted);font-size:1.05rem;max-width:480px;margin:0 auto 36px;line-height:1.7}
-    .sp-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-    .sp-why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .sp-why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
     .sp-why-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:32px;transition:border-color .3s,transform .3s}
     .sp-why-card:hover{border-color:var(--border-hover);transform:translateY(-3px)}
     .sp-why-icon{width:48px;height:48px;background:rgba(236,31,39,.1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:20px}
     .sp-why-icon svg{width:24px;height:24px}
     .sp-why-title{font-weight:700;color:var(--white);margin-bottom:8px;font-size:1.05rem}
     .sp-why-text{font-size:.88rem;color:var(--muted);line-height:1.65}
-    .sp-process{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;counter-reset:step}
-    .sp-process-step{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px 20px;text-align:center;position:relative;transition:border-color .3s,transform .3s}
+    .sp-services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .sp-service-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;transition:border-color .3s,transform .3s}
+    .sp-service-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .sp-service-card-icon{width:44px;height:44px;background:rgba(236,31,39,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:16px}
+    .sp-service-card-icon svg{width:22px;height:22px}
+    .sp-service-card-title{font-weight:700;color:var(--white);margin-bottom:6px;font-size:.95rem}
+    .sp-service-card-text{font-size:.84rem;color:var(--muted);line-height:1.6}
+    .sp-process{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;counter-reset:step;position:relative}
+    .sp-process::before{content:'';position:absolute;top:44px;left:8%;right:8%;height:2px;background:var(--border);z-index:0}
+    .sp-process-step{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px 16px;text-align:center;position:relative;z-index:1;transition:border-color .3s,transform .3s}
     .sp-process-step:hover{border-color:var(--accent);transform:translateY(-3px)}
-    .sp-process-num{font-family:var(--font-heading);font-size:2.5rem;font-weight:900;color:rgba(236,31,39,.15);line-height:1;margin-bottom:12px}
-    .sp-process-title{font-weight:700;color:var(--white);margin-bottom:8px;font-size:.95rem}
-    .sp-process-text{font-size:.82rem;color:var(--muted);line-height:1.6}
-    .sp-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .sp-benefit{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;display:flex;align-items:flex-start;gap:16px;transition:border-color .3s,transform .3s}
-    .sp-benefit:hover{border-color:var(--border-hover);transform:translateY(-3px)}
-    .sp-benefit-check{width:24px;height:24px;background:rgba(236,31,39,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);margin-top:2px}
-    .sp-benefit-check svg{width:14px;height:14px}
-    .sp-benefit-title{font-weight:700;color:var(--white);margin-bottom:4px}
-    .sp-benefit-text{font-size:.85rem;color:var(--muted);line-height:1.6}
+    .sp-process-num{font-family:var(--font-heading);font-size:2.2rem;font-weight:900;color:rgba(236,31,39,.15);line-height:1;margin-bottom:10px}
+    .sp-process-title{font-weight:700;color:var(--white);margin-bottom:6px;font-size:.88rem}
+    .sp-process-text{font-size:.78rem;color:var(--muted);line-height:1.55}
+    .sp-portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .sp-portfolio-item{position:relative;border-radius:var(--radius-md);overflow:hidden;aspect-ratio:4/3;cursor:pointer;border:1px solid var(--border);transition:border-color .3s,transform .3s}
+    .sp-portfolio-item:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .sp-portfolio-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+    .sp-portfolio-item:hover img{transform:scale(1.05)}
+    .sp-portfolio-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.8) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:24px;opacity:0;transition:opacity .3s}
+    .sp-portfolio-item:hover .sp-portfolio-overlay{opacity:1}
+    .sp-portfolio-tag{font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+    .sp-portfolio-name{font-weight:700;color:var(--white);font-size:1rem}
+    .sp-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:60px 0 0}
+    .sp-stat{background:var(--dark-3);padding:36px 32px}
+    .sp-stat-num{font-family:var(--font-heading);font-size:3rem;font-weight:900;color:var(--accent);line-height:1}
+    .sp-stat-label{font-size:.9rem;color:var(--muted);margin-top:8px}
+    .sp-testimonials-slider{position:relative;max-width:900px;margin:0 auto}
+    .sp-testimonials-track{display:flex;overflow:hidden}
+    .sp-testimonial-slide{min-width:100%;padding:0 20px;box-sizing:border-box}
+    .sp-testimonial-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px;position:relative}
+    .sp-testimonial-quote{font-size:1.05rem;color:var(--white);line-height:1.8;font-style:italic;margin-bottom:28px;position:relative;padding-left:24px;border-left:3px solid var(--accent)}
+    .sp-testimonial-author{display:flex;align-items:center;gap:14px}
+    .sp-testimonial-avatar{width:48px;height:48px;border-radius:50%;background:rgba(236,31,39,.15);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:.9rem;flex-shrink:0}
+    .sp-testimonial-name{font-weight:700;color:var(--white);font-size:.95rem}
+    .sp-testimonial-role{font-size:.82rem;color:var(--muted);margin-top:2px}
+    .sp-testimonial-controls{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:32px}
+    .sp-testimonial-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:var(--dark-3);color:var(--white);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:border-color .2s,transform .2s}
+    .sp-testimonial-btn:hover{border-color:var(--accent);transform:scale(1.05)}
+    .sp-testimonial-btn svg{width:18px;height:18px}
+    .sp-testimonial-dots{display:flex;gap:8px}
+    .sp-testimonial-dot{width:10px;height:10px;border-radius:50%;border:none;background:var(--border);cursor:pointer;transition:background .2s,transform .2s}
+    .sp-testimonial-dot.active{background:var(--accent);transform:scale(1.2)}
     .sp-faq{max-width:800px;margin:0 auto}
     .sp-faq-item{border-bottom:1px solid var(--border)}
     .sp-faq-q{width:100%;background:none;border:none;padding:20px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;color:var(--white);font-weight:600;font-size:1rem;text-align:left;font-family:inherit}
@@ -86,6 +85,19 @@
     .sp-faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease}
     .sp-faq-item.open .sp-faq-a{max-height:300px;padding:0 0 20px}
     .sp-faq-a p{font-size:.9rem;color:var(--muted);line-height:1.7}
+    .sp-cta{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-xl);padding:72px;text-align:center;position:relative;overflow:hidden}
+    .sp-cta-orb{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(236,31,39,.15),transparent 70%);border-radius:50%;pointer-events:none}
+    .sp-cta-orb-1{top:-100px;left:-100px}.sp-cta-orb-2{bottom:-100px;right:-100px}
+    .sp-cta-title{font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:16px}
+    .sp-cta-title span{color:var(--accent)}
+    .sp-cta-sub{color:var(--muted);font-size:1.05rem;max-width:480px;margin:0 auto 36px;line-height:1.7}
+    .sp-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    .sp-related-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+    .sp-related-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px;text-align:center;text-decoration:none;color:var(--white);transition:border-color .3s,transform .3s}
+    .sp-related-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .sp-related-icon{width:44px;height:44px;background:rgba(236,31,39,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin:0 auto 14px}
+    .sp-related-icon svg{width:22px;height:22px}
+    .sp-related-title{font-weight:700;font-size:.9rem}
     .sp-nav{display:flex;justify-content:space-between;gap:16px;padding:60px 0}
     .sp-nav-link{flex:1;display:flex;align-items:center;gap:12px;background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:20px 24px;text-decoration:none;color:var(--white);transition:border-color .3s,transform .2s}
     .sp-nav-link:hover{border-color:var(--accent);transform:translateY(-2px)}
@@ -93,13 +105,94 @@
     .sp-nav-label{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
     .sp-nav-title{font-weight:700;font-size:.95rem}
     .sp-nav-next{text-align:right;flex-direction:row-reverse}
-    @media(max-width:1024px){.sp-process{grid-template-columns:repeat(3,1fr)}}
-    @media(max-width:768px){.media-grid{grid-template-columns:repeat(2,1fr)}.media-cell-wide{grid-column:span 2}.sp-features{grid-template-columns:1fr}.sp-stats{grid-template-columns:1fr}.sp-cta{padding:48px 28px}.sp-hero{min-height:50vh}.sp-why-grid{grid-template-columns:1fr}.sp-process{grid-template-columns:1fr}.sp-benefits{grid-template-columns:1fr}.sp-nav{flex-direction:column}}
-    @media(max-width:480px){.media-grid{grid-template-columns:1fr}.media-cell-wide{grid-column:span 1;aspect-ratio:4/3}}
+    @media(max-width:1024px){.sp-process{grid-template-columns:repeat(3,1fr)}.sp-process::before{display:none}.sp-services-grid{grid-template-columns:repeat(2,1fr)}.sp-related-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:768px){.sp-why-grid{grid-template-columns:1fr}.sp-services-grid{grid-template-columns:1fr}.sp-process{grid-template-columns:1fr}.sp-portfolio-grid{grid-template-columns:repeat(2,1fr)}.sp-stats{grid-template-columns:1fr}.sp-related-grid{grid-template-columns:1fr}.sp-cta{padding:48px 28px}.sp-hero{min-height:50vh}.sp-nav{flex-direction:column}.sp-testimonial-card{padding:28px}}
+    @media(max-width:480px){.sp-portfolio-grid{grid-template-columns:1fr}}
+
+    /* ===== COVER FLOW SHOWCASE ===== */
+    .cf-section{padding:100px 0 120px;background:var(--dark);overflow:hidden}
+    .cf-stage{position:relative;max-width:1100px;height:600px;margin:0 auto;perspective:1200px}
+    .cf-slide{position:absolute;left:50%;top:50%;width:360px;margin-left:-180px;margin-top:-290px;transition:transform .8s cubic-bezier(.4,0,.2,1),opacity .8s cubic-bezier(.4,0,.2,1),filter .8s cubic-bezier(.4,0,.2,1);cursor:pointer;will-change:transform,opacity,filter;backface-visibility:hidden}
+    .cf-slide.center{transform:translate3d(0,0,0) scale(1) rotateY(0);z-index:5;opacity:1;filter:none}
+    .cf-slide.left{transform:translate3d(-260px,0,0) scale(.78) rotateY(25deg);z-index:2;opacity:.6;filter:blur(6px);transform-origin:right center}
+    .cf-slide.right{transform:translate3d(260px,0,0) scale(.78) rotateY(-25deg);z-index:2;opacity:.6;filter:blur(6px);transform-origin:left center}
+    .cf-slide.hidden{transform:translate3d(650px,0,0) scale(.5) rotateY(-35deg);z-index:0;opacity:0;filter:blur(12px);pointer-events:none}
+    .cf-slide.hidden-left{transform:translate3d(-650px,0,0) scale(.5) rotateY(35deg);z-index:0;opacity:0;filter:blur(12px);pointer-events:none}
+    .cf-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.1);transition:box-shadow .4s}
+    .cf-slide.center .cf-card{box-shadow:0 20px 60px rgba(0,0,0,.25),0 8px 24px rgba(0,0,0,.15)}
+    .cf-slide.left .cf-card,.cf-slide.right .cf-card{box-shadow:0 10px 30px rgba(0,0,0,.12)}
+    .cf-card:hover{box-shadow:0 24px 64px rgba(0,0,0,.3),0 0 40px rgba(236,31,39,.08)!important}
+    .cf-card-header{display:flex;align-items:center;gap:10px;padding:12px 16px}
+    .cf-card-avatar{width:40px;height:40px;border-radius:50%;overflow:hidden;flex-shrink:0}
+    .cf-card-avatar-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.75rem;color:#fff}
+    .cf-card-user{flex:1;min-width:0}
+    .cf-card-name{font-weight:600;font-size:.875rem;color:#000;line-height:1.3}
+    .cf-card-meta{font-size:.75rem;color:#737373;line-height:1.3}
+    .cf-card-more{color:#737373;font-size:1.2rem;cursor:pointer;padding:4px}
+    .cf-card-image{width:100%;aspect-ratio:1;overflow:hidden;background:#f5f5f5}
+    .cf-card-image img{width:100%;height:100%;object-fit:cover;display:block}
+    .cf-card-image-wide{aspect-ratio:16/9}
+    .cf-card-actions{display:flex;align-items:center;gap:0;padding:8px 12px;border-bottom:1px solid #efefef}
+    .cf-card-action{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:8px 0;background:none;border:none;cursor:pointer;font-size:.8rem;font-weight:600;font-family:inherit;transition:background .15s;border-radius:6px}
+    .cf-card-action:hover{background:#f2f2f2}
+    .cf-card-action svg{width:20px;height:20px}
+    .cf-card-action-right{margin-left:auto}
+    .cf-card-stats{padding:8px 16px;font-size:.8rem;color:#737373;display:flex;align-items:center;gap:12px}
+    .cf-card-caption{padding:4px 16px 12px;font-size:.875rem;color:#262626;line-height:1.5}
+    .cf-card-caption strong{font-weight:600}
+    .cf-card-time{padding:0 16px 12px;font-size:.75rem;color:#737373}
+    .cf-card.fb .cf-card-actions{border-top:1px solid #dadde1;border-bottom:1px solid #dadde1}
+    .cf-card.fb .cf-card-action{color:#65676b;font-weight:400;font-size:.85rem}
+    .cf-card.fb .cf-card-action svg{fill:none;stroke:#65676b;stroke-width:2}
+    .cf-card.ig .cf-card-actions{border-top:none;padding:8px 12px}
+    .cf-card.ig .cf-card-action{color:#262626;flex:none;padding:0 4px}
+    .cf-card.ig .cf-card-action svg{width:24px;height:24px;fill:none;stroke:#262626;stroke-width:2}
+    .cf-card.ig .cf-card-stats{padding:0 16px 4px}
+    .cf-card.li .cf-card-header{background:#f9fafb}
+    .cf-card.li .cf-card-actions{border-top:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8}
+    .cf-card.li .cf-card-action{color:#00000099;font-weight:500;font-size:.8rem}
+    .cf-card.li .cf-card-action svg{fill:none;stroke:#00000099;stroke-width:1.5}
+    .cf-card.x .cf-card-image{border-radius:16px;margin:0 16px;width:calc(100% - 32px)}
+    .cf-card.x .cf-card-actions{border-top:none;padding:4px 16px;justify-content:space-between}
+    .cf-card.x .cf-card-action{color:#71767b;font-weight:400;font-size:.8rem;flex:none;padding:0}
+    .cf-card.x .cf-card-action svg{fill:none;stroke:#71767b;stroke-width:1.5}
+    .cf-card.x .cf-card-action.liked svg{fill:#f91880;stroke:#f91880}
+    .cf-card.x .cf-card-action.liked{color:#f91880}
+    .cf-counter{text-align:center;margin-top:72px;font-size:.85rem;color:var(--muted);font-weight:500;letter-spacing:.05em}
+    .cf-counter span{color:var(--white);font-weight:700;font-size:1.1rem}
+    @media(max-width:1024px){
+      .cf-stage{max-width:900px;height:540px}
+      .cf-slide{width:320px;margin-left:-160px;margin-top:-260px}
+      .cf-slide.left{transform:translate3d(-220px,0,0) scale(.78) rotateY(25deg)}
+      .cf-slide.right{transform:translate3d(220px,0,0) scale(.78) rotateY(-25deg)}
+    }
+    @media(max-width:768px){
+      .cf-section{padding:80px 0}
+      .cf-stage{height:520px}
+      .cf-slide{width:300px;margin-left:-150px;margin-top:-250px}
+      .cf-slide.left{transform:translate3d(-180px,0,0) scale(.75) rotateY(20deg)}
+      .cf-slide.right{transform:translate3d(180px,0,0) scale(.75) rotateY(-20deg)}
+    }
+    @media(max-width:480px){
+      .cf-section{padding:60px 0 80px}
+      .cf-stage{height:auto;min-height:500px}
+      .cf-slide{position:relative!important;left:auto!important;top:auto!important;width:calc(100% - 40px)!important;margin:0 auto!important;transform:none!important;filter:none!important;opacity:0!important;pointer-events:none!important;transition:opacity .5s ease}
+      .cf-slide.center{opacity:1!important;pointer-events:auto!important}
+    }
+
+    /* Bottom CTA */
+    .sm-bottom-cta{padding:80px 0}
+    .sm-bottom-cta-inner{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-xl);padding:72px;text-align:center;position:relative;overflow:hidden}
+    .sm-bottom-cta-inner .sp-cta-orb{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(236,31,39,.15),transparent 70%);border-radius:50%;pointer-events:none}
+    .sm-bottom-cta-inner .sp-cta-orb-1{top:-100px;left:-100px}
+    .sm-bottom-cta-inner .sp-cta-orb-2{bottom:-100px;right:-100px}
+    .sm-bottom-cta-title{font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:16px}
+    .sm-bottom-cta-title span{color:var(--accent)}
+    .sm-bottom-cta-sub{color:var(--muted);font-size:1.05rem;max-width:520px;margin:0 auto 36px;line-height:1.7}
+    .sm-bottom-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
   </style>
   <!-- Arabic Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles-lang.css" />
 </head>
 <body>
   <header class="header" id="header">
@@ -113,29 +206,10 @@
         <li><a href="index.html#testimonials" class="nav-link">Clients</a></li>
       </ul>
       <a href="index.html#contact" class="btn btn-primary nav-cta magnetic-btn" id="nav-cta-btn">
-        <span data-i18n="book_free_call">Book a Call</span>
+        <span>Book a Call</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-          <div class="lang-switcher">
-        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="12" cy="12" r="10"/>
-            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
-          </svg>
-          <span class="lang-switcher-label" id="lang-switcher-label">AR</span>
-        </button>
-        <div class="lang-dropdown" id="lang-dropdown">
-          <button class="lang-option" data-lang="en">
-            <span class="lang-flag">🇺🇸</span>
-            <span>EN</span>
-          </button>
-          <button class="lang-option" data-lang="ar">
-            <span class="lang-flag">🇸🇦</span>
-            <span>AR</span>
-          </button>
-        </div>
-      </div>
     </nav>
   </header>
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
@@ -146,189 +220,456 @@
       <li class="mobile-menu-item"><a href="index.html#process" class="mobile-link">Process</a></li>
       <li class="mobile-menu-item"><a href="index.html#testimonials" class="mobile-link">Clients</a></li>
     </ul>
-    <div class="mobile-menu-cta-wrap"><a href="index.html#contact" class="btn btn-primary mobile-menu-cta"><span data-i18n="book_free_call">Book a Call</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+    <div class="mobile-menu-cta-wrap"><a href="index.html#contact" class="btn btn-primary mobile-menu-cta"><span>Book a Call</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
   </div>
   <main>
+
     <!-- HERO -->
     <section class="sp-hero">
       <div class="sp-hero-bg"></div>
       <div class="container">
-        <a href="index.html#services" class="sp-back" data-i18n="back_to_home"><svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to Services</a>
+        <a href="index.html#services" class="sp-back"><svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to Services</a>
         <div class="sp-label"><span class="sp-label-dot"></span>Service 01</div>
-        <h1 class="sp-title" data-i18n="sm_hero_title">Social Media<br/><span>Management</span></h1>
-        <p class="sp-subtitle" data-i18n="sm_hero_desc">Strategic content creation, community management, and analytics that build audiences and drive engagement across all platforms.</p>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section class="sp-section">
-      <div class="container">
-        <div class="sp-section-label">Our Work</div>
-        <h2 class="sp-section-title">Social Media <span>Gallery</span></h2>
-        <div class="media-grid" id="photo-grid"></div>
-        <p class="upload-hint">Click any cell to <span>upload social media visuals</span></p>
-      </div>
-    </section>
-    <section class="sp-section sp-section-alt">
-      <div class="container">
-        <div class="sp-section-label">Reels & Videos</div>
-        <h2 class="sp-section-title">Video <span>Showcase</span></h2>
-        <div class="media-grid" id="video-grid"></div>
-        <p class="upload-hint" style="margin-top:16px">Click any cell to <span>upload social media videos</span></p>
-      </div>
-    </section>
-
-    <!-- WHY THIS SERVICE -->
-    <section class="sp-section">
-      <div class="container">
-        <div class="sp-section-label">Why Social Media</div>
-        <h2 class="sp-section-title" data-i18n="sm_why_title">Why Your Business <span>Needs This</span></h2>
-        <div class="sp-why-grid">
-          <div class="sp-why-card">
-            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-            <div class="sp-why-title">Your Audience Is Already There</div>
-            <div class="sp-why-text">Over 4.9 billion people use social media. If you're not posting strategically, you're invisible to the customers who are ready to buy.</div>
-          </div>
-          <div class="sp-why-card">
-            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="sp-why-title">Consistency Builds Trust</div>
-            <div class="sp-why-text">Brands that post consistently see 3.5× more engagement and 67% more leads. Consistency signals professionalism and reliability.</div>
-          </div>
-          <div class="sp-why-card">
-            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-            <div class="sp-why-title">Algorithms Reward Activity</div>
-            <div class="sp-why-text">Social platforms reward accounts that post quality content regularly. More visibility means more organic reach without paying for ads.</div>
-          </div>
+        <h1 class="sp-title">Social<br/><span>Media</span></h1>
+        <p class="sp-subtitle" style="font-family:var(--font-heading);font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:700;color:var(--white);max-width:700px;margin-bottom:16px">Grow Your Brand Where Your Customers Spend Their Time.</p>
+        <p class="sp-subtitle">We create scroll-stopping content, manage your communities, and run data-driven campaigns that turn followers into loyal customers and drive measurable business growth.</p>
+        <div class="sp-hero-btns">
+          <a href="brief-social-media.html" class="btn btn-primary btn-lg magnetic-btn"><span>Start Your Social Media Journey</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="portfolio.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>View Social Media Portfolio</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
       </div>
     </section>
 
-    <!-- STATS -->
-    <section class="sp-section sp-section-alt">
+    <!-- WHY CHOOSE US -->
+    <section class="sp-section">
       <div class="container">
-        <div class="sp-section-label">Results</div>
-        <h2 class="sp-section-title">What Brands <span>Achieve</span></h2>
-        <div class="sp-stats">
-          <div class="sp-stat" data-i18n="sm_stat_1"><div class="sp-stat-num" data-i18n="sm_stat_1_num">+420%</div><div class="sp-stat-label" data-i18n="sm_stat_1_label">Average Engagement Increase</div></div>
-          <div class="sp-stat" data-i18n="sm_stat_2"><div class="sp-stat-num" data-i18n="sm_stat_2_num">3.8×</div><div class="sp-stat-label" data-i18n="sm_stat_2_label">Follower Growth Rate</div></div>
-          <div class="sp-stat" data-i18n="sm_stat_3"><div class="sp-stat-num" data-i18n="sm_stat_3_num">90 days</div><div class="sp-stat-label" data-i18n="sm_stat_3_label">To Measurable Results</div></div>
+        <div class="sp-section-label">Why VIVEDFX</div>
+        <h2 class="sp-section-title">Why Leading Brands <span>Choose Us</span></h2>
+        <div class="sp-why-grid">
+          <div class="sp-why-card">
+            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-why-title">Consistent Growth</div>
+            <div class="sp-why-text">Brands that post consistently see 3.5× more engagement and 67% more leads. Consistency signals professionalism and reliability.</div>
+          </div>
+          <div class="sp-why-card">
+            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-why-title">Platform Expertise</div>
+            <div class="sp-why-text">We know the algorithm behind every platform — Instagram, TikTok, LinkedIn, Facebook. Our strategies are built on data, not guesswork.</div>
+          </div>
+          <div class="sp-why-card">
+            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5"/></svg></div>
+            <div class="sp-why-title">Content That Converts</div>
+            <div class="sp-why-text">Every post is designed with purpose. From awareness to consideration to purchase, we guide your audience through the funnel.</div>
+          </div>
+          <div class="sp-why-card">
+            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-why-title">Community Building</div>
+            <div class="sp-why-text">We don't just post — we engage, respond, and build genuine relationships with your audience that turn followers into brand advocates.</div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- WHAT WE DELIVER -->
-    <section class="sp-section">
-      <div class="container">
-        <div class="sp-section-label">What's Included</div>
-        <h2 class="sp-section-title" data-i18n="sm_deliver_title">What We <span>Deliver</span></h2>
-        <div class="sp-features">
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="sp-feature-title" data-i18n="sm_deliver_1">Content Strategy</div><div class="sp-feature-text">Full monthly content calendars tailored to your brand voice, audience, and business goals.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="sp-feature-title" data-i18n="sm_deliver_2">Daily Posting</div><div class="sp-feature-text">Consistent posting across Instagram, Facebook, TikTok, LinkedIn, and more with optimal timing.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="sp-feature-title" data-i18n="sm_deliver_3">Community Management</div><div class="sp-feature-text">Responding to comments and DMs to keep your audience engaged, loyal, and coming back.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="sm_deliver_4">Analytics & Reporting</div><div class="sp-feature-text">Detailed monthly performance reports with actionable insights and strategy adjustments.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="sm_deliver_5">Visual Content Creation</div><div class="sp-feature-text">Scroll-stopping graphics, carousels, reels covers, and stories designed for each platform.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7V4h16v3M9 20h6M12 4v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="sm_deliver_6">Hashtag Research</div><div class="sp-feature-text">Strategic hashtag sets and trend monitoring to maximize organic reach and discoverability.</div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
     <section class="sp-section sp-section-alt">
       <div class="container">
-        <div class="sp-section-label">Our Process</div>
-        <h2 class="sp-section-title" data-i18n="sm_process_title">How We <span>Work</span></h2>
-        <div class="sp-process">
-          <div class="sp-process-step"><div class="sp-process-num">01</div><div class="sp-process-title" data-i18n="sm_process_1">Audit</div><div class="sp-process-text">We analyze your current social presence, competitors, and audience behavior.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">02</div><div class="sp-process-title" data-i18n="sm_process_2">Strategy</div><div class="sp-process-text">We build a custom content calendar aligned with your business goals.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">03</div><div class="sp-process-title" data-i18n="sm_process_3">Create</div><div class="sp-process-text">Our team designs and writes all content — posts, stories, reels, and more.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">04</div><div class="sp-process-title" data-i18n="sm_process_4">Publish</div><div class="sp-process-text">Content goes live at optimal times with strategic hashtags and captions.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">05</div><div class="sp-process-title" data-i18n="sm_process_5">Optimize</div><div class="sp-process-text">We track performance weekly and refine the strategy based on data.</div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BENEFITS -->
-    <section class="sp-section">
-      <div class="container">
-        <div class="sp-section-label">Results & Benefits</div>
-        <h2 class="sp-section-title" data-i18n="sm_benefits_title">What You <span>Get</span></h2>
-        <div class="sp-benefits">
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="sm_benefits_1">More Engaged Followers</div><div class="sp-benefit-text">Attract real, active followers who actually interact with your content and buy from you.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="sm_benefits_2">Stronger Brand Authority</div><div class="sp-benefit-text">Position your business as a trusted leader in your industry through consistent, valuable content.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="sm_benefits_3">Higher Website Traffic</div><div class="sp-benefit-text">Drive qualified visitors from social platforms directly to your website or landing pages.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="sm_benefits_4">Better Customer Relationships</div><div class="sp-benefit-text">Active community management builds loyalty, trust, and repeat customers.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="sm_benefits_5">Time Freedom</div><div class="sp-benefit-text">We handle all content creation and posting so you can focus on running your business.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="sm_benefits_6">Data-Driven Growth</div><div class="sp-benefit-text">Every decision is backed by analytics, ensuring continuous improvement and ROI.</div></div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="sp-section sp-section-alt">
-      <div class="container">
-        <div class="sp-section-label">FAQ</div>
-        <h2 class="sp-section-title" data-i18n="sm_faq_title">Frequently Asked <span>Questions</span></h2>
-        <div class="sp-faq">
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="sm_faq_1_q">Which platforms do you manage?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="sm_faq_1_a">We manage Instagram, Facebook, TikTok, LinkedIn, Twitter/X, Pinterest, and YouTube. We'll recommend the best platforms for your specific business.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="sm_faq_2_q">How many posts do you create per month?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="sm_faq_2_a">Depending on your plan, we create 15–30+ posts per month including feed posts, stories, reels, and carousel content.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="sm_faq_3_q">Do you handle paid advertising too?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="sm_faq_3_a">Yes, we offer paid ad management as an add-on service. We create and manage ad campaigns to amplify your organic content.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="sm_faq_4_q">How soon will I see results?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="sm_faq_4_a">Most clients see increased engagement within 2–4 weeks. Follower growth and lead generation typically peak around 90 days.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="sm_faq_5_q">Can I approve content before it's posted?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="sm_faq_5_a">Absolutely. We send content calendars for your approval before publishing. You have full control over what goes live.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="sm_faq_6_q">Do you write captions and hashtags too?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="sm_faq_6_a">Yes, every post includes professional captions optimized for engagement and strategically researched hashtags for maximum reach.</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="sp-section">
-      <div class="container">
-        <div class="sp-cta">
-          <div class="sp-cta-orb sp-cta-orb-1"></div><div class="sp-cta-orb sp-cta-orb-2"></div>
-          <h2 class="sp-cta-title" data-i18n="sm_cta_title">Ready to Grow Your<br/><span>Social Presence?</span></h2>
-          <p class="sp-cta-sub">Book a free strategy call and we'll show you exactly how we'd grow your accounts.</p>
-          <div class="sp-cta-btns">
-            <a href="index.html#contact" class="btn btn-primary btn-lg magnetic-btn"><span data-i18n="sm_cta_btn">Book Free Strategy Call</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <a href="brief-social-media.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>Start Your Brief</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <a href="https://wa.me/1234567890" class="btn btn-ghost btn-lg" target="_blank"><span data-i18n="sm_cta_whatsapp">Contact Us on WhatsApp</span></a>
+        <div class="sp-section-label">What We Deliver</div>
+        <h2 class="sp-section-title">Our Social Media <span>Services</span></h2>
+        <div class="sp-services-grid">
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M16 2v4M8 2v4M3 10h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-service-card-title">Content Calendar</div>
+            <div class="sp-service-card-text">Monthly content plans with themed posting schedules aligned to your business goals.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Feed Posts & Carousels</div>
+            <div class="sp-service-card-text">Eye-catching graphics and multi-slide posts optimized for each platform's algorithm.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Stories & Reels</div>
+            <div class="sp-service-card-text">Short-form video content and interactive stories that maximize reach and engagement.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/></svg></div>
+            <div class="sp-service-card-title">Community Management</div>
+            <div class="sp-service-card-text">Daily engagement, comment responses, and DM management to keep your audience active.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7V4h16v3M9 20h6M12 4v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Hashtag Strategy</div>
+            <div class="sp-service-card-text">Research-backed hashtag sets that increase discoverability and reach new audiences.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Analytics & Reporting</div>
+            <div class="sp-service-card-text">Monthly performance reports with insights, recommendations, and growth metrics.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-service-card-title">Competitor Analysis</div>
+            <div class="sp-service-card-text">We monitor your competitors' strategies to keep you ahead of the curve.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Trend Jacking</div>
+            <div class="sp-service-card-text">We ride trending topics and formats to maximize your brand's visibility and relevance.</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PREV / NEXT -->
+    <!-- PROCESS -->
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">Our Process</div>
+        <h2 class="sp-section-title">Our 6-Step Social Media <span>Process</span></h2>
+        <div class="sp-process">
+          <div class="sp-process-step"><div class="sp-process-num">01</div><div class="sp-process-title">Discovery</div><div class="sp-process-text">We learn your brand voice, audience, goals, and competitive landscape.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">02</div><div class="sp-process-title">Research</div><div class="sp-process-text">We analyze your industry, competitors, and audience behavior to inform strategy.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">03</div><div class="sp-process-title">Strategy</div><div class="sp-process-text">We build a custom content strategy with posting schedules and content pillars.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">04</div><div class="sp-process-title">Content Creation</div><div class="sp-process-text">Our designers and copywriters craft scroll-stopping visuals and captions.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">05</div><div class="sp-process-title">Review</div><div class="sp-process-text">You approve content before publishing. We refine based on your feedback.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">06</div><div class="sp-process-title">Optimize</div><div class="sp-process-text">We track performance and continuously optimize for better results.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COVER FLOW SHOWCASE -->
+    <section class="cf-section" id="sm-coverflow">
+      <div class="container">
+        <div class="sp-section-label">Our Work</div>
+        <h2 class="sp-section-title">Social Media <span>Portfolio</span></h2>
+        <p class="sp-subtitle" style="margin-bottom:48px">Explore a selection of high-performing social media campaigns and creative designs crafted for brands across different industries.</p>
+      </div>
+      <div class="cf-stage" id="cf-stage">
+
+        <!-- SLIDE 0: FACEBOOK -->
+        <div class="cf-slide center" data-index="0">
+          <div class="cf-card fb">
+            <div class="cf-card-header">
+              <div class="cf-card-avatar"><img src="assets/Services/Social Media Management/CML1.png" alt="Tadawi Clinic Logo" style="width:100%;height:100%;object-fit:cover" /></div>
+              <div class="cf-card-user"><div class="cf-card-name">Tadawi Clinic - مركز تداوي <svg viewBox="0 0 24 24" fill="#1877f2" style="width:14px;height:14px;display:inline;vertical-align:middle"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div><div class="cf-card-meta">Sponsored · 2h</div></div>
+              <div class="cf-card-more">···</div>
+            </div>
+            <div class="cf-card-image"><img src="assets/Services/Social Media Management/CM1.png" alt="Tadawi Clinic - مركز تداوي Facebook Campaign" loading="lazy" /></div>
+            <div class="cf-card-actions">
+              <button class="cf-card-action"><svg viewBox="0 0 24 24" fill="none" stroke="#65676b" stroke-width="2"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg>Like</button>
+              <button class="cf-card-action"><svg viewBox="0 0 24 24" fill="none" stroke="#65676b" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Comment</button>
+              <button class="cf-card-action"><svg viewBox="0 0 24 24" fill="none" stroke="#65676b" stroke-width="2"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13"/></svg>Share</button>
+            </div>
+            <div class="cf-card-stats"><span>2.8K likes</span><span>186 comments</span></div>
+            <div class="cf-card-caption"><strong>Tadawi Clinic - مركز تداوي</strong> Your health deserves more than average care. Our team of specialists delivers personalized treatment plans designed around YOU. Book your consultation today.</div>
+            <div class="cf-card-time">2 hours ago</div>
+          </div>
+        </div>
+
+        <!-- SLIDE 1: INSTAGRAM -->
+        <div class="cf-slide right" data-index="1">
+          <div class="cf-card ig">
+            <div class="cf-card-header">
+              <div class="cf-card-avatar"><img src="assets/Services/Social Media Management/CML3.png" alt="Frigate Shipping Group Logo" style="width:100%;height:100%;object-fit:cover" /></div>
+              <div class="cf-card-user"><div class="cf-card-name">Frigate shipping group <svg viewBox="0 0 24 24" fill="#0095f6" style="width:14px;height:14px;display:inline;vertical-align:middle"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div><div class="cf-card-meta">Reels · 5h</div></div>
+              <div class="cf-card-more">···</div>
+            </div>
+            <div class="cf-card-image"><img src="assets/Services/Social Media Management/CM2.png" alt="Frigate Shipping Group Instagram Campaign" loading="lazy" /></div>
+<div class="cf-card-actions">
+              <button class="cf-card-action"><svg viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button>
+              <button class="cf-card-action"><svg viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></button>
+              <button class="cf-card-action"><svg viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+              <button class="cf-card-action cf-card-action-right"><svg viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg></button>
+            </div>
+            <div class="cf-card-stats"><span>5.2K likes</span><span>324 comments</span></div>
+            <div class="cf-card-caption"><strong>Frigate shipping group</strong> Transform your body. Transform your life. Our 12-week challenge starts Monday — are you in? Drop a 💪 in the comments.</div>
+            <div class="cf-card-time">5 hours ago</div>
+          </div>
+        </div>
+
+        <!-- SLIDE 2: LINKEDIN -->
+        <div class="cf-slide hidden" data-index="2">
+          <div class="cf-card li">
+            <div class="cf-card-header">
+              <div class="cf-card-avatar"><img src="assets/Services/Social Media Management/CML2.png" alt="White Smile Logo" style="width:100%;height:100%;object-fit:cover" /></div>
+              <div class="cf-card-user"><div class="cf-card-name">white smile <svg viewBox="0 0 24 24" fill="#0077b5" style="width:14px;height:14px;display:inline;vertical-align:middle"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div><div class="cf-card-meta">3,847 followers · 8h</div></div>
+              <div class="cf-card-more">···</div>
+            </div>
+            <div class="cf-card-image"><img src="assets/Services/Social Media Management/CM3.png" alt="White Smile LinkedIn Campaign" loading="lazy" /></div>
+            <div class="cf-card-actions">
+              <button class="cf-card-action"><svg viewBox="0 0 24 24" fill="none" stroke="#00000099" stroke-width="1.5"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg>Like</button>
+              <button class="cf-card-action"><svg viewBox="0 0 24 24" fill="none" stroke="#00000099" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Comment</button>
+              <button class="cf-card-action"><svg viewBox="0 0 24 24" fill="none" stroke="#00000099" stroke-width="1.5"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13"/></svg>Repost</button>
+              <button class="cf-card-action"><svg viewBox="0 0 24 24" fill="none" stroke="#00000099" stroke-width="1.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>Send</button>
+            </div>
+            <div class="cf-card-stats"><span>1.9K reactions</span><span>234 comments</span></div>
+            <div class="cf-card-caption"><strong>white smile</strong> We're excited to announce our partnership with leading enterprises to deliver next-generation corporate solutions. The future of business starts with strategic thinking.</div>
+            <div class="cf-card-time">8 hours ago</div>
+          </div>
+        </div>
+
+        <!-- SLIDE 3: X (TWITTER) -->
+        <div class="cf-slide left" data-index="3">
+          <div class="cf-card x">
+            <div class="cf-card-header">
+              <div class="cf-card-avatar"><img src="assets/Services/Social Media Management/CML4.png" alt="Cobra Gym Logo" style="width:100%;height:100%;object-fit:cover" /></div>
+              <div class="cf-card-user"><div class="cf-card-name">COBRA GYM <svg viewBox="0 0 24 24" fill="#1d9bf0" style="width:16px;height:16px;display:inline;vertical-align:middle"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3" stroke="#1d9bf0" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div><div class="cf-card-meta">@CobraGym · 8h</div></div>
+              <div class="cf-card-more">···</div>
+            </div>
+            <div class="cf-card-caption"><strong>COBRA GYM</strong> Engineering excellence isn't just about structures — it's about building trust. Proud to deliver projects that stand the test of time. 🏗️ #Engineering #Construction</div>
+            <div class="cf-card-image"><img src="assets/Services/Social Media Management/CM4.png" alt="Cobra Gym X Campaign" loading="lazy" /></div>
+            <div class="cf-card-actions">
+              <button class="cf-card-action"><svg viewBox="0 0 24 24" fill="none" stroke="#71767b" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>89</button>
+              <button class="cf-card-action"><svg viewBox="0 0 24 24" fill="none" stroke="#71767b" stroke-width="1.5"><path d="M17 1l4 4-4 4M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4M21 13v2a4 4 0 01-4 4H3"/></svg>1.2K</button>
+              <button class="cf-card-action liked"><svg viewBox="0 0 24 24" fill="#f91880" stroke="#f91880" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>4.5K</button>
+              <button class="cf-card-action"><svg viewBox="0 0 24 24" fill="none" stroke="#71767b" stroke-width="1.5"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg></button>
+            </div>
+            <div class="cf-card-stats"><span>31.2K views</span></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="cf-counter"><span id="cf-current">01</span> / 04</div>
+    </section>
+
+    <!-- CLIENT RESULTS -->
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">Client Results</div>
+        <h2 class="sp-section-title">Social Media That <span>Drives Results</span></h2>
+        <div class="sp-stats">
+          <div class="sp-stat"><div class="sp-stat-num" data-target="280" data-suffix="%">0%</div><div class="sp-stat-label">Average Engagement Increase</div></div>
+          <div class="sp-stat"><div class="sp-stat-num" data-target="3.8" data-suffix="×" data-decimal="1">0×</div><div class="sp-stat-label">Follower Growth Rate</div></div>
+          <div class="sp-stat"><div class="sp-stat-num" data-target="45" data-suffix="+">0+</div><div class="sp-stat-label">Posts Per Month</div></div>
+          <div class="sp-stat"><div class="sp-stat-num" data-target="96" data-suffix="%">0%</div><div class="sp-stat-label">Client Retention Rate</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <section class="sp-section sm-bottom-cta">
+      <div class="container">
+        <div class="sm-bottom-cta-inner">
+          <div class="sp-cta-orb sp-cta-orb-1"></div><div class="sp-cta-orb sp-cta-orb-2"></div>
+          <h2 class="sm-bottom-cta-title">Ready to Grow Your<br/><span>Social Presence?</span></h2>
+          <p class="sm-bottom-cta-sub">Let's create content that attracts attention, builds trust, and turns followers into loyal customers.</p>
+          <div class="sm-bottom-cta-btns">
+            <a href="brief-social-media.html" class="btn btn-primary btn-lg magnetic-btn"><span>Start Your Project</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="portfolio.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>View More Projects</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED SERVICES -->
     <section class="sp-section sp-section-alt">
       <div class="container">
-        <div class="sp-nav">
-          <a href="service-media-buying.html" class="sp-nav-link">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <div><div class="sp-nav-label" data-i18n="prev_service">Previous Service</div><div class="sp-nav-title">Media Buying</div></div>
+        <div class="sp-section-label">Explore More</div>
+        <h2 class="sp-section-title">Related <span>Services</span></h2>
+        <div class="sp-related-grid">
+          <a href="service-brand-identity.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-related-title">Brand Identity</div>
           </a>
-          <a href="service-brand-identity.html" class="sp-nav-link sp-nav-next">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <div><div class="sp-nav-label" data-i18n="next_service">Next Service</div><div class="sp-nav-title">Brand Identity</div></div>
+          <a href="service-graphic-design.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-related-title">Graphic Design</div>
+          </a>
+          <a href="service-paid-advertising.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-related-title">Paid Advertising</div>
+          </a>
+          <a href="index.html#services" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+            <div class="sp-related-title">Content Creation</div>
+          </a>
+          <a href="service-website-design.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-related-title">Website Design</div>
           </a>
         </div>
       </div>
     </section>
+
   </main>
   <script src="main.js" defer></script>
   <script>
-    document.querySelectorAll('.sp-faq-q').forEach(btn=>{
-      btn.addEventListener('click',()=>{
-        const item=btn.closest('.sp-faq-item');
-        document.querySelectorAll('.sp-faq-item').forEach(i=>{if(i!==item)i.classList.remove('open')});
-        item.classList.toggle('open');
+    // Stats counter animation
+    (function(){
+      const stats=document.querySelectorAll('.sp-stat-num[data-target]');
+      const observer=new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            const el=entry.target;
+            const target=parseFloat(el.dataset.target);
+            const suffix=el.dataset.suffix||'';
+            const prefix=el.dataset.prefix||'';
+            const decimal=parseInt(el.dataset.decimal)||0;
+            let start=0;const duration=2000;const startTime=performance.now();
+            function update(now){
+              const elapsed=now-startTime;const progress=Math.min(elapsed/duration,1);
+              const eased=1-Math.pow(1-progress,3);
+              const current=eased*target;
+              el.textContent=prefix+(decimal>0?current.toFixed(decimal):Math.floor(current))+suffix;
+              if(progress<1)requestAnimationFrame(update);
+            }
+            requestAnimationFrame(update);
+            observer.unobserve(el);
+          }
+        });
+      },{threshold:0.3});
+      stats.forEach(s=>observer.observe(s));
+    })();
+
+    // ===== COVER FLOW SHOWCASE =====
+    (function(){
+      var stage=document.getElementById('cf-stage');
+      if(!stage)return;
+      var slides=Array.from(stage.querySelectorAll('.cf-slide'));
+      var counterEl=document.getElementById('cf-current');
+      var total=slides.length;
+      var active=0;
+      var prevActive=-1;
+      var autoplayTimer;
+      var isHovering=false;
+      var isCenterHovered=false;
+      var isAnimating=false;
+      var hoverDelayTimer=null;
+      var pauseTimer=null;
+      var resumeTimer=null;
+      var currentHoverIndex=-1;
+      var HOVER_DELAY=500;
+      var ANIM_DURATION=800;
+      var PAUSE_BETWEEN=1000;
+      var RESUME_DELAY=1000;
+
+      function goTo(index){
+        if(isAnimating||isCenterHovered)return;
+        var next=((index%total)+total)%total;
+        if(next===active)return;
+        isAnimating=true;
+        prevActive=active;
+        active=next;
+        slides.forEach(function(slide,i){
+          slide.classList.remove('center','left','right','hidden','hidden-left');
+          var prevDiff=prevActive>=0?((i-prevActive)%total+total)%total:-1;
+          var newDiff=((i-active)%total+total)%total;
+          if(newDiff===0)slide.classList.add('center');
+          else if(newDiff===1)slide.classList.add('right');
+          else if(newDiff===total-1)slide.classList.add('left');
+          else if(prevDiff===total-1)slide.classList.add('hidden-left');
+          else slide.classList.add('hidden');
+        });
+        if(counterEl)counterEl.textContent=String(active+1).padStart(2,'0');
+        setTimeout(function(){
+          isAnimating=false;
+          if(!isCenterHovered&&isHovering&&currentHoverIndex>=0)startPauseThenNext();
+        },ANIM_DURATION);
+      }
+
+      function startPauseThenNext(){
+        clearTimeout(pauseTimer);
+        pauseTimer=setTimeout(function(){
+          if(!isCenterHovered&&isHovering&&currentHoverIndex>=0&&!isAnimating){
+            var nextIndex=(active+1)%total;
+            goTo(nextIndex);
+          }
+        },PAUSE_BETWEEN);
+      }
+
+      function startHoverTransition(idx){
+        clearTimeout(hoverDelayTimer);
+        clearTimeout(pauseTimer);
+        hoverDelayTimer=setTimeout(function(){
+          if(!isCenterHovered&&isHovering&&!isAnimating){
+            goTo(idx);
+          }
+        },HOVER_DELAY);
+      }
+
+      function cancelAllTimers(){
+        clearTimeout(hoverDelayTimer);
+        clearTimeout(pauseTimer);
+        clearTimeout(resumeTimer);
+        hoverDelayTimer=null;
+        pauseTimer=null;
+        resumeTimer=null;
+      }
+
+      function freezeCarousel(){
+        isCenterHovered=true;
+        cancelAllTimers();
+        clearInterval(autoplayTimer);
+      }
+
+      function unfreezeCarousel(){
+        isCenterHovered=false;
+        cancelAllTimers();
+        resumeTimer=setTimeout(function(){
+          if(!isCenterHovered)startAutoplay();
+        },RESUME_DELAY);
+      }
+
+      stage.addEventListener('mouseenter',function(){
+        isHovering=true;
+        clearInterval(autoplayTimer);
       });
-    });
-    function createPhotoCell(i){const c=document.createElement('div');c.className='media-cell';c.innerHTML=`<input type="file" accept="image/*" class="file-input"><div class="media-cell-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="media-cell-text">Upload Photo</div><div class="media-cell-overlay"><span style="color:white;font-size:.8rem">Change Photo</span></div><button class="media-cell-remove">✕</button>`;setup(c,'image');return c;}
-    function createVideoCell(i,wide=false){const c=document.createElement('div');c.className='media-cell media-cell-video'+(wide?' media-cell-wide':'');c.innerHTML=`<input type="file" accept="video/*" class="file-input"><div class="media-cell-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div><div class="media-cell-text">Upload Video</div><div class="media-cell-overlay"><span style="color:white;font-size:.8rem">Change Video</span></div><button class="media-cell-remove">✕</button>`;setup(c,'video');return c;}
-    function setup(cell,type){const inp=cell.querySelector('.file-input'),rm=cell.querySelector('.media-cell-remove');cell.addEventListener('click',e=>{if(e.target===rm)return;inp.click();});inp.addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;const url=URL.createObjectURL(f);cell.querySelectorAll('img,video').forEach(el=>el.remove());if(type==='image'){const img=document.createElement('img');img.src=url;cell.prepend(img);}else{const v=document.createElement('video');v.src=url;v.controls=true;v.muted=true;cell.prepend(v);}cell.classList.add('has-content');});rm.addEventListener('click',e=>{e.stopPropagation();cell.querySelectorAll('img,video').forEach(el=>el.remove());cell.classList.remove('has-content');inp.value='';});}
-    const pg=document.getElementById('photo-grid');for(let i=0;i<9;i++)pg.appendChild(createPhotoCell(i));
-    const vg=document.getElementById('video-grid');for(let i=0;i<6;i++)vg.appendChild(createVideoCell(i));
+      stage.addEventListener('mouseleave',function(){
+        isHovering=false;
+        currentHoverIndex=-1;
+        cancelAllTimers();
+        if(!isCenterHovered){
+          resumeTimer=setTimeout(function(){
+            if(!isHovering)startAutoplay();
+          },RESUME_DELAY);
+        }
+      });
+
+      slides.forEach(function(slide){
+        slide.addEventListener('mouseenter',function(){
+          if(window.innerWidth<=480)return;
+          var idx=parseInt(slide.dataset.index);
+          currentHoverIndex=idx;
+          if(idx===active){
+            freezeCarousel();
+            return;
+          }
+          if(isCenterHovered)return;
+          startHoverTransition(idx);
+        });
+        slide.addEventListener('mouseleave',function(){
+          currentHoverIndex=-1;
+          cancelAllTimers();
+          if(isCenterHovered){
+            unfreezeCarousel();
+          }
+        });
+      });
+
+      var startX=0;
+      stage.addEventListener('touchstart',function(e){startX=e.touches[0].clientX},{passive:true});
+      stage.addEventListener('touchend',function(e){
+        if(isAnimating||isCenterHovered)return;
+        var diff=startX-e.changedTouches[0].clientX;
+        if(Math.abs(diff)>50)goTo(active+(diff>0?1:-1));
+      },{passive:true});
+
+      document.addEventListener('keydown',function(e){
+        if(isAnimating||isCenterHovered)return;
+        var rect=stage.getBoundingClientRect();
+        if(rect.top>window.innerHeight||rect.bottom<0)return;
+        if(e.key==='ArrowRight')goTo(active+1);
+        if(e.key==='ArrowLeft')goTo(active-1);
+      });
+
+      function startAutoplay(){
+        clearInterval(autoplayTimer);
+        if(!isHovering&&!isCenterHovered)autoplayTimer=setInterval(function(){goTo(active+1)},3000);
+      }
+
+      goTo(0);
+      startAutoplay();
+    })();
   </script>
-  <!-- Language System -->
-  <script src="lang-en.js"></script>
-  <script src="lang-ar.js"></script>
-  <script src="lang.js"></script>
+
 </body>
 </html>

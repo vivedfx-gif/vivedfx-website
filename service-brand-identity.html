@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brand Identity Design — VIVEDFX | Build a Brand People Remember</title>
-  <meta name="description" content="Complete brand identity design by VIVEDFX. Logo design, color systems, typography, brand guidelines, and visual identities that build recognition and trust." />
-  <meta property="og:title" content="Brand Identity Design — VIVEDFX" />
+  <title>Brand Identity Design — vivedfx | Build a Brand People Remember</title>
+  <meta name="description" content="Complete brand identity design by vivedfx. Logo design, color systems, typography, brand guidelines, and visual identities that build recognition and trust." />
+  <meta property="og:title" content="Brand Identity Design — vivedfx" />
   <meta property="og:description" content="Logos, color palettes, typography, and brand guidelines that tell your story and build recognition." />
   <meta property="og:type" content="website" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Brand Identity Design","provider":{"@type":"Organization","name":"VIVEDFX"},"description":"Complete brand identity design including logo design, color systems, typography, brand guidelines, and visual identity systems."}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Brand Identity Design","provider":{"@type":"Organization","name":"vivedfx"},"description":"Complete brand identity design including logo design, color systems, typography, brand guidelines, and visual identity systems."}</script>
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -22,62 +22,61 @@
     .sp-title{font-family:var(--font-heading);font-size:clamp(2.5rem,6vw,5rem);font-weight:900;color:var(--white);line-height:1.05;margin-bottom:24px}
     .sp-title span{color:var(--accent)}
     .sp-subtitle{font-size:1.15rem;color:var(--muted);max-width:600px;line-height:1.75}
+    .sp-hero-btns{display:flex;gap:16px;margin-top:32px;flex-wrap:wrap}
     .sp-section{padding:100px 0;background:var(--dark)}.sp-section-alt{background:var(--dark-2)}
     .sp-section-label{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
     .sp-section-title{font-family:var(--font-heading);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:800;color:var(--white);margin-bottom:48px;line-height:1.15}
     .sp-section-title span{color:var(--accent)}
-    .media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .media-cell{background:var(--dark-3);border:2px dashed var(--border);border-radius:var(--radius-md);aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;transition:all .3s;overflow:hidden;position:relative;cursor:pointer}
-    .media-cell:hover{border-color:var(--accent);background:rgba(236,31,39,.05)}
-    .media-cell.has-content{border-style:solid;border-color:var(--border)}
-    .media-cell.has-content:hover{border-color:var(--border-hover)}
-    .media-cell img,.media-cell video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:calc(var(--radius-md) - 2px)}
-    .media-cell-overlay{position:absolute;inset:0;background:rgba(0,0,0,.6);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;transition:opacity .3s;border-radius:calc(var(--radius-md) - 2px)}
-    .media-cell.has-content:hover .media-cell-overlay{opacity:1}
-    .media-cell-icon{color:var(--accent)}.media-cell-icon svg{width:32px;height:32px}
-    .media-cell-text{font-size:.8rem;color:var(--muted);font-weight:500}
-    .media-cell-remove{position:absolute;top:10px;right:10px;width:28px;height:28px;background:rgba(236,31,39,.9);border:none;border-radius:50%;color:white;font-size:14px;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:10}
-    .media-cell.has-content:hover .media-cell-remove{display:flex}
-    .media-cell input[type=file]{display:none}
-    .media-cell-video{aspect-ratio:16/9}.media-cell-wide{grid-column:span 2;aspect-ratio:16/6}
-    .upload-hint{text-align:center;padding:16px 0 0;color:var(--muted);font-size:.85rem}.upload-hint span{color:var(--accent)}
-    .sp-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:60px 0 0}
-    .sp-stat{background:var(--dark-3);padding:36px 32px}
-    .sp-stat-num{font-family:var(--font-heading);font-size:3rem;font-weight:900;color:var(--accent);line-height:1}
-    .sp-stat-label{font-size:.9rem;color:var(--muted);margin-top:8px}
-    .sp-features{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-    .sp-feature{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;transition:border-color .3s,transform .3s}
-    .sp-feature:hover{border-color:var(--border-hover);transform:translateY(-3px)}
-    .sp-feature-icon{color:var(--accent);margin-bottom:14px}.sp-feature-icon svg{width:28px;height:28px}
-    .sp-feature-title{font-weight:700;color:var(--white);margin-bottom:8px}
-    .sp-feature-text{font-size:.88rem;color:var(--muted);line-height:1.65}
-    .sp-cta{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-xl);padding:72px;text-align:center;position:relative;overflow:hidden}
-    .sp-cta-orb{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(236,31,39,.15),transparent 70%);border-radius:50%;pointer-events:none}
-    .sp-cta-orb-1{top:-100px;left:-100px}.sp-cta-orb-2{bottom:-100px;right:-100px}
-    .sp-cta-title{font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:16px}
-    .sp-cta-title span{color:var(--accent)}
-    .sp-cta-sub{color:var(--muted);font-size:1.05rem;max-width:480px;margin:0 auto 36px;line-height:1.7}
-    .sp-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-    .sp-why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .sp-why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
     .sp-why-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:32px;transition:border-color .3s,transform .3s}
     .sp-why-card:hover{border-color:var(--border-hover);transform:translateY(-3px)}
     .sp-why-icon{width:48px;height:48px;background:rgba(236,31,39,.1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:20px}
     .sp-why-icon svg{width:24px;height:24px}
     .sp-why-title{font-weight:700;color:var(--white);margin-bottom:8px;font-size:1.05rem}
     .sp-why-text{font-size:.88rem;color:var(--muted);line-height:1.65}
-    .sp-process{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;counter-reset:step}
-    .sp-process-step{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px 20px;text-align:center;position:relative;transition:border-color .3s,transform .3s}
+    .sp-services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .sp-service-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;transition:border-color .3s,transform .3s}
+    .sp-service-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .sp-service-card-icon{width:44px;height:44px;background:rgba(236,31,39,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:16px}
+    .sp-service-card-icon svg{width:22px;height:22px}
+    .sp-service-card-title{font-weight:700;color:var(--white);margin-bottom:6px;font-size:.95rem}
+    .sp-service-card-text{font-size:.84rem;color:var(--muted);line-height:1.6}
+    .sp-process{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;counter-reset:step;position:relative}
+    .sp-process::before{content:'';position:absolute;top:44px;left:8%;right:8%;height:2px;background:var(--border);z-index:0}
+    .sp-process-step{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px 16px;text-align:center;position:relative;z-index:1;transition:border-color .3s,transform .3s}
     .sp-process-step:hover{border-color:var(--accent);transform:translateY(-3px)}
-    .sp-process-num{font-family:var(--font-heading);font-size:2.5rem;font-weight:900;color:rgba(236,31,39,.15);line-height:1;margin-bottom:12px}
-    .sp-process-title{font-weight:700;color:var(--white);margin-bottom:8px;font-size:.95rem}
-    .sp-process-text{font-size:.82rem;color:var(--muted);line-height:1.6}
-    .sp-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .sp-benefit{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;display:flex;align-items:flex-start;gap:16px;transition:border-color .3s,transform .3s}
-    .sp-benefit:hover{border-color:var(--border-hover);transform:translateY(-3px)}
-    .sp-benefit-check{width:24px;height:24px;background:rgba(236,31,39,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);margin-top:2px}
-    .sp-benefit-check svg{width:14px;height:14px}
-    .sp-benefit-title{font-weight:700;color:var(--white);margin-bottom:4px}
-    .sp-benefit-text{font-size:.85rem;color:var(--muted);line-height:1.6}
+    .sp-process-num{font-family:var(--font-heading);font-size:2.2rem;font-weight:900;color:rgba(236,31,39,.15);line-height:1;margin-bottom:10px}
+    .sp-process-title{font-weight:700;color:var(--white);margin-bottom:6px;font-size:.88rem}
+    .sp-process-text{font-size:.78rem;color:var(--muted);line-height:1.55}
+    .sp-portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .sp-portfolio-item{position:relative;border-radius:var(--radius-md);overflow:hidden;aspect-ratio:4/3;cursor:pointer;border:1px solid var(--border);transition:border-color .3s,transform .3s}
+    .sp-portfolio-item:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .sp-portfolio-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+    .sp-portfolio-item:hover img{transform:scale(1.05)}
+    .sp-portfolio-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.8) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:24px;opacity:0;transition:opacity .3s}
+    .sp-portfolio-item:hover .sp-portfolio-overlay{opacity:1}
+    .sp-portfolio-tag{font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+    .sp-portfolio-name{font-weight:700;color:var(--white);font-size:1rem}
+    .sp-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:60px 0 0}
+    .sp-stat{background:var(--dark-3);padding:36px 32px}
+    .sp-stat-num{font-family:var(--font-heading);font-size:3rem;font-weight:900;color:var(--accent);line-height:1}
+    .sp-stat-label{font-size:.9rem;color:var(--muted);margin-top:8px}
+    .sp-testimonials-slider{position:relative;max-width:900px;margin:0 auto}
+    .sp-testimonials-track{display:flex;overflow:hidden}
+    .sp-testimonial-slide{min-width:100%;padding:0 20px;box-sizing:border-box}
+    .sp-testimonial-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px;position:relative}
+    .sp-testimonial-quote{font-size:1.05rem;color:var(--white);line-height:1.8;font-style:italic;margin-bottom:28px;position:relative;padding-left:24px;border-left:3px solid var(--accent)}
+    .sp-testimonial-author{display:flex;align-items:center;gap:14px}
+    .sp-testimonial-avatar{width:48px;height:48px;border-radius:50%;background:rgba(236,31,39,.15);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:.9rem;flex-shrink:0}
+    .sp-testimonial-name{font-weight:700;color:var(--white);font-size:.95rem}
+    .sp-testimonial-role{font-size:.82rem;color:var(--muted);margin-top:2px}
+    .sp-testimonial-controls{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:32px}
+    .sp-testimonial-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:var(--dark-3);color:var(--white);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:border-color .2s,transform .2s}
+    .sp-testimonial-btn:hover{border-color:var(--accent);transform:scale(1.05)}
+    .sp-testimonial-btn svg{width:18px;height:18px}
+    .sp-testimonial-dots{display:flex;gap:8px}
+    .sp-testimonial-dot{width:10px;height:10px;border-radius:50%;border:none;background:var(--border);cursor:pointer;transition:background .2s,transform .2s}
+    .sp-testimonial-dot.active{background:var(--accent);transform:scale(1.2)}
     .sp-faq{max-width:800px;margin:0 auto}
     .sp-faq-item{border-bottom:1px solid var(--border)}
     .sp-faq-q{width:100%;background:none;border:none;padding:20px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;color:var(--white);font-weight:600;font-size:1rem;text-align:left;font-family:inherit}
@@ -86,6 +85,19 @@
     .sp-faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease}
     .sp-faq-item.open .sp-faq-a{max-height:300px;padding:0 0 20px}
     .sp-faq-a p{font-size:.9rem;color:var(--muted);line-height:1.7}
+    .sp-cta{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-xl);padding:72px;text-align:center;position:relative;overflow:hidden}
+    .sp-cta-orb{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(236,31,39,.15),transparent 70%);border-radius:50%;pointer-events:none}
+    .sp-cta-orb-1{top:-100px;left:-100px}.sp-cta-orb-2{bottom:-100px;right:-100px}
+    .sp-cta-title{font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:16px}
+    .sp-cta-title span{color:var(--accent)}
+    .sp-cta-sub{color:var(--muted);font-size:1.05rem;max-width:480px;margin:0 auto 36px;line-height:1.7}
+    .sp-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    .sp-related-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+    .sp-related-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px;text-align:center;text-decoration:none;color:var(--white);transition:border-color .3s,transform .3s}
+    .sp-related-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .sp-related-icon{width:44px;height:44px;background:rgba(236,31,39,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin:0 auto 14px}
+    .sp-related-icon svg{width:22px;height:22px}
+    .sp-related-title{font-weight:700;font-size:.9rem}
     .sp-nav{display:flex;justify-content:space-between;gap:16px;padding:60px 0}
     .sp-nav-link{flex:1;display:flex;align-items:center;gap:12px;background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:20px 24px;text-decoration:none;color:var(--white);transition:border-color .3s,transform .2s}
     .sp-nav-link:hover{border-color:var(--accent);transform:translateY(-2px)}
@@ -93,13 +105,11 @@
     .sp-nav-label{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
     .sp-nav-title{font-weight:700;font-size:.95rem}
     .sp-nav-next{text-align:right;flex-direction:row-reverse}
-    @media(max-width:1024px){.sp-process{grid-template-columns:repeat(3,1fr)}}
-    @media(max-width:768px){.media-grid{grid-template-columns:repeat(2,1fr)}.media-cell-wide{grid-column:span 2}.sp-features{grid-template-columns:1fr}.sp-stats{grid-template-columns:1fr}.sp-cta{padding:48px 28px}.sp-hero{min-height:50vh}.sp-why-grid{grid-template-columns:1fr}.sp-process{grid-template-columns:1fr}.sp-benefits{grid-template-columns:1fr}.sp-nav{flex-direction:column}}
-    @media(max-width:480px){.media-grid{grid-template-columns:1fr}.media-cell-wide{grid-column:span 1;aspect-ratio:4/3}}
+    @media(max-width:1024px){.sp-process{grid-template-columns:repeat(3,1fr)}.sp-process::before{display:none}.sp-services-grid{grid-template-columns:repeat(2,1fr)}.sp-related-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:768px){.sp-why-grid{grid-template-columns:1fr}.sp-services-grid{grid-template-columns:1fr}.sp-process{grid-template-columns:1fr}.sp-portfolio-grid{grid-template-columns:repeat(2,1fr)}.sp-stats{grid-template-columns:1fr}.sp-related-grid{grid-template-columns:1fr}.sp-cta{padding:48px 28px}.sp-hero{min-height:50vh}.sp-nav{flex-direction:column}.sp-testimonial-card{padding:28px}}
+    @media(max-width:480px){.sp-portfolio-grid{grid-template-columns:1fr}}
   </style>
-  <!-- Arabic Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles-lang.css" />
 </head>
 <body>
   <header class="header" id="header">
@@ -113,29 +123,10 @@
         <li><a href="index.html#testimonials" class="nav-link">Clients</a></li>
       </ul>
       <a href="index.html#contact" class="btn btn-primary nav-cta magnetic-btn" id="nav-cta-btn">
-        <span data-i18n="book_free_call">Book a Call</span>
+        <span>Book a Call</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-          <div class="lang-switcher">
-        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="12" cy="12" r="10"/>
-            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
-          </svg>
-          <span class="lang-switcher-label" id="lang-switcher-label">AR</span>
-        </button>
-        <div class="lang-dropdown" id="lang-dropdown">
-          <button class="lang-option" data-lang="en">
-            <span class="lang-flag">🇺🇸</span>
-            <span>EN</span>
-          </button>
-          <button class="lang-option" data-lang="ar">
-            <span class="lang-flag">🇸🇦</span>
-            <span>AR</span>
-          </button>
-        </div>
-      </div>
     </nav>
   </header>
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
@@ -146,43 +137,31 @@
       <li class="mobile-menu-item"><a href="index.html#process" class="mobile-link">Process</a></li>
       <li class="mobile-menu-item"><a href="index.html#testimonials" class="mobile-link">Clients</a></li>
     </ul>
-    <div class="mobile-menu-cta-wrap"><a href="index.html#contact" class="btn btn-primary mobile-menu-cta"><span data-i18n="book_free_call">Book a Call</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+    <div class="mobile-menu-cta-wrap"><a href="index.html#contact" class="btn btn-primary mobile-menu-cta"><span>Book a Call</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
   </div>
   <main>
+
     <!-- HERO -->
     <section class="sp-hero">
       <div class="sp-hero-bg"></div>
       <div class="container">
-        <a href="index.html#services" class="sp-back" data-i18n="back_to_home"><svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to Services</a>
+        <a href="index.html#services" class="sp-back"><svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to Services</a>
         <div class="sp-label"><span class="sp-label-dot"></span>Service 02</div>
-        <h1 class="sp-title" data-i18n="bi_hero_title">Brand<br/><span>Identity</span></h1>
-        <p class="sp-subtitle" data-i18n="bi_hero_desc">Complete visual systems — logos, color palettes, typography, brand guidelines — that tell your story and build recognition.</p>
+        <h1 class="sp-title">Brand<br/><span>Identity</span></h1>
+        <p class="sp-subtitle" style="font-family:var(--font-heading);font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:700;color:var(--white);max-width:700px;margin-bottom:16px">Create a Brand People Remember.</p>
+        <p class="sp-subtitle">We build complete visual identity systems — from logos and color palettes to typography and brand guidelines — that tell your story, build recognition, and make your business unforgettable.</p>
+        <div class="sp-hero-btns">
+          <a href="brief-branding.html" class="btn btn-primary btn-lg magnetic-btn"><span>Start Your Brand Project</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="portfolio.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>View Brand Portfolio</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
       </div>
     </section>
 
-    <!-- GALLERY -->
+    <!-- WHY CHOOSE US -->
     <section class="sp-section">
       <div class="container">
-        <div class="sp-section-label">Brand Showcase</div>
-        <h2 class="sp-section-title">Logo & Identity <span>Gallery</span></h2>
-        <div class="media-grid" id="photo-grid"></div>
-        <p class="upload-hint">Click any cell to <span>upload brand visuals</span></p>
-      </div>
-    </section>
-    <section class="sp-section sp-section-alt">
-      <div class="container">
-        <div class="sp-section-label">Brand Films</div>
-        <h2 class="sp-section-title">Brand <span>Videos</span></h2>
-        <div class="media-grid" id="video-grid"></div>
-        <p class="upload-hint" style="margin-top:16px">Click any cell to <span>upload brand videos</span></p>
-      </div>
-    </section>
-
-    <!-- WHY THIS SERVICE -->
-    <section class="sp-section">
-      <div class="container">
-        <div class="sp-section-label">Why Brand Identity</div>
-        <h2 class="sp-section-title" data-i18n="bi_why_title">Why Your Business <span>Needs This</span></h2>
+        <div class="sp-section-label">Why vivedfx</div>
+        <h2 class="sp-section-title">Why Your Business <span>Needs This</span></h2>
         <div class="sp-why-grid">
           <div class="sp-why-card">
             <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
@@ -199,82 +178,219 @@
             <div class="sp-why-title">Builds Long-Term Value</div>
             <div class="sp-why-text">A strong brand identity increases business valuation, attracts premium clients, and creates lasting emotional connections with your audience.</div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- STATS -->
-    <section class="sp-section sp-section-alt">
-      <div class="container">
-        <div class="sp-section-label">Results</div>
-        <h2 class="sp-section-title">What Brands <span>Achieve</span></h2>
-        <div class="sp-stats">
-          <div class="sp-stat" data-i18n="bi_stat_1"><div class="sp-stat-num" data-i18n="bi_stat_1_num">+380%</div><div class="sp-stat-label" data-i18n="bi_stat_1_label">Brand Recognition Increase</div></div>
-          <div class="sp-stat" data-i18n="bi_stat_2"><div class="sp-stat-num" data-i18n="bi_stat_2_num">2.5×</div><div class="sp-stat-label" data-i18n="bi_stat_2_label">Trust Score Improvement</div></div>
-          <div class="sp-stat" data-i18n="bi_stat_3"><div class="sp-stat-num" data-i18n="bi_stat_3_num">30 days</div><div class="sp-stat-label" data-i18n="bi_stat_3_label">Full Brand Delivery</div></div>
+          <div class="sp-why-card">
+            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-why-title">Consistency Across Touchpoints</div>
+            <div class="sp-why-text">From your website to your business cards, a unified visual system ensures your brand looks professional everywhere it appears.</div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- WHAT WE DELIVER -->
-    <section class="sp-section">
-      <div class="container">
-        <div class="sp-section-label">What's Included</div>
-        <h2 class="sp-section-title" data-i18n="bi_deliver_title">The Complete <span>Package</span></h2>
-        <div class="sp-features">
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="sp-feature-title" data-i18n="bi_deliver_1">Logo Design</div><div class="sp-feature-text">Primary, secondary, and icon versions in all formats and orientations.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="sp-feature-title" data-i18n="bi_deliver_2">Color System</div><div class="sp-feature-text">Primary, secondary, and neutral palettes with exact hex, RGB, and CMYK codes.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7V4h16v3M9 20h6M12 4v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="bi_deliver_3">Typography</div><div class="sp-feature-text">Curated font pairings with hierarchy rules for headers, body, and UI text.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="bi_deliver_4">Brand Guidelines PDF</div><div class="sp-feature-text">Comprehensive document ensuring brand consistency across every touchpoint.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="sp-feature-title" data-i18n="bi_deliver_5">Business Cards & Stationery</div><div class="sp-feature-text">Print-ready business cards, letterheads, and envelope designs.</div></div>
-          <div class="sp-feature"><div class="sp-feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="sp-feature-title" data-i18n="bi_deliver_6">Social Media Templates</div><div class="sp-feature-text">Branded templates for posts, stories, and profile assets across platforms.</div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
     <section class="sp-section sp-section-alt">
       <div class="container">
-        <div class="sp-section-label">Our Process</div>
-        <h2 class="sp-section-title" data-i18n="bi_process_title">How We <span>Work</span></h2>
-        <div class="sp-process">
-          <div class="sp-process-step"><div class="sp-process-num">01</div><div class="sp-process-title" data-i18n="bi_process_1">Discovery</div><div class="sp-process-text">We learn your brand's story, values, audience, and competitive landscape.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">02</div><div class="sp-process-title" data-i18n="bi_process_2">Research</div><div class="sp-process-text">We analyze competitors, trends, and audience preferences to inform design.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">03</div><div class="sp-process-title" data-i18n="bi_process_3">Concept</div><div class="sp-process-text">We present 3–5 unique logo concepts and visual directions for review.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">04</div><div class="sp-process-title" data-i18n="bi_process_4">Refine</div><div class="sp-process-text">We polish your chosen direction into a complete, cohesive brand system.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">05</div><div class="sp-process-title" data-i18n="bi_process_5">Deliver</div><div class="sp-process-text">Full brand kit — logos, colors, fonts, guidelines — in all formats.</div></div>
+        <div class="sp-section-label">What We Deliver</div>
+        <h2 class="sp-section-title">The Complete <span>Brand Package</span></h2>
+        <div class="sp-services-grid">
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-service-card-title">Logo Design</div>
+            <div class="sp-service-card-text">Primary, secondary, and icon versions in all formats and orientations.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-service-card-title">Color System</div>
+            <div class="sp-service-card-text">Primary, secondary, and neutral palettes with exact hex, RGB, and CMYK codes.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7V4h16v3M9 20h6M12 4v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Typography</div>
+            <div class="sp-service-card-text">Curated font pairings with hierarchy rules for headers, body, and UI text.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Brand Guidelines PDF</div>
+            <div class="sp-service-card-text">Comprehensive document ensuring brand consistency across every touchpoint.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Business Cards & Stationery</div>
+            <div class="sp-service-card-text">Print-ready business cards, letterheads, and envelope designs.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="1.5"/></svg></div>
+            <div class="sp-service-card-title">Social Media Templates</div>
+            <div class="sp-service-card-text">Branded templates for posts, stories, and profile assets across platforms.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/></svg></div>
+            <div class="sp-service-card-title">Brand Mood Board</div>
+            <div class="sp-service-card-text">Visual direction boards capturing your brand's personality, tone, and aesthetic.</div>
+          </div>
+          <div class="sp-service-card">
+            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+            <div class="sp-service-card-title">Icon Set</div>
+            <div class="sp-service-card-text">Custom icon library for your website, apps, and marketing materials.</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- BENEFITS -->
+    <!-- DESIGN PROCESS -->
     <section class="sp-section">
       <div class="container">
-        <div class="sp-section-label">Results & Benefits</div>
-        <h2 class="sp-section-title" data-i18n="bi_benefits_title">What You <span>Get</span></h2>
-        <div class="sp-benefits">
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="bi_benefits_1">Instant Credibility</div><div class="sp-benefit-text">A professional brand identity signals quality and trustworthiness from the first interaction.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="bi_benefits_2">Brand Recognition</div><div class="sp-benefit-text">Consistent visuals across all touchpoints make your brand instantly recognizable.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="bi_benefits_3">Premium Pricing Power</div><div class="sp-benefit-text">Strong brands command higher prices and attract better-quality clients.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="bi_benefits_4">Customer Loyalty</div><div class="sp-benefit-text">Emotional connections built through strong branding create repeat customers and referrals.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="bi_benefits_5">Marketing Efficiency</div><div class="sp-benefit-text">Clear brand guidelines make all future marketing faster, cheaper, and more effective.</div></div></div>
-          <div class="sp-benefit"><div class="sp-benefit-check"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="sp-benefit-title" data-i18n="bi_benefits_6">Business Growth</div><div class="sp-benefit-text">A strong brand attracts partnerships, talent, and investment opportunities.</div></div></div>
+        <div class="sp-section-label">Our Process</div>
+        <h2 class="sp-section-title">Our 6-Step Brand <span>Process</span></h2>
+        <div class="sp-process">
+          <div class="sp-process-step"><div class="sp-process-num">01</div><div class="sp-process-title">Discovery</div><div class="sp-process-text">We learn your brand's story, values, audience, and competitive landscape.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">02</div><div class="sp-process-title">Research</div><div class="sp-process-text">We analyze competitors, trends, and audience preferences to inform design.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">03</div><div class="sp-process-title">Strategy</div><div class="sp-process-text">We define your brand positioning, voice, and visual direction.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">04</div><div class="sp-process-title">Concept</div><div class="sp-process-text">We present 3–5 unique logo concepts and visual directions for review.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">05</div><div class="sp-process-title">Refine</div><div class="sp-process-text">We polish your chosen direction into a complete, cohesive brand system.</div></div>
+          <div class="sp-process-step"><div class="sp-process-num">06</div><div class="sp-process-title">Deliver</div><div class="sp-process-text">Full brand kit — logos, colors, fonts, guidelines — in all formats.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-section-label">Our Work</div>
+        <h2 class="sp-section-title">Brand Identity <span>Portfolio</span></h2>
+        <div class="sp-portfolio-grid">
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Corporate/C1.png" alt="Corporate brand identity project 1" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Corporate</div><div class="sp-portfolio-name">Brand Identity — C1</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Corporate/C2.png" alt="Corporate brand identity project 2" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Corporate</div><div class="sp-portfolio-name">Brand Identity — C2</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Corporate/C3.png" alt="Corporate brand identity project 3" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Corporate</div><div class="sp-portfolio-name">Brand Identity — C3</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Corporate/C4.png" alt="Corporate brand identity project 4" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Corporate</div><div class="sp-portfolio-name">Brand Identity — C4</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Corporate/C5.png" alt="Corporate brand identity project 5" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Corporate</div><div class="sp-portfolio-name">Brand Identity — C5</div></div>
+          </div>
+          <div class="sp-portfolio-item">
+            <img src="assets/Portfolio/Corporate/C6.png" alt="Corporate brand identity project 6" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--dark-3),rgba(236,31,39,.15))'" loading="lazy" />
+            <div class="sp-portfolio-overlay"><div class="sp-portfolio-tag">Corporate</div><div class="sp-portfolio-name">Brand Identity — C6</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENT RESULTS -->
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">Client Results</div>
+        <h2 class="sp-section-title">Brands That <span>Drive Results</span></h2>
+        <div class="sp-stats">
+          <div class="sp-stat"><div class="sp-stat-num" data-target="380" data-suffix="%">0%</div><div class="sp-stat-label">Brand Recognition Increase</div></div>
+          <div class="sp-stat"><div class="sp-stat-num" data-target="2.5" data-suffix="×" data-decimal="1">0×</div><div class="sp-stat-label">Trust Score Improvement</div></div>
+          <div class="sp-stat"><div class="sp-stat-num" data-target="30" data-suffix=" days" data-prefix="">0 days</div><div class="sp-stat-label">Full Brand Delivery</div></div>
+          <div class="sp-stat"><div class="sp-stat-num" data-target="100" data-suffix="%">0%</div><div class="sp-stat-label">Client Satisfaction</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-section-label">Testimonials</div>
+        <h2 class="sp-section-title">What Our Clients <span>Say</span></h2>
+        <div class="sp-testimonials-slider" id="gd-testimonials">
+          <div class="sp-testimonials-track" id="gd-testimonials-track">
+            <div class="sp-testimonial-slide">
+              <div class="sp-testimonial-card">
+                <div class="sp-testimonial-quote">vivedfx built us a brand we're genuinely proud of. Our patients comment on how professional we look. The brand identity has become our most valuable asset.</div>
+                <div class="sp-testimonial-author">
+                  <div class="sp-testimonial-avatar">AH</div>
+                  <div><div class="sp-testimonial-name">Dr. Ahmed Hassan</div><div class="sp-testimonial-role">Founder, MediCare Plus Clinic</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="sp-testimonial-slide">
+              <div class="sp-testimonial-card">
+                <div class="sp-testimonial-quote">The rebrand vivedfx created for us was a game-changer. Our new identity perfectly captures our energy and our members love it.</div>
+                <div class="sp-testimonial-author">
+                  <div class="sp-testimonial-avatar">SM</div>
+                  <div><div class="sp-testimonial-name">Sarah Mitchell</div><div class="sp-testimonial-role">Owner, IronEdge Fitness</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="sp-testimonial-slide">
+              <div class="sp-testimonial-card">
+                <div class="sp-testimonial-quote">As an engineering firm, we needed a brand that communicated trust and expertise. vivedfx delivered exactly that and more.</div>
+                <div class="sp-testimonial-author">
+                  <div class="sp-testimonial-avatar">JO</div>
+                  <div><div class="sp-testimonial-name">James Okonkwo</div><div class="sp-testimonial-role">CEO, BuildCore Engineering</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sp-testimonial-controls">
+            <button class="sp-testimonial-btn" id="gd-testimonial-prev" aria-label="Previous testimonial"><svg viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="sp-testimonial-dots" id="gd-testimonial-dots">
+              <button class="sp-testimonial-dot active" data-index="0" aria-label="Testimonial 1"></button>
+              <button class="sp-testimonial-dot" data-index="1" aria-label="Testimonial 2"></button>
+              <button class="sp-testimonial-dot" data-index="2" aria-label="Testimonial 3"></button>
+            </div>
+            <button class="sp-testimonial-btn" id="gd-testimonial-next" aria-label="Next testimonial"><svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section class="sp-section sp-section-alt">
+    <section class="sp-section">
       <div class="container">
         <div class="sp-section-label">FAQ</div>
-        <h2 class="sp-section-title" data-i18n="bi_faq_title">Frequently Asked <span>Questions</span></h2>
+        <h2 class="sp-section-title">Frequently Asked <span>Questions</span></h2>
         <div class="sp-faq">
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="bi_faq_1_q">What do I receive in the final brand kit?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="bi_faq_1_a">You receive logo files (SVG, PNG, PDF), color codes, typography specs, brand guidelines document, business card templates, and social media kit.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="bi_faq_2_q">How many logo concepts do you present?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="bi_faq_2_a">We present 3–5 unique logo concepts based on the discovery phase. We then refine your chosen direction until it's perfect.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="bi_faq_3_q">How long does the process take?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="bi_faq_3_a">Most brand identity projects are completed within 2–4 weeks, depending on the scope and revision rounds.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="bi_faq_4_q">Do I own the final designs?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="bi_faq_4_a">Yes, you receive full ownership and all source files. The brand is 100% yours — no licensing restrictions.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="bi_faq_5_q">Can you rebrand an existing business?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="bi_faq_5_a">Absolutely. We handle full rebrands as well as refreshes of existing visual identities. We'll preserve what works and elevate what doesn't.</p></div></div>
-          <div class="sp-faq-item"><button class="sp-faq-q" data-i18n="bi_faq_6_q">What if I need more revisions?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p data-i18n="bi_faq_6_a">Every project includes up to 2 revision rounds. Additional rounds are available at a small fee to ensure you're 100% satisfied.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">What do I receive in the final brand kit?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>You receive logo files (SVG, PNG, PDF), color codes, typography specs, brand guidelines document, business card templates, and social media kit.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">How many logo concepts do you present?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>We present 3–5 unique logo concepts based on the discovery phase. We then refine your chosen direction until it's perfect.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">How long does the process take?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>Most brand identity projects are completed within 2–4 weeks, depending on the scope and revision rounds.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">Do I own the final designs?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>Yes, you receive full ownership and all source files. The brand is 100% yours — no licensing restrictions.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">Can you rebrand an existing business?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>Absolutely. We handle full rebrands as well as refreshes of existing visual identities.</p></div></div>
+          <div class="sp-faq-item"><button class="sp-faq-q">What if I need more revisions?<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="sp-faq-a"><p>Every project includes up to 2 revision rounds. Additional rounds are available at a small fee.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED SERVICES -->
+    <section class="sp-section sp-section-alt">
+      <div class="container">
+        <div class="sp-section-label">Explore More</div>
+        <h2 class="sp-section-title">Related <span>Services</span></h2>
+        <div class="sp-related-grid">
+          <a href="service-graphic-design.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-related-title">Graphic Design</div>
+          </a>
+          <a href="service-website-design.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="sp-related-title">Website Design</div>
+          </a>
+          <a href="service-social-media.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="sp-related-title">Social Media</div>
+          </a>
+          <a href="service-video-editing.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+            <div class="sp-related-title">Video Editing</div>
+          </a>
+          <a href="service-photography.html" class="sp-related-card">
+            <div class="sp-related-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="13" r="4" stroke="currentColor" stroke-width="1.5"/></svg></div>
+            <div class="sp-related-title">Photography</div>
+          </a>
         </div>
       </div>
     </section>
@@ -284,12 +400,12 @@
       <div class="container">
         <div class="sp-cta">
           <div class="sp-cta-orb sp-cta-orb-1"></div><div class="sp-cta-orb sp-cta-orb-2"></div>
-          <h2 class="sp-cta-title" data-i18n="bi_cta_title">Ready to Build a Brand<br/><span>People Remember?</span></h2>
+          <h2 class="sp-cta-title">Ready to Build a Brand<br/><span>People Remember?</span></h2>
           <p class="sp-cta-sub">Let's create a visual identity that commands attention and builds lasting trust.</p>
           <div class="sp-cta-btns">
-            <a href="index.html#contact" class="btn btn-primary btn-lg magnetic-btn"><span data-i18n="bi_cta_btn">Book Free Strategy Call</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="index.html#contact" class="btn btn-primary btn-lg magnetic-btn"><span>Book Free Strategy Call</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
             <a href="brief-branding.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>Start Your Brief</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <a href="https://wa.me/1234567890" class="btn btn-ghost btn-lg" target="_blank"><span data-i18n="bi_cta_whatsapp">Contact Us on WhatsApp</span></a>
+            <a href="https://wa.me/1234567890" class="btn btn-ghost btn-lg" target="_blank"><span>Contact Us on WhatsApp</span></a>
           </div>
         </div>
       </div>
@@ -301,15 +417,16 @@
         <div class="sp-nav">
           <a href="service-social-media.html" class="sp-nav-link">
             <svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <div><div class="sp-nav-label" data-i18n="prev_service">Previous Service</div><div class="sp-nav-title">Social Media</div></div>
+            <div><div class="sp-nav-label">Previous Service</div><div class="sp-nav-title">Social Media</div></div>
           </a>
           <a href="service-video-editing.html" class="sp-nav-link sp-nav-next">
             <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <div><div class="sp-nav-label" data-i18n="next_service">Next Service</div><div class="sp-nav-title">Video Editing</div></div>
+            <div><div class="sp-nav-label">Next Service</div><div class="sp-nav-title">Video Editing</div></div>
           </a>
         </div>
       </div>
     </section>
+
   </main>
   <script src="main.js" defer></script>
   <script>
@@ -320,15 +437,48 @@
         item.classList.toggle('open');
       });
     });
-    function createPhotoCell(i){const c=document.createElement('div');c.className='media-cell';c.innerHTML=`<input type="file" accept="image/*" class="file-input"><div class="media-cell-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="media-cell-text">Upload Photo</div><div class="media-cell-overlay"><span style="color:white;font-size:.8rem">Change Photo</span></div><button class="media-cell-remove">✕</button>`;setup(c,'image');return c;}
-    function createVideoCell(i,wide=false){const c=document.createElement('div');c.className='media-cell media-cell-video'+(wide?' media-cell-wide':'');c.innerHTML=`<input type="file" accept="video/*" class="file-input"><div class="media-cell-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div><div class="media-cell-text">Upload Video</div><div class="media-cell-overlay"><span style="color:white;font-size:.8rem">Change Video</span></div><button class="media-cell-remove">✕</button>`;setup(c,'video');return c;}
-    function setup(cell,type){const inp=cell.querySelector('.file-input'),rm=cell.querySelector('.media-cell-remove');cell.addEventListener('click',e=>{if(e.target===rm)return;inp.click();});inp.addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;const url=URL.createObjectURL(f);cell.querySelectorAll('img,video').forEach(el=>el.remove());if(type==='image'){const img=document.createElement('img');img.src=url;cell.prepend(img);}else{const v=document.createElement('video');v.src=url;v.controls=true;v.muted=true;cell.prepend(v);}cell.classList.add('has-content');});rm.addEventListener('click',e=>{e.stopPropagation();cell.querySelectorAll('img,video').forEach(el=>el.remove());cell.classList.remove('has-content');inp.value='';});}
-    const pg=document.getElementById('photo-grid');for(let i=0;i<9;i++)pg.appendChild(createPhotoCell(i));
-    const vg=document.getElementById('video-grid');for(let i=0;i<6;i++)vg.appendChild(createVideoCell(i));
+
+    (function(){
+      const track=document.getElementById('gd-testimonials-track');
+      const dots=document.querySelectorAll('#gd-testimonial-dots .sp-testimonial-dot');
+      const prevBtn=document.getElementById('gd-testimonial-prev');
+      const nextBtn=document.getElementById('gd-testimonial-next');
+      let current=0;const total=dots.length;
+      function goTo(i){current=((i%total)+total)%total;track.style.transform='translateX(-'+(current*100)+'%)';dots.forEach((d,idx)=>{d.classList.toggle('active',idx===current)});}
+      prevBtn.addEventListener('click',()=>goTo(current-1));
+      nextBtn.addEventListener('click',()=>goTo(current+1));
+      dots.forEach(d=>d.addEventListener('click',()=>goTo(parseInt(d.dataset.index))));
+      let autoplay=setInterval(()=>goTo(current+1),5000);
+      track.parentElement.addEventListener('mouseenter',()=>clearInterval(autoplay));
+      track.parentElement.addEventListener('mouseleave',()=>{autoplay=setInterval(()=>goTo(current+1),5000)});
+    })();
+
+    (function(){
+      const stats=document.querySelectorAll('.sp-stat-num[data-target]');
+      const observer=new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            const el=entry.target;
+            const target=parseFloat(el.dataset.target);
+            const suffix=el.dataset.suffix||'';
+            const prefix=el.dataset.prefix||'';
+            const decimal=parseInt(el.dataset.decimal)||0;
+            let start=0;const duration=2000;const startTime=performance.now();
+            function update(now){
+              const elapsed=now-startTime;const progress=Math.min(elapsed/duration,1);
+              const eased=1-Math.pow(1-progress,3);
+              const current=eased*target;
+              el.textContent=prefix+(decimal>0?current.toFixed(decimal):Math.floor(current))+suffix;
+              if(progress<1)requestAnimationFrame(update);
+            }
+            requestAnimationFrame(update);
+            observer.unobserve(el);
+          }
+        });
+      },{threshold:0.3});
+      stats.forEach(s=>observer.observe(s));
+    })();
   </script>
-  <!-- Language System -->
-  <script src="lang-en.js"></script>
-  <script src="lang-ar.js"></script>
-  <script src="lang.js"></script>
+
 </body>
 </html>

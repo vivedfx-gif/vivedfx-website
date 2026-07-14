@@ -1,4 +1,4 @@
-// VIVEDFX English Translations
+﻿// vivedfx English Translations
 // Auto-generated language file
 
 window.EN = {
@@ -74,11 +74,11 @@ window.EN = {
   process_1_title: "Discovery",
   process_1_desc: "Deep dive into your business, competitors, and target audience to understand what truly differentiates you.",
   process_2_title: "Strategy",
-  process_2_desc: "Custom roadmap built around your goals — what channels, what content, what budget will drive maximum results.",
+  process_2_desc: "Custom roadmap built around your goals â€” what channels, what content, what budget will drive maximum results.",
   process_3_title: "Production",
-  process_3_desc: "World-class creative execution — content, design, video, copy — all produced to the highest standard by our in-house team.",
+  process_3_desc: "World-class creative execution â€” content, design, video, copy â€” all produced to the highest standard by our in-house team.",
   process_4_title: "Launch",
-  process_4_desc: "Precision deployment across platforms — every post, ad, and asset published at the optimal time for maximum impact.",
+  process_4_desc: "Precision deployment across platforms â€” every post, ad, and asset published at the optimal time for maximum impact.",
 
   // Testimonials Section
   test_label: "Client Love",
@@ -87,7 +87,7 @@ window.EN = {
   test_1_text: "vivedfx completely transformed our clinic's online presence. In 4 months, we went from almost no social engagement to 40,000+ monthly impressions. New patient bookings are up 3x and our brand finally looks as professional as our service.",
   test_1_name: "Dr. Ahmed Hassan",
   test_1_role: "Founder, MediCare Plus Clinic",
-  test_2_text: "Our gym membership doubled in 6 months after vivedfx launched our rebrand and ad campaigns. The creative work is absolutely fire — our community loves the content and our competitors are clearly watching us now. Best investment we've ever made.",
+  test_2_text: "Our gym membership doubled in 6 months after vivedfx launched our rebrand and ad campaigns. The creative work is absolutely fire â€” our community loves the content and our competitors are clearly watching us now. Best investment we've ever made.",
   test_2_name: "Sarah Mitchell",
   test_2_role: "Owner, IronEdge Fitness",
   test_3_text: "As an engineering firm, we struggled to communicate what we do in a compelling way. vivedfx built us a brand we're genuinely proud of and a website that generates real inbound leads. Revenue from digital channels is up over 200% year-over-year.",
@@ -97,7 +97,7 @@ window.EN = {
   // CTA Section
   cta_title: "Ready To Grow Your Business?",
   cta_title_accent: "",
-  cta_sub: "Book a free strategy call today. No pressure, no obligation — just a clear plan for your brand's growth.",
+  cta_sub: "Book a free strategy call today. No pressure, no obligation â€” just a clear plan for your brand's growth.",
   cta_btn: "Book Free Consultation",
 
   // Footer
@@ -105,7 +105,7 @@ window.EN = {
   footer_services: "Services",
   footer_industries: "Industries",
   footer_start_project: "Start A Project",
-  footer_rights: "\u00a9 2026 VIVEDFX. All rights reserved. Built for brands that mean business.",
+  footer_rights: "\u00a9 2026 vivedfx. All rights reserved. Built for brands that mean business.",
   footer_privacy: "Privacy Policy",
   footer_terms: "Terms of Service",
 
@@ -122,17 +122,17 @@ window.EN = {
   sv_1_title: "Social Media Management",
   sv_1_desc: "Strategic content creation, community management, and analytics that build audiences and drive engagement.",
   sv_2_title: "Brand Identity",
-  sv_2_desc: "Complete visual systems — logos, color palettes, typography, brand guidelines.",
+  sv_2_desc: "Complete visual systems â€” logos, color palettes, typography, brand guidelines.",
   sv_3_title: "Video Editing",
   sv_3_desc: "Cinematic reels, brand films, testimonials, and short-form content optimized for maximum reach.",
   sv_4_title: "Graphic Design",
-  sv_4_desc: "Visuals that stop the scroll — ads, banners, print, packaging crafted to convert.",
+  sv_4_desc: "Visuals that stop the scroll â€” ads, banners, print, packaging crafted to convert.",
   sv_5_title: "Paid Advertising",
   sv_5_desc: "Data-driven Meta, Google, and TikTok ad campaigns engineered for maximum ROI.",
   sv_6_title: "Website Design",
   sv_6_desc: "High-converting, fast, and beautiful websites built to turn visitors into customers.",
   sv_7_title: "Cinematic Videography",
-  sv_7_desc: "Professional on-ground video production — corporate shoots, events, product videos.",
+  sv_7_desc: "Professional on-ground video production â€” corporate shoots, events, product videos.",
   sv_8_title: "Commercial Photography",
   sv_8_desc: "High-quality product, portrait, and commercial photography.",
   sv_9_title: "Strategic Media Buying",
@@ -160,12 +160,12 @@ window.EN = {
   sm_stat_3_num: "90 days",
   sm_stat_3_label: "To Measurable Results",
   sm_deliver_title: "What We Deliver",
-  sm_deliver_1: "Content Strategy — Full monthly content calendars tailored to your brand voice.",
-  sm_deliver_2: "Daily Posting — Consistent posting across all platforms.",
-  sm_deliver_3: "Community Management — Responding to comments and DMs.",
-  sm_deliver_4: "Monthly Analytics — Detailed performance insights.",
-  sm_deliver_5: "Visual Content Creation — Scroll-stopping graphics and carousels.",
-  sm_deliver_6: "Hashtag Research — Strategic hashtag sets for maximum reach.",
+  sm_deliver_1: "Content Strategy â€” Full monthly content calendars tailored to your brand voice.",
+  sm_deliver_2: "Daily Posting â€” Consistent posting across all platforms.",
+  sm_deliver_3: "Community Management â€” Responding to comments and DMs.",
+  sm_deliver_4: "Monthly Analytics â€” Detailed performance insights.",
+  sm_deliver_5: "Visual Content Creation â€” Scroll-stopping graphics and carousels.",
+  sm_deliver_6: "Hashtag Research â€” Strategic hashtag sets for maximum reach.",
   sm_process_title: "Our Process",
   sm_process_1: "Audit",
   sm_process_2: "Strategy",
@@ -198,7 +198,7 @@ window.EN = {
 
   // ==================== BRAND IDENTITY (bi) ====================
   bi_hero_title: "Brand Identity",
-  bi_hero_desc: "Complete visual systems — logos, color palettes, typography, brand guidelines.",
+  bi_hero_desc: "Complete visual systems â€” logos, color palettes, typography, brand guidelines.",
   bi_why_title: "Why Choose Us",
   bi_stat_1_num: "+380%",
   bi_stat_1_label: "Brand Recognition",
@@ -207,12 +207,12 @@ window.EN = {
   bi_stat_3_num: "30 days",
   bi_stat_3_label: "Full Brand Delivery",
   bi_deliver_title: "What We Deliver",
-  bi_deliver_1: "Logo Design — Primary, secondary, and icon versions.",
-  bi_deliver_2: "Color System — Primary, secondary, and neutral palettes.",
-  bi_deliver_3: "Typography — Curated font pairings with hierarchy rules.",
-  bi_deliver_4: "Brand Guidelines — Comprehensive consistency document.",
-  bi_deliver_5: "Business Cards & Stationery — Complete print collateral.",
-  bi_deliver_6: "Brand Pattern & Graphics — Visual elements for all touchpoints.",
+  bi_deliver_1: "Logo Design â€” Primary, secondary, and icon versions.",
+  bi_deliver_2: "Color System â€” Primary, secondary, and neutral palettes.",
+  bi_deliver_3: "Typography â€” Curated font pairings with hierarchy rules.",
+  bi_deliver_4: "Brand Guidelines â€” Comprehensive consistency document.",
+  bi_deliver_5: "Business Cards & Stationery â€” Complete print collateral.",
+  bi_deliver_6: "Brand Pattern & Graphics â€” Visual elements for all touchpoints.",
   bi_process_title: "Our Process",
   bi_process_1: "Research",
   bi_process_2: "Moodboard",
@@ -254,12 +254,12 @@ window.EN = {
   ve_stat_3_num: "7 days",
   ve_stat_3_label: "Fast Turnaround",
   ve_deliver_title: "What We Deliver",
-  ve_deliver_1: "Reels & Short-form — Scroll-stopping vertical content.",
-  ve_deliver_2: "Brand Films — Cinematic storytelling for your brand.",
-  ve_deliver_3: "Testimonials — Professional customer review videos.",
-  ve_deliver_4: "Motion Graphics — Animated overlays and transitions.",
-  ve_deliver_5: "Color Grading — Professional cinematic color correction.",
-  ve_deliver_6: "Sound Design — Music selection and audio mixing.",
+  ve_deliver_1: "Reels & Short-form â€” Scroll-stopping vertical content.",
+  ve_deliver_2: "Brand Films â€” Cinematic storytelling for your brand.",
+  ve_deliver_3: "Testimonials â€” Professional customer review videos.",
+  ve_deliver_4: "Motion Graphics â€” Animated overlays and transitions.",
+  ve_deliver_5: "Color Grading â€” Professional cinematic color correction.",
+  ve_deliver_6: "Sound Design â€” Music selection and audio mixing.",
   ve_process_title: "Our Process",
   ve_process_1: "Brief",
   ve_process_2: "Edit",
@@ -292,7 +292,7 @@ window.EN = {
 
   // ==================== GRAPHIC DESIGN (gd) ====================
   gd_hero_title: "Graphic Design",
-  gd_hero_desc: "Visuals that stop the scroll — ads, banners, print, packaging crafted to convert.",
+  gd_hero_desc: "Visuals that stop the scroll â€” ads, banners, print, packaging crafted to convert.",
   gd_why_title: "Why Choose Us",
   gd_stat_1_num: "+350%",
   gd_stat_1_label: "Conversion Increase",
@@ -301,12 +301,12 @@ window.EN = {
   gd_stat_3_num: "48 hours",
   gd_stat_3_label: "Quick Delivery",
   gd_deliver_title: "What We Deliver",
-  gd_deliver_1: "Social Media Graphics — Posts, stories, and covers.",
-  gd_deliver_2: "Ad Creatives — Banners and display ads.",
-  gd_deliver_3: "Print Design — Brochures, flyers, and posters.",
-  gd_deliver_4: "Packaging Design — Product packaging and labels.",
-  gd_deliver_5: "Presentation Design — Professional slide decks.",
-  gd_deliver_6: "Icon Sets — Custom icon libraries.",
+  gd_deliver_1: "Social Media Graphics â€” Posts, stories, and covers.",
+  gd_deliver_2: "Ad Creatives â€” Banners and display ads.",
+  gd_deliver_3: "Print Design â€” Brochures, flyers, and posters.",
+  gd_deliver_4: "Packaging Design â€” Product packaging and labels.",
+  gd_deliver_5: "Presentation Design â€” Professional slide decks.",
+  gd_deliver_6: "Icon Sets â€” Custom icon libraries.",
   gd_process_title: "Our Process",
   gd_process_1: "Concept",
   gd_process_2: "Design",
@@ -348,12 +348,12 @@ window.EN = {
   pa_stat_3_num: "+280%",
   pa_stat_3_label: "Revenue Growth",
   pa_deliver_title: "What We Deliver",
-  pa_deliver_1: "Campaign Strategy — Full-funnel advertising plans.",
-  pa_deliver_2: "Ad Creation — Copy, visuals, and video ads.",
-  pa_deliver_3: "Audience Targeting — Precision demographic targeting.",
-  pa_deliver_4: "A/B Testing — Continuous creative optimization.",
-  pa_deliver_5: "Performance Reports — Weekly analytics and insights.",
-  pa_deliver_6: "Retargeting — Win-back campaigns for lost visitors.",
+  pa_deliver_1: "Campaign Strategy â€” Full-funnel advertising plans.",
+  pa_deliver_2: "Ad Creation â€” Copy, visuals, and video ads.",
+  pa_deliver_3: "Audience Targeting â€” Precision demographic targeting.",
+  pa_deliver_4: "A/B Testing â€” Continuous creative optimization.",
+  pa_deliver_5: "Performance Reports â€” Weekly analytics and insights.",
+  pa_deliver_6: "Retargeting â€” Win-back campaigns for lost visitors.",
   pa_process_title: "Our Process",
   pa_process_1: "Audit",
   pa_process_2: "Strategy",
@@ -395,12 +395,12 @@ window.EN = {
   wd_stat_3_num: "14 days",
   wd_stat_3_label: "Fast Delivery",
   wd_deliver_title: "What We Deliver",
-  wd_deliver_1: "Custom Design — Unique layouts tailored to your brand.",
-  wd_deliver_2: "Responsive Development — Mobile-first approach.",
-  wd_deliver_3: "SEO Optimization — On-page technical SEO.",
-  wd_deliver_4: "CMS Integration — Easy content management.",
-  wd_deliver_5: "E-commerce Setup — Full online store configuration.",
-  wd_deliver_6: "Speed Optimization — Fast loading performance.",
+  wd_deliver_1: "Custom Design â€” Unique layouts tailored to your brand.",
+  wd_deliver_2: "Responsive Development â€” Mobile-first approach.",
+  wd_deliver_3: "SEO Optimization â€” On-page technical SEO.",
+  wd_deliver_4: "CMS Integration â€” Easy content management.",
+  wd_deliver_5: "E-commerce Setup â€” Full online store configuration.",
+  wd_deliver_6: "Speed Optimization â€” Fast loading performance.",
   wd_process_title: "Our Process",
   wd_process_1: "Discovery",
   wd_process_2: "Wireframe",
@@ -433,7 +433,7 @@ window.EN = {
 
   // ==================== VIDEOGRAPHY (vg) ====================
   vg_hero_title: "Cinematic Videography",
-  vg_hero_desc: "Professional on-ground video production — corporate shoots, events, product videos.",
+  vg_hero_desc: "Professional on-ground video production â€” corporate shoots, events, product videos.",
   vg_why_title: "Why Choose Us",
   vg_stat_1_num: "+600%",
   vg_stat_1_label: "Engagement Boost",
@@ -442,12 +442,12 @@ window.EN = {
   vg_stat_3_num: "5 days",
   vg_stat_3_label: "Quick Turnaround",
   vg_deliver_title: "What We Deliver",
-  vg_deliver_1: "Corporate Videos — Professional business content.",
-  vg_deliver_2: "Event Coverage — Full event documentation.",
-  vg_deliver_3: "Product Videos — Showcase your products in action.",
-  vg_deliver_4: "Brand Storytelling — Cinematic brand narratives.",
-  vg_deliver_5: "Interview Videos — Professional talking head content.",
-  vg_deliver_6: "Drone Footage — Aerial perspectives.",
+  vg_deliver_1: "Corporate Videos â€” Professional business content.",
+  vg_deliver_2: "Event Coverage â€” Full event documentation.",
+  vg_deliver_3: "Product Videos â€” Showcase your products in action.",
+  vg_deliver_4: "Brand Storytelling â€” Cinematic brand narratives.",
+  vg_deliver_5: "Interview Videos â€” Professional talking head content.",
+  vg_deliver_6: "Drone Footage â€” Aerial perspectives.",
   vg_process_title: "Our Process",
   vg_process_1: "Planning",
   vg_process_2: "Production",
@@ -489,12 +489,12 @@ window.EN = {
   ph_stat_3_num: "3 days",
   ph_stat_3_label: "Fast Delivery",
   ph_deliver_title: "What We Deliver",
-  ph_deliver_1: "Product Photography — Clean, professional product shots.",
-  ph_deliver_2: "Portrait Photography — Professional headshots and team photos.",
-  ph_deliver_3: "Commercial Shoots — Brand and advertising photography.",
-  ph_deliver_4: "Lifestyle Photography — Authentic brand moments.",
-  ph_deliver_5: "E-commerce Photography — White background product images.",
-  ph_deliver_6: "Photo Retouching — Professional post-processing.",
+  ph_deliver_1: "Product Photography â€” Clean, professional product shots.",
+  ph_deliver_2: "Portrait Photography â€” Professional headshots and team photos.",
+  ph_deliver_3: "Commercial Shoots â€” Brand and advertising photography.",
+  ph_deliver_4: "Lifestyle Photography â€” Authentic brand moments.",
+  ph_deliver_5: "E-commerce Photography â€” White background product images.",
+  ph_deliver_6: "Photo Retouching â€” Professional post-processing.",
   ph_process_title: "Our Process",
   ph_process_1: "Concept",
   ph_process_2: "Shoot",
@@ -536,12 +536,12 @@ window.EN = {
   mb_stat_3_num: "+400%",
   mb_stat_3_label: "Reach Increase",
   mb_deliver_title: "What We Deliver",
-  mb_deliver_1: "Media Planning — Strategic channel selection.",
-  mb_deliver_2: "TV Buying — National and local TV placements.",
-  mb_deliver_3: "Digital Buying — Programmatic and direct placements.",
-  mb_deliver_4: "OOH Campaigns — Billboards and transit advertising.",
-  mb_deliver_5: "Negotiation — Best rates and premium placements.",
-  mb_deliver_6: "Performance Tracking — Cross-channel analytics.",
+  mb_deliver_1: "Media Planning â€” Strategic channel selection.",
+  mb_deliver_2: "TV Buying â€” National and local TV placements.",
+  mb_deliver_3: "Digital Buying â€” Programmatic and direct placements.",
+  mb_deliver_4: "OOH Campaigns â€” Billboards and transit advertising.",
+  mb_deliver_5: "Negotiation â€” Best rates and premium placements.",
+  mb_deliver_6: "Performance Tracking â€” Cross-channel analytics.",
   mb_process_title: "Our Process",
   mb_process_1: "Research",
   mb_process_2: "Plan",
@@ -572,7 +572,7 @@ window.EN = {
   mb_cta_btn: "Book Free Strategy Call",
   mb_cta_whatsapp: "Contact on WhatsApp",
 
-  // ==================== BRIEF PAGE — COMMON ====================
+  // ==================== BRIEF PAGE â€” COMMON ====================
   brief_progress: "Progress",
   brief_continue: "Continue",
   brief_previous: "Previous",
@@ -589,9 +589,9 @@ window.EN = {
   brief_desc_please_review_all_your_answers_before_submitting: "Please review all your answers before submitting.",
   brief_desc_please_review_all_your_answers_before_submitting_you_can_go_back_to_make_changes: "Please review all your answers before submitting. You can go back to make changes.",
 
-  // ==================== BRIEF — SHARED LABELS ====================
+  // ==================== BRIEF â€” SHARED LABELS ====================
   brief_label_business_name: "Business Name",
-  brief_ph_eg_vivedfx: "e.g. VIVEDFX",
+  brief_ph_eg_vivedfx: "e.g. vivedfx",
   brief_label_industry: "Industry",
   brief_label_target_audience: "Target Audience",
   brief_label_competitors: "Competitors",
@@ -599,7 +599,7 @@ window.EN = {
   brief_label_budget_range: "Budget Range",
   brief_label_deadline: "Deadline",
 
-  // ==================== BRIEF — INDUSTRY OPTIONS ====================
+  // ==================== BRIEF â€” INDUSTRY OPTIONS ====================
   brief_select_select_your_industry: "Select your industry",
   brief_option_healthcare_medical: "Healthcare & Medical",
   brief_option_fitness_wellness: "Fitness & Wellness",
@@ -615,7 +615,7 @@ window.EN = {
   brief_option_other: "Other",
   brief_option_legal_financial: "Legal & Financial",
 
-  // ==================== BRIEF — BUDGET OPTIONS ====================
+  // ==================== BRIEF â€” BUDGET OPTIONS ====================
   brief_select_select_your_budget_range: "Select your budget range",
   brief_option_under_500: "Under $500",
   brief_option_500_1000: "$500 - $1,000",
@@ -628,7 +628,7 @@ window.EN = {
   brief_option_20000: "$20,000+",
   brief_option_not_sure_yet: "Not sure yet",
 
-  // ==================== BRIEF — MONTHLY BUDGET OPTIONS ====================
+  // ==================== BRIEF â€” MONTHLY BUDGET OPTIONS ====================
   brief_option_under_500month: "Under $500/month",
   brief_option_500_1000month: "$500 - $1,000/month",
   brief_option_1000_3000month: "$1,000 - $3,000/month",
@@ -638,7 +638,7 @@ window.EN = {
   brief_option_10000month: "$10,000+/month",
   brief_option_under_1000month: "Under $1,000/month",
 
-  // ==================== BRIEF — PLATFORM OPTIONS ====================
+  // ==================== BRIEF â€” PLATFORM OPTIONS ====================
   brief_option_instagram: "Instagram",
   brief_option_facebook: "Facebook",
   brief_option_tiktok: "TikTok",
@@ -650,7 +650,7 @@ window.EN = {
   brief_option_website: "Website",
   brief_option_email: "Email",
 
-  // ==================== BRIEF — GOAL OPTIONS ====================
+  // ==================== BRIEF â€” GOAL OPTIONS ====================
   brief_option_brand_awareness: "Brand Awareness",
   brief_option_lead_generation: "Lead Generation",
   brief_option_sales_conversions: "Sales & Conversions",
@@ -661,20 +661,20 @@ window.EN = {
   brief_option_app_installs: "App Installs",
   brief_option_conversions_sales: "Conversions / Sales",
 
-  // ==================== BRIEF — CONTENT STYLE OPTIONS ====================
+  // ==================== BRIEF â€” CONTENT STYLE OPTIONS ====================
   brief_option_professional_polished: "Professional & Polished",
   brief_option_casual_friendly: "Casual & Friendly",
   brief_option_bold_edgy: "Bold & Edgy",
   brief_option_minimal_clean: "Minimal & Clean",
   brief_option_luxury_premium: "Luxury & Premium",
 
-  // ==================== BRIEF — BRAND VOICE OPTIONS ====================
+  // ==================== BRIEF â€” BRAND VOICE OPTIONS ====================
   brief_option_professional: "Professional",
   brief_option_friendly_casual: "Friendly & Casual",
   brief_option_authoritative: "Authoritative",
   brief_option_playful_fun: "Playful & Fun",
 
-  // ==================== BRIEF — VISUAL STYLE OPTIONS ====================
+  // ==================== BRIEF â€” VISUAL STYLE OPTIONS ====================
   brief_option_modern_minimal: "Modern & Minimal",
   brief_option_classic_timeless: "Classic & Timeless",
   brief_option_bold_expressive: "Bold & Expressive",
@@ -684,20 +684,20 @@ window.EN = {
   brief_option_creative_artistic: "Creative & Artistic",
   brief_option_tech_modern: "Tech & Modern",
 
-  // ==================== BRIEF — EDITING STYLE OPTIONS ====================
+  // ==================== BRIEF â€” EDITING STYLE OPTIONS ====================
   brief_option_cinematic_dramatic: "Cinematic & Dramatic",
   brief_option_clean_modern: "Clean & Modern",
   brief_option_fastpaced_energetic: "Fast-Paced & Energetic",
   brief_option_minimal_elegant: "Minimal & Elegant",
   brief_option_documentary_style: "Documentary Style",
 
-  // ==================== BRIEF — VOLUME / QUANTITY OPTIONS ====================
+  // ==================== BRIEF â€” VOLUME / QUANTITY OPTIONS ====================
   brief_select_select_volume: "Select volume",
   brief_option_12_posts_per_week: "1-2 posts per week",
   brief_option_34_posts_per_week: "3-4 posts per week",
   brief_option_daily_posts: "Daily posts",
   brief_option_multiple_posts_per_day: "Multiple posts per day",
-  brief_option_not_sure_need_recommendation: "Not sure — need recommendation",
+  brief_option_not_sure_need_recommendation: "Not sure â€” need recommendation",
   brief_select_select_quantity: "Select quantity",
   brief_option_14_pieces_per_month: "1-4 pieces per month",
   brief_option_510_pieces_per_month: "5-10 pieces per month",
@@ -705,7 +705,7 @@ window.EN = {
   brief_option_20_pieces_per_month: "20+ pieces per month",
   brief_option_need_recommendation: "Need recommendation",
 
-  // ==================== BRIEF — CONTENT TYPE OPTIONS ====================
+  // ==================== BRIEF â€” CONTENT TYPE OPTIONS ====================
   brief_option_social_media_posts: "Social Media Posts",
   brief_option_blog_articles: "Blog Articles",
   brief_option_email_marketing: "Email Marketing",
@@ -715,7 +715,7 @@ window.EN = {
   brief_option_presentations: "Presentations",
   brief_option_infographics: "Infographics",
 
-  // ==================== BRIEF — VIDEO TYPE OPTIONS ====================
+  // ==================== BRIEF â€” VIDEO TYPE OPTIONS ====================
   brief_option_brand_company_profile: "Brand / Company Profile",
   brief_option_product_demo: "Product Demo",
   brief_option_social_media_video: "Social Media Video",
@@ -725,7 +725,7 @@ window.EN = {
   brief_option_testimonial_interview: "Testimonial / Interview",
   brief_option_motion_graphics_animation: "Motion Graphics / Animation",
 
-  // ==================== BRIEF — DURATION OPTIONS ====================
+  // ==================== BRIEF â€” DURATION OPTIONS ====================
   brief_select_select_target_duration: "Select target duration",
   brief_option_under_15_seconds_reeltiktok: "Under 15 seconds (Reel/TikTok)",
   brief_option_1530_seconds_adsocial: "15-30 seconds (Ad/Social)",
@@ -734,26 +734,26 @@ window.EN = {
   brief_option_25_minutes_documentary_style: "2-5 minutes (Documentary style)",
   brief_option_5_minutes_long_form: "5+ minutes (Long form)",
 
-  // ==================== BRIEF — SHOOT TYPE OPTIONS ====================
+  // ==================== BRIEF â€” SHOOT TYPE OPTIONS ====================
   brief_option_product_photography: "Product Photography",
   brief_option_corporate_headshots: "Corporate / Headshots",
   brief_option_lifestyle_brand: "Lifestyle / Brand",
   brief_option_real_estate_interior: "Real Estate / Interior",
   brief_option_fashion_apparel: "Fashion & Apparel",
 
-  // ==================== BRIEF — INDOOR/OUTDOOR OPTIONS ====================
+  // ==================== BRIEF â€” INDOOR/OUTDOOR OPTIONS ====================
   brief_option_indoor: "Indoor",
   brief_option_outdoor: "Outdoor",
   brief_option_both: "Both",
 
-  // ==================== BRIEF — WEBSITE PURPOSE OPTIONS ====================
+  // ==================== BRIEF â€” WEBSITE PURPOSE OPTIONS ====================
   brief_option_brochure_info_site: "Brochure / Info Site",
   brief_option_ecommerce_online_store: "E-Commerce / Online Store",
   brief_option_booking_appointment: "Booking / Appointment",
   brief_option_portfolio_showcase: "Portfolio / Showcase",
   brief_option_saas_app_landing: "SaaS / App Landing",
 
-  // ==================== BRIEF — PAGE OPTIONS ====================
+  // ==================== BRIEF â€” PAGE OPTIONS ====================
   brief_option_home: "Home",
   brief_option_about_us: "About Us",
   brief_option_services: "Services",
@@ -767,7 +767,7 @@ window.EN = {
   brief_option_careers: "Careers",
   brief_option_custom_page: "Custom Page",
 
-  // ==================== BRIEF — FEATURE OPTIONS ====================
+  // ==================== BRIEF â€” FEATURE OPTIONS ====================
   brief_option_contact_form: "Contact Form",
   brief_option_newsletter_signup: "Newsletter Signup",
   brief_option_live_chat: "Live Chat",
@@ -777,7 +777,7 @@ window.EN = {
   brief_option_custom_animations: "Custom Animations",
   brief_option_cms_content_management: "CMS (Content Management)",
 
-  // ==================== BRIEF — BOOKING / PAYMENT OPTIONS ====================
+  // ==================== BRIEF â€” BOOKING / PAYMENT OPTIONS ====================
   brief_option_yes_i_need_a_booking_system: "Yes, I need a booking system",
   brief_option_maybe_in_the_future: "Maybe in the future",
   brief_option_no: "No",
@@ -786,35 +786,35 @@ window.EN = {
   brief_option_local_payment_gateway: "Local Payment Gateway",
   brief_option_not_needed: "Not needed",
 
-  // ==================== BRIEF — LANGUAGE OPTIONS ====================
+  // ==================== BRIEF â€” LANGUAGE OPTIONS ====================
   brief_option_english_only: "English Only",
   brief_option_arabic_english: "Arabic + English",
 
-  // ==================== BRIEF — SEO OPTIONS ====================
+  // ==================== BRIEF â€” SEO OPTIONS ====================
   brief_option_onpage_seo: "On-Page SEO",
   brief_option_technical_seo: "Technical SEO",
   brief_option_local_seo: "Local SEO",
   brief_option_schema_markup: "Schema Markup",
   brief_option_speed_optimization: "Speed Optimization",
 
-  // ==================== BRIEF — HOSTING OPTIONS ====================
+  // ==================== BRIEF â€” HOSTING OPTIONS ====================
   brief_option_i_have_hosting: "I have hosting",
   brief_option_need_hosting_setup: "Need hosting setup",
   brief_option_not_sure: "Not sure",
 
-  // ==================== BRIEF — PIXEL / TRACKING OPTIONS ====================
+  // ==================== BRIEF â€” PIXEL / TRACKING OPTIONS ====================
   brief_option_yes_installed: "Yes, installed",
   brief_option_yes_fully_set_up: "Yes, fully set up",
   brief_option_partial_setup: "Partial setup",
   brief_option_no_tracking_in_place: "No tracking in place",
   brief_option_yes_connected: "Yes, connected",
 
-  // ==================== BRIEF — ANALYTICS OPTIONS ====================
+  // ==================== BRIEF â€” ANALYTICS OPTIONS ====================
   brief_option_ga4_installed: "GA4 installed",
   brief_option_old_analytics_ua: "Old Analytics (UA)",
   brief_option_no_analytics: "No analytics",
 
-  // ==================== BRIEF — SCRIPT / ACTOR / DRONE / VO OPTIONS ====================
+  // ==================== BRIEF â€” SCRIPT / ACTOR / DRONE / VO OPTIONS ====================
   brief_option_yes_i_have_a_script: "Yes, I have a script",
   brief_option_i_have_a_rough_idea: "I have a rough idea",
   brief_option_no_need_script_writing: "No, need script writing",
@@ -827,7 +827,7 @@ window.EN = {
   brief_option_yes_female_vo: "Yes, Female VO",
   brief_option_no_voice_over: "No voice over",
 
-  // ==================== BRIEF — AD PLATFORM OPTIONS ====================
+  // ==================== BRIEF â€” AD PLATFORM OPTIONS ====================
   brief_option_google_ads: "Google Ads",
   brief_option_facebook_ads: "Facebook Ads",
   brief_option_instagram_ads: "Instagram Ads",
@@ -836,7 +836,7 @@ window.EN = {
   brief_option_snapchat_ads: "Snapchat Ads",
   brief_option_none_starting_fresh: "None (Starting fresh)",
 
-  // ==================== BRIEF — UPLOAD / HINT ====================
+  // ==================== BRIEF â€” UPLOAD / HINT ====================
   brief_label_upload_reference_files: "Upload Reference Files",
   brief_upload_drop_files_here_or_click_to_upload: "Drop files here or click to upload",
   brief_hint_pdf_docx_jpg_png_ai_psd_zip_max_10_files: "PDF, DOCX, JPG, PNG, AI, PSD, ZIP \u2014 Max 10 files",
@@ -848,7 +848,7 @@ window.EN = {
   brief_hint_guidelines_color_palettes_typography_patterns_max_10_files: "Guidelines, color palettes, typography, patterns \u2014 Max 10 files",
   brief_label_upload_files: "Upload Files",
 
-  // ==================== BRIEF — SOCIAL MEDIA PAGE ====================
+  // ==================== BRIEF â€” SOCIAL MEDIA PAGE ====================
   brief_social_media_step_about_your_business: "About Your Business",
   brief_desc_lets_start_with_the_basics_so_we_understand_who_you_are: "Let's start with the basics so we understand who you are.",
   brief_ph_describe_your_ideal_customer_age_gender_interests_pain_points: "Describe your ideal customer \u2014 age, gender, interests, pain points...",
@@ -874,7 +874,7 @@ window.EN = {
   brief_label_monthly_marketing_budget: "Monthly Marketing Budget",
   brief_ph_anything_else_youd_like_us_to_know_special_requirements_deadlines_references: "Anything else you'd like us to know? Special requirements, deadlines, references...",
 
-  // ==================== BRIEF — BRANDING PAGE ====================
+  // ==================== BRIEF â€” BRANDING PAGE ====================
   brief_step_brand_foundation: "Brand Foundation",
   brief_desc_tell_us_the_story_behind_your_brand_what_drives_you_and_where_youre_headed: "Tell us the story behind your brand \u2014 what drives you and where you're headed.",
   brief_label_brand_story: "Brand Story",
@@ -906,7 +906,7 @@ window.EN = {
   brief_ph_eg_within_4_weeks_no_rush: "e.g. Within 4 weeks, No rush",
   brief_ph_anything_else_youd_like_us_to_know: "Anything else you'd like us to know?",
 
-  // ==================== BRIEF — CONTENT CREATION PAGE ====================
+  // ==================== BRIEF â€” CONTENT CREATION PAGE ====================
   brief_step_content_type_and_audience: "Content Type & Audience",
   brief_desc_what_kind_of_content_do_you_need_and_who_is_it_for: "What kind of content do you need and who is it for?",
   brief_label_content_type: "Content Type",
@@ -931,7 +931,7 @@ window.EN = {
   brief_desc_final_details_to_get_started: "Final details to get started.",
   brief_ph_anything_else_special_requirements_brand_guidelines_content_calendar: "Anything else? Special requirements, brand guidelines, content calendar...",
 
-  // ==================== BRIEF — VIDEOGRAPHY PAGE ====================
+  // ==================== BRIEF â€” VIDEOGRAPHY PAGE ====================
   brief_step_video_details: "Video Details",
   brief_desc_tell_us_about_the_video_you_need: "Tell us about the video you need.",
   brief_label_video_type: "Video Type",
@@ -953,7 +953,7 @@ window.EN = {
   brief_ph_eg_need_final_video_by_march_20: "e.g. Need final video by March 20",
   brief_desc_final_details_to_wrap_up_your_brief: "Final details to wrap up your brief.",
 
-  // ==================== BRIEF — PHOTOGRAPHY PAGE ====================
+  // ==================== BRIEF â€” PHOTOGRAPHY PAGE ====================
   brief_step_shoot_details: "Shoot Details",
   brief_desc_tell_us_about_the_photoshoot_you_need: "Tell us about the photoshoot you need.",
   brief_label_business_type: "Business Type",
@@ -977,7 +977,7 @@ window.EN = {
   brief_ph_eg_within_2_weeks_need_by_march_15: "e.g. Within 2 weeks, Need by March 15",
   brief_ph_anything_else_mood_color_grading_retouching_level_number_of_final_images: "Anything else? Mood, color grading, retouching level, number of final images...",
 
-  // ==================== BRIEF — WEBSITE PAGE ====================
+  // ==================== BRIEF â€” WEBSITE PAGE ====================
   brief_step_business_and_purpose: "Business & Purpose",
   brief_desc_tell_us_about_your_business_and_what_you_need_the_website_to_achieve: "Tell us about your business and what you need the website to achieve.",
   brief_label_business_information: "Business Information",
@@ -1009,7 +1009,7 @@ window.EN = {
   brief_ph_eg_launch_by_march_1st_asap_no_rush: "e.g. Launch by March 1st, ASAP, No rush",
   brief_ph_anything_else_special_features_integrations_existing_content: "Anything else? Special features, integrations, existing content...",
 
-  // ==================== BRIEF — CONSULTATION PAGE ====================
+  // ==================== BRIEF â€” CONSULTATION PAGE ====================
   brief_step_about_your_business: "About Your Business",
   brief_desc_give_us_a_snapshot_of_your_business_and_where_it_stands_today: "Give us a snapshot of your business and where it stands today.",
   brief_label_current_situation: "Current Situation",
@@ -1025,7 +1025,7 @@ window.EN = {
   brief_ph_eg_need_to_see_results_in_3_months_longterm_partnership: "e.g. Need to see results in 3 months, Long-term partnership",
   brief_ph_anything_else_youd_like_us_to_know_before_the_consultation: "Anything else you'd like us to know before the consultation?",
 
-  // ==================== BRIEF — PERFORMANCE MARKETING PAGE ====================
+  // ==================== BRIEF â€” PERFORMANCE MARKETING PAGE ====================
   brief_step_business_overview: "Business Overview",
   brief_desc_tell_us_about_your_business_and_current_advertising_setup: "Tell us about your business and current advertising setup.",
   brief_ph_what_are_you_selling_describe_your_main_products_or_services: "What are you selling? Describe your main products or services.",
@@ -1053,7 +1053,7 @@ window.EN = {
   brief_ph_what_metrics_do_you_want_us_to_optimize_for_eg_cost_per_lead_roas_ctr_cpa: "What metrics do you want us to optimize for? (e.g. cost per lead, ROAS, CTR, CPA)",
   brief_ph_anything_else_past_experiences_specific_requirements_references: "Anything else? Past experiences, specific requirements, references...",
 
-  // ==================== BRIEF — MARKETING STRATEGY PAGE ====================
+  // ==================== BRIEF â€” MARKETING STRATEGY PAGE ====================
   brief_desc_give_us_a_complete_picture_of_your_business_and_where_it_stands_today: "Give us a complete picture of your business and where it stands today.",
   brief_label_business_overview: "Business Overview",
   brief_ph_tell_us_about_your_business_what_you_do_who_you_serve_how_long_youve_been_operating_size_of_team: "Tell us about your business \u2014 what you do, who you serve, how long you've been operating, size of team...",
@@ -1077,7 +1077,7 @@ window.EN = {
   brief_ph_what_metrics_will_you_judge_success_by_eg_leads_per_month_conversion_rate_revenue_growth_social_engagement: "What metrics will you judge success by? (e.g. leads per month, conversion rate, revenue growth, social engagement)",
   brief_ph_anything_else_past_experiences_specific_requirements_timeline_expectations: "Anything else? Past experiences, specific requirements, timeline expectations...",
 
-  // ==================== BRIEF — SEO PAGE ====================
+  // ==================== BRIEF â€” SEO PAGE ====================
   brief_step_website_and_business: "Website & Business",
   brief_desc_tell_us_about_your_website_and_business_so_we_can_assess_your_seo_needs: "Tell us about your website and business so we can assess your SEO needs.",
   brief_label_website_url: "Website URL",

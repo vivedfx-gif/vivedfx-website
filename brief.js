@@ -1,13 +1,13 @@
-/* ═══════════════════════════════════════════
-   VIVEDFX CLIENT BRIEF — ENGINE
+﻿/* â•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گ
+   vivedfx CLIENT BRIEF â€” ENGINE
    Multi-step form with progress, validation,
    file upload, save/load, and review.
-   ═══════════════════════════════════════════ */
+   â•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گâ•گ */
 
 (function () {
   'use strict';
 
-  /* ── INIT ── */
+  /* â”€â”€ INIT â”€â”€ */
   const BRIEF_KEY = 'vivedfx_brief_' + (window.BRIEF_ID || 'default');
   let currentStep = 0;
   let totalSteps = 0;
@@ -18,7 +18,7 @@
   const steps = form.querySelectorAll('.brief-step');
   totalSteps = steps.length;
 
-  /* ── PROGRESS DOTS ── */
+  /* â”€â”€ PROGRESS DOTS â”€â”€ */
   const dotsContainer = document.getElementById('briefProgressDots');
   if (dotsContainer) {
     for (let i = 0; i < totalSteps; i++) {
@@ -28,14 +28,14 @@
     }
   }
 
-  /* ── STEP COUNTER ── */
+  /* â”€â”€ STEP COUNTER â”€â”€ */
   const stepBadge = document.getElementById('briefStepBadge');
   const stepLabel = document.getElementById('briefStepLabel');
 
-  /* ── SAVE TOAST ── */
+  /* â”€â”€ SAVE TOAST â”€â”€ */
   const toast = document.getElementById('briefSaveToast');
 
-  /* ── RENDER STEP ── */
+  /* â”€â”€ RENDER STEP â”€â”€ */
   function renderStep() {
     steps.forEach((s, i) => s.classList.toggle('active', i === currentStep));
 
@@ -66,7 +66,7 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  /* ── VALIDATE CURRENT STEP ── */
+  /* â”€â”€ VALIDATE CURRENT STEP â”€â”€ */
   function validateStep() {
     const step = steps[currentStep];
     if (!step) return true;
@@ -107,7 +107,7 @@
     return valid;
   }
 
-  /* ── COLLECT DATA ── */
+  /* â”€â”€ COLLECT DATA â”€â”€ */
   function collectData() {
     const data = {};
     const fd = new FormData(form);
@@ -126,7 +126,7 @@
     return data;
   }
 
-  /* ── BUILD REVIEW ── */
+  /* â”€â”€ BUILD REVIEW â”€â”€ */
   function buildReview() {
     const container = document.getElementById('briefReviewData');
     if (!container) return;
@@ -178,7 +178,7 @@
     }
   }
 
-  /* ── NAVIGATION ── */
+  /* â”€â”€ NAVIGATION â”€â”€ */
   document.getElementById('briefNext')?.addEventListener('click', () => {
     if (currentStep < totalSteps - 1) {
       if (!validateStep()) return;
@@ -218,7 +218,7 @@
     }
   });
 
-  /* ── FORM SUBMISSION ── */
+  /* â”€â”€ FORM SUBMISSION â”€â”€ */
   form.addEventListener('submit', e => {
     e.preventDefault();
     if (!validateStep()) return;
@@ -245,7 +245,7 @@
     }, 1500);
   });
 
-  /* ── AUTO-SAVE ── */
+  /* â”€â”€ AUTO-SAVE â”€â”€ */
   function saveProgress() {
     const data = collectData();
     data._step = currentStep;
@@ -290,13 +290,13 @@
     setTimeout(() => toast.classList.remove('visible'), 2500);
   }
 
-  /* ── SAVE BUTTON ── */
+  /* â”€â”€ SAVE BUTTON â”€â”€ */
   document.getElementById('briefSaveBtn')?.addEventListener('click', saveProgress);
 
   // Auto-save every 30s
   setInterval(saveProgress, 30000);
 
-  /* ── FILE UPLOAD ── */
+  /* â”€â”€ FILE UPLOAD â”€â”€ */
   document.querySelectorAll('.brief-upload').forEach(upload => {
     const key = upload.dataset.key;
     const input = upload.querySelector('input[type="file"]');
@@ -355,7 +355,7 @@
     }
   });
 
-  /* ── RADIO / CHECKBOX SELECTED CLASS ── */
+  /* â”€â”€ RADIO / CHECKBOX SELECTED CLASS â”€â”€ */
   document.addEventListener('change', e => {
     if (e.target.type === 'radio') {
       const name = e.target.name;
@@ -384,7 +384,7 @@
     });
   });
 
-  /* ── INPUT LISTENERS ── */
+  /* â”€â”€ INPUT LISTENERS â”€â”€ */
   form.querySelectorAll('input, select, textarea').forEach(el => {
     el.addEventListener('input', () => {
       el.classList.remove('error');
@@ -392,7 +392,7 @@
     });
   });
 
-  /* ── INIT ── */
+  /* â”€â”€ INIT â”€â”€ */
   renderStep();
   loadProgress();
 })();
