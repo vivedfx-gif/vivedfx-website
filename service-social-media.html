@@ -13,8 +13,22 @@
   <link rel="stylesheet" href="style.css" />
   <style>
     :root{--accent:#ec1f27}
-    .sp-hero{min-height:60vh;background:var(--dark);display:flex;align-items:flex-end;padding:120px 0 80px;position:relative;overflow:hidden}
+    .sp-hero{min-height:100vh;background:var(--dark);display:flex;align-items:flex-start;padding:130px 0 60px;position:relative;overflow:hidden}
     .sp-hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 30% 0%,rgba(236,31,39,.18) 0%,transparent 65%);pointer-events:none}
+    .sp-hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+    .sp-hero-text{position:relative;z-index:2;padding-top:0}
+    .sp-hero-showcase{position:relative;z-index:1}
+
+    /* ── Why Vivedfx ── */
+    .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .why-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:40px 32px;text-align:center;transition:border-color .3s,transform .3s}
+    .why-card:hover{border-color:rgba(236,31,39,.3);transform:translateY(-4px)}
+    .why-card-icon{width:56px;height:56px;background:rgba(236,31,39,.08);border:1px solid rgba(236,31,39,.12);border-radius:14px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin:0 auto 24px}
+    .why-card-icon svg{width:26px;height:26px}
+    .why-card-title{font-family:var(--font-heading);font-weight:800;font-size:1.2rem;color:var(--white);margin-bottom:12px}
+    .why-card-desc{font-size:.95rem;color:var(--muted);line-height:1.7}
+    @media(max-width:1024px){.why-grid{gap:20px}.why-card{padding:32px 24px}}
+    @media(max-width:768px){.why-grid{grid-template-columns:1fr;gap:16px}.why-card{padding:28px 20px}}
     .sp-back{display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-size:.9rem;text-decoration:none;margin-bottom:40px;transition:color .2s}
     .sp-back:hover{color:var(--white)}.sp-back svg{width:18px;height:18px}
     .sp-label{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:rgba(236,31,39,.1);border:1px solid rgba(236,31,39,.2);border-radius:100px;padding:6px 16px;margin-bottom:24px}
@@ -27,64 +41,33 @@
     .sp-section-label{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
     .sp-section-title{font-family:var(--font-heading);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:800;color:var(--white);margin-bottom:48px;line-height:1.15}
     .sp-section-title span{color:var(--accent)}
-    .sp-why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-    .sp-why-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:32px;transition:border-color .3s,transform .3s}
-    .sp-why-card:hover{border-color:var(--border-hover);transform:translateY(-3px)}
-    .sp-why-icon{width:48px;height:48px;background:rgba(236,31,39,.1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:20px}
-    .sp-why-icon svg{width:24px;height:24px}
-    .sp-why-title{font-weight:700;color:var(--white);margin-bottom:8px;font-size:1.05rem}
-    .sp-why-text{font-size:.88rem;color:var(--muted);line-height:1.65}
-    .sp-services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-    .sp-service-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px;transition:border-color .3s,transform .3s}
-    .sp-service-card:hover{border-color:var(--accent);transform:translateY(-3px)}
-    .sp-service-card-icon{width:44px;height:44px;background:rgba(236,31,39,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:16px}
-    .sp-service-card-icon svg{width:22px;height:22px}
-    .sp-service-card-title{font-weight:700;color:var(--white);margin-bottom:6px;font-size:.95rem}
-    .sp-service-card-text{font-size:.84rem;color:var(--muted);line-height:1.6}
-    .sp-process{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;counter-reset:step;position:relative}
-    .sp-process::before{content:'';position:absolute;top:44px;left:8%;right:8%;height:2px;background:var(--border);z-index:0}
-    .sp-process-step{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-md);padding:24px 16px;text-align:center;position:relative;z-index:1;transition:border-color .3s,transform .3s}
-    .sp-process-step:hover{border-color:var(--accent);transform:translateY(-3px)}
-    .sp-process-num{font-family:var(--font-heading);font-size:2.2rem;font-weight:900;color:rgba(236,31,39,.15);line-height:1;margin-bottom:10px}
-    .sp-process-title{font-weight:700;color:var(--white);margin-bottom:6px;font-size:.88rem}
-    .sp-process-text{font-size:.78rem;color:var(--muted);line-height:1.55}
-    .sp-portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .sp-portfolio-item{position:relative;border-radius:var(--radius-md);overflow:hidden;aspect-ratio:4/3;cursor:pointer;border:1px solid var(--border);transition:border-color .3s,transform .3s}
-    .sp-portfolio-item:hover{border-color:var(--accent);transform:translateY(-3px)}
-    .sp-portfolio-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-    .sp-portfolio-item:hover img{transform:scale(1.05)}
-    .sp-portfolio-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.8) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:24px;opacity:0;transition:opacity .3s}
-    .sp-portfolio-item:hover .sp-portfolio-overlay{opacity:1}
-    .sp-portfolio-tag{font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
-    .sp-portfolio-name{font-weight:700;color:var(--white);font-size:1rem}
-    .sp-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:60px 0 0}
-    .sp-stat{background:var(--dark-3);padding:36px 32px}
-    .sp-stat-num{font-family:var(--font-heading);font-size:3rem;font-weight:900;color:var(--accent);line-height:1}
-    .sp-stat-label{font-size:.9rem;color:var(--muted);margin-top:8px}
-    .sp-testimonials-slider{position:relative;max-width:900px;margin:0 auto}
-    .sp-testimonials-track{display:flex;overflow:hidden}
-    .sp-testimonial-slide{min-width:100%;padding:0 20px;box-sizing:border-box}
-    .sp-testimonial-card{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px;position:relative}
-    .sp-testimonial-quote{font-size:1.05rem;color:var(--white);line-height:1.8;font-style:italic;margin-bottom:28px;position:relative;padding-left:24px;border-left:3px solid var(--accent)}
-    .sp-testimonial-author{display:flex;align-items:center;gap:14px}
-    .sp-testimonial-avatar{width:48px;height:48px;border-radius:50%;background:rgba(236,31,39,.15);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:.9rem;flex-shrink:0}
-    .sp-testimonial-name{font-weight:700;color:var(--white);font-size:.95rem}
-    .sp-testimonial-role{font-size:.82rem;color:var(--muted);margin-top:2px}
-    .sp-testimonial-controls{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:32px}
-    .sp-testimonial-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:var(--dark-3);color:var(--white);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:border-color .2s,transform .2s}
-    .sp-testimonial-btn:hover{border-color:var(--accent);transform:scale(1.05)}
-    .sp-testimonial-btn svg{width:18px;height:18px}
-    .sp-testimonial-dots{display:flex;gap:8px}
-    .sp-testimonial-dot{width:10px;height:10px;border-radius:50%;border:none;background:var(--border);cursor:pointer;transition:background .2s,transform .2s}
-    .sp-testimonial-dot.active{background:var(--accent);transform:scale(1.2)}
-    .sp-faq{max-width:800px;margin:0 auto}
-    .sp-faq-item{border-bottom:1px solid var(--border)}
-    .sp-faq-q{width:100%;background:none;border:none;padding:20px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;color:var(--white);font-weight:600;font-size:1rem;text-align:left;font-family:inherit}
-    .sp-faq-q svg{width:20px;height:20px;color:var(--muted);transition:transform .3s;flex-shrink:0;margin-left:16px}
-    .sp-faq-item.open .sp-faq-q svg{transform:rotate(180deg)}
-    .sp-faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease}
-    .sp-faq-item.open .sp-faq-a{max-height:300px;padding:0 0 20px}
-    .sp-faq-a p{font-size:.9rem;color:var(--muted);line-height:1.7}
+
+    /* ── Services: Alternating Rows ── */
+    .svc-rows{display:flex;flex-direction:column;gap:0;position:relative;max-width:900px;margin:0 auto}
+    .svc-row{display:grid;grid-template-columns:56px 1fr;gap:24px;align-items:start;padding:36px 0;position:relative}
+    .svc-row:not(:last-child){border-bottom:1px solid var(--border)}
+    .svc-row-line{display:flex;flex-direction:column;align-items:center;position:relative}
+    .svc-row-dot{width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--dark);box-shadow:0 0 0 2px var(--accent);z-index:1;flex-shrink:0;margin-top:4px}
+    .svc-row-stem{width:2px;flex:1;background:linear-gradient(to bottom,var(--accent),rgba(236,31,39,.15));margin-top:8px;animation:grow-line 1.5s ease-out forwards;transform-origin:top}
+    @keyframes grow-line{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+    .svc-row-content{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start}
+    .svc-row-icon{width:48px;height:48px;background:rgba(236,31,39,.08);border:1px solid rgba(236,31,39,.12);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--accent);flex-shrink:0}
+    .svc-row-icon svg{width:24px;height:24px}
+    .svc-row-info{}
+    .svc-row-title{font-weight:700;font-size:1.05rem;color:var(--white);margin-bottom:6px}
+    .svc-row-desc{font-size:.9rem;color:var(--muted);line-height:1.65}
+    @media(max-width:768px){.svc-row{grid-template-columns:40px 1fr;gap:16px;padding:28px 0}.svc-row-content{grid-template-columns:auto 1fr;gap:12px}}
+
+    /* ── Process: Grid Layout ── */
+    .proc-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:16px}
+    .proc-item{text-align:center;padding:0 4px}
+    .proc-num{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--accent),rgba(236,31,39,.6));display:flex;align-items:center;justify-content:center;font-family:var(--font-heading);font-size:1.15rem;font-weight:900;color:#fff;margin:0 auto 14px;position:relative;z-index:1;box-shadow:0 4px 16px rgba(236,31,39,.25)}
+    .proc-name{font-weight:700;font-size:.88rem;color:var(--white);margin-bottom:6px}
+    .proc-desc{font-size:.75rem;color:var(--muted);line-height:1.5}
+    @media(max-width:1024px){.proc-grid{gap:12px}.proc-num{width:46px;height:46px;font-size:1.05rem}.proc-name{font-size:.82rem}.proc-desc{font-size:.72rem}}
+    @media(max-width:768px){.proc-grid{grid-template-columns:repeat(4,1fr);gap:14px}.proc-num{width:48px;height:48px;font-size:1.1rem}.proc-name{font-size:.85rem}.proc-desc{font-size:.74rem}}
+    @media(max-width:480px){.proc-grid{grid-template-columns:repeat(2,1fr);gap:16px 12px}}
+
     .sp-cta{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-xl);padding:72px;text-align:center;position:relative;overflow:hidden}
     .sp-cta-orb{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(236,31,39,.15),transparent 70%);border-radius:50%;pointer-events:none}
     .sp-cta-orb-1{top:-100px;left:-100px}.sp-cta-orb-2{bottom:-100px;right:-100px}
@@ -105,13 +88,15 @@
     .sp-nav-label{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
     .sp-nav-title{font-weight:700;font-size:.95rem}
     .sp-nav-next{text-align:right;flex-direction:row-reverse}
-    @media(max-width:1024px){.sp-process{grid-template-columns:repeat(3,1fr)}.sp-process::before{display:none}.sp-services-grid{grid-template-columns:repeat(2,1fr)}.sp-related-grid{grid-template-columns:repeat(3,1fr)}}
-    @media(max-width:768px){.sp-why-grid{grid-template-columns:1fr}.sp-services-grid{grid-template-columns:1fr}.sp-process{grid-template-columns:1fr}.sp-portfolio-grid{grid-template-columns:repeat(2,1fr)}.sp-stats{grid-template-columns:1fr}.sp-related-grid{grid-template-columns:1fr}.sp-cta{padding:48px 28px}.sp-hero{min-height:50vh}.sp-nav{flex-direction:column}.sp-testimonial-card{padding:28px}}
-    @media(max-width:480px){.sp-portfolio-grid{grid-template-columns:1fr}}
+    @media(max-width:1024px){.sp-hero-inner{grid-template-columns:1fr;gap:40px}.cf-stage{max-width:500px;height:460px;margin:0 auto}.sp-related-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:768px){.sp-hero{min-height:auto;padding:120px 0 60px}.cf-stage{max-width:400px;height:420px;margin:0 auto}.sp-related-grid{grid-template-columns:repeat(2,1fr)}.sp-cta{padding:48px 28px}.sp-nav{flex-direction:column}}
+    @media(max-width:480px){.cf-stage{width:100%;height:auto;min-height:480px}}
 
     /* ===== COVER FLOW SHOWCASE ===== */
-    .cf-section{padding:100px 0 120px;background:var(--dark);overflow:hidden}
-    .cf-stage{position:relative;max-width:1100px;height:600px;margin:0 auto;perspective:1200px}
+    .cf-section{padding:0;background:transparent;overflow:visible}
+    .cf-section .container{max-width:100%;padding:0}
+    .cf-section .sp-section-label,.cf-section .sp-section-title,.cf-section .sp-subtitle{display:none}
+    .cf-stage{position:relative;max-width:600px;height:520px;perspective:1200px}
     .cf-slide{position:absolute;left:50%;top:50%;width:360px;margin-left:-180px;margin-top:-290px;transition:transform .8s cubic-bezier(.4,0,.2,1),opacity .8s cubic-bezier(.4,0,.2,1),filter .8s cubic-bezier(.4,0,.2,1);cursor:pointer;will-change:transform,opacity,filter;backface-visibility:hidden}
     .cf-slide.center{transform:translate3d(0,0,0) scale(1) rotateY(0);z-index:5;opacity:1;filter:none}
     .cf-slide.left{transform:translate3d(-260px,0,0) scale(.78) rotateY(25deg);z-index:2;opacity:.6;filter:blur(6px);transform-origin:right center}
@@ -158,7 +143,7 @@
     .cf-card.x .cf-card-action svg{fill:none;stroke:#71767b;stroke-width:1.5}
     .cf-card.x .cf-card-action.liked svg{fill:#f91880;stroke:#f91880}
     .cf-card.x .cf-card-action.liked{color:#f91880}
-    .cf-counter{text-align:center;margin-top:72px;font-size:.85rem;color:var(--muted);font-weight:500;letter-spacing:.05em}
+    .cf-counter{text-align:center;margin-top:120px;font-size:.85rem;color:var(--muted);font-weight:500;letter-spacing:.05em}
     .cf-counter span{color:var(--white);font-weight:700;font-size:1.1rem}
     @media(max-width:1024px){
       .cf-stage{max-width:900px;height:540px}
@@ -180,16 +165,6 @@
       .cf-slide.center{opacity:1!important;pointer-events:auto!important}
     }
 
-    /* Bottom CTA */
-    .sm-bottom-cta{padding:80px 0}
-    .sm-bottom-cta-inner{background:var(--dark-3);border:1px solid var(--border);border-radius:var(--radius-xl);padding:72px;text-align:center;position:relative;overflow:hidden}
-    .sm-bottom-cta-inner .sp-cta-orb{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(236,31,39,.15),transparent 70%);border-radius:50%;pointer-events:none}
-    .sm-bottom-cta-inner .sp-cta-orb-1{top:-100px;left:-100px}
-    .sm-bottom-cta-inner .sp-cta-orb-2{bottom:-100px;right:-100px}
-    .sm-bottom-cta-title{font-family:var(--font-heading);font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:16px}
-    .sm-bottom-cta-title span{color:var(--accent)}
-    .sm-bottom-cta-sub{color:var(--muted);font-size:1.05rem;max-width:520px;margin:0 auto 36px;line-height:1.7}
-    .sm-bottom-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
   </style>
   <!-- Arabic Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -204,8 +179,9 @@
         <li><a href="index.html#industries" class="nav-link">Industries</a></li>
         <li><a href="index.html#process" class="nav-link">Process</a></li>
         <li><a href="index.html#testimonials" class="nav-link">Clients</a></li>
+        <li><a href="briefs.html" class="nav-link">Brief</a></li>
       </ul>
-      <a href="index.html#contact" class="btn btn-primary nav-cta magnetic-btn" id="nav-cta-btn">
+      <a href="https://calendly.com/vivedfx" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cta magnetic-btn" id="nav-cta-btn">
         <span>Book a Call</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
@@ -219,8 +195,9 @@
       <li class="mobile-menu-item"><a href="index.html#industries" class="mobile-link">Industries</a></li>
       <li class="mobile-menu-item"><a href="index.html#process" class="mobile-link">Process</a></li>
       <li class="mobile-menu-item"><a href="index.html#testimonials" class="mobile-link">Clients</a></li>
+      <li class="mobile-menu-item"><a href="briefs.html" class="mobile-link">Brief</a></li>
     </ul>
-    <div class="mobile-menu-cta-wrap"><a href="index.html#contact" class="btn btn-primary mobile-menu-cta"><span>Book a Call</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+    <div class="mobile-menu-cta-wrap"><a href="https://calendly.com/vivedfx" target="_blank" rel="noopener noreferrer" class="btn btn-primary mobile-menu-cta"><span>Book a Call</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
   </div>
   <main>
 
@@ -228,122 +205,20 @@
     <section class="sp-hero">
       <div class="sp-hero-bg"></div>
       <div class="container">
-        <a href="index.html#services" class="sp-back"><svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to Services</a>
-        <div class="sp-label"><span class="sp-label-dot"></span>Service 01</div>
-        <h1 class="sp-title">Social<br/><span>Media</span></h1>
-        <p class="sp-subtitle" style="font-family:var(--font-heading);font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:700;color:var(--white);max-width:700px;margin-bottom:16px">Grow Your Brand Where Your Customers Spend Their Time.</p>
-        <p class="sp-subtitle">We create scroll-stopping content, manage your communities, and run data-driven campaigns that turn followers into loyal customers and drive measurable business growth.</p>
-        <div class="sp-hero-btns">
-          <a href="brief-social-media.html" class="btn btn-primary btn-lg magnetic-btn"><span>Start Your Social Media Journey</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          <a href="portfolio.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>View Social Media Portfolio</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY CHOOSE US -->
-    <section class="sp-section">
-      <div class="container">
-        <div class="sp-section-label">Why VIVEDFX</div>
-        <h2 class="sp-section-title">Why Leading Brands <span>Choose Us</span></h2>
-        <div class="sp-why-grid">
-          <div class="sp-why-card">
-            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="sp-why-title">Consistent Growth</div>
-            <div class="sp-why-text">Brands that post consistently see 3.5× more engagement and 67% more leads. Consistency signals professionalism and reliability.</div>
+        <div class="sp-hero-inner">
+          <div class="sp-hero-text">
+            <a href="index.html#services" class="sp-back"><svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to Services</a>
+            <div class="sp-label"><span class="sp-label-dot"></span>Service 01</div>
+            <h1 class="sp-title">Social <span>Media</span></h1>
+            <p class="sp-subtitle" style="font-family:var(--font-heading);font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:700;color:var(--white);max-width:700px;margin-bottom:16px">Grow Your Brand Where Your Customers Spend Their Time.</p>
+            <p class="sp-subtitle">We create scroll-stopping content, manage your communities, and run data-driven campaigns that turn followers into loyal customers and drive measurable business growth.</p>
+            <div class="sp-hero-btns">
+              <a href="brief-social-media.html" class="btn btn-primary btn-lg magnetic-btn"><span>Start Your Social Media Journey</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="portfolio.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>View Social Media Portfolio</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
           </div>
-          <div class="sp-why-card">
-            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-            <div class="sp-why-title">Platform Expertise</div>
-            <div class="sp-why-text">We know the algorithm behind every platform — Instagram, TikTok, LinkedIn, Facebook. Our strategies are built on data, not guesswork.</div>
-          </div>
-          <div class="sp-why-card">
-            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5"/></svg></div>
-            <div class="sp-why-title">Content That Converts</div>
-            <div class="sp-why-text">Every post is designed with purpose. From awareness to consideration to purchase, we guide your audience through the funnel.</div>
-          </div>
-          <div class="sp-why-card">
-            <div class="sp-why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-            <div class="sp-why-title">Community Building</div>
-            <div class="sp-why-text">We don't just post — we engage, respond, and build genuine relationships with your audience that turn followers into brand advocates.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHAT WE DELIVER -->
-    <section class="sp-section sp-section-alt">
-      <div class="container">
-        <div class="sp-section-label">What We Deliver</div>
-        <h2 class="sp-section-title">Our Social Media <span>Services</span></h2>
-        <div class="sp-services-grid">
-          <div class="sp-service-card">
-            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M16 2v4M8 2v4M3 10h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-            <div class="sp-service-card-title">Content Calendar</div>
-            <div class="sp-service-card-text">Monthly content plans with themed posting schedules aligned to your business goals.</div>
-          </div>
-          <div class="sp-service-card">
-            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="sp-service-card-title">Feed Posts & Carousels</div>
-            <div class="sp-service-card-text">Eye-catching graphics and multi-slide posts optimized for each platform's algorithm.</div>
-          </div>
-          <div class="sp-service-card">
-            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
-            <div class="sp-service-card-title">Stories & Reels</div>
-            <div class="sp-service-card-text">Short-form video content and interactive stories that maximize reach and engagement.</div>
-          </div>
-          <div class="sp-service-card">
-            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/></svg></div>
-            <div class="sp-service-card-title">Community Management</div>
-            <div class="sp-service-card-text">Daily engagement, comment responses, and DM management to keep your audience active.</div>
-          </div>
-          <div class="sp-service-card">
-            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7V4h16v3M9 20h6M12 4v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="sp-service-card-title">Hashtag Strategy</div>
-            <div class="sp-service-card-text">Research-backed hashtag sets that increase discoverability and reach new audiences.</div>
-          </div>
-          <div class="sp-service-card">
-            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="sp-service-card-title">Analytics & Reporting</div>
-            <div class="sp-service-card-text">Monthly performance reports with insights, recommendations, and growth metrics.</div>
-          </div>
-          <div class="sp-service-card">
-            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-            <div class="sp-service-card-title">Competitor Analysis</div>
-            <div class="sp-service-card-text">We monitor your competitors' strategies to keep you ahead of the curve.</div>
-          </div>
-          <div class="sp-service-card">
-            <div class="sp-service-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="sp-service-card-title">Trend Jacking</div>
-            <div class="sp-service-card-text">We ride trending topics and formats to maximize your brand's visibility and relevance.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="sp-section">
-      <div class="container">
-        <div class="sp-section-label">Our Process</div>
-        <h2 class="sp-section-title">Our 6-Step Social Media <span>Process</span></h2>
-        <div class="sp-process">
-          <div class="sp-process-step"><div class="sp-process-num">01</div><div class="sp-process-title">Discovery</div><div class="sp-process-text">We learn your brand voice, audience, goals, and competitive landscape.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">02</div><div class="sp-process-title">Research</div><div class="sp-process-text">We analyze your industry, competitors, and audience behavior to inform strategy.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">03</div><div class="sp-process-title">Strategy</div><div class="sp-process-text">We build a custom content strategy with posting schedules and content pillars.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">04</div><div class="sp-process-title">Content Creation</div><div class="sp-process-text">Our designers and copywriters craft scroll-stopping visuals and captions.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">05</div><div class="sp-process-title">Review</div><div class="sp-process-text">You approve content before publishing. We refine based on your feedback.</div></div>
-          <div class="sp-process-step"><div class="sp-process-num">06</div><div class="sp-process-title">Optimize</div><div class="sp-process-text">We track performance and continuously optimize for better results.</div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- COVER FLOW SHOWCASE -->
-    <section class="cf-section" id="sm-coverflow">
-      <div class="container">
-        <div class="sp-section-label">Our Work</div>
-        <h2 class="sp-section-title">Social Media <span>Portfolio</span></h2>
-        <p class="sp-subtitle" style="margin-bottom:48px">Explore a selection of high-performing social media campaigns and creative designs crafted for brands across different industries.</p>
-      </div>
-      <div class="cf-stage" id="cf-stage">
+          <div class="sp-hero-showcase">
+            <div class="cf-stage" id="cf-stage">
 
         <!-- SLIDE 0: FACEBOOK -->
         <div class="cf-slide center" data-index="0">
@@ -429,32 +304,131 @@
 
       </div>
       <div class="cf-counter"><span id="cf-current">01</span> / 04</div>
-    </section>
-
-    <!-- CLIENT RESULTS -->
-    <section class="sp-section">
-      <div class="container">
-        <div class="sp-section-label">Client Results</div>
-        <h2 class="sp-section-title">Social Media That <span>Drives Results</span></h2>
-        <div class="sp-stats">
-          <div class="sp-stat"><div class="sp-stat-num" data-target="280" data-suffix="%">0%</div><div class="sp-stat-label">Average Engagement Increase</div></div>
-          <div class="sp-stat"><div class="sp-stat-num" data-target="3.8" data-suffix="×" data-decimal="1">0×</div><div class="sp-stat-label">Follower Growth Rate</div></div>
-          <div class="sp-stat"><div class="sp-stat-num" data-target="45" data-suffix="+">0+</div><div class="sp-stat-label">Posts Per Month</div></div>
-          <div class="sp-stat"><div class="sp-stat-num" data-target="96" data-suffix="%">0%</div><div class="sp-stat-label">Client Retention Rate</div></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- BOTTOM CTA -->
-    <section class="sp-section sm-bottom-cta">
+    <!-- WHAT WE DELIVER -->
       <div class="container">
-        <div class="sm-bottom-cta-inner">
+        <div class="sp-section-label">What We Deliver</div>
+        <h2 class="sp-section-title">Our Social Media <span>Services</span></h2>
+        <div class="svc-rows">
+          <div class="svc-row">
+            <div class="svc-row-line"><div class="svc-row-dot"></div><div class="svc-row-stem"></div></div>
+            <div class="svc-row-content">
+              <div class="svc-row-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M16 2v4M8 2v4M3 10h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+              <div class="svc-row-info"><div class="svc-row-title">Content Calendar</div><div class="svc-row-desc">Monthly content plans with themed posting schedules aligned to your business goals.</div></div>
+            </div>
+          </div>
+          <div class="svc-row">
+            <div class="svc-row-line"><div class="svc-row-dot"></div><div class="svc-row-stem"></div></div>
+            <div class="svc-row-content">
+              <div class="svc-row-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <div class="svc-row-info"><div class="svc-row-title">Feed Posts & Carousels</div><div class="svc-row-desc">Eye-catching graphics and multi-slide posts optimized for each platform's algorithm.</div></div>
+            </div>
+          </div>
+          <div class="svc-row">
+            <div class="svc-row-line"><div class="svc-row-dot"></div><div class="svc-row-stem"></div></div>
+            <div class="svc-row-content">
+              <div class="svc-row-icon"><svg viewBox="0 0 24 24" fill="none"><polygon points="5 3 19 12 5 21 5 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+              <div class="svc-row-info"><div class="svc-row-title">Stories & Reels</div><div class="svc-row-desc">Short-form video content and interactive stories that maximize reach and engagement.</div></div>
+            </div>
+          </div>
+          <div class="svc-row">
+            <div class="svc-row-line"><div class="svc-row-dot"></div><div class="svc-row-stem"></div></div>
+            <div class="svc-row-content">
+              <div class="svc-row-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/></svg></div>
+              <div class="svc-row-info"><div class="svc-row-title">Community Management</div><div class="svc-row-desc">Daily engagement, comment responses, and DM management to keep your audience active.</div></div>
+            </div>
+          </div>
+          <div class="svc-row">
+            <div class="svc-row-line"><div class="svc-row-dot"></div><div class="svc-row-stem"></div></div>
+            <div class="svc-row-content">
+              <div class="svc-row-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7V4h16v3M9 20h6M12 4v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <div class="svc-row-info"><div class="svc-row-title">Hashtag Strategy</div><div class="svc-row-desc">Research-backed hashtag sets that increase discoverability and reach new audiences.</div></div>
+            </div>
+          </div>
+          <div class="svc-row">
+            <div class="svc-row-line"><div class="svc-row-dot"></div><div class="svc-row-stem"></div></div>
+            <div class="svc-row-content">
+              <div class="svc-row-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <div class="svc-row-info"><div class="svc-row-title">Analytics & Reporting</div><div class="svc-row-desc">Monthly performance reports with insights, recommendations, and growth metrics.</div></div>
+            </div>
+          </div>
+          <div class="svc-row">
+            <div class="svc-row-line"><div class="svc-row-dot"></div><div class="svc-row-stem"></div></div>
+            <div class="svc-row-content">
+              <div class="svc-row-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+              <div class="svc-row-info"><div class="svc-row-title">Competitor Analysis</div><div class="svc-row-desc">We monitor your competitors' strategies to keep you ahead of the curve.</div></div>
+            </div>
+          </div>
+          <div class="svc-row">
+            <div class="svc-row-line"><div class="svc-row-dot"></div></div>
+            <div class="svc-row-content">
+              <div class="svc-row-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <div class="svc-row-info"><div class="svc-row-title">Trend Jacking</div><div class="svc-row-desc">We ride trending topics and formats to maximize your brand's visibility and relevance.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-section-label">Our Process</div>
+        <h2 class="sp-section-title">Our 7-Step Social Media <span>Process</span></h2>
+        <div class="proc-grid">
+          <div class="proc-item"><div class="proc-num">01</div><div class="proc-name">Discovery</div><div class="proc-desc">We learn your brand voice, audience, goals, and competitive landscape.</div></div>
+          <div class="proc-item"><div class="proc-num">02</div><div class="proc-name">Research</div><div class="proc-desc">We analyze your industry, competitors, and audience behavior.</div></div>
+          <div class="proc-item"><div class="proc-num">03</div><div class="proc-name">Strategy</div><div class="proc-desc">We build a custom content strategy with posting schedules.</div></div>
+          <div class="proc-item"><div class="proc-num">04</div><div class="proc-name">Content Creation</div><div class="proc-desc">Our designers craft scroll-stopping visuals and captions.</div></div>
+          <div class="proc-item"><div class="proc-num">05</div><div class="proc-name">Review</div><div class="proc-desc">You approve content before publishing.</div></div>
+          <div class="proc-item"><div class="proc-num">06</div><div class="proc-name">Publishing</div><div class="proc-desc">We schedule and publish content at optimal times.</div></div>
+          <div class="proc-item"><div class="proc-num">07</div><div class="proc-name">Optimization</div><div class="proc-desc">We track performance and continuously optimize.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY VIVEDFX -->
+    <section class="sp-section">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:56px">
+          <div class="sp-section-label">WHY VIVEDFX</div>
+          <h2 class="sp-section-title">We Don't Just Manage Social Media —<br/>We Build Brands That <span>Dominate Feed.</span></h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3 class="why-card-title">Consistent Growth</h3>
+            <p class="why-card-desc">3.5× more engagement and 67% more leads.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-card-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <h3 class="why-card-title">Platform Expertise</h3>
+            <p class="why-card-desc">Strategies built on data, not guesswork.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <h3 class="why-card-title">Community Building</h3>
+            <p class="why-card-desc">Turn followers into loyal customers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="sp-section">
+      <div class="container">
+        <div class="sp-cta">
           <div class="sp-cta-orb sp-cta-orb-1"></div><div class="sp-cta-orb sp-cta-orb-2"></div>
-          <h2 class="sm-bottom-cta-title">Ready to Grow Your<br/><span>Social Presence?</span></h2>
-          <p class="sm-bottom-cta-sub">Let's create content that attracts attention, builds trust, and turns followers into loyal customers.</p>
-          <div class="sm-bottom-cta-btns">
-            <a href="brief-social-media.html" class="btn btn-primary btn-lg magnetic-btn"><span>Start Your Project</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            <a href="portfolio.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>View More Projects</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <h2 class="sp-cta-title">Ready to Grow Your<br/><span>Social Presence?</span></h2>
+          <p class="sp-cta-sub">Let's create content that attracts attention, builds trust, and turns followers into loyal customers.</p>
+          <div class="sp-cta-btns">
+            <a href="https://calendly.com/vivedfx" class="btn btn-primary btn-lg magnetic-btn" target="_blank" rel="noopener noreferrer"><span>Book Free Strategy Call</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="brief-social-media.html" class="btn btn-primary btn-lg magnetic-btn" style="background:transparent;border:1px solid var(--accent)"><span>Start Your Brief</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="https://wa.me/1234567890" class="btn btn-ghost btn-lg" target="_blank"><span>Contact Us on WhatsApp</span></a>
           </div>
         </div>
       </div>
@@ -493,31 +467,49 @@
   </main>
   <script src="main.js" defer></script>
   <script>
-    // Stats counter animation
+    // Process scroll animation
     (function(){
-      const stats=document.querySelectorAll('.sp-stat-num[data-target]');
-      const observer=new IntersectionObserver((entries)=>{
-        entries.forEach(entry=>{
-          if(entry.isIntersecting){
-            const el=entry.target;
-            const target=parseFloat(el.dataset.target);
-            const suffix=el.dataset.suffix||'';
-            const prefix=el.dataset.prefix||'';
-            const decimal=parseInt(el.dataset.decimal)||0;
-            let start=0;const duration=2000;const startTime=performance.now();
-            function update(now){
-              const elapsed=now-startTime;const progress=Math.min(elapsed/duration,1);
-              const eased=1-Math.pow(1-progress,3);
-              const current=eased*target;
-              el.textContent=prefix+(decimal>0?current.toFixed(decimal):Math.floor(current))+suffix;
-              if(progress<1)requestAnimationFrame(update);
-            }
-            requestAnimationFrame(update);
-            observer.unobserve(el);
-          }
+      var items=document.querySelectorAll('.proc-item');
+      if(!items.length)return;
+      var observer=new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){entry.target.style.opacity='1';entry.target.style.transform='translateY(0)'}
         });
-      },{threshold:0.3});
-      stats.forEach(s=>observer.observe(s));
+      },{threshold:0.2});
+      items.forEach(function(item,i){
+        item.style.opacity='0';item.style.transform='translateY(30px)';item.style.transition='opacity .6s '+(i*.12)+'s, transform .6s '+(i*.12)+'s';
+        observer.observe(item);
+      });
+    })();
+
+    // Why cards scroll animation
+    (function(){
+      var cards=document.querySelectorAll('.why-card');
+      if(!cards.length)return;
+      var observer=new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){entry.target.style.opacity='1';entry.target.style.transform='translateY(0)'}
+        });
+      },{threshold:0.2});
+      cards.forEach(function(card,i){
+        card.style.opacity='0';card.style.transform='translateY(30px)';card.style.transition='opacity .6s '+(i*.15)+'s, transform .6s '+(i*.15)+'s';
+        observer.observe(card);
+      });
+    })();
+
+    // Service rows scroll animation
+    (function(){
+      var rows=document.querySelectorAll('.svc-row');
+      if(!rows.length)return;
+      var observer=new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){entry.target.style.opacity='1';entry.target.style.transform='translateX(0)'}
+        });
+      },{threshold:0.2});
+      rows.forEach(function(row,i){
+        row.style.opacity='0';row.style.transform='translateX(-30px)';row.style.transition='opacity .5s '+(i*.08)+'s, transform .5s '+(i*.08)+'s';
+        observer.observe(row);
+      });
     })();
 
     // ===== COVER FLOW SHOWCASE =====

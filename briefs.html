@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Brief — vivedfx</title>
+  <meta name="description" content="Choose your service and complete a project brief. Help our team understand your business, goals, and requirements before we begin." />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root { --accent: #ec1f27; }
+
+    /* HERO */
+    .br-hero {
+      min-height: 65vh;
+      background: var(--dark);
+      display: flex; align-items: flex-end;
+      padding: 140px 0 80px;
+      position: relative; overflow: hidden;
+    }
+    .br-hero-bg {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(236,31,39,0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .br-hero-inner { position: relative; z-index: 1; text-align: center; max-width: 720px; margin: 0 auto; }
+    .br-hero-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--accent);
+      background: rgba(236,31,39,0.1); border: 1px solid rgba(236,31,39,0.2);
+      border-radius: 100px; padding: 6px 16px; margin-bottom: 24px;
+    }
+    .br-hero-label-dot { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; }
+    .br-hero-title {
+      font-family: var(--font-heading); font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 900; color: var(--white); line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    .br-hero-title span { color: var(--accent); }
+    .br-hero-sub { font-size: 1.05rem; color: var(--muted); max-width: 600px; margin: 0 auto 36px; line-height: 1.7; }
+    .br-hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    /* SECTIONS */
+    .br-section { padding: 100px 0; background: var(--dark); }
+    .br-section-alt { background: var(--dark-2); }
+    .br-section-label {
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 12px;
+      text-align: center;
+    }
+    .br-section-title {
+      font-family: var(--font-heading); font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 900; color: var(--white); margin-bottom: 20px; line-height: 1.15;
+      text-align: center;
+    }
+    .br-section-title span { color: var(--accent); }
+    .br-section-sub {
+      font-size: 1rem; color: var(--muted); max-width: 560px; line-height: 1.7;
+      text-align: center; margin: 0 auto 56px;
+    }
+
+    /* BRIEF CARDS */
+    .br-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+    }
+    .br-card {
+      background: var(--dark-3); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 32px;
+      transition: border-color 0.3s, transform 0.3s;
+      display: flex; flex-direction: column;
+    }
+    .br-card:hover { border-color: var(--border-hover); transform: translateY(-4px); }
+    .br-card-icon {
+      width: 52px; height: 52px; background: rgba(236,31,39,0.08);
+      border: 1px solid rgba(236,31,39,0.15); border-radius: var(--radius-md);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--accent); margin-bottom: 20px;
+    }
+    .br-card-icon svg { width: 26px; height: 26px; }
+    .br-card-title {
+      font-family: var(--font-heading); font-size: 1.15rem; font-weight: 800;
+      color: var(--white); margin-bottom: 8px; line-height: 1.2;
+    }
+    .br-card-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.6; margin-bottom: 20px; flex: 1; }
+    .br-card-meta {
+      display: flex; align-items: center; justify-content: space-between;
+      padding-top: 16px; border-top: 1px solid var(--border);
+    }
+    .br-card-time {
+      font-size: 0.78rem; color: var(--muted); display: flex; align-items: center; gap: 6px;
+    }
+    .br-card-time svg { width: 14px; height: 14px; color: var(--accent); }
+    .br-card-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: var(--accent); font-size: 0.85rem; font-weight: 600;
+      text-decoration: none; transition: gap 0.2s;
+    }
+    .br-card-link:hover { gap: 10px; }
+    .br-card-link svg { width: 14px; height: 14px; }
+
+    /* HOW IT WORKS */
+    .br-steps {
+      display: flex; gap: 0; position: relative;
+      max-width: 900px; margin: 0 auto;
+    }
+    .br-step {
+      flex: 1; text-align: center; position: relative; padding: 0 16px;
+    }
+    .br-step-num {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--dark-3); border: 2px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px; position: relative; z-index: 2;
+      transition: border-color 0.3s, background 0.3s;
+    }
+    .br-step-num span {
+      font-family: var(--font-heading); font-size: 1rem; font-weight: 800;
+      color: var(--muted); transition: color 0.3s;
+    }
+    .br-step.active .br-step-num {
+      border-color: var(--accent); background: rgba(236,31,39,0.1);
+    }
+    .br-step.active .br-step-num span { color: var(--accent); }
+    .br-step-title {
+      font-family: var(--font-heading); font-size: 0.95rem; font-weight: 700;
+      color: var(--white); margin-bottom: 6px;
+    }
+    .br-step-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+    .br-step-line {
+      position: absolute; top: 28px; left: calc(50% + 32px); right: calc(-50% + 32px);
+      height: 2px; background: var(--border); z-index: 1;
+    }
+    .br-step:last-child .br-step-line { display: none; }
+
+    /* WHY CARDS */
+    .br-why-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+    }
+    .br-why-card {
+      background: var(--dark-3); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 32px 24px;
+      text-align: center; transition: border-color 0.3s, transform 0.3s;
+    }
+    .br-why-card:hover { border-color: var(--border-hover); transform: translateY(-4px); }
+    .br-why-icon {
+      width: 48px; height: 48px; background: rgba(236,31,39,0.08);
+      border: 1px solid rgba(236,31,39,0.15); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px; color: var(--accent);
+    }
+    .br-why-icon svg { width: 22px; height: 22px; }
+    .br-why-title {
+      font-family: var(--font-heading); font-size: 1.05rem; font-weight: 700;
+      color: var(--white); margin-bottom: 8px;
+    }
+    .br-why-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+
+    /* FAQ */
+    .br-faq { max-width: 680px; margin: 0 auto; }
+    .br-faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+    .br-faq-q {
+      width: 100%; display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 0; background: none; border: none; cursor: pointer;
+      text-align: left;
+    }
+    .br-faq-q-text {
+      font-family: var(--font-heading); font-size: 1rem; font-weight: 700;
+      color: var(--white); transition: color 0.2s;
+    }
+    .br-faq-q:hover .br-faq-q-text { color: var(--accent); }
+    .br-faq-q-icon {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: rgba(236,31,39,0.08); border: 1px solid rgba(236,31,39,0.15);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--accent); flex-shrink: 0; transition: transform 0.3s;
+    }
+    .br-faq-item.open .br-faq-q-icon { transform: rotate(45deg); }
+    .br-faq-a {
+      max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease;
+    }
+    .br-faq-item.open .br-faq-a { max-height: 200px; }
+    .br-faq-a-inner {
+      padding: 0 0 20px;
+      font-size: 0.92rem; color: var(--muted); line-height: 1.7;
+    }
+
+    /* CTA */
+    .br-cta {
+      background: var(--dark-3); border: 1px solid var(--border);
+      border-radius: var(--radius-xl); padding: 72px;
+      text-align: center; position: relative; overflow: hidden;
+    }
+    .br-cta-orb {
+      position: absolute; width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(236,31,39,0.15), transparent 70%);
+      border-radius: 50%; pointer-events: none;
+    }
+    .br-cta-orb-1 { top: -100px; left: -100px; }
+    .br-cta-orb-2 { bottom: -100px; right: -100px; }
+    .br-cta-title {
+      font-family: var(--font-heading); font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 900; color: var(--white); margin-bottom: 16px;
+      position: relative; z-index: 1;
+    }
+    .br-cta-title span { color: var(--accent); }
+    .br-cta-sub { color: var(--muted); font-size: 1.05rem; max-width: 500px; margin: 0 auto 36px; line-height: 1.7; position: relative; z-index: 1; }
+    .br-cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1; }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .br-grid { grid-template-columns: repeat(2, 1fr); }
+      .br-why-grid { grid-template-columns: repeat(2, 1fr); }
+      .br-steps { flex-wrap: wrap; gap: 24px; }
+      .br-step { flex: 0 0 calc(50% - 12px); }
+      .br-step-line { display: none; }
+    }
+    @media (max-width: 768px) {
+      .br-hero { min-height: 50vh; padding: 120px 0 60px; }
+      .br-section { padding: 72px 0; }
+      .br-grid { grid-template-columns: 1fr; }
+      .br-why-grid { grid-template-columns: 1fr; }
+      .br-step { flex: 0 0 100%; }
+      .br-cta { padding: 48px 24px; }
+      .br-faq-q-text { font-size: 0.92rem; }
+    }
+    @media (max-width: 480px) {
+      .br-hero { padding: 100px 0 48px; }
+      .br-hero-title { font-size: 2rem; }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Logo" class="logo">
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="index.html#industries" class="nav-link">Industries</a></li>
+        <li><a href="briefs.html" class="nav-link">Brief</a></li>
+        <li><a href="index.html#process" class="nav-link">Process</a></li>
+        <li><a href="index.html#testimonials" class="nav-link">Clients</a></li>
+      </ul>
+      <a href="https://calendly.com/vivedfx" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cta magnetic-btn" id="nav-cta-btn">
+        <span>Book a Call</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-menu-list" role="list">
+      <li class="mobile-menu-item"><a href="index.html#services" class="mobile-link">Services</a></li>
+      <li class="mobile-menu-item"><a href="index.html#portfolio" class="mobile-link">Portfolio</a></li>
+      <li class="mobile-menu-item"><a href="index.html#industries" class="mobile-link">Industries</a></li>
+      <li class="mobile-menu-item"><a href="briefs.html" class="mobile-link">Brief</a></li>
+      <li class="mobile-menu-item"><a href="index.html#process" class="mobile-link">Process</a></li>
+      <li class="mobile-menu-item"><a href="index.html#testimonials" class="mobile-link">Clients</a></li>
+    </ul>
+    <div class="mobile-menu-cta-wrap">
+      <a href="https://calendly.com/vivedfx" target="_blank" rel="noopener noreferrer" class="btn btn-primary mobile-menu-cta">
+        <span>Book a Call</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="br-hero">
+      <div class="br-hero-bg"></div>
+      <div class="container">
+        <div class="br-hero-inner">
+          <div class="br-hero-label reveal-up">
+            <span class="br-hero-label-dot"></span>
+            Project Brief
+          </div>
+          <h1 class="br-hero-title reveal-up delay-1">
+            Tell Us About <span>Your Project</span>
+          </h1>
+          <p class="br-hero-sub reveal-up delay-2">
+            Choose the service you need and complete a short project brief. This helps our team understand your business, goals, and requirements before we begin.
+          </p>
+          <div class="br-hero-btns reveal-up delay-3">
+            <a href="#brief-categories" class="btn btn-primary btn-lg magnetic-btn">
+              <span>Start Your Brief</span>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="index.html#contact" class="btn btn-ghost btn-lg magnetic-btn">
+              <span>Contact Our Team</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRIEF CATEGORIES -->
+    <section class="br-section" id="brief-categories">
+      <div class="container">
+        <div class="br-section-label reveal-up">Choose Your Service</div>
+        <h2 class="br-section-title reveal-up delay-1">Select Your <span>Project Brief</span></h2>
+        <p class="br-section-sub reveal-up delay-2">Pick the service that matches your needs. Each brief is designed to capture the exact details our team requires.</p>
+
+        <div class="br-grid">
+
+          <!-- 1. Graphic Design -->
+          <div class="br-card reveal-up">
+            <div class="br-card-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="br-card-title">Graphic Design Brief</div>
+            <div class="br-card-desc">Posters, social media graphics, print materials, packaging, and visual content.</div>
+            <div class="br-card-meta">
+              <span class="br-card-time">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                5 Minutes
+              </span>
+              <a href="brief-graphic-design.html" class="br-card-link">
+                Open Brief
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. Website Design -->
+          <div class="br-card reveal-up delay-1">
+            <div class="br-card-icon">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="br-card-title">Website Design Brief</div>
+            <div class="br-card-desc">Landing pages, corporate websites, e-commerce, and web applications.</div>
+            <div class="br-card-meta">
+              <span class="br-card-time">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                5 Minutes
+              </span>
+              <a href="brief-website.html" class="br-card-link">
+                Open Brief
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. Brand Identity -->
+          <div class="br-card reveal-up delay-2">
+            <div class="br-card-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="br-card-title">Brand Identity Brief</div>
+            <div class="br-card-desc">Logo design, brand guidelines, color palettes, typography, and brand voice.</div>
+            <div class="br-card-meta">
+              <span class="br-card-time">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                7 Minutes
+              </span>
+              <a href="brief-branding.html" class="br-card-link">
+                Open Brief
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. Social Media Management -->
+          <div class="br-card reveal-up">
+            <div class="br-card-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="br-card-title">Social Media Brief</div>
+            <div class="br-card-desc">Content strategy, posting schedules, community management, and analytics.</div>
+            <div class="br-card-meta">
+              <span class="br-card-time">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                5 Minutes
+              </span>
+              <a href="brief-social-media.html" class="br-card-link">
+                Open Brief
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 5. Content Creation -->
+          <div class="br-card reveal-up delay-1">
+            <div class="br-card-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="br-card-title">Content Creation Brief</div>
+            <div class="br-card-desc">Video production, motion graphics, reels, TikToks, and creative content.</div>
+            <div class="br-card-meta">
+              <span class="br-card-time">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                5 Minutes
+              </span>
+              <a href="brief-content-creation.html" class="br-card-link">
+                Open Brief
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 6. Photography -->
+          <div class="br-card reveal-up delay-2">
+            <div class="br-card-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="13" r="4" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div class="br-card-title">Photography Brief</div>
+            <div class="br-card-desc">Product photography, corporate shoots, events, headshots, and lifestyle imagery.</div>
+            <div class="br-card-meta">
+              <span class="br-card-time">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                5 Minutes
+              </span>
+              <a href="brief-photography.html" class="br-card-link">
+                Open Brief
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 7. Videography -->
+          <div class="br-card reveal-up">
+            <div class="br-card-icon">
+              <svg viewBox="0 0 24 24" fill="none"><polygon points="23 7 16 12 23 17 23 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1" y="5" width="15" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div class="br-card-title">Videography Brief</div>
+            <div class="br-card-desc">Commercial videos, brand films, testimonials, drones, and event coverage.</div>
+            <div class="br-card-meta">
+              <span class="br-card-time">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                5 Minutes
+              </span>
+              <a href="brief-videography.html" class="br-card-link">
+                Open Brief
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 8. Media Buying -->
+          <div class="br-card reveal-up delay-1">
+            <div class="br-card-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="br-card-title">Media Buying Brief</div>
+            <div class="br-card-desc">TV, radio, OOH, print, and digital ad placements across all channels.</div>
+            <div class="br-card-meta">
+              <span class="br-card-time">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                5 Minutes
+              </span>
+              <a href="brief-performance-marketing.html" class="br-card-link">
+                Open Brief
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 9. SEO -->
+          <div class="br-card reveal-up delay-2">
+            <div class="br-card-icon">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="br-card-title">SEO Brief</div>
+            <div class="br-card-desc">Technical SEO, content optimization, link building, and search visibility.</div>
+            <div class="br-card-meta">
+              <span class="br-card-time">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                4 Minutes
+              </span>
+              <a href="brief-seo.html" class="br-card-link">
+                Open Brief
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 10. Marketing Strategy -->
+          <div class="br-card reveal-up">
+            <div class="br-card-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="br-card-title">Marketing Strategy Brief</div>
+            <div class="br-card-desc">Go-to-market plans, brand positioning, growth strategy, and market research.</div>
+            <div class="br-card-meta">
+              <span class="br-card-time">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                6 Minutes
+              </span>
+              <a href="brief-marketing-strategy.html" class="br-card-link">
+                Open Brief
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 11. Business Consultation -->
+          <div class="br-card reveal-up delay-1">
+            <div class="br-card-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="br-card-title">Business Consultation Brief</div>
+            <div class="br-card-desc">Business audits, growth consulting, digital transformation, and advisory.</div>
+            <div class="br-card-meta">
+              <span class="br-card-time">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                5 Minutes
+              </span>
+              <a href="brief-consultation.html" class="br-card-link">
+                Open Brief
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="br-section br-section-alt" id="how-it-works">
+      <div class="container">
+        <div class="br-section-label reveal-up">Simple Process</div>
+        <h2 class="br-section-title reveal-up delay-1">How It <span>Works</span></h2>
+        <p class="br-section-sub reveal-up delay-2">Five simple steps from brief submission to project kickoff.</p>
+
+        <div class="br-steps reveal-up delay-3">
+          <div class="br-step active">
+            <div class="br-step-num"><span>1</span></div>
+            <div class="br-step-line"></div>
+            <div class="br-step-title">Choose Your Service</div>
+            <div class="br-step-desc">Select the service that matches your project needs.</div>
+          </div>
+          <div class="br-step active">
+            <div class="br-step-num"><span>2</span></div>
+            <div class="br-step-line"></div>
+            <div class="br-step-title">Fill The Brief</div>
+            <div class="br-step-desc">Answer a few short questions about your business and goals.</div>
+          </div>
+          <div class="br-step active">
+            <div class="br-step-num"><span>3</span></div>
+            <div class="br-step-line"></div>
+            <div class="br-step-title">Review</div>
+            <div class="br-step-desc">Double-check your information before submitting.</div>
+          </div>
+          <div class="br-step active">
+            <div class="br-step-num"><span>4</span></div>
+            <div class="br-step-line"></div>
+            <div class="br-step-title">Submit Request</div>
+            <div class="br-step-desc">Send your brief to our team securely.</div>
+          </div>
+          <div class="br-step active">
+            <div class="br-step-num"><span>5</span></div>
+            <div class="br-step-title">We Contact You</div>
+            <div class="br-step-desc">Our team reaches out within 24 hours.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY COMPLETE A BRIEF -->
+    <section class="br-section" id="why-brief">
+      <div class="container">
+        <div class="br-section-label reveal-up">Why Brief Us</div>
+        <h2 class="br-section-title reveal-up delay-1">Why Complete <span>A Brief?</span></h2>
+        <p class="br-section-sub reveal-up delay-2">A few minutes of your time saves hours of back-and-forth and ensures the best possible outcome.</p>
+
+        <div class="br-why-grid">
+          <div class="br-why-card reveal-up">
+            <div class="br-why-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div class="br-why-title">Better Understanding</div>
+            <div class="br-why-desc">We get a clear picture of your brand, goals, and challenges from day one.</div>
+          </div>
+          <div class="br-why-card reveal-up delay-1">
+            <div class="br-why-icon">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><polyline points="12 6 12 12 16 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="br-why-title">Faster Delivery</div>
+            <div class="br-why-desc">Pre-filled briefs cut project timelines by 40% on average.</div>
+          </div>
+          <div class="br-why-card reveal-up delay-2">
+            <div class="br-why-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="br-why-title">Accurate Pricing</div>
+            <div class="br-why-desc">Detailed briefs mean precise quotes with no hidden costs or surprises.</div>
+          </div>
+          <div class="br-why-card reveal-up delay-3">
+            <div class="br-why-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="br-why-title">Higher Quality</div>
+            <div class="br-why-desc">Clear direction leads to results that exceed expectations every time.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="br-section br-section-alt" id="faq">
+      <div class="container">
+        <div class="br-section-label reveal-up">FAQ</div>
+        <h2 class="br-section-title reveal-up delay-1">Frequently Asked <span>Questions</span></h2>
+        <p class="br-section-sub reveal-up delay-2">Everything you need to know before starting your brief.</p>
+
+        <div class="br-faq reveal-up delay-3">
+          <div class="br-faq-item">
+            <button class="br-faq-q" aria-expanded="false">
+              <span class="br-faq-q-text">How long does the brief take?</span>
+              <span class="br-faq-q-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 3v8M3 7h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="br-faq-a"><div class="br-faq-a-inner">Most briefs take 4 to 7 minutes to complete. You can save your progress and come back later if needed.</div></div>
+          </div>
+          <div class="br-faq-item">
+            <button class="br-faq-q" aria-expanded="false">
+              <span class="br-faq-q-text">Can I edit my brief after submission?</span>
+              <span class="br-faq-q-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 3v8M3 7h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="br-faq-a"><div class="br-faq-a-inner">Yes. Once you submit, our team will reach out within 24 hours. You can request changes or updates at any point during the conversation.</div></div>
+          </div>
+          <div class="br-faq-item">
+            <button class="br-faq-q" aria-expanded="false">
+              <span class="br-faq-q-text">Is it completely free?</span>
+              <span class="br-faq-q-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 3v8M3 7h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="br-faq-a"><div class="br-faq-a-inner">Absolutely. The brief is 100% free with no obligation. It simply helps us prepare the best possible solution for your project.</div></div>
+          </div>
+          <div class="br-faq-item">
+            <button class="br-faq-q" aria-expanded="false">
+              <span class="br-faq-q-text">What happens after I submit?</span>
+              <span class="br-faq-q-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 3v8M3 7h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            </button>
+            <div class="br-faq-a"><div class="br-faq-a-inner">Our team reviews your brief, prepares a tailored proposal, and contacts you within 24 hours to discuss next steps.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="br-section">
+      <div class="container">
+        <div class="br-cta reveal-up">
+          <div class="br-cta-orb br-cta-orb-1"></div>
+          <div class="br-cta-orb br-cta-orb-2"></div>
+          <h2 class="br-cta-title">Ready To <span>Start Your Project?</span></h2>
+          <p class="br-cta-sub">Complete your project brief today and let our team build something exceptional for your business.</p>
+          <div class="br-cta-btns">
+            <a href="#brief-categories" class="btn btn-primary btn-lg magnetic-btn">
+              <span>Start Your Brief</span>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <path d="M3.5 9h11M10.5 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="index.html#contact" class="btn btn-ghost btn-lg magnetic-btn">
+              <span>Talk To Our Team</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact" aria-label="Footer and contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo" aria-label="vivedfx Home">
+            <img src="assets/logo.png" alt="Logo" class="logo">
+          </a>
+          <p class="footer-tagline">We build brands people remember. Premium marketing agency serving businesses that demand results.</p>
+          <div class="footer-socials">
+            <a href="https://instagram.com/vivedfx" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow vivedfx on Instagram">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </a>
+            <a href="https://facebook.com/vivedfx" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow vivedfx on Facebook">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://linkedin.com/company/vivedfx" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow vivedfx on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M7 10v7M7 7v.01M11 17v-3.5a2.5 2.5 0 015 0V17M11 10v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <a href="https://wa.me/1234567890" class="social-link social-link-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contact vivedfx on WhatsApp">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://tiktok.com/@vivedfx" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow vivedfx on TikTok">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Services</h4>
+          <ul role="list">
+            <li><a href="services.html" class="footer-link" style="font-weight:600;">View All Services</a></li>
+            <li><a href="service-social-media.html" class="footer-link">Social Media Management</a></li>
+            <li><a href="service-brand-identity.html" class="footer-link">Brand Identity</a></li>
+            <li><a href="service-graphic-design.html" class="footer-link">Graphic Design</a></li>
+            <li><a href="service-video-editing.html" class="footer-link">Video Editing</a></li>
+            <li><a href="service-paid-advertising.html" class="footer-link">Paid Advertising</a></li>
+            <li><a href="service-website-design.html" class="footer-link">Website Design</a></li>
+            <li><a href="service-videography.html" class="footer-link">Videography</a></li>
+            <li><a href="service-photography.html" class="footer-link">Photography</a></li>
+            <li><a href="service-media-buying.html" class="footer-link">Media Buying</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Industries</h4>
+          <ul role="list">
+            <li><a href="index.html#industries" class="footer-link">Doctors &amp; Clinics</a></li>
+            <li><a href="index.html#industries" class="footer-link">Gyms &amp; Fitness</a></li>
+            <li><a href="index.html#industries" class="footer-link">Engineering Firms</a></li>
+            <li><a href="index.html#industries" class="footer-link">Corporate Businesses</a></li>
+            <li><a href="index.html#industries" class="footer-link">Restaurants &amp; F&amp;B</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Briefs</h4>
+          <ul role="list">
+            <li><a href="briefs.html" class="footer-link">All Briefs</a></li>
+            <li><a href="brief-branding.html" class="footer-link">Brand Identity</a></li>
+            <li><a href="brief-social-media.html" class="footer-link">Social Media</a></li>
+            <li><a href="brief-website.html" class="footer-link">Website Design</a></li>
+            <li><a href="brief-content-creation.html" class="footer-link">Content Creation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 vivedfx. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-link-sm">Privacy Policy</a>
+          <span class="footer-bottom-sep" aria-hidden="true"></span>
+          <a href="#" class="footer-link-sm">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.br-faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.br-faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.br-faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+        btn.setAttribute('aria-expanded', !isOpen);
+      });
+    });
+  </script>
+</body>
+</html>

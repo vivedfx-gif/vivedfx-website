@@ -376,61 +376,440 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 })();
 
 /* ============================================================
-   9. CONTACT FORM
+   9. PROJECT MODAL
    ============================================================ */
-(function initContactForm() {
-  const form = $('#contact-form');
-  const successEl = $('#form-success');
-  if (!form) return;
+(function initProjectModal() {
+  const backdrop = $('#pm-backdrop');
+  const modal = $('#pm-modal');
+  const closeBtn = $('#pm-close');
+  const form = $('#pm-form');
+  const successEl = $('#pm-success');
+  const successClose = $('#pm-success-close');
+  if (!backdrop || !modal) return;
 
-  const showError = (input, msg) => {
-    input.style.borderColor = '#FF1023';
-    let errEl = input.nextElementSibling;
-    if (!errEl || !errEl.classList.contains('form-err')) {
-      errEl = document.createElement('span');
-      errEl.className = 'form-err';
-      errEl.style.cssText = 'color:#FF1023;font-size:0.72rem;font-weight:500;';
-      input.parentNode.appendChild(errEl);
+  // ── Country data ──
+  const countries = [
+    { code:'EG', name:'Egypt', dial:'+20', flag:'🇪🇬' },
+    { code:'SA', name:'Saudi Arabia', dial:'+966', flag:'🇸🇦' },
+    { code:'AE', name:'United Arab Emirates', dial:'+971', flag:'🇦🇪' },
+    { code:'QA', name:'Qatar', dial:'+974', flag:'🇶🇦' },
+    { code:'KW', name:'Kuwait', dial:'+965', flag:'🇰🇼' },
+    { code:'BH', name:'Bahrain', dial:'+973', flag:'🇧🇭' },
+    { code:'OM', name:'Oman', dial:'+968', flag:'🇴🇲' },
+    { code:'JO', name:'Jordan', dial:'+962', flag:'🇯🇴' },
+    { code:'LB', name:'Lebanon', dial:'+961', flag:'🇱🇧' },
+    { code:'IQ', name:'Iraq', dial:'+964', flag:'🇮🇶' },
+    { code:'LY', name:'Libya', dial:'+218', flag:'🇱🇾' },
+    { code:'TN', name:'Tunisia', dial:'+216', flag:'🇹🇳' },
+    { code:'DZ', name:'Algeria', dial:'+213', flag:'🇩🇿' },
+    { code:'MA', name:'Morocco', dial:'+212', flag:'🇲🇦' },
+    { code:'SD', name:'Sudan', dial:'+249', flag:'🇸🇩' },
+    { code:'PS', name:'Palestine', dial:'+970', flag:'🇵🇸' },
+    { code:'SY', name:'Syria', dial:'+963', flag:'🇸🇾' },
+    { code:'YE', name:'Yemen', dial:'+967', flag:'🇾🇪' },
+    { code:'US', name:'United States', dial:'+1', flag:'🇺🇸' },
+    { code:'GB', name:'United Kingdom', dial:'+44', flag:'🇬🇧' },
+    { code:'CA', name:'Canada', dial:'+1', flag:'🇨🇦' },
+    { code:'AU', name:'Australia', dial:'+61', flag:'🇦🇺' },
+    { code:'DE', name:'Germany', dial:'+49', flag:'🇩🇪' },
+    { code:'FR', name:'France', dial:'+33', flag:'🇫🇷' },
+    { code:'IT', name:'Italy', dial:'+39', flag:'🇮🇹' },
+    { code:'ES', name:'Spain', dial:'+34', flag:'🇪🇸' },
+    { code:'PT', name:'Portugal', dial:'+351', flag:'🇵🇹' },
+    { code:'NL', name:'Netherlands', dial:'+31', flag:'🇳🇱' },
+    { code:'BE', name:'Belgium', dial:'+32', flag:'🇧🇪' },
+    { code:'CH', name:'Switzerland', dial:'+41', flag:'🇨🇭' },
+    { code:'AT', name:'Austria', dial:'+43', flag:'🇦🇹' },
+    { code:'SE', name:'Sweden', dial:'+46', flag:'🇸🇪' },
+    { code:'NO', name:'Norway', dial:'+47', flag:'🇳🇴' },
+    { code:'DK', name:'Denmark', dial:'+45', flag:'🇩🇰' },
+    { code:'FI', name:'Finland', dial:'+358', flag:'🇫🇮' },
+    { code:'IE', name:'Ireland', dial:'+353', flag:'🇮🇪' },
+    { code:'PL', name:'Poland', dial:'+48', flag:'🇵🇱' },
+    { code:'CZ', name:'Czech Republic', dial:'+420', flag:'🇨🇿' },
+    { code:'RO', name:'Romania', dial:'+40', flag:'🇷🇴' },
+    { code:'HU', name:'Hungary', dial:'+36', flag:'🇭🇺' },
+    { code:'BG', name:'Bulgaria', dial:'+359', flag:'🇧🇬' },
+    { code:'HR', name:'Croatia', dial:'+385', flag:'🇭🇷' },
+    { code:'SK', name:'Slovakia', dial:'+421', flag:'🇸🇰' },
+    { code:'SI', name:'Slovenia', dial:'+386', flag:'🇸🇮' },
+    { code:'LT', name:'Lithuania', dial:'+370', flag:'🇱🇹' },
+    { code:'LV', name:'Latvia', dial:'+371', flag:'🇱🇻' },
+    { code:'UA', name:'Ukraine', dial:'+380', flag:'🇺🇦' },
+    { code:'RU', name:'Russia', dial:'+7', flag:'🇷🇺' },
+    { code:'TR', name:'Turkey', dial:'+90', flag:'🇹🇷' },
+    { code:'IN', name:'India', dial:'+91', flag:'🇮🇳' },
+    { code:'CN', name:'China', dial:'+86', flag:'🇨🇳' },
+    { code:'JP', name:'Japan', dial:'+81', flag:'🇯🇵' },
+    { code:'KR', name:'South Korea', dial:'+82', flag:'🇰🇷' },
+    { code:'BR', name:'Brazil', dial:'+55', flag:'🇧🇷' },
+    { code:'MX', name:'Mexico', dial:'+52', flag:'🇲🇽' },
+    { code:'AR', name:'Argentina', dial:'+54', flag:'🇦🇷' },
+    { code:'CL', name:'Chile', dial:'+56', flag:'🇨🇱' },
+    { code:'CO', name:'Colombia', dial:'+57', flag:'🇨🇴' },
+    { code:'PE', name:'Peru', dial:'+51', flag:'🇵🇪' },
+    { code:'PK', name:'Pakistan', dial:'+92', flag:'🇵🇰' },
+    { code:'BD', name:'Bangladesh', dial:'+880', flag:'🇧🇩' },
+    { code:'ID', name:'Indonesia', dial:'+62', flag:'🇮🇩' },
+    { code:'MY', name:'Malaysia', dial:'+60', flag:'🇲🇾' },
+    { code:'PH', name:'Philippines', dial:'+63', flag:'🇵🇭' },
+    { code:'TH', name:'Thailand', dial:'+66', flag:'🇹🇭' },
+    { code:'VN', name:'Vietnam', dial:'+84', flag:'🇻🇳' },
+    { code:'SG', name:'Singapore', dial:'+65', flag:'🇸🇬' },
+    { code:'NZ', name:'New Zealand', dial:'+64', flag:'🇳🇿' },
+    { code:'ZA', name:'South Africa', dial:'+27', flag:'🇿🇦' },
+    { code:'NG', name:'Nigeria', dial:'+234', flag:'🇳🇬' },
+    { code:'KE', name:'Kenya', dial:'+254', flag:'🇰🇪' },
+    { code:'GH', name:'Ghana', dial:'+233', flag:'🇬🇭' },
+    { code:'IL', name:'Israel', dial:'+972', flag:'🇮🇱' },
+    { code:'CY', name:'Cyprus', dial:'+357', flag:'🇨🇾' },
+    { code:'MT', name:'Malta', dial:'+356', flag:'🇲🇹' },
+    { code:'IS', name:'Iceland', dial:'+354', flag:'🇮🇸' },
+    { code:'LU', name:'Luxembourg', dial:'+352', flag:'🇱🇺' },
+    { code:'EE', name:'Estonia', dial:'+372', flag:'🇪🇪' },
+    { code:'BY', name:'Belarus', dial:'+375', flag:'🇧🇾' },
+    { code:'GE', name:'Georgia', dial:'+995', flag:'🇬🇪' },
+    { code:'AM', name:'Armenia', dial:'+374', flag:'🇦🇲' },
+    { code:'AZ', name:'Azerbaijan', dial:'+994', flag:'🇦🇿' },
+    { code:'KZ', name:'Kazakhstan', dial:'+7', flag:'🇰🇿' },
+    { code:'UZ', name:'Uzbekistan', dial:'+998', flag:'🇺🇿' },
+    { code:'TM', name:'Turkmenistan', dial:'+993', flag:'🇹🇲' },
+    { code:'TJ', name:'Tajikistan', dial:'+992', flag:'🇹🇯' },
+    { code:'KG', name:'Kyrgyzstan', dial:'+996', flag:'🇰🇬' },
+    { code:'MN', name:'Mongolia', dial:'+976', flag:'🇲🇳' },
+    { code:'NP', name:'Nepal', dial:'+977', flag:'🇳🇵' },
+    { code:'LK', name:'Sri Lanka', dial:'+94', flag:'🇱🇰' },
+    { code:'MM', name:'Myanmar', dial:'+95', flag:'🇲🇲' },
+    { code:'KH', name:'Cambodia', dial:'+855', flag:'🇰🇭' },
+    { code:'LA', name:'Laos', dial:'+856', flag:'🇱🇦' },
+    { code:'BN', name:'Brunei', dial:'+673', flag:'🇧🇳' },
+  ];
+
+  const businessTypes = [
+    'Marketing Agency','Doctor','Medical Clinic','Dental Clinic','Physical Therapy Clinic',
+    'Pharmacy','Hospital','Gym & Fitness Center','Personal Trainer','Nutrition Coach',
+    'Restaurant','Cafe','Coffee Shop','Hotel','Real Estate Company','Real Estate Developer',
+    'Car Showroom','Car Rental','Car Service Center','E-commerce Store','Fashion Brand',
+    'Clothing Brand','Jewelry Brand','Beauty Salon','Barber Shop','Spa & Wellness',
+    'Cosmetics Brand','Furniture Store','Interior Design','Architecture Office',
+    'Construction Company','Engineering Company','Law Firm','Accounting Office',
+    'Financial Services','Insurance Company','Educational Center','School','University',
+    'Online Course Creator','Teacher','Photographer','Videographer','Event Planner',
+    'Travel Agency','Tourism Company','Mobile Store','Electronics Store','Software Company',
+    'SaaS Startup','Technology Company','NGO','Government Organization',
+    'Manufacturing Company','Logistics Company','Import & Export','Other'
+  ];
+
+  // ── Elements ──
+  const phoneTrigger = $('#pm-phone-trigger');
+  const phoneFlag = $('#pm-phone-flag');
+  const phoneDial = $('#pm-phone-dial');
+  const phoneInput = $('#pm-phone');
+  const countryDropdown = $('#pm-country-dropdown');
+  const countrySearch = $('#pm-country-search');
+  const countryList = $('#pm-country-list');
+  const businessSearch = $('#pm-business-search');
+  const businessHidden = $('#pm-business');
+  const businessDropdown = $('#pm-business-dropdown');
+  const businessList = $('#pm-business-list');
+  const submitBtn = $('#pm-submit');
+
+  let selectedCountry = countries[0]; // Egypt default
+
+  // ── Build country list ──
+  countries.forEach((c, i) => {
+    const item = document.createElement('div');
+    item.className = 'pm-country-item' + (i === 0 ? ' selected' : '');
+    item.dataset.index = i;
+    item.innerHTML = `<span class="pm-country-flag">${c.flag}</span><span class="pm-country-name">${c.name}</span><span class="pm-country-dial">${c.dial}</span>`;
+    countryList.appendChild(item);
+  });
+
+  // ── Build business list ──
+  businessTypes.forEach(type => {
+    const val = type.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+$/, '');
+    const item = document.createElement('div');
+    item.className = 'pm-searchable-item';
+    item.textContent = type;
+    item.dataset.value = val;
+    businessList.appendChild(item);
+
+    const opt = document.createElement('option');
+    opt.value = val;
+    opt.textContent = type;
+    businessHidden.appendChild(opt);
+  });
+
+  // ── Open / Close modal ──
+  function openModal() {
+    backdrop.classList.add('active');
+    backdrop.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => { $('#pm-name')?.focus(); }, 300);
+  }
+
+  function closeModal() {
+    backdrop.classList.remove('active');
+    backdrop.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    resetForm();
+  }
+
+  function resetForm() {
+    if (!form) return;
+    form.reset();
+    form.style.display = '';
+    successEl.style.display = 'none';
+    submitBtn.disabled = false;
+    submitBtn.classList.remove('loading');
+    selectedCountry = countries[0];
+    phoneFlag.textContent = countries[0].flag;
+    phoneDial.textContent = countries[0].dial;
+    $$('.pm-field', form).forEach(f => f.classList.remove('error'));
+    $$('.pm-err', form).forEach(e => { e.textContent = ''; });
+    businessSearch.value = '';
+    businessHidden.value = '';
+    businessList.querySelectorAll('.pm-searchable-item').forEach(i => i.classList.remove('selected'));
+  }
+
+  // ── Wire open buttons ──
+  $$('.open-project-modal').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal();
+    });
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+  successClose?.addEventListener('click', closeModal);
+
+  backdrop.addEventListener('click', (e) => {
+    if (e.target === backdrop) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && backdrop.classList.contains('active')) {
+      closeModal();
     }
-    errEl.textContent = msg;
-  };
+  });
 
-  const clearErrors = () => {
-    $$('.form-err', form).forEach(el => el.remove());
-    $$('.form-input', form).forEach(el => el.style.borderColor = '');
-  };
+  // ── Country selector ──
+  phoneTrigger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = countryDropdown.classList.contains('active');
+    countryDropdown.classList.toggle('active');
+    phoneTrigger.classList.toggle('open');
+    if (!isOpen) {
+      countrySearch.value = '';
+      filterCountries('');
+      countrySearch.focus();
+    }
+  });
 
-  const validate = () => {
-    clearErrors();
+  phoneTrigger.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      phoneTrigger.click();
+    }
+  });
+
+  countryList.addEventListener('click', (e) => {
+    const item = e.target.closest('.pm-country-item');
+    if (!item) return;
+    const idx = parseInt(item.dataset.index);
+    selectedCountry = countries[idx];
+    phoneFlag.textContent = selectedCountry.flag;
+    phoneDial.textContent = selectedCountry.dial;
+    countryList.querySelectorAll('.pm-country-item').forEach(i => i.classList.remove('selected'));
+    item.classList.add('selected');
+    countryDropdown.classList.remove('active');
+    phoneTrigger.classList.remove('open');
+    phoneInput.focus();
+  });
+
+  countrySearch.addEventListener('input', () => {
+    filterCountries(countrySearch.value.toLowerCase());
+  });
+
+  countrySearch.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      countryDropdown.classList.remove('active');
+      phoneTrigger.classList.remove('open');
+    }
+  });
+
+  function filterCountries(q) {
+    countryList.querySelectorAll('.pm-country-item').forEach(item => {
+      const name = item.querySelector('.pm-country-name').textContent.toLowerCase();
+      const dial = item.querySelector('.pm-country-dial').textContent;
+      item.classList.toggle('hidden', !name.includes(q) && !dial.includes(q));
+    });
+  }
+
+  // Auto-detect country from phone input
+  phoneInput.addEventListener('input', () => {
+    let val = phoneInput.value.replace(/[\s\-()]/g, '');
+    if (val.startsWith('+')) {
+      for (let len = 4; len >= 1; len--) {
+        const prefix = val.substring(0, len + 1);
+        const match = countries.find(c => c.dial === prefix);
+        if (match) {
+          selectedCountry = match;
+          phoneFlag.textContent = match.flag;
+          phoneDial.textContent = match.dial;
+          countryList.querySelectorAll('.pm-country-item').forEach(i => i.classList.remove('selected'));
+          const items = countryList.querySelectorAll('.pm-country-item');
+          items.forEach(i => {
+            if (parseInt(i.dataset.index) === countries.indexOf(match)) {
+              i.classList.add('selected');
+            }
+          });
+          break;
+        }
+      }
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!phoneTrigger.contains(e.target) && !countryDropdown.contains(e.target)) {
+      countryDropdown.classList.remove('active');
+      phoneTrigger.classList.remove('open');
+    }
+  });
+
+  // ── Business searchable dropdown ──
+  businessSearch.addEventListener('focus', () => {
+    businessDropdown.classList.add('active');
+  });
+
+  businessSearch.addEventListener('input', () => {
+    const q = businessSearch.value.toLowerCase();
+    businessList.querySelectorAll('.pm-searchable-item').forEach(item => {
+      item.classList.toggle('hidden', !item.textContent.toLowerCase().includes(q));
+    });
+  });
+
+  businessList.addEventListener('click', (e) => {
+    const item = e.target.closest('.pm-searchable-item');
+    if (!item) return;
+    businessList.querySelectorAll('.pm-searchable-item').forEach(i => i.classList.remove('selected'));
+    item.classList.add('selected');
+    businessSearch.value = item.textContent;
+    businessHidden.value = item.dataset.value;
+    businessDropdown.classList.remove('active');
+    const field = businessSearch.closest('.pm-field');
+    if (field) field.classList.remove('error');
+    const errEl = field?.querySelector('.pm-err');
+    if (errEl) errEl.textContent = '';
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!businessSearch.contains(e.target) && !businessDropdown.contains(e.target)) {
+      businessDropdown.classList.remove('active');
+    }
+  });
+
+  // ── Enter to next field ──
+  form.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && e.target.tagName !== 'TEXTAREA') {
+      e.preventDefault();
+      const fields = Array.from(form.querySelectorAll('.pm-input:not([type="hidden"]), .pm-select, .pm-phone-input, .pm-phone-trigger'));
+      const idx = fields.indexOf(e.target);
+      if (idx > -1 && idx < fields.length - 1) {
+        fields[idx + 1].focus();
+      }
+    }
+  });
+
+  // ── Validation ──
+  function showFieldError(field, msg) {
+    field.classList.add('error');
+    const errEl = field.querySelector('.pm-err');
+    if (errEl) errEl.textContent = msg;
+  }
+
+  function clearFieldError(field) {
+    field.classList.remove('error');
+    const errEl = field.querySelector('.pm-err');
+    if (errEl) errEl.textContent = '';
+  }
+
+  function validateForm() {
     let valid = true;
 
-    const name = $('#contact-name');
-    const email = $('#contact-email');
-    const business = $('#contact-business');
-    const message = $('#contact-message');
+    const nameField = $('#pm-name')?.closest('.pm-field');
+    const emailField = $('#pm-email')?.closest('.pm-field');
+    const phoneField = $('#pm-phone')?.closest('.pm-field');
+    const businessField = businessSearch?.closest('.pm-field');
+    const serviceField = $('#pm-service')?.closest('.pm-field');
+    const messageField = $('#pm-message')?.closest('.pm-field');
 
-    if (!name.value.trim()) { showError(name, 'Please enter your name'); valid = false; }
-    if (!email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
-      showError(email, 'Please enter a valid email address'); valid = false;
+    // Clear all
+    $$('.pm-field', form).forEach(clearFieldError);
+
+    // Name
+    if (!$('#pm-name')?.value.trim()) {
+      showFieldError(nameField, 'Please enter your name');
+      valid = false;
     }
-    if (!business.value) { showError(business, 'Please select your industry'); valid = false; }
-    if (!message.value.trim()) { showError(message, 'Please describe your project'); valid = false; }
+
+    // Email
+    const email = $('#pm-email')?.value.trim();
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      showFieldError(emailField, 'Please enter a valid email address');
+      valid = false;
+    }
+
+    // Phone
+    const phone = phoneInput.value.trim();
+    if (!phone) {
+      showFieldError(phoneField, 'Please enter your phone number');
+      valid = false;
+    } else if (phone.replace(/\D/g, '').length < 6) {
+      showFieldError(phoneField, 'Please enter a valid phone number');
+      valid = false;
+    }
+
+    // Business
+    if (!businessHidden.value) {
+      showFieldError(businessField, 'Please select your business type');
+      valid = false;
+    }
+
+    // Service
+    if (!$('#pm-service')?.value) {
+      showFieldError(serviceField, 'Please select a service');
+      valid = false;
+    }
+
+    // Message
+    if (!$('#pm-message')?.value.trim()) {
+      showFieldError(messageField, 'Please describe your project');
+      valid = false;
+    }
 
     return valid;
-  };
+  }
 
+  // Clear error on focus
+  $$('.pm-input, .pm-select, .pm-phone-trigger', form).forEach(input => {
+    input.addEventListener('focus', () => {
+      const field = input.closest('.pm-field');
+      if (field) clearFieldError(field);
+    });
+  });
+
+  // ── Submit ──
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    if (!validate()) return;
+    if (!validateForm()) return;
 
-    const submitBtn = $('#form-submit-btn');
     submitBtn.disabled = true;
-    submitBtn.querySelector('span').textContent = 'Sending...';
+    submitBtn.classList.add('loading');
 
-    // Simulate form submission
     setTimeout(() => {
       form.style.display = 'none';
-      if (successEl) successEl.style.display = 'flex';
+      successEl.style.display = 'flex';
     }, 1200);
   });
 })();
@@ -480,7 +859,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 })();
 
 /* ============================================================
-   12. MOBILE STICKY CTA â€” Show after scrolling past hero
+   12. MOBILE STICKY CTA — Show after scrolling past hero
    ============================================================ */
 (function initMobileStickyCTA() {
   const cta = $('#mobile-sticky-cta');
